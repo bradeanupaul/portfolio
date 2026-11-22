@@ -38,7 +38,6 @@ export function ChefStory() {
             fill
             sizes="(max-width: 1024px) 100vw, 55vw"
             className="object-cover object-center"
-            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-bn-bg/80 max-lg:bg-gradient-to-t max-lg:from-bn-bg/70 max-lg:via-transparent max-lg:to-transparent" />
         </AnimatedReveal>

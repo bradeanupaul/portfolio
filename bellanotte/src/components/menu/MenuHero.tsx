@@ -32,9 +32,9 @@ export function MenuHero() {
         <Image
           src="/images/hero/pasta-wide.webp"
           fetchPriority="high"
+          loading="eager"
           alt=""
           fill
-          priority
           className="object-cover object-center opacity-45"
           sizes="100vw"
         />

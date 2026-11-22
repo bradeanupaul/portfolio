@@ -255,13 +255,19 @@ function buildDemo(demo) {
   try {
     rmSync(join(appDir, ".next"), { recursive: true, force: true });
     rmSync(outDir, { recursive: true, force: true });
-    run("npx", ["next", "build"], appDir, {
+    // Absolute SQLite URL — webpack page-data workers can resolve relative paths wrong.
+    const prismaDb = join(appDir, "prisma", "dev.db");
+    const databaseUrl = process.env.DATABASE_URL
+      || (existsSync(prismaDb) ? `file:${prismaDb}` : "file:./prisma/dev.db");
+
+    // Webpack respects package.json browserslist for polyfill dropping; Turbopack
+    // still ships Array.at/fromEntries helpers that PageSpeed flags as Legacy JS.
+    run("npx", ["next", "build", "--webpack"], appDir, {
       STATIC_EXPORT: "1",
       NEXT_PUBLIC_BASE_PATH: `/${slug}`,
       NEXT_PUBLIC_SITE_URL: `https://paulbradeanu.com/${slug}`,
       NODE_ENV: "production",
-      // Avoid picking up a developer .env that breaks CI/export assumptions.
-      DATABASE_URL: process.env.DATABASE_URL || "file:./prisma/dev.db",
+      DATABASE_URL: databaseUrl,
     });
 
     if (!existsSync(outDir) || !statSync(outDir).isDirectory()) {

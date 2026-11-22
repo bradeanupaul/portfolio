@@ -1,40 +1,32 @@
-2:"/vanta-ink/_next/static/chunks/0xkao2-mcbxwi.js"
-3:"/vanta-ink/_next/static/chunks/0r-1opmiwy6zf.js"
-4:"/vanta-ink/_next/static/chunks/3w2f_xaiijww8.js"
-5:"LoadingBoundaryProvider"
-6:I[39756,["$2","$3","$4"],"$5"]
-7:"$Sreact.fragment"
-8:I[39756,["$2","$3","$4"],"default"]
-9:I[37457,["$2","$3","$4"],"default"]
-a:I[22016,["$2","$3","$4"],""]
-11:"/vanta-ink/_next/static/chunks/42q4tqcxh0rs8.js"
-12:I[82987,["$2","$3","$4","$11"],"Reveal"]
-1a:"ViewportBoundary"
-1b:I[97367,["$2","$3","$4"],"$1a"]
-1c:"MetadataBoundary"
-1d:I[97367,["$2","$3","$4"],"$1c"]
-1e:"$Sreact.suspense"
-1f:I[27201,["$2","$3","$4"],"IconMark"]
-c:X
-f:X
-f:C
-10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$7","c",{"children":[["$","div",null,{"className":"py-14 md:py-20","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-3xl","children":[["$","p",null,{"className":"mono-index text-text-subtle","aria-hidden":"true","children":[["$","span",null,{"children":"L2"}],["$","span",null,{"aria-hidden":"true","children":" / "}],["$","span",null,{"children":"TERMENI"}]]}],["$","$L12",null,{"className":"mt-6","children":["$","h1",null,{"className":"display-section font-display uppercase text-text","children":"Termeni de utilizare demonstrativi"}]}],["$","div",null,{"className":"space-y-6 text-sm leading-relaxed text-text-muted [&_h2]:mt-10 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:uppercase [&_h2]:text-text [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_strong]:text-text mt-8 border border-line bg-surface-raised p-6 md:p-8","children":[["$","p",null,{"children":"Accesând VANTA INK acceptați că utilizați un proiect de portofoliu, nu un studio operațional de tatuaj."}],["$","h2",null,{"children":"Natură fictivă"}],["$","p",null,{"children":"Artiștii, lucrările, programările și datele de contact sunt create pentru prezentare. Orice rezervare sau mesaj trimis prin site este simulat și stocat local."}],["$","h2",null,{"children":"Fără servicii reale"}],["$","p",null,{"children":"Nu se efectuează tatuaje, consultații medicale sau plăți prin acest site. Informațiile despre îngrijire sunt generale și nu înlocuiesc sfatul unui specialist."}],["$","h2",null,{"children":"Conținut și imagini"}],["$","p",null,{"children":"Imaginile pot fi placeholder sau în curs de generare. Nu garantăm disponibilitatea fișierelor media listate în manifest."}],"$L13","$L14","$L15","$L16"]}]]}]}],["$L17"],"$L18"]}],"p":"$@19","v":null,"s":"$c"}}]]
-d:[["children",{"s":"termeni","h":96,"d":{"r":["$","$7","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-1:[["children",{"s":"(site)","h":68,"d":{"r":["$","$L6",null,{"loading":[["$","div","l",{"className":"bg-bg py-16","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-[var(--content-max)]","children":[["$","p",null,{"className":"mono-index","aria-live":"polite","children":"Se pregătește conținutul"}],["$","div",null,{"className":"mt-8 space-y-3","children":[["$","div",null,{"className":"h-4 w-3/4 max-w-md animate-pulse bg-surface-muted"}],["$","div",null,{"className":"h-4 w-1/2 max-w-sm animate-pulse bg-surface-muted"}],["$","div",null,{"className":"mt-6 aspect-[16/9] w-full max-w-2xl animate-pulse border border-line bg-surface-raised"}]]}]]}]}],[],null],"children":["$","$7","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}],"notFound":[["$","div",null,{"className":"min-h-[60vh] bg-bg","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-[var(--content-max)] flex min-h-[60vh] flex-col justify-center py-16","children":[["$","p",null,{"className":"mono-index","children":"EROARE 404"}],["$","h1",null,{"className":"mt-4 display-section font-display uppercase text-text","children":"Pagina nu există"}],["$","p",null,{"className":"mt-4 max-w-md text-text-muted","children":"Ruta căutată nu face parte din proiectul demonstrativ VANTA INK. Puteți reveni la pagina principală sau la galerie."}],["$","hr",null,{"className":"editorial-rule-strong my-8 w-24 border-0"}],["$","div",null,{"className":"flex flex-wrap gap-4","children":[["$","$La",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 rounded-none font-body font-semibold tracking-wide no-underline transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50 border border-transparent bg-accent text-white hover:bg-accent-hover hover:text-white focus-visible:outline-focus min-h-11 px-5 text-sm","children":"Acasă"}],["$","$La",null,{"href":"/portofoliu","className":"inline-flex items-center justify-center gap-2 rounded-none font-body font-semibold tracking-wide no-underline transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50 border border-line bg-transparent text-text hover:border-accent hover:text-accent min-h-11 px-5 text-sm","children":"Lucrări"}]]}]]}]}],[]]}]]}]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"}]]
-0:{"t":{"t":{"s":"","h":28,"c":"$Q1"},"h":{"r":["$","$7","h",{"children":[null,["$","$L1b",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0B0B0C"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","$L1d",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Termeni de utilizare (demo) · VANTA INK"}],["$","meta","1",{"name":"description","content":"Termeni fictivi pentru utilizarea site ului demonstrativ VANTA INK, aliniați cu absența serviciilor reale."}],["$","meta","2",{"property":"og:title","content":"VANTA INK"}],["$","meta","3",{"property":"og:description","content":"Arta pe care o porți."}],["$","meta","4",{"property":"og:locale","content":"ro_RO"}],["$","meta","5",{"property":"og:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"VANTA INK"}],["$","meta","11",{"name":"twitter:description","content":"Arta pe care o porți."}],["$","meta","12",{"name":"twitter:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","link","13",{"rel":"icon","href":"/vanta-ink/brand/vanta-symbol.svg"}],["$","link","14",{"rel":"apple-touch-icon","href":"/vanta-ink/brand/apple-touch-icon.png"}],["$","$L1f","15",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@20","v":null,"s":"$c"}},"a":"$@21","u":"$@22","b":"fZLt5Y2R7De5nsi5gIHWE"}
-23:I[97367,["$2","$3","$4"],"OutletBoundary"]
-13:["$","h2",null,{"children":"Utilizare acceptabilă"}]
-14:["$","p",null,{"children":"Este interzisă trimiterea masivă de formulare, tentativa de abuz a API urilor demo sau introducerea de date care încalcă legea. Se aplică limitări tehnice de rată pe server."}]
-15:["$","h2",null,{"children":"Limitarea răspunderii"}]
-16:["$","p",null,{"children":"Proiectul este oferit ca atare, fără garanții. Dezvoltatorul nu răspunde pentru decizii luate pe baza conținutului demonstrativ."}]
-17:["$","script","script-0",{"src":"/vanta-ink/_next/static/chunks/42q4tqcxh0rs8.js","async":true}]
-18:["$","$L23",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@24"}]}]
-22:true
-c:300
-24:null
-c:C
-21:0
-e:"$undefined"
-b:"$undefined"
-20:"$undefined"
-19:"$undefined"
+2:"LoadingBoundaryProvider"
+3:I[7121,[],"$2"]
+4:"$Sreact.fragment"
+5:I[7121,[],""]
+6:I[4581,[],""]
+d:"static/chunks/409-f9a4a214ccc8bf0b.js"
+e:"static/chunks/628-fa6d62be6b2d8043.js"
+f:"static/chunks/app/(site)/termeni/page-2a84d72df123e781.js"
+10:I[4804,["409","$d","628","$e","766","$f"],"Reveal"]
+11:I[484,[],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[484,[],"$15"]
+17:"MetadataBoundary"
+18:I[484,[],"$17"]
+19:I[6869,[],"IconMark"]
+8:X
+b:X
+b:C
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$4","c",{"children":[["$","div",null,{"className":"py-14 md:py-20","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-3xl","children":[["$","p",null,{"className":"mono-index text-text-subtle","aria-hidden":"true","children":[["$","span",null,{"children":"L2"}],["$","span",null,{"aria-hidden":"true","children":" / "}],["$","span",null,{"children":"TERMENI"}]]}],["$","$L10",null,{"className":"mt-6","children":["$","h1",null,{"className":"display-section font-display uppercase text-text","children":"Termeni de utilizare demonstrativi"}]}],["$","div",null,{"className":"space-y-6 text-sm leading-relaxed text-text-muted [&_h2]:mt-10 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:uppercase [&_h2]:text-text [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_strong]:text-text mt-8 border border-line bg-surface-raised p-6 md:p-8","children":[["$","p",null,{"children":"Accesând VANTA INK acceptați că utilizați un proiect de portofoliu, nu un studio operațional de tatuaj."}],["$","h2",null,{"children":"Natură fictivă"}],["$","p",null,{"children":"Artiștii, lucrările, programările și datele de contact sunt create pentru prezentare. Orice rezervare sau mesaj trimis prin site este simulat și stocat local."}],["$","h2",null,{"children":"Fără servicii reale"}],["$","p",null,{"children":"Nu se efectuează tatuaje, consultații medicale sau plăți prin acest site. Informațiile despre îngrijire sunt generale și nu înlocuiesc sfatul unui specialist."}],["$","h2",null,{"children":"Conținut și imagini"}],["$","p",null,{"children":"Imaginile pot fi placeholder sau în curs de generare. Nu garantăm disponibilitatea fișierelor media listate în manifest."}],["$","h2",null,{"children":"Utilizare acceptabilă"}],["$","p",null,{"children":"Este interzisă trimiterea masivă de formulare, tentativa de abuz a API urilor demo sau introducerea de date care încalcă legea. Se aplică limitări tehnice de rată pe server."}],["$","h2",null,{"children":"Limitarea răspunderii"}],["$","p",null,{"children":"Proiectul este oferit ca atare, fără garanții. Dezvoltatorul nu răspunde pentru decizii luate pe baza conținutului demonstrativ."}]]}]]}]}],null,["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":"$@14","v":null,"s":"$8"}}]]
+9:[["children",{"s":"termeni","h":96,"d":{"r":["$","$4","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@a","v":"$b","s":"$8"},"c":"$Qc"}]]
+1:[["children",{"s":"(site)","h":68,"d":{"r":["$","$L3",null,{"loading":[["$","div","l",{"className":"bg-bg py-16","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-[var(--content-max)]","children":[["$","p",null,{"className":"mono-index","aria-live":"polite","children":"Se pregătește conținutul"}],["$","div",null,{"className":"mt-8 space-y-3","children":[["$","div",null,{"className":"h-4 w-3/4 max-w-md animate-pulse bg-surface-muted"}],["$","div",null,{"className":"h-4 w-1/2 max-w-sm animate-pulse bg-surface-muted"}],["$","div",null,{"className":"mt-6 aspect-[16/9] w-full max-w-2xl animate-pulse border border-line bg-surface-raised"}]]}]]}]}],[],null],"children":["$","$4","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}]}],"p":"$@7","v":null,"s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":28,"c":"$Q1"},"h":{"r":["$","$4","h",{"children":[null,["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0B0B0C"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Termeni de utilizare (demo) · VANTA INK"}],["$","meta","1",{"name":"description","content":"Termeni fictivi pentru utilizarea site ului demonstrativ VANTA INK, aliniați cu absența serviciilor reale."}],["$","meta","2",{"property":"og:title","content":"VANTA INK"}],["$","meta","3",{"property":"og:description","content":"Arta pe care o porți."}],["$","meta","4",{"property":"og:locale","content":"ro_RO"}],["$","meta","5",{"property":"og:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"VANTA INK"}],["$","meta","11",{"name":"twitter:description","content":"Arta pe care o porți."}],["$","meta","12",{"name":"twitter:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","link","13",{"rel":"icon","href":"/vanta-ink/brand/vanta-symbol.svg"}],["$","link","14",{"rel":"apple-touch-icon","href":"/vanta-ink/brand/apple-touch-icon.png"}],["$","$L19","15",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1a","v":null,"s":"$8"}},"a":"$@1b","u":"$@1c","b":"K-DgyC1vibK5kE8TVzXld"}
+13:null
+1c:true
+8:300
+8:C
+1b:0
+a:"$undefined"
+7:"$undefined"
+1a:"$undefined"
+14:"$undefined"

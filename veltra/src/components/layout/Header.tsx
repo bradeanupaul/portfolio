@@ -109,6 +109,7 @@ export function Header() {
             height={56}
             className="!h-10 w-auto object-contain md:!h-11"
             priority
+            fetchPriority="high"
             unoptimized
           />
         </Link>

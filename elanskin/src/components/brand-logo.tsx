@@ -50,6 +50,7 @@ export function BrandLogo({
         className="shrink-0"
         style={{ width: markW, height: "auto" }}
         decoding="async"
+        fetchPriority="high"
       />
       <span className="leading-none">
         <span className={cn("block font-display tracking-[0.04em]", titleClass)} style={{ color: ink }}>

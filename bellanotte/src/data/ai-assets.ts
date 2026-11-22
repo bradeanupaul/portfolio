@@ -5,9 +5,9 @@
 
 export const brandingAssets = {
   logoSvg: "/images/branding/logo-bella-notte.svg",
-  logoMobile: "/images/branding/logo-bella-notte-mobile.png",
-  logoDesktop: "/images/branding/logo-bella-notte.png",
-  logoCompact: "/images/branding/logo-bella-notte-compact.png",
+  logoMobile: "/images/branding/logo-bella-notte-mobile.webp",
+  logoDesktop: "/images/branding/logo-bella-notte.webp",
+  logoCompact: "/images/branding/logo-bella-notte-compact.webp",
   favicon: "/images/branding/favicon-logo.png",
 } as const;
 

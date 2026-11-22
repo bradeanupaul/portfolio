@@ -78,12 +78,36 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+const assetBase = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="ro"
       className={`${displayFont.variable} ${sansFont.variable} ${scriptFont.variable} h-full`}
     >
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href={`${assetBase}/images/branding/logo-bella-notte-mobile.webp`}
+          fetchPriority="high"
+          media="(max-width: 1023px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${assetBase}/images/branding/logo-bella-notte.webp`}
+          fetchPriority="high"
+          media="(min-width: 1024px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${assetBase}/images/hero/pasta-wide.webp`}
+          fetchPriority="high"
+        />
+      </head>
       <body className="bn-grain flex min-h-full flex-col bg-bn-bg font-sans text-bn-text antialiased">
         <IntroProvider>
           <JsonLd />

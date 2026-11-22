@@ -99,11 +99,12 @@ export function Header() {
         <Container className="grid h-[var(--header-height)] grid-cols-[auto_1fr_auto] items-center gap-4">
           <Link href="/" className="block w-[148px] shrink-0 sm:w-[180px] md:w-[196px] lg:w-[210px]">
             <Image
-              src="/branding/logo-horizontal.png"
+              src="/branding/logo-horizontal.webp"
               alt="Aurelia Estates"
-              width={804}
-              height={168}
+              width={420}
+              height={88}
               priority
+              fetchPriority="high"
               unoptimized
               className="h-auto w-full"
             />

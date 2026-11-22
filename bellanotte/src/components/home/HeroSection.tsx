@@ -48,7 +48,7 @@ export function HeroSection() {
           src="/images/hero/pasta-wide.webp"
           alt="Tagliatelle cu trufe negre și Parmigiano pe farfurie ceramică întunecată"
           fill
-          priority
+          loading="eager"
           fetchPriority="high"
           unoptimized
           sizes="100vw"
@@ -160,7 +160,6 @@ export function HeroSection() {
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1280px) 40vw, 520px"
-                priority
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bn-bg/50 via-transparent to-transparent" />
