@@ -1,0 +1,43 @@
+2:"/vanta-ink/_next/static/chunks/0xkao2-mcbxwi.js"
+3:"/vanta-ink/_next/static/chunks/0r-1opmiwy6zf.js"
+4:"/vanta-ink/_next/static/chunks/3w2f_xaiijww8.js"
+5:"LoadingBoundaryProvider"
+6:I[39756,["$2","$3","$4"],"$5"]
+7:"$Sreact.fragment"
+8:I[39756,["$2","$3","$4"],"default"]
+9:I[37457,["$2","$3","$4"],"default"]
+a:I[22016,["$2","$3","$4"],""]
+11:"/vanta-ink/_next/static/chunks/42q4tqcxh0rs8.js"
+12:I[82987,["$2","$3","$4","$11"],"Reveal"]
+1d:"ViewportBoundary"
+1e:I[97367,["$2","$3","$4"],"$1d"]
+1f:"MetadataBoundary"
+20:I[97367,["$2","$3","$4"],"$1f"]
+21:"$Sreact.suspense"
+22:I[27201,["$2","$3","$4"],"IconMark"]
+c:X
+f:X
+f:C
+10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$7","c",{"children":[["$","div",null,{"className":"py-14 md:py-20","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-3xl","children":[["$","p",null,{"className":"mono-index text-text-subtle","aria-hidden":"true","children":[["$","span",null,{"children":"L1"}],["$","span",null,{"aria-hidden":"true","children":" / "}],["$","span",null,{"children":"CONFIDENȚIALITATE"}]]}],["$","$L12",null,{"className":"mt-6","children":["$","h1",null,{"className":"display-section font-display uppercase text-text","children":"Confidențialitate în proiectul demo"}]}],["$","div",null,{"className":"space-y-6 text-sm leading-relaxed text-text-muted [&_h2]:mt-10 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:uppercase [&_h2]:text-text [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_strong]:text-text mt-8 border border-line bg-surface-raised p-6 md:p-8","children":[["$","p",null,{"children":"VANTA INK este un studiou fictiv de portofoliu. Această pagină descrie comportamentul real al aplicației demo, nu o politică comercială."}],["$","h2",null,{"children":"Ce date colectăm"}],["$","ul",null,{"children":[["$","li",null,{"children":"Solicitările din formularul de programare: nume, email, descrierea ideii, artist și interval ales, stocate în baza SQLite locală a proiectului."}],["$","li",null,{"children":"Mesajele din formularul de contact: nume, email, subiect și conținut, tot în SQLite local."}],["$","li",null,{"children":"Nu colectăm plăți, identificatori medicali sau încărcări de fișiere reale în această versiune."}]]}],["$","h2",null,{"children":"Email și notificări"}],"$L13","$L14","$L15","$L16","$L17","$L18","$L19"]}]]}]}],["$L1a"],"$L1b"]}],"p":"$@1c","v":null,"s":"$c"}}]]
+d:[["children",{"s":"confidentialitate","h":96,"d":{"r":["$","$7","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
+1:[["children",{"s":"(site)","h":68,"d":{"r":["$","$L6",null,{"loading":[["$","div","l",{"className":"bg-bg py-16","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-[var(--content-max)]","children":[["$","p",null,{"className":"mono-index","aria-live":"polite","children":"Se pregătește conținutul"}],["$","div",null,{"className":"mt-8 space-y-3","children":[["$","div",null,{"className":"h-4 w-3/4 max-w-md animate-pulse bg-surface-muted"}],["$","div",null,{"className":"h-4 w-1/2 max-w-sm animate-pulse bg-surface-muted"}],["$","div",null,{"className":"mt-6 aspect-[16/9] w-full max-w-2xl animate-pulse border border-line bg-surface-raised"}]]}]]}]}],[],null],"children":["$","$7","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}],"notFound":[["$","div",null,{"className":"min-h-[60vh] bg-bg","children":["$","div",null,{"className":"page-gutter mx-auto w-full max-w-[var(--content-max)] flex min-h-[60vh] flex-col justify-center py-16","children":[["$","p",null,{"className":"mono-index","children":"EROARE 404"}],["$","h1",null,{"className":"mt-4 display-section font-display uppercase text-text","children":"Pagina nu există"}],["$","p",null,{"className":"mt-4 max-w-md text-text-muted","children":"Ruta căutată nu face parte din proiectul demonstrativ VANTA INK. Puteți reveni la pagina principală sau la galerie."}],["$","hr",null,{"className":"editorial-rule-strong my-8 w-24 border-0"}],["$","div",null,{"className":"flex flex-wrap gap-4","children":[["$","$La",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 rounded-none font-body font-semibold tracking-wide no-underline transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50 border border-transparent bg-accent text-white hover:bg-accent-hover hover:text-white focus-visible:outline-focus min-h-11 px-5 text-sm","children":"Acasă"}],["$","$La",null,{"href":"/portofoliu","className":"inline-flex items-center justify-center gap-2 rounded-none font-body font-semibold tracking-wide no-underline transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50 border border-line bg-transparent text-text hover:border-accent hover:text-accent min-h-11 px-5 text-sm","children":"Lucrări"}]]}]]}]}],[]]}]]}]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"}]]
+0:{"t":{"t":{"s":"","h":28,"c":"$Q1"},"h":{"r":["$","$7","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0B0B0C"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Confidențialitate (demo) · VANTA INK"}],["$","meta","1",{"name":"description","content":"Politica demonstrativă de confidențialitate pentru VANTA INK: ce se stochează local, retenție și absența emailului real."}],["$","meta","2",{"property":"og:title","content":"VANTA INK"}],["$","meta","3",{"property":"og:description","content":"Arta pe care o porți."}],["$","meta","4",{"property":"og:locale","content":"ro_RO"}],["$","meta","5",{"property":"og:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"VANTA INK"}],["$","meta","11",{"name":"twitter:description","content":"Arta pe care o porți."}],["$","meta","12",{"name":"twitter:image","content":"https://paulbradeanu.com/vanta-ink/brand/opengraph.webp"}],["$","link","13",{"rel":"icon","href":"/brand/vanta-symbol.svg"}],["$","link","14",{"rel":"apple-touch-icon","href":"/brand/apple-touch-icon.png"}],["$","$L22","15",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@23","v":null,"s":"$c"}},"a":"$@24","u":"$@25","b":"fZLt5Y2R7De5nsi5gIHWE"}
+26:I[97367,["$2","$3","$4"],"OutletBoundary"]
+13:["$","p",null,{"children":"Nu trimitem email de confirmare și nu conectăm formularele la un serviciu SMTP. Adresele introduse sunt folosite doar ca text în baza locală pentru demonstrație."}]
+14:["$","h2",null,{"children":"Cookie uri și urmărire"}]
+15:["$","p",null,{"children":"Nu presupunem cookie uri de marketing sau analytics terțe în acest demo. Nu afișăm un banner de cookie uri fictiv. Detalii în pagina dedicată cookie urilor."}]
+16:["$","h2",null,{"children":"Retenție"}]
+17:["$","p",null,{"children":"Înregistrările rămân în baza locală atât timp cât dezvoltatorul păstrează mediul de demo. Pot fi șterse oricând prin resetarea bazei de date fără notificare către utilizatori."}]
+18:["$","h2",null,{"children":"Drepturile dumneavoastră"}]
+19:["$","p",null,{"children":"Pentru că proiectul nu este un serviciu operațional, nu există un canal real de exercitare a drepturilor GDPR. Pentru un site de producție, aceste mecanisme ar fi obligatorii."}]
+1a:["$","script","script-0",{"src":"/vanta-ink/_next/static/chunks/42q4tqcxh0rs8.js","async":true}]
+1b:["$","$L26",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@27"}]}]
+25:true
+c:300
+27:null
+c:C
+24:0
+e:"$undefined"
+b:"$undefined"
+23:"$undefined"
+1c:"$undefined"

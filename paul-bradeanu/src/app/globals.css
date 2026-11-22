@@ -134,8 +134,14 @@ img {
 }
 
 .container-shell {
-  width: min(100% - 2rem, var(--container));
+  width: min(100% - 1.5rem, var(--container));
   margin-inline: auto;
+}
+
+@media (min-width: 400px) {
+  .container-shell {
+    width: min(100% - 2rem, var(--container));
+  }
 }
 
 @media (min-width: 768px) {
@@ -146,6 +152,12 @@ img {
   .container-shell {
     width: min(100% - 3rem, var(--container));
   }
+}
+
+/* Soft wrap for long unbroken strings (emails, paths) */
+.break-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 h1,

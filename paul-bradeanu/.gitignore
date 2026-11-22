@@ -24,12 +24,8 @@
 .DS_Store
 *.pem
 
-# Static demo exports (generated into public/ at build time)
-/public/bella-notte/
-/public/veltra/
-/public/vanta-ink/
-/public/aurelia-estates/
-/public/elan-skin/
+# Demo static exports live in public/<slug>/ and are committed
+# so Vercel can deploy one project without rebuilding all demos.
 
 # debug
 npm-debug.log*

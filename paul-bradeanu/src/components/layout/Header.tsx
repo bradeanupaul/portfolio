@@ -83,17 +83,18 @@ export function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
             <Link
               href="/contact"
-              className="btn btn-primary"
+              className="btn btn-primary max-[380px]:px-2.5"
+              aria-label="Contactează-mă"
             >
               <MessageCircle className="h-3.5 w-3.5 shrink-0" aria-hidden />
-              <span>Contactează-mă</span>
+              <span className="max-[380px]:sr-only">Contactează-mă</span>
             </Link>
             <button
               type="button"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--line-on-dark)] text-[var(--text-primary)] sm:h-10 sm:w-10 xl:hidden"
+              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--line-on-dark)] text-[var(--text-primary)] sm:h-10 sm:w-10 xl:hidden"
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? "Închide meniul" : "Deschide meniul"}

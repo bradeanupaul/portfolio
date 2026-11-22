@@ -23,7 +23,7 @@ export default function ProjectsPage() {
             <RevealItem
               as="h1"
               delay={0.08}
-              className="mt-1.5 max-w-[16ch] text-[clamp(1.65rem,6.5vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] text-[var(--ink-on-dark)] md:mt-3"
+              className="mt-1.5 max-w-none text-balance text-[clamp(1.65rem,6.5vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] text-[var(--ink-on-dark)] md:mt-3 md:max-w-[16ch]"
             >
               Cinci experiențe web, gândite ca produse reale.
             </RevealItem>

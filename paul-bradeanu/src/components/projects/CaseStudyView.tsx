@@ -68,7 +68,7 @@ export function CaseStudyView({
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute right-[-8%] top-40 h-[420px] w-[420px] rounded-full blur-3xl"
+        className="pointer-events-none absolute right-[-12%] top-40 h-[min(72vw,280px)] w-[min(72vw,280px)] rounded-full blur-3xl md:right-[-8%] md:h-[420px] md:w-[420px]"
         style={{ background: `${project.accent}22` }}
         aria-hidden
       />
@@ -92,7 +92,7 @@ export function CaseStudyView({
               </div>
             </RevealItem>
 
-            <RevealItem as="h1" delay={0.08} className="font-display mt-5 text-[clamp(2.4rem,5vw,4rem)] font-semibold leading-[1.02] tracking-[-0.04em] text-[var(--ink-on-dark)]">
+            <RevealItem as="h1" delay={0.08} className="font-display mt-5 text-balance text-[clamp(1.85rem,7vw,4rem)] font-semibold leading-[1.02] tracking-[-0.04em] text-[var(--ink-on-dark)]">
               {project.name}
             </RevealItem>
 

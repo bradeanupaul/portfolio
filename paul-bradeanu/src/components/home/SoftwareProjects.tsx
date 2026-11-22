@@ -43,7 +43,7 @@ export function SoftwareProjects() {
         <SnapCarousel
           className="mt-8 md:mt-12"
           ariaLabel="Proiecte software"
-          trackClassName="max-lg:-mx-4 max-lg:px-4 lg:flex-col lg:gap-10 lg:overflow-visible lg:snap-none lg:pb-0"
+          trackClassName="max-lg:-mx-3 max-lg:px-3 lg:flex-col lg:gap-10 lg:overflow-visible lg:snap-none lg:pb-0"
           slideClassName="max-lg:w-[min(90vw,400px)] lg:w-full lg:shrink lg:snap-none"
         >
           {softwareProjects.map((project, index) => {

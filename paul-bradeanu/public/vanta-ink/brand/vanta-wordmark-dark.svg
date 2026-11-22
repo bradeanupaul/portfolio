@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 52" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">VANTA INK</title>
+  <!-- Single cut-line V as first letter of VANTA — no duplicate monogram -->
+  <g fill="#0B0B0C" fill-rule="evenodd">
+    <path d="M8 6h11.5L28.5 42H17.2L8 6Z"/>
+    <path d="M2 6h8.2L7.4 20.5H1.2L2 6Z"/>
+    <path d="M5.2 26.5h8.8L11.4 42H4L5.2 26.5Z"/>
+    <rect x="3.5" y="22.2" width="16" height="2.8" fill="#FF5538" transform="rotate(-17 11.5 23.6)"/>
+    <path d="M40 42 L52 6 H59.5 L71.5 42 H62.5 L59.8 33 H51.7 L49 42 Z M53.2 26 H58.3 L55.75 17 Z"/>
+    <polygon points="80,6 87.5,6 87.5,28 105,6 112.5,6 112.5,42 105,42 105,20 87.5,42 80,42"/>
+    <rect x="121" y="6" width="24" height="5"/>
+    <rect x="129.5" y="11" width="7" height="31"/>
+    <path d="M154 42 L166 6 H173.5 L185.5 42 H176.5 L173.8 33 H165.7 L163 42 Z M167.2 26 H172.3 L169.75 17 Z"/>
+    <rect x="206" y="6" width="7" height="36"/>
+    <polygon points="222,6 229.5,6 229.5,28 247,6 254.5,6 254.5,42 247,42 247,20 229.5,42 222,42"/>
+    <rect x="264" y="6" width="7" height="36"/>
+    <polygon points="271,22 288,6 296,6 278.5,24 296,42 288,42 271,26"/>
+  </g>
+</svg>

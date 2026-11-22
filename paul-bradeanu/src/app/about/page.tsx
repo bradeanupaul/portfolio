@@ -177,19 +177,19 @@ export default function AboutPage() {
               />
             </RevealItem>
             <RevealItem className="mt-4 flex w-full flex-col gap-2 sm:mt-5">
-              <div className="flex w-full gap-2">
+              <div className="flex w-full flex-col gap-2 min-[420px]:flex-row">
                 <ButtonLink
                   href="/experience"
                   icon={BriefcaseBusiness}
                   showArrow
-                  className="min-w-0 flex-1 justify-center sm:flex-none"
+                  className="min-w-0 w-full justify-center min-[420px]:flex-1 sm:w-auto sm:flex-none"
                 >
                   Experiență & studii
                 </ButtonLink>
                 <a
                   href={siteConfig.cvUrl}
                   download
-                  className="btn btn-secondary min-w-0 flex-1 justify-center sm:flex-none"
+                  className="btn btn-secondary min-w-0 w-full justify-center min-[420px]:flex-1 sm:w-auto sm:flex-none"
                 >
                   <Download className="h-3.5 w-3.5" aria-hidden />
                   <span>Descarcă CV</span>
@@ -211,8 +211,8 @@ export default function AboutPage() {
         <div id="values" className="mt-8 scroll-mt-24 md:mt-14">
           <SnapCarousel
             ariaLabel="Focus profesional"
-            trackClassName="max-md:-mx-4 max-md:px-4 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:snap-none md:pb-0"
-            slideClassName="h-full max-md:w-[min(82vw,300px)] md:w-auto md:min-w-0 md:shrink md:snap-none"
+            trackClassName="max-md:-mx-3 max-md:px-3 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:snap-none md:pb-0"
+            slideClassName="h-full max-md:w-[min(calc(100vw-2rem),300px)] md:w-auto md:min-w-0 md:shrink md:snap-none"
             dotsHideFrom="md"
           >
             {focusAreas.map((item) => (

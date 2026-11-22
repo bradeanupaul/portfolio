@@ -203,11 +203,11 @@ export function ProjectsShowcase() {
               aria-label="Carusel proiecte"
             >
               <div
-                className="relative mx-auto h-[280px] overflow-visible touch-pan-y select-none sm:h-[380px] md:h-[480px] lg:h-[520px]"
+                className="relative mx-auto h-[240px] overflow-x-clip touch-pan-y select-none sm:h-[380px] sm:overflow-visible md:h-[480px] lg:h-[520px]"
                 style={{
-                  perspective: reduceMotion ? undefined : "1200px",
+                  perspective: reduceMotion || compact ? undefined : "1200px",
                   perspectiveOrigin: "50% 45%",
-                  transformStyle: "preserve-3d",
+                  transformStyle: compact ? undefined : "preserve-3d",
                 }}
                 onPointerDown={onPointerDown}
                 onPointerMove={onPointerMove}
@@ -229,7 +229,7 @@ export function ProjectsShowcase() {
                 ))}
               </div>
 
-              <RevealItem delay={0.22} className="mt-3 flex flex-wrap items-center justify-between gap-4">
+              <RevealItem delay={0.22} className="mt-3 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-4">
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
@@ -253,7 +253,7 @@ export function ProjectsShowcase() {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                   {filtered.map((project, index) => (
                     <button
                       key={project.slug}
@@ -568,19 +568,19 @@ function CarouselCard({
   const isCenter = offset === 0;
   const dragInfluence = isCenter ? dragX * 0.35 : dragX * 0.12;
 
-  const step = compact ? 156 : 290;
+  const step = compact ? 108 : 290;
   const shift = reduceMotion
-    ? offset * 78 + dragInfluence * 0.2
+    ? offset * 64 + dragInfluence * 0.2
     : offset * (abs === 1 ? step : step * 0.84) + dragInfluence;
-  const rotateY = reduceMotion ? 0 : offset * -42;
+  const rotateY = reduceMotion || compact ? 0 : offset * -42;
   const scale = reduceMotion
     ? isCenter
       ? 1
       : 0.94
     : isCenter
       ? 1
-      : Math.max(0.68, 0.9 - abs * 0.1);
-  const opacity = abs > 2 ? 0 : 1;
+      : Math.max(compact ? 0.78 : 0.68, (compact ? 0.88 : 0.9) - abs * 0.1);
+  const opacity = compact ? (abs > 1 ? 0 : 1) : abs > 2 ? 0 : 1;
 
   return (
     <motion.button
@@ -589,7 +589,7 @@ function CarouselCard({
         if (!isCenter) onSelect();
       }}
       className={cn(
-        "glass-card absolute left-1/2 top-1/2 w-[min(82vw,560px)] overflow-hidden rounded-2xl border text-left outline-none will-change-transform md:rounded-[24px]",
+        "glass-card absolute left-1/2 top-1/2 w-[min(78vw,560px)] overflow-hidden rounded-2xl border text-left outline-none will-change-transform sm:w-[min(82vw,560px)] md:rounded-[24px]",
         isCenter
           ? "border-white/40 shadow-[0_28px_70px_rgba(4,10,18,0.45)]"
           : "border-white/15",

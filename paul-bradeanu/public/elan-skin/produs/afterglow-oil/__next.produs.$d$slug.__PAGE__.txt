@@ -1,0 +1,35 @@
+2:"$Sreact.fragment"
+3:"/elan-skin/_next/static/chunks/1ua2kfq9s-me6.js"
+4:"/elan-skin/_next/static/chunks/2-9z7asrx3uj4.js"
+5:"/elan-skin/_next/static/chunks/1ukcbho5cs6-x.js"
+6:"/elan-skin/_next/static/chunks/0fljji4-o3mbu.js"
+7:"/elan-skin/_next/static/chunks/2xh-39vgnbbes.js"
+8:"/elan-skin/_next/static/chunks/3dop11osv0vte.js"
+9:I[39756,["$3","$4","$5","$6","$7","$8"],"default"]
+a:I[37457,["$3","$4","$5","$6","$7","$8"],"default"]
+11:"/elan-skin/_next/static/chunks/0ilpw5la58hgn.js"
+12:I[22016,["$3","$4","$5","$6","$7","$8","$11"],""]
+13:I[22602,["$3","$4","$5","$6","$7","$8","$11"],"ProductPurchase"]
+14:I[97367,["$3","$4","$5","$6","$7","$8"],"OutletBoundary"]
+15:"$Sreact.suspense"
+18:"ViewportBoundary"
+19:I[97367,["$3","$4","$5","$6","$7","$8"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$3","$4","$5","$6","$7","$8"],"$1a"]
+1c:I[27201,["$3","$4","$5","$6","$7","$8"],"IconMark"]
+c:X
+c:C
+d:X
+10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"mx-auto w-full px-5 md:px-8 max-w-[77.5rem] py-12","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"Afterglow Oil\",\"description\":\"Câteva picături sigilează rutina de seară și lasă un luciu liniștit.\",\"brand\":{\"@type\":\"Brand\",\"name\":\"ÉLAN SKIN\"},\"offers\":{\"@type\":\"Offer\",\"priceCurrency\":\"RON\",\"price\":158,\"availability\":\"https://schema.org/InStock\"}}"}}],["$","p",null,{"className":"text-sm text-ink","children":["$","$L12",null,{"href":"/magazin","className":"hover:text-orchid","children":"Magazin"}]}],["$","div",null,{"className":"mt-6","children":["$","$L13",null,{"product":{"slug":"afterglow-oil","name":"Afterglow Oil","kind":"Ulei facial","price":158,"size":"30 ml","category":"hidratare","step":"hidratare","feels":["uscata","mixta"],"focuses":["confort","netezime"],"texture":"Ulei uscat, cu luciu discret","scent":"Semințe calde","short":"Câteva picături sigilează rutina de seară și lasă un luciu liniștit.","story":"Afterglow Oil este ultimul gest, nu primul. Două picături peste cremă, sau în locul ei când tenul este deja confortabil, lasă un finisaj viu, niciodată ud.","use":["Pune două picături în palmă.","Presară pe ten seara, după fluid.","Dacă pielea lucește prea tare, amestecă o picătură în Velvet Barrier."],"highlights":["Squalane","Ceramide"],"inci":"Squalane, Caprylic Capric Triglyceride, Ceramide NP, Tocopherol, Rosmarinus Officinalis Leaf Extract.","suitable":"Potrivit seara, pentru tenul uscat sau mixt.","images":{"packshot":"/assets/products/afterglow-oil/packshot.jpg","lifestyle":"/assets/products/afterglow-oil/angle.jpg","texture":"/assets/products/afterglow-oil/texture.jpg","front":"/assets/products/afterglow-oil/front.jpg","angle":"/assets/products/afterglow-oil/angle.jpg","detail":"/assets/products/afterglow-oil/detail.jpg"}}}]}]]}],[["$","script","script-0",{"src":"/elan-skin/_next/static/chunks/0ilpw5la58hgn.js","async":true}]],["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]]}],"p":"$@17","v":null,"s":"$d"}}]]
+e:[["children",{"s":{"n":"slug","t":"d","k":"afterglow-oil","s":[]},"h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$L9",null,{"parallelRouterKey":"children","template":["$","$La",null,{}]}]]}],"p":"$@f","v":"$c","s":"$d"},"c":"$Q10"}]]
+1:[["children",{"s":"produs","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L9",null,{"parallelRouterKey":"children","template":["$","$La",null,{}]}]]}],"p":"$@b","v":"$c","s":"$d"},"c":"$Qe"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$15",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Afterglow Oil | ÉLAN SKIN"}],["$","meta","1",{"name":"description","content":"Câteva picături sigilează rutina de seară și lasă un luciu liniștit."}],["$","meta","2",{"name":"application-name","content":"ÉLAN SKIN"}],["$","meta","3",{"property":"og:title","content":"Afterglow Oil"}],["$","meta","4",{"property":"og:description","content":"Câteva picături sigilează rutina de seară și lasă un luciu liniștit."}],["$","meta","5",{"property":"og:locale","content":"ro_RO"}],["$","meta","6",{"property":"og:image","content":"https://elanskin.demo/assets/og.jpg"}],["$","meta","7",{"property":"og:image:width","content":"1024"}],["$","meta","8",{"property":"og:image:height","content":"1024"}],["$","meta","9",{"property":"og:image:alt","content":"ÉLAN SKIN"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Afterglow Oil"}],["$","meta","13",{"name":"twitter:description","content":"Câteva picături sigilează rutina de seară și lasă un luciu liniștit."}],["$","meta","14",{"name":"twitter:image","content":"https://elanskin.demo/assets/og.jpg"}],["$","meta","15",{"name":"twitter:image:alt","content":"ÉLAN SKIN"}],["$","meta","16",{"name":"twitter:image:width","content":"1024"}],["$","meta","17",{"name":"twitter:image:height","content":"1024"}],["$","link","18",{"rel":"icon","href":"/assets/brand/mark.png"}],["$","$L1c","19",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1d","v":null,"s":"$d"}},"a":"$@1e","u":"$@1f","b":"Ozv8kknl_FxJSgWCgnXH2"}
+16:null
+1f:true
+d:300
+d:C
+1e:0
+f:"$undefined"
+b:"$undefined"
+1d:"$undefined"
+17:"$undefined"

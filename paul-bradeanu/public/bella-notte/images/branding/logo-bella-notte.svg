@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="195" viewBox="0 0 1680 780">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C878"/>
+      <stop offset="55%" stop-color="#D8AF5B"/>
+      <stop offset="100%" stop-color="#B8923F"/>
+    </linearGradient>
+  </defs>
+  <!-- Substantial olive branch ornament -->
+  <g transform="translate(840 130)">
+    <path d="M0 28 C-18 10 -48 -8 -78 -18" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 28 C18 10 48 -8 78 -18" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 28 C-6 55 -3 95 0 128" fill="none" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Left leaves -->
+    <ellipse cx="-42" cy="-6" rx="22" ry="11" transform="rotate(-38 -42 -6)" fill="url(#gold)"/>
+    <ellipse cx="-72" cy="8" rx="20" ry="10" transform="rotate(-22 -72 8)" fill="#D8AF5B"/>
+    <ellipse cx="-28" cy="22" rx="18" ry="9" transform="rotate(-52 -28 22)" fill="#C9A04E"/>
+    <ellipse cx="-58" cy="28" rx="16" ry="8" transform="rotate(-30 -58 28)" fill="#D8AF5B" opacity="0.9"/>
+    <!-- Right leaves -->
+    <ellipse cx="42" cy="-6" rx="22" ry="11" transform="rotate(38 42 -6)" fill="url(#gold)"/>
+    <ellipse cx="72" cy="8" rx="20" ry="10" transform="rotate(22 72 8)" fill="#D8AF5B"/>
+    <ellipse cx="28" cy="22" rx="18" ry="9" transform="rotate(52 28 22)" fill="#C9A04E"/>
+    <ellipse cx="58" cy="28" rx="16" ry="8" transform="rotate(30 58 28)" fill="#D8AF5B" opacity="0.9"/>
+    <!-- Center bud -->
+    <ellipse cx="0" cy="8" rx="10" ry="14" fill="#E8C878"/>
+  </g>
+  <text x="840" y="420" text-anchor="middle" font-family="Didot, 'Bodoni 72', Georgia, serif" font-size="176" font-weight="400" fill="#F6EFE4" letter-spacing="6">Bella Notte</text>
+  <text x="840" y="500" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500" fill="#F8F5EE" letter-spacing="20">RISTORANTE ITALIANO</text>
+  <!-- Thin long Italian flag -->
+  <g transform="translate(720 540)">
+    <rect width="80" height="14" fill="#009246"/>
+    <rect x="80" width="80" height="14" fill="#F8F5EE"/>
+    <rect x="160" width="80" height="14" fill="#CE2B37"/>
+  </g>
+</svg>

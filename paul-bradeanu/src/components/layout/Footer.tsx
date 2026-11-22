@@ -133,10 +133,10 @@ export function Footer() {
             <li>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="inline-flex items-center gap-2 hover:text-[var(--text-primary)]"
+                className="inline-flex min-w-0 items-center gap-2 hover:text-[var(--text-primary)]"
               >
-                <Mail className="h-4 w-4 text-[var(--accent-hover)]" />
-                {siteConfig.email}
+                <Mail className="h-4 w-4 shrink-0 text-[var(--accent-hover)]" />
+                <span className="break-anywhere">{siteConfig.email}</span>
               </a>
             </li>
             <li>

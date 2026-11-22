@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+2:"/veltra/_next/static/chunks/1mj4ree2gflnm.js"
+3:"/veltra/_next/static/chunks/16hd2j7g9p65_.js"
+4:"/veltra/_next/static/chunks/3eqzjbwbjdxz1.js"
+5:"/veltra/_next/static/chunks/1ny_krg_ytb3i.js"
+6:"/veltra/_next/static/chunks/3t44ihsidyfh7.js"
+7:I[98943,["$2","$3","$4","$5","$6"],"SiteShell"]
+8:I[39756,["$2","$3","$4","$5","$6"],"default"]
+9:"/veltra/_next/static/chunks/1s0jlll7jxvhj.js"
+a:I[58298,["$2","$3","$4","$5","$6","$9"],"default"]
+b:I[37457,["$2","$3","$4","$5","$6"],"default"]
+c:I[22016,["$2","$3","$4","$5","$6"],""]
+10:"/veltra/_next/static/chunks/3vf4g3sl_0o6r.js"
+11:I[21804,["$2","$3","$4","$5","$6","$10"],"FacilitiesView"]
+12:I[97367,["$2","$3","$4","$5","$6"],"OutletBoundary"]
+13:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[97367,["$2","$3","$4","$5","$6"],"$15"]
+18:"MetadataBoundary"
+19:I[97367,["$2","$3","$4","$5","$6"],"$18"]
+1b:I[68027,["$2","$3","$4","$5","$6"],"default",1]
+:HL["/veltra/_next/static/chunks/0jvxoqe8kqw7b.css","style"]
+:HL["/veltra/_next/static/media/0dd5b9de0494c9e9-s.p.0_mk8de7o781e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/veltra/_next/static/media/42b34334b62e1e5a-s.p.3rqg0w444aekk.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/veltra/_next/static/media/6f3ab718e3727c1a-s.p.3huc2loe0ie8a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/veltra/_next/static/media/82450a180bcad83c-s.p.0p-wng2nn8o-p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/veltra/_next/static/media/9eff0a3f1ba11d74-s.p.3aak_kra40y8r.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/veltra/_next/static/media/fbb7028efdf70529-s.p.1_0gbi-gsbqmd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+e:X
+f:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","$L11",null,{}],[["$","script","script-0",{"src":"/veltra/_next/static/chunks/3vf4g3sl_0o6r.js","async":true,"nonce":"$undefined"}]],["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":false,"v":null}}]]
+d:[["children",{"s":"facilitati","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$e"},"c":"$Qf"}]]
+0:{"P":null,"c":["","facilitati"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/chunks/0jvxoqe8kqw7b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/veltra/_next/static/chunks/1mj4ree2gflnm.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/veltra/_next/static/chunks/16hd2j7g9p65_.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/veltra/_next/static/chunks/3eqzjbwbjdxz1.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/veltra/_next/static/chunks/1ny_krg_ytb3i.js","async":true,"nonce":"$undefined"}],["$","script","script-4",{"src":"/veltra/_next/static/chunks/3t44ihsidyfh7.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"_4k7Amq_variable qH9mbG_variable Hk46lW_variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$L7",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","error":"$a","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/veltra/_next/static/chunks/1s0jlll7jxvhj.js","async":true,"nonce":"$undefined"}]],"template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$Lc",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$Lc",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$13",null,{"name":"Next.Metadata","children":"$L1a"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1b",[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/chunks/0jvxoqe8kqw7b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"gY2josJuvwLQ6zpcFF1nz"}
+e:C
+17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$2","$3","$4","$5","$6"],"IconMark"]
+14:null
+1a:[["$","title","0",{"children":"Facilități | VELTRA Alpine Hideaway · VELTRA"}],["$","meta","1",{"name":"description","content":"Piscină încălzită, saună, ciubăr și pavilion de grătar pe domeniul VELTRA. Concept demonstrativ."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"Facilități | VELTRA"}],["$","meta","4",{"property":"og:description","content":"Loc pentru fiecare fel de răgaz."}],["$","meta","5",{"property":"og:image","content":"https://paulbradeanu.com/veltra/images/facilities/v7/facility-pool-editorial.webp"}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"Facilități | VELTRA"}],["$","meta","8",{"name":"twitter:description","content":"Loc pentru fiecare fel de răgaz."}],["$","meta","9",{"name":"twitter:image","content":"https://paulbradeanu.com/veltra/images/facilities/v7/facility-pool-editorial.webp"}],["$","link","10",{"rel":"icon","href":"/favicon.svg"}],["$","$L1c","11",{}]]

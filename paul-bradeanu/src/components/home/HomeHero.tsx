@@ -84,14 +84,14 @@ export function HomeHero() {
           </motion.p>
 
           <motion.div
-            className="mt-5 flex w-full gap-2 sm:gap-3 md:mt-8"
+            className="mt-5 flex w-full flex-col gap-2 sm:flex-row sm:gap-3 md:mt-8"
             {...item(0.88)}
           >
             <ButtonLink
               href="/#selected-work"
               icon={LayoutGrid}
               showArrow
-              className="min-w-0 flex-1 justify-center sm:flex-none"
+              className="min-w-0 w-full justify-center sm:w-auto sm:flex-none"
             >
               Explorează proiectele
             </ButtonLink>
@@ -99,7 +99,7 @@ export function HomeHero() {
               href="/experience"
               variant="secondary"
               icon={BriefcaseBusiness}
-              className="min-w-0 flex-1 justify-center sm:flex-none"
+              className="min-w-0 w-full justify-center sm:w-auto sm:flex-none"
             >
               Experiența profesională
             </ButtonLink>

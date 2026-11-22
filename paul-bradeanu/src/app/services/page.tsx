@@ -46,12 +46,12 @@ export default function ServicesPage() {
             garanții de ranking și fără testimoniale fabricate. Doar ce pot
             livra cu standardele din portofoliu.
           </RevealItem>
-          <RevealItem className="mt-6 flex w-full gap-2 sm:mt-7 sm:gap-3">
+          <RevealItem className="mt-6 flex w-full flex-col gap-2 sm:mt-7 sm:flex-row sm:gap-3">
             <ButtonLink
               href="/contact?intent=project"
               icon={MessageCircle}
               showArrow
-              className="min-w-0 flex-1 justify-center sm:flex-none"
+              className="min-w-0 w-full justify-center sm:w-auto sm:flex-none"
             >
               Hai să discutăm
             </ButtonLink>
@@ -59,7 +59,7 @@ export default function ServicesPage() {
               href="/projects"
               variant="secondary"
               icon={LayoutGrid}
-              className="min-w-0 flex-1 justify-center sm:flex-none"
+              className="min-w-0 w-full justify-center sm:w-auto sm:flex-none"
             >
               Vezi proiectele
             </ButtonLink>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
           <SnapCarousel
             className="mt-8 md:mt-10"
             ariaLabel="Pași proces"
-            trackClassName="max-lg:-mx-4 max-lg:px-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:overflow-visible lg:snap-none lg:pb-0 xl:grid-cols-4"
+            trackClassName="max-lg:-mx-3 max-lg:px-3 lg:grid lg:grid-cols-2 lg:gap-5 lg:overflow-visible lg:snap-none lg:pb-0 xl:grid-cols-4"
             slideClassName="h-full max-lg:w-[min(82vw,300px)] lg:w-auto lg:min-w-0 lg:shrink lg:snap-none"
           >
             {serviceWorkflow.map((step, index) => (

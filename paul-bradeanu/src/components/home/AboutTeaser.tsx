@@ -166,19 +166,19 @@ export function AboutTeaser() {
               </Stagger>
             </RevealItem>
 
-            <RevealItem className="mt-5 flex w-full flex-row gap-2 sm:mt-7 sm:gap-3">
+            <RevealItem className="mt-5 flex w-full flex-col gap-2 min-[400px]:flex-row sm:mt-7 sm:gap-3">
               <ButtonLink
                 href="/about"
                 icon={UserRound}
                 showArrow
-                className="min-w-0 flex-1 justify-center sm:flex-none"
+                className="min-w-0 w-full justify-center min-[400px]:flex-1 sm:w-auto sm:flex-none"
               >
                 Despre mine
               </ButtonLink>
               <a
                 href={siteConfig.cvUrl}
                 download
-                className="btn btn-secondary min-w-0 flex-1 !border-[var(--line-on-light)] !bg-white !text-[var(--text-on-light)] shadow-[0_8px_20px_rgba(16,27,45,0.06)] hover:!border-[var(--accent)]/35 hover:!text-[var(--accent)] sm:flex-none"
+                className="btn btn-secondary min-w-0 w-full justify-center !border-[var(--line-on-light)] !bg-white !text-[var(--text-on-light)] shadow-[0_8px_20px_rgba(16,27,45,0.06)] hover:!border-[var(--accent)]/35 hover:!text-[var(--accent)] min-[400px]:flex-1 sm:w-auto sm:flex-none"
               >
                 <Download className="h-3.5 w-3.5" aria-hidden />
                 <span>CV</span>

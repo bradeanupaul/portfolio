@@ -1,6 +1,6 @@
 # Portfolio monorepo
 
-Un singur repo + **un singur proiect Vercel** (portofoliul). Demo-urile se exportă static la build și apar pe același domeniu:
+Un singur repo + **un singur proiect Vercel** (portofoliul). Demo-urile sunt exportate static în `paul-bradeanu/public/<slug>/` și apar pe același domeniu:
 
 - `paulbradeanu.com/bella-notte`
 - `paulbradeanu.com/veltra`
@@ -12,8 +12,9 @@ Un singur repo + **un singur proiect Vercel** (portofoliul). Demo-urile se expor
 
 | Path | Rol |
 |------|-----|
-| `paul-bradeanu/` | Portofoliu + export static al demo-urilor în `public/<slug>/` |
-| `bellanotte/` … `elanskin/` | Sursele demo (Next.js), folosite la `npm run build` |
+| `paul-bradeanu/` | Portofoliu Next.js (Root Directory pe Vercel) |
+| `paul-bradeanu/public/<slug>/` | Export static al demo-urilor (versionat) |
+| `bellanotte/` … `elanskin/` | Surse demo — regenerezi exportul local când se schimbă |
 | `client-presentations/` | Prezentări client |
 
 ## Development
@@ -25,23 +26,21 @@ npm run dev          # portofoliu + demo-uri pe ports 3000–3005
 npm run dev:site     # doar portofoliul
 ```
 
-Local, demo-urile rulează full (cu API). Pe Vercel, formularele/API rămân demonstrative (export static).
+## Deploy (un proiect Vercel)
 
-## Deploy (un proiect)
+1. Importă repo-ul, **Root Directory:** `paul-bradeanu`
+2. Build: `npm run build` (doar portofoliul; demo-urile sunt deja în `public/`)
+3. Fără proiecte Vercel extra, fără subdomenii
 
-1. Importă [bradeanupaul/portfolio](https://github.com/bradeanupaul/portfolio) pe Vercel.
-2. **Root Directory:** `paul-bradeanu`
-3. Build: `npm run build` (rulează `scripts/build-demos.mjs`, apoi Next)
-4. Fără proiecte Vercel separate, fără subdomenii.
-
-Build-ul din `paul-bradeanu` vede sibling-urile (`../bellanotte` etc.) din același repo și le instală la nevoie.
+### Regenerare demo-uri (local, apoi commit)
 
 ```bash
-# build rapid fără demo-uri (local)
-npm run build:site
+cd paul-bradeanu
+npm run build:demos
+git add public/bella-notte public/veltra public/vanta-ink public/aurelia-estates public/elan-skin
 ```
 
 ## Note
 
-- Exporturile din `public/<slug>/` sunt generate, nu se commită.
-- Assetele mockup (video/cover) sunt în `paul-bradeanu/public/projects/`.
+- Pe producție, demo-urile sunt **static** (pagini OK; API/formulare rămân demonstrative).
+- `screenshots-for-mockups/` nu e versionat.

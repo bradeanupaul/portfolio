@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Builds sibling demo apps as static exports into public/<slug>/
- * so one Vercel project (paul-bradeanu) can serve paulbradeanu.com/<slug>.
+ * Builds sibling demo apps as static exports into public/<slug>/.
+ * Run locally via `npm run build:demos` when demo sources change, then commit.
+ * Vercel uses the committed exports (see package.json `build`).
  */
 import { spawnSync } from "node:child_process";
 import {
@@ -31,7 +32,6 @@ const demos = [
   { dir: "elanskin", slug: "elan-skin", stashApp: [], stubActions: true },
 ];
 
-/** Paths under src/app that block `output: 'export'`. */
 const stashAppNames = [
   "api",
   "sitemap.ts",
@@ -47,6 +47,7 @@ const stashAppNames = [
 ];
 
 function run(command, args, cwd, env = {}) {
+  console.log(`[demos] $ ${command} ${args.join(" ")}  (cwd=${cwd})`);
   const result = spawnSync(command, args, {
     cwd,
     env: { ...process.env, ...env },
@@ -54,7 +55,7 @@ function run(command, args, cwd, env = {}) {
     shell: process.platform === "win32",
   });
   if (result.status !== 0) {
-    throw new Error(`${command} ${args.join(" ")} failed in ${cwd}`);
+    throw new Error(`${command} ${args.join(" ")} failed in ${cwd} (exit ${result.status})`);
   }
 }
 
@@ -70,12 +71,10 @@ function stashPath(from, label) {
 function stashBlocking(appDir, extraAppStash = []) {
   const appPath = join(appDir, "src", "app");
   const stashed = [];
-
   for (const name of [...stashAppNames, ...extraAppStash]) {
     const item = stashPath(join(appPath, name), name);
     if (item) stashed.push(item);
   }
-
   return stashed;
 }
 
@@ -87,12 +86,13 @@ function restoreStash(stashed) {
 }
 
 function ensureDeps(appDir) {
-  if (existsSync(join(appDir, "node_modules"))) return;
+  const modules = join(appDir, "node_modules");
+  const force = process.env.VERCEL === "1" || process.env.FORCE_DEMO_INSTALL === "1";
+  if (!force && existsSync(modules)) return;
   console.log(`[demos] npm install in ${appDir}`);
   run("npm", ["install", "--no-audit", "--no-fund"], appDir);
 }
 
-/** Comment out `export const instant` — incompatible with `output: 'export'`. */
 function stripInstantExports(appDir) {
   const src = join(appDir, "src");
   const touched = [];
@@ -129,7 +129,6 @@ function restoreInstantExports(touched) {
   }
 }
 
-/** Replace server actions with client-safe stubs for static export. */
 function stubElanActions(appDir) {
   const actionsDir = join(appDir, "src", "actions");
   const stashed = stashPath(actionsDir, "actions");
@@ -152,6 +151,15 @@ function stubElanActions(appDir) {
   return stashed;
 }
 
+function assertExportSafe(appDir) {
+  const appPath = join(appDir, "src", "app");
+  for (const name of ["api", "robots.ts", "sitemap.ts", "opengraph-image.tsx"]) {
+    if (existsSync(join(appPath, name))) {
+      throw new Error(`[demos] expected ${name} to be stashed before export in ${appDir}`);
+    }
+  }
+}
+
 function buildDemo(demo) {
   const { dir, slug, stashApp = [], stubActions = false } = demo;
   const appDir = join(monorepoRoot, dir);
@@ -169,17 +177,21 @@ function buildDemo(demo) {
     if (actionStash) stashed.push(actionStash);
   }
   const instantTouched = stripInstantExports(appDir);
+  assertExportSafe(appDir);
 
   const outDir = join(appDir, "out");
   const destDir = join(publicRoot, slug);
 
   try {
+    rmSync(join(appDir, ".next"), { recursive: true, force: true });
     rmSync(outDir, { recursive: true, force: true });
     run("npx", ["next", "build"], appDir, {
       STATIC_EXPORT: "1",
       NEXT_PUBLIC_BASE_PATH: `/${slug}`,
       NEXT_PUBLIC_SITE_URL: `https://paulbradeanu.com/${slug}`,
       NODE_ENV: "production",
+      // Avoid picking up a developer .env that breaks CI/export assumptions.
+      DATABASE_URL: process.env.DATABASE_URL || "file:./prisma/dev.db",
     });
 
     if (!existsSync(outDir) || !statSync(outDir).isDirectory()) {

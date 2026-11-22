@@ -184,7 +184,7 @@ export function ContactForm() {
               role="tab"
               aria-selected={active}
               className={cn(
-                "rounded-lg px-2.5 py-2 text-[12px] font-medium transition sm:text-[13px]",
+                "rounded-lg px-2 py-2 text-[11px] font-medium leading-tight transition sm:px-2.5 sm:text-[13px]",
                 active
                   ? "bg-[var(--accent)] text-white shadow-[0_6px_16px_rgba(37,140,255,0.28)]"
                   : "text-[var(--muted-on-dark)] hover:text-[var(--ink-on-dark)]",
@@ -195,7 +195,14 @@ export function ContactForm() {
                 setStatus({ type: "idle", message: "" });
               }}
             >
-              {tab.id === "project" ? "Proiect / Colaborare" : "Oportunitate"}
+              {tab.id === "project" ? (
+                <>
+                  <span className="sm:hidden">Proiect</span>
+                  <span className="hidden sm:inline">Proiect / Colaborare</span>
+                </>
+              ) : (
+                "Oportunitate"
+              )}
             </button>
           );
         })}

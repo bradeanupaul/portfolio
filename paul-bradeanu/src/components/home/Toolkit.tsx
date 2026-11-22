@@ -71,7 +71,7 @@ export function Toolkit() {
         <div className="mt-8 lg:hidden">
           <SnapCarousel
             ariaLabel="Toolkit"
-            trackClassName="-mx-4 px-4"
+            trackClassName="-mx-3 px-3 sm:-mx-4 sm:px-4"
             slideClassName="w-[min(88vw,360px)]"
             dotsHideFrom="lg"
           >

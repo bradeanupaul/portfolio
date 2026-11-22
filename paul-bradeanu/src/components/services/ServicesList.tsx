@@ -39,8 +39,8 @@ export function ServicesList() {
   return (
     <SnapCarousel
       ariaLabel="Lista de servicii"
-      trackClassName="max-lg:-mx-4 max-lg:px-4 lg:flex-col lg:gap-6 lg:overflow-visible lg:snap-none lg:pb-0"
-      slideClassName="max-lg:w-[min(90vw,400px)] lg:w-full lg:shrink lg:snap-none"
+      trackClassName="max-lg:-mx-3 max-lg:px-3 lg:flex-col lg:gap-6 lg:overflow-visible lg:snap-none lg:pb-0"
+      slideClassName="max-lg:w-[min(calc(100vw-2.5rem),400px)] lg:w-full lg:shrink lg:snap-none"
     >
       {services.map((service, index) => {
         const reverse = index % 2 === 1;

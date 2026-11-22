@@ -333,7 +333,7 @@ export default function ExperiencePage() {
           <SnapCarousel
             className="mt-5 md:mt-8"
             ariaLabel="Grupuri tehnologii"
-            trackClassName="max-md:-mx-4 max-md:px-4 md:grid md:grid-cols-2 md:gap-5 md:overflow-visible md:snap-none md:pb-0"
+            trackClassName="max-md:-mx-3 max-md:px-3 md:grid md:grid-cols-2 md:gap-5 md:overflow-visible md:snap-none md:pb-0"
             slideClassName="h-full max-md:w-[min(86vw,340px)] md:w-auto md:min-w-0 md:shrink md:snap-none"
             dotsHideFrom="md"
           >
@@ -468,7 +468,7 @@ export default function ExperiencePage() {
           <SnapCarousel
             className="mt-5 md:mt-8"
             ariaLabel="Proiecte software"
-            trackClassName="max-lg:-mx-4 max-lg:px-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:overflow-visible lg:snap-none lg:pb-0"
+            trackClassName="max-lg:-mx-3 max-lg:px-3 lg:grid lg:grid-cols-2 lg:gap-5 lg:overflow-visible lg:snap-none lg:pb-0"
             slideClassName="h-full max-lg:w-[min(88vw,360px)] lg:w-auto lg:min-w-0 lg:shrink lg:snap-none"
           >
             {softwareProjects.map((project) => (

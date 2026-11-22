@@ -100,7 +100,7 @@ export function SnapCarousel({
         aria-label={ariaLabel}
         tabIndex={0}
         className={cn(
-          "mobile-snap-track flex gap-4 overflow-x-auto overscroll-x-contain pb-1 [-ms-overflow-style:none] [scrollbar-width:none] snap-x snap-mandatory scroll-px-4 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden",
+          "mobile-snap-track flex gap-3 overflow-x-auto overscroll-x-contain pb-1 [-ms-overflow-style:none] [scrollbar-width:none] snap-x snap-mandatory scroll-px-3 [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden sm:gap-4 sm:scroll-px-4",
           trackClassName,
         )}
       >
@@ -112,7 +112,7 @@ export function SnapCarousel({
             aria-roledescription="slide"
             aria-label={`${index + 1} din ${items.length}`}
             className={cn(
-              "mobile-snap-slide w-[min(86vw,340px)] shrink-0 snap-center [&>*]:h-full",
+              "mobile-snap-slide w-[min(calc(100vw-2rem),340px)] shrink-0 snap-center [&>*]:h-full",
               slideClassName,
             )}
           >

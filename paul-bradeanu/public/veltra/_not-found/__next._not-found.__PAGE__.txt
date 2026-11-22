@@ -1,0 +1,35 @@
+1:"$Sreact.fragment"
+2:"/veltra/_next/static/chunks/1mj4ree2gflnm.js"
+3:"/veltra/_next/static/chunks/16hd2j7g9p65_.js"
+4:"/veltra/_next/static/chunks/3eqzjbwbjdxz1.js"
+5:"/veltra/_next/static/chunks/1ny_krg_ytb3i.js"
+6:"/veltra/_next/static/chunks/3t44ihsidyfh7.js"
+7:I[98943,["$2","$3","$4","$5","$6"],"SiteShell"]
+8:I[39756,["$2","$3","$4","$5","$6"],"default"]
+9:"/veltra/_next/static/chunks/1s0jlll7jxvhj.js"
+a:I[58298,["$2","$3","$4","$5","$6","$9"],"default"]
+b:I[37457,["$2","$3","$4","$5","$6"],"default"]
+c:I[22016,["$2","$3","$4","$5","$6"],""]
+13:I[97367,["$2","$3","$4","$5","$6"],"OutletBoundary"]
+14:"$Sreact.suspense"
+17:"ViewportBoundary"
+18:I[97367,["$2","$3","$4","$5","$6"],"$17"]
+19:"MetadataBoundary"
+1a:I[97367,["$2","$3","$4","$5","$6"],"$19"]
+1b:I[27201,["$2","$3","$4","$5","$6"],"IconMark"]
+:HL["/veltra/_next/static/chunks/0jvxoqe8kqw7b.css","style"]
+e:X
+11:X
+11:C
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$Lc",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$Lc",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":"$@16","v":null,"s":"$e"}}]]
+f:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]]}],"p":"$@10","v":"$11","s":"$e"},"c":"$Q12"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/chunks/0jvxoqe8kqw7b.css","precedence":"next"}],["$","script","script-0",{"src":"/veltra/_next/static/chunks/1mj4ree2gflnm.js","async":true}],["$","script","script-1",{"src":"/veltra/_next/static/chunks/16hd2j7g9p65_.js","async":true}],["$","script","script-2",{"src":"/veltra/_next/static/chunks/3eqzjbwbjdxz1.js","async":true}],["$","script","script-3",{"src":"/veltra/_next/static/chunks/1ny_krg_ytb3i.js","async":true}],["$","script","script-4",{"src":"/veltra/_next/static/chunks/3t44ihsidyfh7.js","async":true}]],["$","html",null,{"lang":"ro","className":"_4k7Amq_variable qH9mbG_variable Hk46lW_variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$L7",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","error":"$a","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/veltra/_next/static/chunks/1s0jlll7jxvhj.js","async":true}]],"template":["$","$Lb",null,{}],"notFound":[["$","section",null,{"className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$Lc",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$Lc",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]]}]}]}]}]]}],"p":"$@d","v":null,"s":"$e"},"c":"$Qf"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VELTRA Alpine Hideaway & Spa"}],["$","meta","1",{"name":"description","content":"Refugiu montan premium în Valea Cerbului Alb. Camere elegante, SPA, restaurant ARBOR și experiențe în natură. Proiect demonstrativ."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","4",{"property":"og:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","5",{"property":"og:locale","content":"ro_RO"}],["$","meta","6",{"property":"og:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.jpg"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","10",{"name":"twitter:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","11",{"name":"twitter:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.jpg"}],["$","link","12",{"rel":"icon","href":"/favicon.svg"}],["$","$L1b","13",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1c","v":null,"s":"$e"}},"a":"$@1d","u":"$@1e","b":"gY2josJuvwLQ6zpcFF1nz"}
+15:null
+e:300
+1e:true
+e:C
+1d:0
+10:"$undefined"
+d:"$undefined"
+1c:"$undefined"
+16:"$undefined"

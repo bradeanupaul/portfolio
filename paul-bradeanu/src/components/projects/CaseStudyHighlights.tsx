@@ -56,10 +56,10 @@ export function CaseStudyHighlights({
               <RevealItem
                 delay={0.04}
                 variant={mediaVariant}
-                className={cn("relative", !imageLeft && "lg:order-2")}
+                className={cn("relative overflow-x-clip", !imageLeft && "lg:order-2")}
               >
                 <div
-                  className="pointer-events-none absolute -inset-8 opacity-50 blur-3xl"
+                  className="pointer-events-none absolute -inset-2 opacity-50 blur-2xl sm:-inset-8 sm:blur-3xl"
                   style={{
                     background:
                       "radial-gradient(circle at 40% 40%, rgba(37,140,255,0.05), transparent 65%)",
@@ -84,7 +84,7 @@ export function CaseStudyHighlights({
                   as="p"
                   delay={0.06}
                   variant={textVariant}
-                  className="font-display text-[clamp(3.5rem,7vw,5.5rem)] font-semibold leading-none tracking-[-0.06em] text-[var(--accent)]/12"
+                  className="font-display text-[clamp(2.5rem,12vw,5.5rem)] font-semibold leading-none tracking-[-0.06em] text-[var(--accent)]/12"
                 >
                   {String(index + 1).padStart(2, "0")}
                 </RevealItem>

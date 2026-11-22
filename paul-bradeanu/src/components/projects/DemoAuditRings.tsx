@@ -134,7 +134,7 @@ export function DemoAuditRings({ audit }: { audit: ProjectAudit }) {
       <p className="font-semibold text-[10px] tracking-[0.16em] text-[var(--accent-hover)]">
         {audit.label}
       </p>
-      <div className="mt-3 grid grid-cols-4 gap-1 sm:gap-3">
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-3">
         {labels.map((item) => (
           <SemiGauge
             key={item.key}

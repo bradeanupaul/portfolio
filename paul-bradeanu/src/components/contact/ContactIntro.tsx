@@ -111,11 +111,11 @@ export function ContactIntro() {
       </motion.div>
 
       <motion.ul
-        className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2.5 sm:mt-4"
+        className="mt-3 grid grid-cols-1 gap-y-2.5 min-[400px]:grid-cols-2 min-[400px]:gap-x-3 sm:mt-4"
         {...item(0.58)}
       >
         {channels.map((channel) => (
-          <li key={channel.href}>
+          <li key={channel.href} className="min-w-0">
             <a
               href={channel.href}
               {...(channel.external
@@ -127,7 +127,7 @@ export function ContactIntro() {
                 className="h-3.5 w-3.5 shrink-0 text-white/90"
                 aria-hidden
               />
-              <span className="truncate text-[var(--accent-bright)] group-hover:text-white">
+              <span className="break-anywhere text-[var(--accent-bright)] group-hover:text-white">
                 {channel.label}
               </span>
             </a>

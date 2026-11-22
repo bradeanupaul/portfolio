@@ -83,14 +83,14 @@ function ProjectWorkRow({
       <div
         ref={devicesRef}
         className={cn(
-          "relative overflow-visible py-1 sm:py-2 lg:col-span-7 lg:py-4",
+          "relative overflow-x-clip py-1 sm:overflow-visible sm:py-2 lg:col-span-7 lg:py-4",
           reverse && "lg:order-2",
         )}
       >
         <div
           className={cn(
-            // Mobile: centered. Desktop: modest oversize, shift only outward.
-            "relative z-10 mx-auto w-[100%] max-w-none sm:w-[102%] lg:mx-0 lg:w-[112%]",
+            // Mobile: full width, clipped. Desktop: modest oversize outward.
+            "relative z-10 mx-auto w-full max-w-none md:w-[102%] lg:mx-0 lg:w-[112%]",
             reverse ? "lg:ml-[2%] xl:ml-[3%]" : "lg:-ml-[14%] xl:-ml-[15%]",
           )}
         >
@@ -104,15 +104,16 @@ function ProjectWorkRow({
             active={active}
             appearDelay={0}
             appearFrom={laptopFrom}
+            className="mx-auto max-md:max-w-[min(100%,22rem)]"
           />
 
           {mobile ? (
             <div
               className={cn(
-                "pointer-events-none absolute z-30 w-[72%] max-w-[300px] sm:w-[70%] sm:max-w-[320px] lg:w-[72%] lg:min-w-[260px] lg:max-w-[420px]",
+                "pointer-events-none absolute z-30 w-[58%] max-w-[200px] sm:w-[70%] sm:max-w-[320px] lg:w-[72%] lg:min-w-[260px] lg:max-w-[420px]",
                 reverse
-                  ? "bottom-[18%] left-[4%] sm:bottom-[16%] sm:left-[6%] lg:bottom-[14%] lg:left-[-2%] xl:bottom-[16%] xl:left-[-4%]"
-                  : "bottom-[18%] right-[4%] sm:bottom-[16%] sm:right-[6%] lg:bottom-[14%] lg:right-[-2%] xl:bottom-[16%] xl:right-[-4%]",
+                  ? "bottom-[12%] left-[2%] sm:bottom-[16%] sm:left-[6%] lg:bottom-[14%] lg:left-[-2%] xl:bottom-[16%] xl:left-[-4%]"
+                  : "bottom-[12%] right-[2%] sm:bottom-[16%] sm:right-[6%] lg:bottom-[14%] lg:right-[-2%] xl:bottom-[16%] xl:right-[-4%]",
               )}
             >
               <PhoneFrame
