@@ -3,6 +3,7 @@
   "framework": "nextjs",
   "installCommand": "npm install",
   "buildCommand": "npm run build",
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/bella-notte", "destination": "/bella-notte/index.html" },
     { "source": "/veltra", "destination": "/veltra/index.html" },
