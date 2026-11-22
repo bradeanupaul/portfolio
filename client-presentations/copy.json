@@ -1,0 +1,703 @@
+{
+  "shared": {
+    "contactLead": "Scrie-mi sau sună-mă și stabilim un apel scurt, pe site-ul tău."
+  },
+  "projects": {
+    "bella-notte": {
+      "tagline": "Site de restaurant: meniu cu filtre, pagină de fel și rezervare pe intervale.",
+      "coverPoints": [
+        {
+          "title": "Rezervare mereu la îndemână",
+          "subtitle": "Buton în header și bară fixă jos pe telefon, după scroll. Pe pagina de rezervare bara dispare."
+        },
+        {
+          "title": "Meniu care se filtrează",
+          "subtitle": "Căutare după nume, comutator pentru feluri vegetariene și taburi de categorie care se trag."
+        },
+        {
+          "title": "Confirmare cu cod",
+          "subtitle": "După salvare apar codul de rezervare și un link separat de anulare, fără cont."
+        }
+      ],
+      "features": [
+        {
+          "title": "Navigație și buton",
+          "subtitle": "Șase linkuri în header și butonul Rezervă o masă. Pe telefon, meniul iese din iconiță.",
+          "shot": "home"
+        },
+        {
+          "title": "Căutare și categorii",
+          "subtitle": "Câmp cu lupă, buton Doar vegetariene și numărul de feluri rămase. Zero rezultate lasă un text.",
+          "shot": "meniu"
+        },
+        {
+          "title": "Pagină de preparat",
+          "subtitle": "Poză, preț în lei și alergeni ca text. Sub ele, carduri din aceeași categorie, cu link propriu.",
+          "shot": "preparat"
+        },
+        {
+          "title": "Ore și persoane",
+          "subtitle": "Dată, persoane și intervale; orele pline nu se pot alege. Numele și telefonul sunt obligatorii.",
+          "shot": "rezervari"
+        },
+        {
+          "title": "Grilă și lightbox",
+          "subtitle": "Filtru pe categorie, apoi cadre. Un tap deschide poza mare; săgețile schimbă cadrul fără reload.",
+          "shot": "galerie"
+        },
+        {
+          "title": "Formulare de eveniment",
+          "subtitle": "Tipurile de seară au pagini proprii. Cererea pleacă cu data, persoanele și tipul, separat de masa obișnuită.",
+          "shot": "evenimente"
+        }
+      ],
+      "flows": [
+        {
+          "title": "Parcurgerea primei pagini",
+          "subtitle": "Sus hero și butonul de masă. Mai jos, feluri cu preț și intrări în categorii, una sub alta pe telefon.",
+          "shots": [
+            "home",
+            "home-s2"
+          ],
+          "bullets": [
+            "Header-ul rămâne vizibil la scroll.",
+            "Tap pe fel deschide pagina lui.",
+            "La final, al doilea buton de masă."
+          ]
+        },
+        {
+          "title": "Filtrarea listei de feluri",
+          "subtitle": "Filtrele stau deasupra cardurilor. Căutarea și comutatorul vegetarian se aplică împreună, pe categoria deschisă.",
+          "shots": [
+            "meniu",
+            "meniu-s2"
+          ],
+          "bullets": [
+            "X-ul din câmp golește căutarea.",
+            "Taburile de categorie se derulează lateral.",
+            "Prețul e scris lângă nume."
+          ]
+        },
+        {
+          "title": "Detaliu și feluri vecine",
+          "subtitle": "Jumătatea de sus ține poza și prețul. Jumătatea de jos ține alergenii și alte feluri din categorie.",
+          "shots": [
+            "preparat",
+            "preparat-s2"
+          ],
+          "bullets": [
+            "Etichetele stau lângă titlu.",
+            "Alergenii nu sunt doar în fotografie.",
+            "Linkul paginii se poate copia."
+          ]
+        },
+        {
+          "title": "Trimitere și anulare",
+          "subtitle": "Formularul refuză câmpurile goale. Ecranul următor arată codul; anularea se face din link, cu un cod separat.",
+          "shots": [
+            "rezervari",
+            "rezervari-s2"
+          ],
+          "bullets": [
+            "Data închisă lasă lista de ore goală.",
+            "Grupul mare e îndrumat la evenimente.",
+            "Anularea eliberează intervalul ales."
+          ]
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Prisma",
+        "SQLite",
+        "Zod"
+      ],
+      "stackNote": "Fiecare fel are rută Next.js. Formularul trece prin Zod, iar rezervarea intră în SQLite cu cod și token de anulare.",
+      "seo": [
+        {
+          "title": "Fel cu adresă proprie",
+          "subtitle": "Slug, titlu și descriere pe preparat, ca un link trimis să deschidă felul, nu tot meniul."
+        },
+        {
+          "title": "Schema de restaurant",
+          "subtitle": "JSON-LD cu bucătărie, adresă, telefon și program. Fără notă agregată inventată."
+        },
+        {
+          "title": "Meniul intră în sitemap",
+          "subtitle": "Lista publică include slug-urile de feluri și paginile de eveniment, nu un fișier PDF."
+        },
+        {
+          "title": "Program scris în pagină",
+          "subtitle": "Orele de pe contact sunt text și sunt aceleași cu intervalele din formularul de masă."
+        }
+      ],
+      "nextSteps": [
+        "Email cu codul și linkul de anulare, după salvare.",
+        "Ecran intern pentru preț, alergeni și feluri scoase.",
+        "Intervalele legate de mese, nu doar de un plafon.",
+        "Varianta în engleză pe aceleași rute de meniu."
+      ]
+    },
+    "veltra": {
+      "tagline": "Site de cazare: camere cu fișă, spa, restaurant și rezervare pe nopți.",
+      "coverPoints": [
+        {
+          "title": "Carduri comparabile",
+          "subtitle": "Pe listă: metri, persoane și preț pe noapte. Click-ul deschide fișa, nu un popup."
+        },
+        {
+          "title": "Cinci pași de sejur",
+          "subtitle": "Date, camere libere, date oaspete, confirmare, final. Înapoi păstrează intervalul ales."
+        },
+        {
+          "title": "Panou cu cifre",
+          "subtitle": "După login: rezervări active, mesaje noi și tipuri de camere. Fiecare card e un link."
+        }
+      ],
+      "features": [
+        {
+          "title": "Lista de camere",
+          "subtitle": "Poză, suprafață, capacitate și preț de pornire. Butonul duce la ruta camerei.",
+          "shot": "camere"
+        },
+        {
+          "title": "Fișa unei camere",
+          "subtitle": "Metri, oaspeți și lista de dotări. Butonul Rezervă această cameră deschide wizard-ul.",
+          "shot": "camera"
+        },
+        {
+          "title": "Pagină de spa",
+          "subtitle": "Rută proprie, legată din meniul secundar și din subsol. Secțiunile stau una sub alta.",
+          "shot": "spa"
+        },
+        {
+          "title": "Pagină de restaurant",
+          "subtitle": "Felurile au preț și alergeni în text, pe o rută diferită de camere și de spa.",
+          "shot": "restaurant"
+        },
+        {
+          "title": "Wizard de nopți",
+          "subtitle": "Check-in, check-out și număr de oaspeți, apoi doar camerele libere. Nu există pas de plată.",
+          "shot": "rezervari"
+        },
+        {
+          "title": "Tablou de administrare",
+          "subtitle": "Carduri cu numere pentru rezervări, mesaje și camere. Click-ul deschide lista corespunzătoare.",
+          "shot": "admin"
+        }
+      ],
+      "flows": [
+        {
+          "title": "Scroll pe homepage",
+          "subtitle": "Cadrele se schimbă la scroll. Dacă telefonul cere mișcare redusă, rămâne posterul static.",
+          "shots": [
+            "home",
+            "home-s2"
+          ],
+          "bullets": [
+            "Meniu: Camere, Facilități, Contact.",
+            "Widget scurt: sosire, plecare, oaspeți.",
+            "Butonul de sejur sare la wizard."
+          ]
+        },
+        {
+          "title": "De la listă la fișă",
+          "subtitle": "Pe desktop, poza și textul alternează stânga-dreapta. Pe telefon, poza stă deasupra textului.",
+          "shots": [
+            "camere",
+            "camere-s2"
+          ],
+          "bullets": [
+            "Mp, oaspeți și preț pe același card.",
+            "Camerele marcate apar primele în listă.",
+            "Butonul deschide ruta camerei."
+          ]
+        },
+        {
+          "title": "Ruta de spa",
+          "subtitle": "Intrarea e în meniul Mai mult și în subsol. Pagina nu are filtre și nu are coș.",
+          "shots": [
+            "spa",
+            "spa-s2"
+          ],
+          "bullets": [
+            "Linkul SPA e separat de Camere.",
+            "Secțiunile se citesc de sus în jos.",
+            "Nu există buton de plată pe pagină."
+          ]
+        },
+        {
+          "title": "Alegerea nopților",
+          "subtitle": "Pasul 1 cere datele, pasul 2 listează doar camerele libere, iar ecranul final dă un cod.",
+          "shots": [
+            "rezervari",
+            "rezervari-s2"
+          ],
+          "bullets": [
+            "Check-in și check-out sunt câmpuri de dată.",
+            "Camerele ocupate nu intră în listă.",
+            "Confirmarea nu cere date de card."
+          ]
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "GSAP",
+        "Prisma",
+        "SQLite",
+        "Zod",
+        "Vitest"
+      ],
+      "stackNote": "Homepage-ul leagă cadrele de scroll cu GSAP. Suprapunerea nopților și tariful sunt verificate în cod, cu teste Vitest.",
+      "seo": [
+        {
+          "title": "Cameră cu URL propriu",
+          "subtitle": "Fiecare tip are titlu, descriere și slug. Lista nu înlocuiește fișa."
+        },
+        {
+          "title": "Panoul scos din index",
+          "subtitle": "robots.txt închide /admin. Sitemap-ul rămâne pe camere, spa și restaurant."
+        },
+        {
+          "title": "Titlu compus pe fișă",
+          "subtitle": "Șablonul pune numele camerei lângă numele site-ului, în tab și la share."
+        },
+        {
+          "title": "Contact lizibil",
+          "subtitle": "Adresa și telefonul sunt text în pagină, nu doar desenate pe o imagine."
+        }
+      ],
+      "nextSteps": [
+        "Avans după confirmare, pe același cod de sejur.",
+        "Email către oaspete și către recepție.",
+        "Calendar extern pe aceleași intervale de cameră.",
+        "Tarife de sezon schimbate din panou."
+      ]
+    },
+    "vanta-ink": {
+      "tagline": "Site de studio: portofoliu cu filtre, fișă de lucrare și programare în pași.",
+      "coverPoints": [
+        {
+          "title": "Filtre care rămân în link",
+          "subtitle": "Stil, artist, amplasare și scară se scriu în adresă. Același link redeschide selecția."
+        },
+        {
+          "title": "Din lucrare la programare",
+          "subtitle": "Butonul de pe fișă deschide wizard-ul cu artistul deja pus în query."
+        },
+        {
+          "title": "Cinci pași, cu Înapoi",
+          "subtitle": "Idee, artist, interval, contact, recapitulare. Pasul nu avansează dacă validarea pică."
+        }
+      ],
+      "features": [
+        {
+          "title": "Bara de filtre",
+          "subtitle": "Chipuri de stil, artist, amplasare și scară, cu număr lângă opțiune. Pe telefon, panou separat.",
+          "shot": "portofoliu"
+        },
+        {
+          "title": "Fișa lucrării",
+          "subtitle": "Stiluri, artist, zonă și scară pe aceeași pagină. Butonul duce la programare cu artistul lucrării.",
+          "shot": "lucrare"
+        },
+        {
+          "title": "Pagina artistului",
+          "subtitle": "Portret, text și grila lui. Linkul de programare adaugă ?artist= în adresă.",
+          "shot": "artist"
+        },
+        {
+          "title": "Secțiuni de proces",
+          "subtitle": "Blocuri în ordine pe pagină, fiecare cu o listă scurtă. Jos, buton către programare.",
+          "shot": "proces"
+        },
+        {
+          "title": "Wizard de consultație",
+          "subtitle": "Bară de progres, Continuă și Înapoi. Orele vin din lista artistului, nu dintr-un câmp liber.",
+          "shot": "programare"
+        },
+        {
+          "title": "Pagina de servicii",
+          "subtitle": "Stilurile stau pe o rută proprie, cu buton secundar către același wizard.",
+          "shot": "servicii"
+        }
+      ],
+      "flows": [
+        {
+          "title": "Header și consultație",
+          "subtitle": "Linkuri: Portofoliu, Artiști, Servicii, Proces, Despre, Contact. Butonul de programare stă în header.",
+          "shots": [
+            "home",
+            "home-s2"
+          ],
+          "bullets": [
+            "Pe telefon, meniul acoperă ecranul.",
+            "Butonul din header deschide programarea.",
+            "Cardurile de jos duc în portofoliu."
+          ]
+        },
+        {
+          "title": "Selecție în portofoliu",
+          "subtitle": "Filtrele schimbă grila și query-ul. Un chip selectat se scoate fără să golești restul.",
+          "shots": [
+            "portofoliu",
+            "portofoliu-s2"
+          ],
+          "bullets": [
+            "Fiecare opțiune arată câte lucrări rămân.",
+            "Pe mobil, Aplică confirmă schița.",
+            "Resetul golește toate grupurile."
+          ]
+        },
+        {
+          "title": "Deschiderea unei lucrări",
+          "subtitle": "Click pe card schimbă ruta. Pe fișă: datele sus, apoi imaginile și butonul de programare.",
+          "shots": [
+            "lucrare",
+            "lucrare-s2"
+          ],
+          "bullets": [
+            "Artistul e link către pagina lui.",
+            "Amplasarea și scara stau lângă titlu.",
+            "Query-ul de programare preia artistul."
+          ]
+        },
+        {
+          "title": "Pașii de programare",
+          "subtitle": "Pasul 1 cere stiluri și descriere, pasul 2 artistul, iar pasul 3 un interval din lista lui.",
+          "shots": [
+            "programare",
+            "programare-s2"
+          ],
+          "bullets": [
+            "Bara arată pasul curent din cinci.",
+            "Înapoi nu șterge stilurile bifate.",
+            "Recapitularea e ultimul ecran."
+          ]
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Prisma",
+        "SQLite",
+        "Zod",
+        "Vitest"
+      ],
+      "stackNote": "Filtrele se scriu în query. Wizard-ul validează fiecare pas cu Zod și salvează cererea în SQLite.",
+      "seo": [
+        {
+          "title": "Lucrare cu slug",
+          "subtitle": "Titlu, descriere și URL pe piesă. Un share deschide fișa, nu grila întreagă."
+        },
+        {
+          "title": "Artist în sitemap",
+          "subtitle": "Pagina artistului și lucrările lui sunt rute publice, listate lângă portofoliu."
+        },
+        {
+          "title": "Selecție cu link stabil",
+          "subtitle": "Stil, artist, amplasare și scară rămân în adresă, deci filtrul se poate trimite."
+        },
+        {
+          "title": "Ore citibile",
+          "subtitle": "Programul de pe contact e text în pagină, nu un program desenat într-un banner."
+        }
+      ],
+      "nextSteps": [
+        "Intervalele legate de calendarul real al artiștilor.",
+        "Email cu artistul, data și ora alese.",
+        "Panou din care se adaugă o lucrare nouă.",
+        "Avans după recapitulare, pe aceeași cerere."
+      ]
+    },
+    "aurelia-estates": {
+      "tagline": "Site de agenție: catalog filtrat în URL, fișă, hartă, favorite și vizionare.",
+      "coverPoints": [
+        {
+          "title": "Filtre care se pot trimite",
+          "subtitle": "Zonă, tip, tranzacție, buget, dormitoare și suprafață stau în adresă."
+        },
+        {
+          "title": "Hartă legată de listă",
+          "subtitle": "Pinurile sunt anunțurile rămase după filtre, cu prețul scris pe marker."
+        },
+        {
+          "title": "Inimă fără cont",
+          "subtitle": "Favoritele se salvează în browser. Pagina lor arată doar ce ai bifat pe acest dispozitiv."
+        }
+      ],
+      "features": [
+        {
+          "title": "Bară de catalog",
+          "subtitle": "Pe desktop: șase selecturi și căutare. Pe telefon: buton Filtre, cu numărul de chipuri active.",
+          "shot": "catalog"
+        },
+        {
+          "title": "Fișa proprietății",
+          "subtitle": "Galerie, preț, inimă și formular de vizionare pe aceeași pagină. Anunțul e deja legat.",
+          "shot": "proprietate"
+        },
+        {
+          "title": "Programare vizită",
+          "subtitle": "Nume, email, telefon, dată și oră; orele trecute sunt blocate. Nota e opțională.",
+          "shot": "vizionare"
+        },
+        {
+          "title": "Echipa pe site",
+          "subtitle": "Carduri cu nume, rol și link. Click-ul deschide profilul agentului, nu un modal.",
+          "shot": "echipa"
+        },
+        {
+          "title": "Rute de colecții",
+          "subtitle": "Grupuri de anunțuri pe pagini proprii, cu întoarcere către catalog.",
+          "shot": "colectii"
+        },
+        {
+          "title": "Formular de listare",
+          "subtitle": "Pagină separată de vizionare, pentru cine trimite o proprietate, nu o cerere de vizită.",
+          "shot": "vinde"
+        }
+      ],
+      "flows": [
+        {
+          "title": "Din homepage în catalog",
+          "subtitle": "Header cu Proprietăți, Colecții, Echipă și Servicii. Butonul de vizionare stă lângă meniu.",
+          "shots": [
+            "home",
+            "home-s2"
+          ],
+          "bullets": [
+            "Programează o vizionare e în header.",
+            "Cardurile de jos deschid catalogul.",
+            "Iconița de meniu deschide linkurile."
+          ]
+        },
+        {
+          "title": "Filtre, chipuri, pagini",
+          "subtitle": "Un filtru nou readuce lista la pagina 1, chipul se scoate singur, iar Resetează golește tot.",
+          "shots": [
+            "catalog",
+            "catalog-s2"
+          ],
+          "bullets": [
+            "Bugetul diferă la vânzare față de chirie.",
+            "Numărul de anunțuri stă deasupra grilei.",
+            "Sortarea lasă filtrele în URL."
+          ]
+        },
+        {
+          "title": "Citirea unei fișe",
+          "subtitle": "Sus galeria și prețul. Mai jos datele și formularul scurt, cu dată și oră.",
+          "shots": [
+            "proprietate",
+            "proprietate-s2"
+          ],
+          "bullets": [
+            "Inima comută starea de favorit.",
+            "Pozele se schimbă pe aceeași pagină.",
+            "Linkul de vizionare duce anunțul în query."
+          ]
+        },
+        {
+          "title": "Cererea de vizionare",
+          "subtitle": "Dacă vii din fișă, proprietatea e deja în adresă. Câmpurile goale blochează trimiterea.",
+          "shots": [
+            "vizionare",
+            "vizionare-s2"
+          ],
+          "bullets": [
+            "Data minimă e ziua curentă.",
+            "Ora trecută nu se poate alege.",
+            "Eroarea rămâne lângă câmpul greșit."
+          ]
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Prisma",
+        "SQLite",
+        "Zod",
+        "Leaflet"
+      ],
+      "stackNote": "Filtrele trăiesc în query, harta Leaflet primește doar pinurile din lista curentă, iar favoritele rămân în browser.",
+      "seo": [
+        {
+          "title": "Anunț cu slug",
+          "subtitle": "Fiecare proprietate are titlu, descriere și URL propriu și intră în sitemap."
+        },
+        {
+          "title": "Listă cu parametri",
+          "subtitle": "Tranzacție, zonă și dormitoare rămân în URL, deci o selecție trimisă se deschide la fel."
+        },
+        {
+          "title": "Colecție ca pagină",
+          "subtitle": "Colecțiile au rută și titlu propriu, nu sunt doar un tab ascuns în catalog."
+        },
+        {
+          "title": "Contact în HTML",
+          "subtitle": "Telefonul și formularul de contact sunt text în pagină, nu într-o imagine de copertă."
+        }
+      ],
+      "nextSteps": [
+        "Vizionarea pleacă în CRM, cu anunțul și ora.",
+        "Import de anunțuri în câmpurile existente de catalog.",
+        "Status vândut care scoate pinul de pe hartă.",
+        "Cont opțional, ca favoritele să schimbe telefonul."
+      ]
+    },
+    "elan-skin": {
+      "tagline": "Magazin cu filtre, fișă de produs, rutină în trei pași și checkout fără card.",
+      "coverPoints": [
+        {
+          "title": "Taburi și sortare",
+          "subtitle": "Categorii pe un rând care se derulează, select de ten și sortare după preț sau nume."
+        },
+        {
+          "title": "Trei alegeri, apoi coș",
+          "subtitle": "Ten, senzație, timp. Lista rezultată are preț și butonul Pune rutina în coș."
+        },
+        {
+          "title": "Comandă fără card",
+          "subtitle": "Ramburs sau transfer. Coșul gol arată un mesaj și butonul Alege produse."
+        }
+      ],
+      "features": [
+        {
+          "title": "Filtre de magazin",
+          "subtitle": "Tab Toate plus categorii, select Ten, select Sortează și numărul de produse. Chipul se scoate cu X.",
+          "shot": "magazin"
+        },
+        {
+          "title": "Cumpărare pe fișă",
+          "subtitle": "Preț, plus, minus și butonul Adaugă în coș. Restul fișei continuă pe aceeași adresă.",
+          "shot": "produs"
+        },
+        {
+          "title": "Coș lateral și pagină",
+          "subtitle": "Mini-coș cu cantități și total. Un buton duce la checkout, altul la pagina de coș.",
+          "shot": "cos"
+        },
+        {
+          "title": "Formular de checkout",
+          "subtitle": "Câmpuri de livrare, observații și două radio de plată. Sumarul de colet stă lângă formular.",
+          "shot": "checkout"
+        },
+        {
+          "title": "Pași de rutină",
+          "subtitle": "Trei întrebări, apoi lista de produse cu preț. Răspunsurile rămân în acest browser.",
+          "shot": "rutina"
+        },
+        {
+          "title": "Articole de jurnal",
+          "subtitle": "Listă și pagină de articol cu slug. Sub text apar alte articole, cu link.",
+          "shot": "jurnal"
+        }
+      ],
+      "flows": [
+        {
+          "title": "Două căi de pe homepage",
+          "subtitle": "Hero cu link la magazin și la constructorul de rutină. Pe telefon, butoanele stau unul sub altul.",
+          "shots": [
+            "home",
+            "home-s2"
+          ],
+          "bullets": [
+            "Construiește rutina deschide /rutina-mea.",
+            "Cardurile arată prețul și inima.",
+            "Jurnalul e o secțiune mai jos."
+          ]
+        },
+        {
+          "title": "Din categorie în card",
+          "subtitle": "Categoria schimbă grila fără să reîncarce site-ul. Click pe card deschide fișa produsului.",
+          "shots": [
+            "magazin",
+            "magazin-s2"
+          ],
+          "bullets": [
+            "Șterge filtrele revine la Toate.",
+            "Sortarea după preț reordonează grila.",
+            "Inima salvează produsul local."
+          ]
+        },
+        {
+          "title": "Fișă și cantitate",
+          "subtitle": "Sus prețul, cantitatea și Adaugă în coș. Mai jos, detaliile rămân pe aceeași pagină.",
+          "shots": [
+            "produs",
+            "produs-s2"
+          ],
+          "bullets": [
+            "Plus și minus schimbă cantitatea.",
+            "Butonul trece pe starea Adăugat.",
+            "Inima e separată de butonul de coș."
+          ]
+        },
+        {
+          "title": "Livrare și sumar",
+          "subtitle": "Pe desktop, formularul e în stânga și coletul în dreapta. Pe telefon, sumarul trece dedesubt.",
+          "shots": [
+            "checkout",
+            "checkout-s2"
+          ],
+          "bullets": [
+            "Coș gol: buton Alege produse.",
+            "Radio: ramburs sau transfer.",
+            "Eroarea de câmp apare sub input."
+          ]
+        }
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Prisma",
+        "SQLite",
+        "Zod",
+        "Zustand",
+        "Vitest"
+      ],
+      "stackNote": "Coșul și rutina stau în Zustand, pe acest browser. La checkout prețul se recalculează pe server, apoi comanda intră în SQLite.",
+      "seo": [
+        {
+          "title": "Produs cu ofertă în cod",
+          "subtitle": "Fișa are titlu, descriere și JSON-LD Product, cu prețul în RON."
+        },
+        {
+          "title": "Slug de produs și articol",
+          "subtitle": "Produsele și articolele de jurnal au URL propriu și intră în sitemap."
+        },
+        {
+          "title": "Previzualizare pe fișă",
+          "subtitle": "Open Graph ia titlul produsului și imaginea de pachet, nu bannerul de pe prima pagină."
+        },
+        {
+          "title": "Jurnal separat de grilă",
+          "subtitle": "Articolul are titlu și slug propriu, în afara grilei de magazin."
+        }
+      ],
+      "nextSteps": [
+        "Plată cu card pe același sumar de colet.",
+        "Email de comandă cu codul și liniile din coș.",
+        "Stoc care blochează plusul când se epuizează.",
+        "Cont, ca rutina să treacă pe alt telefon."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" role="img">
+  <rect width="800" height="600" fill="#080F1C"/>
+  <circle cx="400" cy="300" r="210" fill="#258CFF" fill-opacity="0.07"/>
+  <circle cx="400" cy="300" r="140" fill="#55B6FF" fill-opacity="0.05"/>
+
+  <!-- quiet corner marks -->
+  <path d="M56 56H96M56 56V96" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M744 56H704M744 56V96" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M56 544H96M56 544V504" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M744 544H704M744 544V504" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- faint orbit ring -->
+  <circle cx="400" cy="300" r="188" stroke="#258CFF" stroke-opacity="0.14" stroke-width="1"/>
+  <circle cx="400" cy="300" r="188" stroke="#55B6FF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 10"/>
+
+  
+  <!-- document to nodes -->
+  <rect x="250" y="190" width="150" height="200" rx="16" stroke="#55B6FF" stroke-opacity="0.55" stroke-width="1.75" fill="#258CFF" fill-opacity="0.08"/>
+  <path d="M278 230H372M278 258H360M278 286H344" stroke="#C5D2E1" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round"/>
+  <rect x="278" y="330" width="70" height="22" rx="8" fill="#258CFF" fill-opacity="0.45"/>
+  <path d="M410 280C460 250 500 250 540 280" stroke="#7EC8FF" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="560" cy="300" r="8" fill="#7EC8FF"/>
+  <circle cx="600" cy="250" r="6" fill="#258CFF" fill-opacity="0.85"/>
+  <circle cx="610" cy="340" r="6" fill="#258CFF" fill-opacity="0.85"/>
+  <path d="M560 300L600 250M560 300L610 340" stroke="#258CFF" stroke-opacity="0.4" stroke-width="1.5"/>
+
+</svg>

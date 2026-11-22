@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model DemoSlot {
+  id                   String                @id @default(cuid())
+  artistSlug           String
+  startsAt             DateTime
+  endsAt               DateTime
+  label                String
+  isBooked             Boolean               @default(false)
+  consultationRequests ConsultationRequest[]
+  createdAt            DateTime              @default(now())
+
+  @@unique([artistSlug, startsAt])
+  @@index([artistSlug, startsAt])
+}
+
+model ConsultationRequest {
+  id                String   @id @default(cuid())
+  referenceId       String   @unique
+  artistSlug        String
+  styleSlugs        String
+  placement         String
+  approximateSize   String
+  ideaDescription   String
+  preferredPeriod   String?
+  contactName       String
+  contactEmail      String
+  demoAcknowledged  Boolean
+  slotId            String?
+  slot              DemoSlot? @relation(fields: [slotId], references: [id])
+  status            String   @default("received")
+  createdAt         DateTime @default(now())
+
+  @@index([artistSlug, slotId])
+  @@index([contactEmail])
+}
+
+model ContactRequest {
+  id          String   @id @default(cuid())
+  referenceId String   @unique
+  name        String
+  email       String
+  subject     String
+  message     String
+  demoAck     Boolean
+  createdAt   DateTime @default(now())
+}

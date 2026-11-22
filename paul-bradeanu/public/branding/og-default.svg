@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0C1118"/>
+  <circle cx="980" cy="120" r="220" fill="#A5C4E0" fill-opacity="0.16"/>
+  <circle cx="180" cy="520" r="180" fill="#A5C4E0" fill-opacity="0.08"/>
+  <path d="M120 150h90c52 0 85 27 85 70 0 29-15 51-41 61 32 9 53 34 53 68 0 47-36 77-91 77H120V150zm52 45v54h33c23 0 36-10 36-27s-13-27-36-27h-33zm0 97v65h38c26 0 41-12 41-33s-15-32-41-32h-38z" fill="#D5E6F3"/>
+  <text x="120" y="390" fill="#F5F7FA" font-family="Manrope, Arial, sans-serif" font-size="64" font-weight="600">Paul Brdeanu</text>
+  <text x="120" y="450" fill="#A9B4C1" font-family="Manrope, Arial, sans-serif" font-size="28">Full-Stack Developer � Frontend &amp; AI</text>
+</svg>

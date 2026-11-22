@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none" role="img">
+  <rect width="800" height="600" fill="#080F1C"/>
+  <circle cx="400" cy="300" r="210" fill="#258CFF" fill-opacity="0.07"/>
+  <circle cx="400" cy="300" r="140" fill="#55B6FF" fill-opacity="0.05"/>
+
+  <!-- quiet corner marks -->
+  <path d="M56 56H96M56 56V96" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M744 56H704M744 56V96" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M56 544H96M56 544V504" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M744 544H704M744 544V504" stroke="#258CFF" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- faint orbit ring -->
+  <circle cx="400" cy="300" r="188" stroke="#258CFF" stroke-opacity="0.14" stroke-width="1"/>
+  <circle cx="400" cy="300" r="188" stroke="#55B6FF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 10"/>
+
+  
+  <!-- brackets + nodes -->
+  <path d="M320 230V240C320 252 328 260 340 260H360" stroke="#55B6FF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M320 370V360C320 348 328 340 340 340H360" stroke="#55B6FF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M480 260H500C512 260 520 252 520 240V230" stroke="#55B6FF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M480 340H500C512 340 520 348 520 360V370" stroke="#55B6FF" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="400" cy="300" r="28" fill="#258CFF" fill-opacity="0.25" stroke="#7EC8FF" stroke-width="1.75"/>
+  <circle cx="400" cy="300" r="8" fill="#7EC8FF"/>
+  <circle cx="340" cy="300" r="5" fill="#258CFF" fill-opacity="0.8"/>
+  <circle cx="460" cy="300" r="5" fill="#258CFF" fill-opacity="0.8"/>
+  <path d="M345 300H375M425 300H455" stroke="#C5D2E1" stroke-opacity="0.35" stroke-width="1.25"/>
+
+</svg>

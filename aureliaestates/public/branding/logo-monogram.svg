@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="monogram-title">
+  <title id="monogram-title">Aurelia Estates</title>
+  <g fill="#285CFA">
+    <path fill-opacity="0.42" d="M40 10h14l19 60H59Z"/>
+    <path fill-opacity="0.7" d="M8 70 27 10h6L14 70Z"/>
+    <path d="M14 70 33 10h12l-8 26h19l2 8H34l-8 26Z"/>
+  </g>
+</svg>

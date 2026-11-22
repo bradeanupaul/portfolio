@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Agent {
+  id              String     @id
+  slug            String     @unique
+  name            String
+  role            String
+  bio             String
+  specializations Json
+  email           String     @unique
+  phone           String
+  image           String
+  quote           String
+  properties      Property[]
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+}
+
+model Collection {
+  id               String     @id
+  slug             String     @unique
+  title            String
+  shortDescription String
+  description      String
+  image            String
+  properties       Property[]
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+}
+
+model Property {
+  id               String           @id
+  slug             String           @unique
+  title            String
+  description      String
+  shortDescription String
+  location         String
+  city             String
+  lat              Float
+  lng              Float
+  transactionType  String
+  category         String
+  priceEur         Int
+  areaSqm          Float
+  usableAreaSqm    Float?
+  rooms            Int
+  bedrooms         Int
+  bathrooms        Int
+  floor            Int?
+  totalFloors      Int?
+  parking          Int
+  yearBuilt        Int
+  amenities        Json
+  features         Json
+  images           Json
+  agentId          String
+  agent            Agent            @relation(fields: [agentId], references: [id])
+  status           String
+  badges           Json
+  featured         Boolean          @default(false)
+  energyRating     String?
+  collections      Collection[]
+  viewingRequests  ViewingRequest[]
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  @@index([transactionType])
+  @@index([category])
+  @@index([location])
+  @@index([city])
+  @@index([status])
+  @@index([featured])
+  @@index([agentId])
+  @@index([priceEur])
+}
+
+model ViewingRequest {
+  id            String   @id @default(cuid())
+  propertyId    String
+  property      Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  name          String
+  email         String
+  phone         String
+  message       String   @default("")
+  preferredDate String?
+  preferredTime String?
+  status        String   @default("noua")
+  createdAt     DateTime @default(now())
+
+  @@index([propertyId])
+  @@index([createdAt])
+  @@index([email])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([email])
+}
+
+model SellerInquiry {
+  id               String   @id @default(cuid())
+  name             String
+  email            String
+  phone            String
+  location         String   @default("")
+  propertyCategory String   @default("")
+  estimatedArea    Int?
+  message          String
+  createdAt        DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([email])
+}

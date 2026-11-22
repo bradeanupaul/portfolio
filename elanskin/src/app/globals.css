@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  --pearl: #faf8fc;
+  --white: #ffffff;
+  --lavender: #eae1f2;
+  --lilac: #eae1f2;
+  --orchid: #8463a1;
+  --aubergine: #352344;
+  --midnight: #292632;
+  --plum: #352344;
+  --coral: #e9b8c6;
+  --blush: #e9b8c6;
+  --periwinkle: #e8edf1;
+  --cool: #e8edf1;
+  --shell: #e9b8c6;
+  --mist: #e8edf1;
+  --line: #ddd4e5;
+  --ink: #292632;
+  --muted: #78717d;
+  --success: #347a65;
+  --danger: #b53f55;
+  --header-offset: 6.25rem;
+}
+
+@theme inline {
+  --color-pearl: var(--pearl);
+  --color-white: var(--white);
+  --color-lavender: var(--lavender);
+  --color-lilac: var(--lilac);
+  --color-orchid: var(--orchid);
+  --color-aubergine: var(--aubergine);
+  --color-midnight: var(--midnight);
+  --color-plum: var(--plum);
+  --color-coral: var(--coral);
+  --color-blush: var(--blush);
+  --color-periwinkle: var(--periwinkle);
+  --color-cool: var(--cool);
+  --color-shell: var(--shell);
+  --color-mist: var(--mist);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-dm-serif), "Times New Roman", serif;
+  --shadow-soft: 0 20px 44px rgba(33, 20, 43, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--pearl);
+  color: var(--aubergine);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--lavender);
+  color: var(--aubergine);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orchid);
+  outline-offset: 3px;
+}
+
+.band-pearl { background: var(--pearl); }
+.band-lavender { background: var(--lavender); }
+.band-periwinkle { background: var(--periwinkle); }
+.band-blush { background: var(--blush); }
+.band-cool { background: var(--cool); }
+.band-midnight {
+  background: var(--midnight);
+  color: #fcfaff;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[fade-up_0\.55s_ease_both\],
+  .animate-\[fade-up_0\.6s_ease_both\],
+  .animate-\[fade-in_0\.7s_ease_both\],
+  .animate-\[fade-in_0\.75s_ease_both\] {
+    animation: none !important;
+  }
+}

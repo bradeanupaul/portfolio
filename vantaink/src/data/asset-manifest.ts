@@ -1,0 +1,56 @@
+/**
+ * Slim V5 pointer. Full photographic inventory lives in docs/V5-image-manifest.md.
+ * Paths below are the active public assets for validation.
+ */
+
+export const studioImages = {
+  atelierWide: "/images/studio/atelier-wide.webp",
+  workstation: "/images/studio/workstation.webp",
+  entrance: "/images/studio/entrance.webp",
+  materialDetail: "/images/studio/material-detail.webp",
+  studioTeam: "/images/artists/studio-team.webp",
+} as const;
+
+export const activeImagePaths = [
+  "/images/hero/v5-editorial-hand.webp",
+  "/images/hero/v5-editorial-ink.webp",
+  "/images/hero/v5-editorial-skin.webp",
+  "/images/booking/desk.webp",
+  "/images/process/consultatie.webp",
+  "/images/process/desen.webp",
+  "/images/process/pregatire.webp",
+  "/images/process/sesiune.webp",
+  "/images/process/detaliu.webp",
+  "/images/styles/blackwork.webp",
+  "/images/styles/fine-line.webp",
+  "/images/styles/geometric.webp",
+  "/images/styles/realism.webp",
+  "/images/styles/ornamental.webp",
+  "/images/styles/color.webp",
+  "/images/works/molie-blackwork-umar-main.webp",
+  "/images/works/frunza-blackwork-gamba-main.webp",
+  "/images/works/panou-geometric-coapsa-main.webp",
+  "/images/works/semn-geometric-incheietura-main.webp",
+  "/images/works/romburi-negative-antebrat-main.webp",
+  "/images/works/floare-salbatica-antebrat-main.webp",
+  "/images/works/constelatie-clavicula-main.webp",
+  "/images/works/fluture-linie-glezna-main.webp",
+  "/images/works/figura-linie-coaste-main.webp",
+  "/images/works/creste-gri-antebrat-main.webp",
+  "/images/works/bujor-gri-umar-main.webp",
+  "/images/works/profil-lup-piept-main.webp",
+  "/images/works/trandafir-traditional-antebrat-main.webp",
+  "/images/works/randunica-traditional-brat-main.webp",
+  "/images/works/pumnal-inima-gamba-main.webp",
+  "/images/works/banda-ornamentala-incheietura-main.webp",
+  "/images/works/voluta-ornamentala-talie-main.webp",
+  "/images/studio/atelier-wide.webp",
+  "/images/studio/workstation.webp",
+  "/images/studio/entrance.webp",
+  "/images/studio/material-detail.webp",
+  "/images/artists/alex-muresan.webp",
+  "/images/artists/mara-ionescu.webp",
+  "/images/artists/david-radu.webp",
+  "/images/artists/iris-pavel.webp",
+  "/images/artists/studio-team.webp",
+] as const;

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none" role="img" aria-label="Bella Notte">
+  <path d="M6 38c4-12 10-20 16-24" stroke="#35483A" stroke-width="1.1" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="20" cy="18" rx="3.5" ry="7" fill="#35483A" opacity=".3"/>
+  <text x="36" y="32" font-family="Georgia, 'Cormorant Garamond', serif" font-size="26" font-weight="500" fill="#D4AF63">Bella Notte</text>
+</svg>

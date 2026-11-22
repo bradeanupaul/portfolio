@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Vanta Ink">
+  <rect width="180" height="180" fill="#111111"/>
+  <g fill="#F1F0EB" transform="translate(26 26) scale(4)">
+    <path d="M17 5h8L15.5 27h-3L17 5z"/>
+    <path d="M6 5h4l1.75 8.25H7.75L6 5z"/>
+    <path d="M11.75 18.25h4.25l-.75 8.75h-3l.75-8.75z"/>
+  </g>
+</svg>

@@ -1,0 +1,167 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model RoomType {
+  id              String         @id @default(cuid())
+  slug            String         @unique
+  name            String
+  shortName       String
+  description     String
+  longDescription String
+  capacityMin     Int
+  capacityMax     Int
+  areaSqm         Int
+  basePriceBan    Int
+  viewType        String
+  sortOrder       Int            @default(0)
+  featured        Boolean        @default(false)
+  amenities       RoomAmenity[]
+  images          RoomImage[]
+  units           RoomUnit[]
+  priceRules      PriceRule[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+}
+
+model RoomUnit {
+  id            String         @id @default(cuid())
+  roomTypeId    String
+  roomType      RoomType       @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  label         String
+  active        Boolean        @default(true)
+  reservations  Reservation[]
+  blocks        AvailabilityBlock[]
+}
+
+model RoomImage {
+  id         String   @id @default(cuid())
+  roomTypeId String
+  roomType   RoomType @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  src        String
+  alt        String
+  sortOrder  Int      @default(0)
+  isPrimary  Boolean  @default(false)
+}
+
+model RoomAmenity {
+  id         String   @id @default(cuid())
+  roomTypeId String
+  roomType   RoomType @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  label      String
+  icon       String?
+}
+
+model PriceRule {
+  id         String   @id @default(cuid())
+  roomTypeId String?
+  roomType   RoomType? @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  name       String
+  type       String
+  amountBan  Int
+  percentBps Int?
+  startMonth Int?
+  endMonth   Int?
+  weekendOnly Boolean @default(false)
+  active     Boolean  @default(true)
+}
+
+model AvailabilityBlock {
+  id         String   @id @default(cuid())
+  roomUnitId String
+  roomUnit   RoomUnit @relation(fields: [roomUnitId], references: [id], onDelete: Cascade)
+  startDate  String
+  endDate    String
+  reason     String?
+}
+
+model Reservation {
+  id            String            @id @default(cuid())
+  reference     String            @unique
+  roomUnitId    String
+  roomUnit      RoomUnit          @relation(fields: [roomUnitId], references: [id])
+  checkIn       String
+  checkOut      String
+  guestCount    Int
+  nights        Int
+  subtotalBan   Int
+  feesBan       Int               @default(0)
+  totalBan      Int
+  status        String            @default("CONFIRMED_DEMO")
+  guest         ReservationGuest?
+  specialRequests String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model ReservationGuest {
+  id            String      @id @default(cuid())
+  reservationId String      @unique
+  reservation   Reservation @relation(fields: [reservationId], references: [id], onDelete: Cascade)
+  firstName     String
+  lastName      String
+  email         String
+  phone         String
+}
+
+model Experience {
+  id              String              @id @default(cuid())
+  slug            String              @unique
+  name            String
+  category        String
+  description     String
+  longDescription String
+  duration        String
+  difficulty      String?
+  suitableFor     String
+  imageSrc        String
+  imageAlt        String
+  sortOrder       Int                 @default(0)
+  inquiries       ExperienceInquiry[]
+}
+
+model ExperienceInquiry {
+  id           String        @id @default(cuid())
+  experienceId String?
+  experience   Experience?   @relation(fields: [experienceId], references: [id])
+  name         String
+  email        String
+  phone        String?
+  message      String
+  preferredDate String?
+  status       String        @default("NEW")
+  createdAt    DateTime      @default(now())
+}
+
+model ContactInquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String
+  role         String   @default("admin")
+  createdAt    DateTime @default(now())
+}
+
+model AdminSession {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  adminId   String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}

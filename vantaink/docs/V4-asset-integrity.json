@@ -1,0 +1,334 @@
+{
+  "generatedAt": "2026-11-17T18:22:18.897Z",
+  "failures": 0,
+  "rows": [
+    {
+      "ref": "/images/artists/alex-muresan.webp",
+      "status": "OK",
+      "bytes": 58544,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/artists/david-radu.webp",
+      "status": "OK",
+      "bytes": 86768,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/artists/iris-pavel.webp",
+      "status": "OK",
+      "bytes": 79876,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/artists/mara-ionescu.webp",
+      "status": "OK",
+      "bytes": 62082,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/artists/studio-team.webp",
+      "status": "OK",
+      "bytes": 94842,
+      "width": 1280,
+      "height": 720,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/booking/desk.webp",
+      "status": "OK",
+      "bytes": 89710,
+      "width": 1152,
+      "height": 864,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/hero/v5-editorial-hand.webp",
+      "status": "OK",
+      "bytes": 35174,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/hero/v5-editorial-ink.webp",
+      "status": "OK",
+      "bytes": 75600,
+      "width": 1024,
+      "height": 1024,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/hero/v5-editorial-skin.webp",
+      "status": "OK",
+      "bytes": 45146,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/process/consultatie.webp",
+      "status": "OK",
+      "bytes": 95012,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/process/desen.webp",
+      "status": "OK",
+      "bytes": 64726,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/process/detaliu.webp",
+      "status": "OK",
+      "bytes": 28870,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/process/pregatire.webp",
+      "status": "OK",
+      "bytes": 65718,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/process/sesiune.webp",
+      "status": "OK",
+      "bytes": 54218,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/studio/atelier-wide.webp",
+      "status": "OK",
+      "bytes": 107686,
+      "width": 1152,
+      "height": 864,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/studio/entrance.webp",
+      "status": "OK",
+      "bytes": 52514,
+      "width": 1152,
+      "height": 864,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/studio/material-detail.webp",
+      "status": "OK",
+      "bytes": 120976,
+      "width": 1152,
+      "height": 864,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/studio/workstation.webp",
+      "status": "OK",
+      "bytes": 71146,
+      "width": 1024,
+      "height": 1024,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/blackwork.webp",
+      "status": "OK",
+      "bytes": 49876,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/color.webp",
+      "status": "OK",
+      "bytes": 89956,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/fine-line.webp",
+      "status": "OK",
+      "bytes": 50030,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/geometric.webp",
+      "status": "OK",
+      "bytes": 50728,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/ornamental.webp",
+      "status": "OK",
+      "bytes": 62848,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/styles/realism.webp",
+      "status": "OK",
+      "bytes": 59546,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/banda-ornamentala-incheietura-main.webp",
+      "status": "OK",
+      "bytes": 55120,
+      "width": 1024,
+      "height": 1024,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/bujor-gri-umar-main.webp",
+      "status": "OK",
+      "bytes": 67930,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/constelatie-clavicula-main.webp",
+      "status": "OK",
+      "bytes": 48868,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/creste-gri-antebrat-main.webp",
+      "status": "OK",
+      "bytes": 49190,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/figura-linie-coaste-main.webp",
+      "status": "OK",
+      "bytes": 114696,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/floare-salbatica-antebrat-main.webp",
+      "status": "OK",
+      "bytes": 58152,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/fluture-linie-glezna-main.webp",
+      "status": "OK",
+      "bytes": 60080,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/frunza-blackwork-gamba-main.webp",
+      "status": "OK",
+      "bytes": 63590,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/molie-blackwork-umar-main.webp",
+      "status": "OK",
+      "bytes": 60614,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/panou-geometric-coapsa-main.webp",
+      "status": "OK",
+      "bytes": 51230,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/profil-lup-piept-main.webp",
+      "status": "OK",
+      "bytes": 101544,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/pumnal-inima-gamba-main.webp",
+      "status": "OK",
+      "bytes": 85730,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/randunica-traditional-brat-main.webp",
+      "status": "OK",
+      "bytes": 70390,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/romburi-negative-antebrat-main.webp",
+      "status": "OK",
+      "bytes": 58418,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/semn-geometric-incheietura-main.webp",
+      "status": "OK",
+      "bytes": 58302,
+      "width": 1024,
+      "height": 1024,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/trandafir-traditional-antebrat-main.webp",
+      "status": "OK",
+      "bytes": 63446,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    },
+    {
+      "ref": "/images/works/voluta-ornamentala-talie-main.webp",
+      "status": "OK",
+      "bytes": 78012,
+      "width": 864,
+      "height": 1152,
+      "format": "webp"
+    }
+  ]
+}

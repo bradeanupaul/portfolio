@@ -1,0 +1,24 @@
+{
+  "laptop": {
+    "left": 13.2812,
+    "top": 24.8047,
+    "width": 74.3164,
+    "height": 44.6289,
+    "radiusPx": 20,
+    "radiusX": 2.6281,
+    "radiusY": 4.3764,
+    "overscanX": 0.08,
+    "overscanY": 0.08
+  },
+  "phone": {
+    "left": 27.3438,
+    "top": 1.9531,
+    "width": 44.9219,
+    "height": 96.0938,
+    "radiusPx": 54,
+    "radiusX": 11.7391,
+    "radiusY": 5.4878,
+    "overscanX": 0.55,
+    "overscanY": 0.45
+  }
+}

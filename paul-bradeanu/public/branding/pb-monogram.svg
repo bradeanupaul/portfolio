@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="PB">
+  <title>Paul Brdeanu monogram</title>
+  <rect width="64" height="64" rx="14" fill="#1A2029"/>
+  <path d="M18 14h14.2c8.1 0 13.3 4.4 13.3 11.2 0 4.7-2.5 8.2-6.7 9.8 5.1 1.4 8.4 5.4 8.4 10.8 0 7.4-5.6 12.2-14.4 12.2H18V14zm8.2 7.1v8.6h5.4c3.7 0 5.8-1.7 5.8-4.4s-2.1-4.2-5.7-4.2h-5.5zm0 15.4v10.3h6.2c4.1 0 6.6-2 6.6-5.2 0-3.1-2.5-5.1-6.6-5.1h-6.2z" fill="#D5E6F3"/>
+  <path d="M18 14v36" stroke="#A5C4E0" stroke-width="1.2" stroke-linecap="round" opacity="0.55"/>
+</svg>

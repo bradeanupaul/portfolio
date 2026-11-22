@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="68" viewBox="0 0 300 68" fill="none" role="img" aria-label="ELAN SKIN">
+  <defs>
+    <linearGradient id="elanPetal" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4EFF9"/>
+      <stop offset="0.45" stop-color="#D9C8EA"/>
+      <stop offset="1" stop-color="#8D5BAD"/>
+    </linearGradient>
+    <linearGradient id="elanCore" x1="28" y1="22" x2="40" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8D5BAD"/>
+      <stop offset="1" stop-color="#2D163F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="34" r="29" stroke="#2D163F" stroke-width="1.2"/>
+  <path d="M32 13c8.4 9.2 15.2 16.8 15.2 26.1a15.2 15.2 0 1 1-30.4 0C16.8 29.8 23.6 22.2 32 13z" fill="url(#elanPetal)" stroke="#2D163F" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M32 26.5c3.1 3.4 5.5 6.3 5.5 9.7a5.5 5.5 0 1 1-11 0c0-3.4 2.4-6.3 5.5-9.7z" fill="url(#elanCore)"/>
+  <ellipse cx="29.2" cy="30.8" rx="1.6" ry="2.4" fill="#FEFCFF" opacity="0.55"/>
+  <text x="72" y="40" fill="#2D163F" font-family="Georgia, Times New Roman, serif" font-size="34" letter-spacing="0.04em">&#201;LAN</text>
+  <text x="74" y="58" fill="#8D5BAD" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" letter-spacing="0.46em">SKIN</text>
+</svg>

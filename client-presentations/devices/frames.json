@@ -1,0 +1,20 @@
+{
+  "macbook": {
+    "src": "/devices/macbook-frame.png",
+    "screen": {
+      "left": 0.1840277777777778,
+      "top": 0.13541666666666666,
+      "right": 0.8159722222222222,
+      "bottom": 0.6192129629629629
+    }
+  },
+  "iphone": {
+    "src": "/devices/iphone-frame.png",
+    "screen": {
+      "left": 0.175,
+      "top": 0.096875,
+      "right": 0.8263888888888888,
+      "bottom": 0.88203125
+    }
+  }
+}

@@ -1,0 +1,38 @@
+"use client";
+
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
+
+type IntroContextValue = {
+  /** True after branded intro finishes (or is skipped). */
+  ready: boolean;
+  markReady: () => void;
+};
+
+const IntroContext = createContext<IntroContextValue>({
+  ready: false,
+  markReady: () => undefined,
+});
+
+export function IntroProvider({ children }: { children: ReactNode }) {
+  const [ready, setReady] = useState(false);
+  const markReady = useCallback(() => setReady(true), []);
+  const value = useMemo(() => ({ ready, markReady }), [ready, markReady]);
+  return (
+    <IntroContext.Provider value={value}>{children}</IntroContext.Provider>
+  );
+}
+
+export function useIntroReady() {
+  return useContext(IntroContext).ready;
+}
+
+export function useMarkIntroReady() {
+  return useContext(IntroContext).markReady;
+}
