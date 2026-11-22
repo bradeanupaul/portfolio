@@ -1,7 +1,7 @@
 /**
  * Central link config for demos.
  * Development: local ports from `npm run dev:all`.
- * Production: public demo hosts (subdomains on paulbradeanu.com).
+ * Production: same-domain paths (paulbradeanu.com/bella-notte), proxied by portfolio rewrites.
  */
 export const localDemoPorts: Record<string, number> = {
   "bella-notte": 3001,
@@ -20,24 +20,23 @@ export const demoRootDirs: Record<string, string> = {
   "elan-skin": "elanskin",
 };
 
-/**
- * Public demo URLs. Override any entry with
- * NEXT_PUBLIC_DEMO_URL_<SLUG> (slug uppercased, `-` → `_`),
- * e.g. NEXT_PUBLIC_DEMO_URL_BELLA_NOTTE=https://…
- */
-export const productionDemoUrls: Record<string, string> = {
-  "bella-notte": "https://bella-notte.paulbradeanu.com",
-  veltra: "https://veltra.paulbradeanu.com",
-  "vanta-ink": "https://vanta-ink.paulbradeanu.com",
-  "aurelia-estates": "https://aurelia-estates.paulbradeanu.com",
-  "elan-skin": "https://elan-skin.paulbradeanu.com",
+/** Public path on paulbradeanu.com (no subdomains). */
+export const productionDemoPaths: Record<string, string> = {
+  "bella-notte": "/bella-notte",
+  veltra: "/veltra",
+  "vanta-ink": "/vanta-ink",
+  "aurelia-estates": "/aurelia-estates",
+  "elan-skin": "/elan-skin",
 };
 
-function envDemoUrl(slug: string): string | undefined {
-  const key = `NEXT_PUBLIC_DEMO_URL_${slug.replace(/-/g, "_").toUpperCase()}`;
-  const value = process.env[key]?.trim();
-  return value || undefined;
-}
+/** Env origin for portfolio rewrites, e.g. https://bellanotte-xxx.vercel.app */
+export const demoOriginEnvKeys: Record<string, string> = {
+  "bella-notte": "DEMO_ORIGIN_BELLA_NOTTE",
+  veltra: "DEMO_ORIGIN_VELTRA",
+  "vanta-ink": "DEMO_ORIGIN_VANTA_INK",
+  "aurelia-estates": "DEMO_ORIGIN_AURELIA_ESTATES",
+  "elan-skin": "DEMO_ORIGIN_ELAN_SKIN",
+};
 
 export function resolveProjectLiveUrl(
   slug: string,
@@ -58,9 +57,9 @@ export function resolveProjectLiveUrl(
     };
   }
 
-  const production = envDemoUrl(slug) ?? productionDemoUrls[slug];
-  if (production) {
-    return { href: production, label: "Vezi site-ul", external: true };
+  const path = productionDemoPaths[slug];
+  if (path) {
+    return { href: path, label: "Vezi site-ul", external: true };
   }
 
   return {

@@ -6,12 +6,12 @@ Un singur repo cu portofoliul și site-urile demo folosite în case studies.
 
 | Path | Rol |
 |------|-----|
-| `paul-bradeanu/` | Portofoliu (Next.js) — **singurul app publicat pe Vercel** |
-| `bellanotte/` | Demo hospitality |
-| `veltra/` | Demo creative / branding |
-| `vantaink/` | Demo creative platform |
-| `aureliaestates/` | Demo real estate |
-| `elanskin/` | Demo e-commerce |
+| `paul-bradeanu/` | Portofoliu (Next.js) — domeniul principal |
+| `bellanotte/` | Demo → `paulbradeanu.com/bella-notte` |
+| `veltra/` | Demo → `paulbradeanu.com/veltra` |
+| `vantaink/` | Demo → `paulbradeanu.com/vanta-ink` |
+| `aureliaestates/` | Demo → `paulbradeanu.com/aurelia-estates` |
+| `elanskin/` | Demo → `paulbradeanu.com/elan-skin` |
 | `client-presentations/` | Prezentări client |
 
 ## Development
@@ -23,40 +23,48 @@ npm run dev          # portofoliu + cele 5 demo-uri (ports 3000–3005)
 npm run dev:site     # doar portofoliul pe :3000
 ```
 
-Demo-urile trebuie instalate separat o dată (`npm install` în fiecare folder).
+Demo-urile trebuie instalate separat o dată (`npm install` în fiecare folder). Local **fără** basePath (rămân pe `/`).
 
-## Deploy pe Vercel
+## Deploy pe Vercel (path-uri, fără subdomenii)
 
-### Portofoliu (obligatoriu)
+### 1) Portofoliu
 
-1. Importă [bradeanupaul/portfolio](https://github.com/bradeanupaul/portfolio).
-2. **Root Directory:** `paul-bradeanu`
-3. Framework: Next.js · Build: `npm run build`
+- Repo: `bradeanupaul/portfolio`
+- **Root Directory:** `paul-bradeanu`
+- Domeniu: `paulbradeanu.com` / `www`
 
-### Demo-uri live (butonul „Vezi site-ul”)
+### 2) Fiecare demo (proiect separat, același repo)
 
-Portofoliul leagă demo-urile de aceste subdomenii:
+| Root Directory | Env pe proiectul demo |
+|----------------|------------------------|
+| `bellanotte` | `NEXT_PUBLIC_BASE_PATH=/bella-notte` |
+| `veltra` | `NEXT_PUBLIC_BASE_PATH=/veltra` |
+| `vantaink` | `NEXT_PUBLIC_BASE_PATH=/vanta-ink` |
+| `aureliaestates` | `NEXT_PUBLIC_BASE_PATH=/aurelia-estates` |
+| `elanskin` | `NEXT_PUBLIC_BASE_PATH=/elan-skin` |
 
-| Root Directory | Domeniu |
-|----------------|---------|
-| `bellanotte` | `bella-notte.paulbradeanu.com` |
-| `veltra` | `veltra.paulbradeanu.com` |
-| `vantaink` | `vanta-ink.paulbradeanu.com` |
-| `aureliaestates` | `aurelia-estates.paulbradeanu.com` |
-| `elanskin` | `elan-skin.paulbradeanu.com` |
-
-Pentru fiecare: **Add New Project** → același repo → Root Directory din tabel → Deploy → **Settings → Domains** → adaugă subdomeniul.
-
-Env pe fiecare demo (minim):
+Plus pe fiecare demo:
 
 ```bash
 DATABASE_URL="file:./prisma/dev.db"
-NEXT_PUBLIC_SITE_URL="https://<subdomeniu>.paulbradeanu.com"
+NEXT_PUBLIC_SITE_URL="https://paulbradeanu.com/<path>"
 ```
 
-(Pentru Veltra mai trebuie `NEXTAUTH_SECRET` + credențiale admin din `.env.example`.)
+(Nu atașa domeniu custom pe demo-uri — lasă `*.vercel.app`.)
 
-Poți override URL-urile din portofoliu cu `NEXT_PUBLIC_DEMO_URL_BELLA_NOTTE`, `NEXT_PUBLIC_DEMO_URL_VELTRA`, etc.
+### 3) Proxy pe portofoliu
+
+În proiectul **paul-bradeanu** (Vercel → Settings → Environment Variables), pune originile demo:
+
+```bash
+DEMO_ORIGIN_BELLA_NOTTE=https://<bellanotte>.vercel.app
+DEMO_ORIGIN_VELTRA=https://<veltra>.vercel.app
+DEMO_ORIGIN_VANTA_INK=https://<vantaink>.vercel.app
+DEMO_ORIGIN_AURELIA_ESTATES=https://<aureliaestates>.vercel.app
+DEMO_ORIGIN_ELAN_SKIN=https://<elanskin>.vercel.app
+```
+
+Redeploy portofoliul. Apoi `paulbradeanu.com/bella-notte` servește demo-ul.
 
 ## Note
 
