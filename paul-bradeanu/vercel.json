@@ -5,29 +5,1033 @@
   "buildCommand": "npm run build",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/bella-notte", "destination": "/bella-notte/index.html" },
-    { "source": "/veltra", "destination": "/veltra/index.html" },
-    { "source": "/vanta-ink", "destination": "/vanta-ink/index.html" },
-    { "source": "/aurelia-estates", "destination": "/aurelia-estates/index.html" },
-    { "source": "/elan-skin", "destination": "/elan-skin/index.html" }
+    {
+      "source": "/bella-notte",
+      "destination": "/bella-notte/index.html"
+    },
+    {
+      "source": "/bella-notte/404",
+      "destination": "/bella-notte/404.html"
+    },
+    {
+      "source": "/bella-notte/_not-found",
+      "destination": "/bella-notte/_not-found.html"
+    },
+    {
+      "source": "/bella-notte/contact",
+      "destination": "/bella-notte/contact.html"
+    },
+    {
+      "source": "/bella-notte/despre-noi",
+      "destination": "/bella-notte/despre-noi.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/aniversari",
+      "destination": "/bella-notte/evenimente/aniversari.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/cine-romantice",
+      "destination": "/bella-notte/evenimente/cine-romantice.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/degustari-de-vin",
+      "destination": "/bella-notte/evenimente/degustari-de-vin.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/evenimente-corporate",
+      "destination": "/bella-notte/evenimente/evenimente-corporate.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/petreceri-private",
+      "destination": "/bella-notte/evenimente/petreceri-private.html"
+    },
+    {
+      "source": "/bella-notte/evenimente/seri-gastronomice",
+      "destination": "/bella-notte/evenimente/seri-gastronomice.html"
+    },
+    {
+      "source": "/bella-notte/evenimente",
+      "destination": "/bella-notte/evenimente.html"
+    },
+    {
+      "source": "/bella-notte/galerie",
+      "destination": "/bella-notte/galerie.html"
+    },
+    {
+      "source": "/bella-notte/meniu/affogato-al-caffe",
+      "destination": "/bella-notte/meniu/affogato-al-caffe.html"
+    },
+    {
+      "source": "/bella-notte/meniu/branzino-al-forno",
+      "destination": "/bella-notte/meniu/branzino-al-forno.html"
+    },
+    {
+      "source": "/bella-notte/meniu/bresaola-rucola-grana",
+      "destination": "/bella-notte/meniu/bresaola-rucola-grana.html"
+    },
+    {
+      "source": "/bella-notte/meniu/brodo-di-manzo",
+      "destination": "/bella-notte/meniu/brodo-di-manzo.html"
+    },
+    {
+      "source": "/bella-notte/meniu/bruschette-classiche",
+      "destination": "/bella-notte/meniu/bruschette-classiche.html"
+    },
+    {
+      "source": "/bella-notte/meniu/burrata-cu-rosii",
+      "destination": "/bella-notte/meniu/burrata-cu-rosii.html"
+    },
+    {
+      "source": "/bella-notte/meniu/calzone-ricotta-spinaci",
+      "destination": "/bella-notte/meniu/calzone-ricotta-spinaci.html"
+    },
+    {
+      "source": "/bella-notte/meniu/cannoli-siciliani",
+      "destination": "/bella-notte/meniu/cannoli-siciliani.html"
+    },
+    {
+      "source": "/bella-notte/meniu/carpaccio-di-manzo",
+      "destination": "/bella-notte/meniu/carpaccio-di-manzo.html"
+    },
+    {
+      "source": "/bella-notte/meniu/carpaccio-somon-gravlax",
+      "destination": "/bella-notte/meniu/carpaccio-somon-gravlax.html"
+    },
+    {
+      "source": "/bella-notte/meniu/cartofi-patate-arrosto",
+      "destination": "/bella-notte/meniu/cartofi-patate-arrosto.html"
+    },
+    {
+      "source": "/bella-notte/meniu/crema-zucca-amaretti",
+      "destination": "/bella-notte/meniu/crema-zucca-amaretti.html"
+    },
+    {
+      "source": "/bella-notte/meniu/diavola",
+      "destination": "/bella-notte/meniu/diavola.html"
+    },
+    {
+      "source": "/bella-notte/meniu/digestivo-limoncello",
+      "destination": "/bella-notte/meniu/digestivo-limoncello.html"
+    },
+    {
+      "source": "/bella-notte/meniu/filetto-di-manzo",
+      "destination": "/bella-notte/meniu/filetto-di-manzo.html"
+    },
+    {
+      "source": "/bella-notte/meniu/focaccia-alle-erbe",
+      "destination": "/bella-notte/meniu/focaccia-alle-erbe.html"
+    },
+    {
+      "source": "/bella-notte/meniu/gelato-artigianale",
+      "destination": "/bella-notte/meniu/gelato-artigianale.html"
+    },
+    {
+      "source": "/bella-notte/meniu/gnocchi-gorgonzola-nuci",
+      "destination": "/bella-notte/meniu/gnocchi-gorgonzola-nuci.html"
+    },
+    {
+      "source": "/bella-notte/meniu/insalata-verde-sezon",
+      "destination": "/bella-notte/meniu/insalata-verde-sezon.html"
+    },
+    {
+      "source": "/bella-notte/meniu/lasagna-tradizionale",
+      "destination": "/bella-notte/meniu/lasagna-tradizionale.html"
+    },
+    {
+      "source": "/bella-notte/meniu/linguine-vongole",
+      "destination": "/bella-notte/meniu/linguine-vongole.html"
+    },
+    {
+      "source": "/bella-notte/meniu/margherita-napoletana",
+      "destination": "/bella-notte/meniu/margherita-napoletana.html"
+    },
+    {
+      "source": "/bella-notte/meniu/melanzane-parmigiana",
+      "destination": "/bella-notte/meniu/melanzane-parmigiana.html"
+    },
+    {
+      "source": "/bella-notte/meniu/minestrone-alle-stagioni",
+      "destination": "/bella-notte/meniu/minestrone-alle-stagioni.html"
+    },
+    {
+      "source": "/bella-notte/meniu/ortolana",
+      "destination": "/bella-notte/meniu/ortolana.html"
+    },
+    {
+      "source": "/bella-notte/meniu/osso-buco-milanese",
+      "destination": "/bella-notte/meniu/osso-buco-milanese.html"
+    },
+    {
+      "source": "/bella-notte/meniu/panna-cotta-vanilie",
+      "destination": "/bella-notte/meniu/panna-cotta-vanilie.html"
+    },
+    {
+      "source": "/bella-notte/meniu/pappardelle-ciolle",
+      "destination": "/bella-notte/meniu/pappardelle-ciolle.html"
+    },
+    {
+      "source": "/bella-notte/meniu/platou-antipasto-della-casa",
+      "destination": "/bella-notte/meniu/platou-antipasto-della-casa.html"
+    },
+    {
+      "source": "/bella-notte/meniu/polenta-cremosa",
+      "destination": "/bella-notte/meniu/polenta-cremosa.html"
+    },
+    {
+      "source": "/bella-notte/meniu/pollo-ripieno",
+      "destination": "/bella-notte/meniu/pollo-ripieno.html"
+    },
+    {
+      "source": "/bella-notte/meniu/prosciutto-funghi",
+      "destination": "/bella-notte/meniu/prosciutto-funghi.html"
+    },
+    {
+      "source": "/bella-notte/meniu/quattro-formaggi",
+      "destination": "/bella-notte/meniu/quattro-formaggi.html"
+    },
+    {
+      "source": "/bella-notte/meniu/ravioli-ricotta-spanac",
+      "destination": "/bella-notte/meniu/ravioli-ricotta-spanac.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-ai-funghi-porcini",
+      "destination": "/bella-notte/meniu/risotto-ai-funghi-porcini.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-asparagi",
+      "destination": "/bella-notte/meniu/risotto-asparagi.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-frutti-di-mare",
+      "destination": "/bella-notte/meniu/risotto-frutti-di-mare.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-milanese",
+      "destination": "/bella-notte/meniu/risotto-milanese.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-pesto-rucola",
+      "destination": "/bella-notte/meniu/risotto-pesto-rucola.html"
+    },
+    {
+      "source": "/bella-notte/meniu/risotto-tartufo-estate",
+      "destination": "/bella-notte/meniu/risotto-tartufo-estate.html"
+    },
+    {
+      "source": "/bella-notte/meniu/salmone-agrodolce",
+      "destination": "/bella-notte/meniu/salmone-agrodolce.html"
+    },
+    {
+      "source": "/bella-notte/meniu/spaghetti-carbonara",
+      "destination": "/bella-notte/meniu/spaghetti-carbonara.html"
+    },
+    {
+      "source": "/bella-notte/meniu/spinaci-all-aglio",
+      "destination": "/bella-notte/meniu/spinaci-all-aglio.html"
+    },
+    {
+      "source": "/bella-notte/meniu/supa-crema-ciuperci-trufe",
+      "destination": "/bella-notte/meniu/supa-crema-ciuperci-trufe.html"
+    },
+    {
+      "source": "/bella-notte/meniu/tagliata-di-manzo",
+      "destination": "/bella-notte/meniu/tagliata-di-manzo.html"
+    },
+    {
+      "source": "/bella-notte/meniu/tagliatelle-al-tartufo",
+      "destination": "/bella-notte/meniu/tagliatelle-al-tartufo.html"
+    },
+    {
+      "source": "/bella-notte/meniu/tagliatelle-bolognese",
+      "destination": "/bella-notte/meniu/tagliatelle-bolognese.html"
+    },
+    {
+      "source": "/bella-notte/meniu/tiramisu-della-casa",
+      "destination": "/bella-notte/meniu/tiramisu-della-casa.html"
+    },
+    {
+      "source": "/bella-notte/meniu/tortino-ciocolata",
+      "destination": "/bella-notte/meniu/tortino-ciocolata.html"
+    },
+    {
+      "source": "/bella-notte/meniu/verdure-grigliate",
+      "destination": "/bella-notte/meniu/verdure-grigliate.html"
+    },
+    {
+      "source": "/bella-notte/meniu/zuppa-di-pesce",
+      "destination": "/bella-notte/meniu/zuppa-di-pesce.html"
+    },
+    {
+      "source": "/bella-notte/meniu/zuppa-pomodoro",
+      "destination": "/bella-notte/meniu/zuppa-pomodoro.html"
+    },
+    {
+      "source": "/bella-notte/meniu",
+      "destination": "/bella-notte/meniu.html"
+    },
+    {
+      "source": "/bella-notte/politica-cookies",
+      "destination": "/bella-notte/politica-cookies.html"
+    },
+    {
+      "source": "/bella-notte/politica-de-confidentialitate",
+      "destination": "/bella-notte/politica-de-confidentialitate.html"
+    },
+    {
+      "source": "/bella-notte/recenzii",
+      "destination": "/bella-notte/recenzii.html"
+    },
+    {
+      "source": "/bella-notte/rezervari/anulare",
+      "destination": "/bella-notte/rezervari/anulare.html"
+    },
+    {
+      "source": "/bella-notte/rezervari",
+      "destination": "/bella-notte/rezervari.html"
+    },
+    {
+      "source": "/bella-notte/termeni-si-conditii",
+      "destination": "/bella-notte/termeni-si-conditii.html"
+    },
+    {
+      "source": "/veltra",
+      "destination": "/veltra/index.html"
+    },
+    {
+      "source": "/veltra/404",
+      "destination": "/veltra/404.html"
+    },
+    {
+      "source": "/veltra/_not-found",
+      "destination": "/veltra/_not-found.html"
+    },
+    {
+      "source": "/veltra/camere/forest-room",
+      "destination": "/veltra/camere/forest-room.html"
+    },
+    {
+      "source": "/veltra/camere/mountain-view-suite",
+      "destination": "/veltra/camere/mountain-view-suite.html"
+    },
+    {
+      "source": "/veltra/camere/panorama-loft",
+      "destination": "/veltra/camere/panorama-loft.html"
+    },
+    {
+      "source": "/veltra/camere/signature-residence",
+      "destination": "/veltra/camere/signature-residence.html"
+    },
+    {
+      "source": "/veltra/camere",
+      "destination": "/veltra/camere.html"
+    },
+    {
+      "source": "/veltra/contact",
+      "destination": "/veltra/contact.html"
+    },
+    {
+      "source": "/veltra/despre-noi",
+      "destination": "/veltra/despre-noi.html"
+    },
+    {
+      "source": "/veltra/experiente/drumetii-montane",
+      "destination": "/veltra/experiente/drumetii-montane.html"
+    },
+    {
+      "source": "/veltra/experiente/seri-la-foc",
+      "destination": "/veltra/experiente/seri-la-foc.html"
+    },
+    {
+      "source": "/veltra/experiente/tururi-cu-atv",
+      "destination": "/veltra/experiente/tururi-cu-atv.html"
+    },
+    {
+      "source": "/veltra/experiente/tururi-cu-bicicleta",
+      "destination": "/veltra/experiente/tururi-cu-bicicleta.html"
+    },
+    {
+      "source": "/veltra/experiente",
+      "destination": "/veltra/experiente.html"
+    },
+    {
+      "source": "/veltra/facilitati",
+      "destination": "/veltra/facilitati.html"
+    },
+    {
+      "source": "/veltra/galerie",
+      "destination": "/veltra/galerie.html"
+    },
+    {
+      "source": "/veltra/imprejurimi",
+      "destination": "/veltra/imprejurimi.html"
+    },
+    {
+      "source": "/veltra/intrebari-frecvente",
+      "destination": "/veltra/intrebari-frecvente.html"
+    },
+    {
+      "source": "/veltra/politica-cookies",
+      "destination": "/veltra/politica-cookies.html"
+    },
+    {
+      "source": "/veltra/politica-de-confidentialitate",
+      "destination": "/veltra/politica-de-confidentialitate.html"
+    },
+    {
+      "source": "/veltra/restaurant",
+      "destination": "/veltra/restaurant.html"
+    },
+    {
+      "source": "/veltra/rezervari",
+      "destination": "/veltra/rezervari.html"
+    },
+    {
+      "source": "/veltra/spa",
+      "destination": "/veltra/spa.html"
+    },
+    {
+      "source": "/veltra/termeni-si-conditii",
+      "destination": "/veltra/termeni-si-conditii.html"
+    },
+    {
+      "source": "/vanta-ink",
+      "destination": "/vanta-ink/index.html"
+    },
+    {
+      "source": "/vanta-ink/404",
+      "destination": "/vanta-ink/404.html"
+    },
+    {
+      "source": "/vanta-ink/_not-found",
+      "destination": "/vanta-ink/_not-found.html"
+    },
+    {
+      "source": "/vanta-ink/artisti/alex-muresan",
+      "destination": "/vanta-ink/artisti/alex-muresan.html"
+    },
+    {
+      "source": "/vanta-ink/artisti/david-radu",
+      "destination": "/vanta-ink/artisti/david-radu.html"
+    },
+    {
+      "source": "/vanta-ink/artisti/iris-pavel",
+      "destination": "/vanta-ink/artisti/iris-pavel.html"
+    },
+    {
+      "source": "/vanta-ink/artisti/mara-ionescu",
+      "destination": "/vanta-ink/artisti/mara-ionescu.html"
+    },
+    {
+      "source": "/vanta-ink/artisti",
+      "destination": "/vanta-ink/artisti.html"
+    },
+    {
+      "source": "/vanta-ink/confidentialitate",
+      "destination": "/vanta-ink/confidentialitate.html"
+    },
+    {
+      "source": "/vanta-ink/contact",
+      "destination": "/vanta-ink/contact.html"
+    },
+    {
+      "source": "/vanta-ink/cookies",
+      "destination": "/vanta-ink/cookies.html"
+    },
+    {
+      "source": "/vanta-ink/despre",
+      "destination": "/vanta-ink/despre.html"
+    },
+    {
+      "source": "/vanta-ink/intrebari-frecvente",
+      "destination": "/vanta-ink/intrebari-frecvente.html"
+    },
+    {
+      "source": "/vanta-ink/intrebari",
+      "destination": "/vanta-ink/intrebari.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/banda-ornamentala-incheietura",
+      "destination": "/vanta-ink/portofoliu/banda-ornamentala-incheietura.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/bujor-gri-umar",
+      "destination": "/vanta-ink/portofoliu/bujor-gri-umar.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/constelatie-clavicula",
+      "destination": "/vanta-ink/portofoliu/constelatie-clavicula.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/creste-gri-antebrat",
+      "destination": "/vanta-ink/portofoliu/creste-gri-antebrat.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/figura-linie-coaste",
+      "destination": "/vanta-ink/portofoliu/figura-linie-coaste.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/floare-salbatica-antebrat",
+      "destination": "/vanta-ink/portofoliu/floare-salbatica-antebrat.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/fluture-linie-glezna",
+      "destination": "/vanta-ink/portofoliu/fluture-linie-glezna.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/frunza-blackwork-gamba",
+      "destination": "/vanta-ink/portofoliu/frunza-blackwork-gamba.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/molie-blackwork-umar",
+      "destination": "/vanta-ink/portofoliu/molie-blackwork-umar.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/panou-geometric-coapsa",
+      "destination": "/vanta-ink/portofoliu/panou-geometric-coapsa.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/profil-lup-piept",
+      "destination": "/vanta-ink/portofoliu/profil-lup-piept.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/pumnal-inima-gamba",
+      "destination": "/vanta-ink/portofoliu/pumnal-inima-gamba.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/randunica-traditional-brat",
+      "destination": "/vanta-ink/portofoliu/randunica-traditional-brat.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/romburi-negative-antebrat",
+      "destination": "/vanta-ink/portofoliu/romburi-negative-antebrat.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/semn-geometric-incheietura",
+      "destination": "/vanta-ink/portofoliu/semn-geometric-incheietura.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/trandafir-traditional-antebrat",
+      "destination": "/vanta-ink/portofoliu/trandafir-traditional-antebrat.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu/voluta-ornamentala-talie",
+      "destination": "/vanta-ink/portofoliu/voluta-ornamentala-talie.html"
+    },
+    {
+      "source": "/vanta-ink/portofoliu",
+      "destination": "/vanta-ink/portofoliu.html"
+    },
+    {
+      "source": "/vanta-ink/proces",
+      "destination": "/vanta-ink/proces.html"
+    },
+    {
+      "source": "/vanta-ink/programare",
+      "destination": "/vanta-ink/programare.html"
+    },
+    {
+      "source": "/vanta-ink/servicii",
+      "destination": "/vanta-ink/servicii.html"
+    },
+    {
+      "source": "/vanta-ink/termeni",
+      "destination": "/vanta-ink/termeni.html"
+    },
+    {
+      "source": "/aurelia-estates",
+      "destination": "/aurelia-estates/index.html"
+    },
+    {
+      "source": "/aurelia-estates/404",
+      "destination": "/aurelia-estates/404.html"
+    },
+    {
+      "source": "/aurelia-estates/_not-found",
+      "destination": "/aurelia-estates/_not-found.html"
+    },
+    {
+      "source": "/aurelia-estates/colectii/privelisti-exceptionale",
+      "destination": "/aurelia-estates/colectii/privelisti-exceptionale.html"
+    },
+    {
+      "source": "/aurelia-estates/colectii/spatiu-pentru-familie",
+      "destination": "/aurelia-estates/colectii/spatiu-pentru-familie.html"
+    },
+    {
+      "source": "/aurelia-estates/colectii/viata-urbana",
+      "destination": "/aurelia-estates/colectii/viata-urbana.html"
+    },
+    {
+      "source": "/aurelia-estates/colectii",
+      "destination": "/aurelia-estates/colectii.html"
+    },
+    {
+      "source": "/aurelia-estates/confidentialitate",
+      "destination": "/aurelia-estates/confidentialitate.html"
+    },
+    {
+      "source": "/aurelia-estates/contact",
+      "destination": "/aurelia-estates/contact.html"
+    },
+    {
+      "source": "/aurelia-estates/cookie-uri",
+      "destination": "/aurelia-estates/cookie-uri.html"
+    },
+    {
+      "source": "/aurelia-estates/despre-noi",
+      "destination": "/aurelia-estates/despre-noi.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa/andrei-popescu",
+      "destination": "/aurelia-estates/echipa/andrei-popescu.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa/clara-ionescu",
+      "destination": "/aurelia-estates/echipa/clara-ionescu.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa/elena-marinescu",
+      "destination": "/aurelia-estates/echipa/elena-marinescu.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa/ioana-radu",
+      "destination": "/aurelia-estates/echipa/ioana-radu.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa/mihai-constantin",
+      "destination": "/aurelia-estates/echipa/mihai-constantin.html"
+    },
+    {
+      "source": "/aurelia-estates/echipa",
+      "destination": "/aurelia-estates/echipa.html"
+    },
+    {
+      "source": "/aurelia-estates/favorite",
+      "destination": "/aurelia-estates/favorite.html"
+    },
+    {
+      "source": "/aurelia-estates/intrebari-frecvente",
+      "destination": "/aurelia-estates/intrebari-frecvente.html"
+    },
+    {
+      "source": "/aurelia-estates/programeaza-vizionare",
+      "destination": "/aurelia-estates/programeaza-vizionare.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-centru-brasov",
+      "destination": "/aurelia-estates/proprietati/apartament-centru-brasov.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-colectie-primaverii",
+      "destination": "/aurelia-estates/proprietati/apartament-colectie-primaverii.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-linistit-primaverii",
+      "destination": "/aurelia-estates/proprietati/apartament-linistit-primaverii.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-luminos-floreasca",
+      "destination": "/aurelia-estates/proprietati/apartament-luminos-floreasca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-nou-pipera",
+      "destination": "/aurelia-estates/proprietati/apartament-nou-pipera.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-urban-floreasca",
+      "destination": "/aurelia-estates/proprietati/apartament-urban-floreasca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/apartament-vedere-lac-herastrau",
+      "destination": "/aurelia-estates/proprietati/apartament-vedere-lac-herastrau.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/casa-inchiriere-brasov",
+      "destination": "/aurelia-estates/proprietati/casa-inchiriere-brasov.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/casa-poiana-brasov",
+      "destination": "/aurelia-estates/proprietati/casa-poiana-brasov.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/casa-printre-pini-corbeanca",
+      "destination": "/aurelia-estates/proprietati/casa-printre-pini-corbeanca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/casa-priveliste-brasov",
+      "destination": "/aurelia-estates/proprietati/casa-priveliste-brasov.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/penthouse-floreasca",
+      "destination": "/aurelia-estates/proprietati/penthouse-floreasca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/penthouse-herastrau",
+      "destination": "/aurelia-estates/proprietati/penthouse-herastrau.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/penthouse-inchiriere-primaverii",
+      "destination": "/aurelia-estates/proprietati/penthouse-inchiriere-primaverii.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/penthouse-terasa-primaverii",
+      "destination": "/aurelia-estates/proprietati/penthouse-terasa-primaverii.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/resedinta-atriu-corbeanca",
+      "destination": "/aurelia-estates/proprietati/resedinta-atriu-corbeanca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/resedinta-contemporana-pipera",
+      "destination": "/aurelia-estates/proprietati/resedinta-contemporana-pipera.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/resedinta-piscina-corbeanca",
+      "destination": "/aurelia-estates/proprietati/resedinta-piscina-corbeanca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-contemporana-herastrau",
+      "destination": "/aurelia-estates/proprietati/vila-contemporana-herastrau.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-de-epoca-herastrau",
+      "destination": "/aurelia-estates/proprietati/vila-de-epoca-herastrau.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-discreta-floreasca",
+      "destination": "/aurelia-estates/proprietati/vila-discreta-floreasca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-gradina-pipera",
+      "destination": "/aurelia-estates/proprietati/vila-gradina-pipera.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-inchiriere-corbeanca",
+      "destination": "/aurelia-estates/proprietati/vila-inchiriere-corbeanca.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati/vila-sculpturala-herastrau",
+      "destination": "/aurelia-estates/proprietati/vila-sculpturala-herastrau.html"
+    },
+    {
+      "source": "/aurelia-estates/proprietati",
+      "destination": "/aurelia-estates/proprietati.html"
+    },
+    {
+      "source": "/aurelia-estates/servicii",
+      "destination": "/aurelia-estates/servicii.html"
+    },
+    {
+      "source": "/aurelia-estates/termeni",
+      "destination": "/aurelia-estates/termeni.html"
+    },
+    {
+      "source": "/aurelia-estates/vinde-cu-noi",
+      "destination": "/aurelia-estates/vinde-cu-noi.html"
+    },
+    {
+      "source": "/elan-skin",
+      "destination": "/elan-skin/index.html"
+    },
+    {
+      "source": "/elan-skin/404",
+      "destination": "/elan-skin/404.html"
+    },
+    {
+      "source": "/elan-skin/_not-found",
+      "destination": "/elan-skin/_not-found.html"
+    },
+    {
+      "source": "/elan-skin/checkout",
+      "destination": "/elan-skin/checkout.html"
+    },
+    {
+      "source": "/elan-skin/colectii/confort-zilnic",
+      "destination": "/elan-skin/colectii/confort-zilnic.html"
+    },
+    {
+      "source": "/elan-skin/colectii/lumina-lina",
+      "destination": "/elan-skin/colectii/lumina-lina.html"
+    },
+    {
+      "source": "/elan-skin/colectii/ritualul-diminetii",
+      "destination": "/elan-skin/colectii/ritualul-diminetii.html"
+    },
+    {
+      "source": "/elan-skin/colectii/ritualul-serii",
+      "destination": "/elan-skin/colectii/ritualul-serii.html"
+    },
+    {
+      "source": "/elan-skin/colectii",
+      "destination": "/elan-skin/colectii.html"
+    },
+    {
+      "source": "/elan-skin/comanda/confirmare",
+      "destination": "/elan-skin/comanda/confirmare.html"
+    },
+    {
+      "source": "/elan-skin/cont",
+      "destination": "/elan-skin/cont.html"
+    },
+    {
+      "source": "/elan-skin/contact",
+      "destination": "/elan-skin/contact.html"
+    },
+    {
+      "source": "/elan-skin/cos",
+      "destination": "/elan-skin/cos.html"
+    },
+    {
+      "source": "/elan-skin/despre-noi",
+      "destination": "/elan-skin/despre-noi.html"
+    },
+    {
+      "source": "/elan-skin/favorite",
+      "destination": "/elan-skin/favorite.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/acid-hialuronic",
+      "destination": "/elan-skin/ingrediente/acid-hialuronic.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/ascorbil-glucozid",
+      "destination": "/elan-skin/ingrediente/ascorbil-glucozid.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/centella",
+      "destination": "/elan-skin/ingrediente/centella.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/ceramide",
+      "destination": "/elan-skin/ingrediente/ceramide.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/extract-de-orez",
+      "destination": "/elan-skin/ingrediente/extract-de-orez.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/niacinamida",
+      "destination": "/elan-skin/ingrediente/niacinamida.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/oxid-de-zinc",
+      "destination": "/elan-skin/ingrediente/oxid-de-zinc.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/pantenol",
+      "destination": "/elan-skin/ingrediente/pantenol.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente/squalane",
+      "destination": "/elan-skin/ingrediente/squalane.html"
+    },
+    {
+      "source": "/elan-skin/ingrediente",
+      "destination": "/elan-skin/ingrediente.html"
+    },
+    {
+      "source": "/elan-skin/intrebari-frecvente",
+      "destination": "/elan-skin/intrebari-frecvente.html"
+    },
+    {
+      "source": "/elan-skin/jurnal/cum-citesti-o-eticheta",
+      "destination": "/elan-skin/jurnal/cum-citesti-o-eticheta.html"
+    },
+    {
+      "source": "/elan-skin/jurnal/ordinea-pasilor",
+      "destination": "/elan-skin/jurnal/ordinea-pasilor.html"
+    },
+    {
+      "source": "/elan-skin/jurnal/texturi-de-seara",
+      "destination": "/elan-skin/jurnal/texturi-de-seara.html"
+    },
+    {
+      "source": "/elan-skin/jurnal/un-ritual-scurt",
+      "destination": "/elan-skin/jurnal/un-ritual-scurt.html"
+    },
+    {
+      "source": "/elan-skin/jurnal",
+      "destination": "/elan-skin/jurnal.html"
+    },
+    {
+      "source": "/elan-skin/livrare-si-retur",
+      "destination": "/elan-skin/livrare-si-retur.html"
+    },
+    {
+      "source": "/elan-skin/magazin",
+      "destination": "/elan-skin/magazin.html"
+    },
+    {
+      "source": "/elan-skin/politica-cookies",
+      "destination": "/elan-skin/politica-cookies.html"
+    },
+    {
+      "source": "/elan-skin/politica-de-confidentialitate",
+      "destination": "/elan-skin/politica-de-confidentialitate.html"
+    },
+    {
+      "source": "/elan-skin/produs/afterglow-oil",
+      "destination": "/elan-skin/produs/afterglow-oil.html"
+    },
+    {
+      "source": "/elan-skin/produs/amber-milk",
+      "destination": "/elan-skin/produs/amber-milk.html"
+    },
+    {
+      "source": "/elan-skin/produs/barrier-thread",
+      "destination": "/elan-skin/produs/barrier-thread.html"
+    },
+    {
+      "source": "/elan-skin/produs/calm-current",
+      "destination": "/elan-skin/produs/calm-current.html"
+    },
+    {
+      "source": "/elan-skin/produs/calm-sheet",
+      "destination": "/elan-skin/produs/calm-sheet.html"
+    },
+    {
+      "source": "/elan-skin/produs/clay-quiet",
+      "destination": "/elan-skin/produs/clay-quiet.html"
+    },
+    {
+      "source": "/elan-skin/produs/cloud-cleanse",
+      "destination": "/elan-skin/produs/cloud-cleanse.html"
+    },
+    {
+      "source": "/elan-skin/produs/daily-veil-spf-50",
+      "destination": "/elan-skin/produs/daily-veil-spf-50.html"
+    },
+    {
+      "source": "/elan-skin/produs/dawn-balm",
+      "destination": "/elan-skin/produs/dawn-balm.html"
+    },
+    {
+      "source": "/elan-skin/produs/dawn-kit",
+      "destination": "/elan-skin/produs/dawn-kit.html"
+    },
+    {
+      "source": "/elan-skin/produs/dew-theory",
+      "destination": "/elan-skin/produs/dew-theory.html"
+    },
+    {
+      "source": "/elan-skin/produs/ember-oil",
+      "destination": "/elan-skin/produs/ember-oil.html"
+    },
+    {
+      "source": "/elan-skin/produs/eye-dew",
+      "destination": "/elan-skin/produs/eye-dew.html"
+    },
+    {
+      "source": "/elan-skin/produs/glow-drops",
+      "destination": "/elan-skin/produs/glow-drops.html"
+    },
+    {
+      "source": "/elan-skin/produs/linen-veil",
+      "destination": "/elan-skin/produs/linen-veil.html"
+    },
+    {
+      "source": "/elan-skin/produs/lip-silk",
+      "destination": "/elan-skin/produs/lip-silk.html"
+    },
+    {
+      "source": "/elan-skin/produs/milk-cloud",
+      "destination": "/elan-skin/produs/milk-cloud.html"
+    },
+    {
+      "source": "/elan-skin/produs/mist-hour",
+      "destination": "/elan-skin/produs/mist-hour.html"
+    },
+    {
+      "source": "/elan-skin/produs/night-cloud",
+      "destination": "/elan-skin/produs/night-cloud.html"
+    },
+    {
+      "source": "/elan-skin/produs/night-reset",
+      "destination": "/elan-skin/produs/night-reset.html"
+    },
+    {
+      "source": "/elan-skin/produs/palm-soft",
+      "destination": "/elan-skin/produs/palm-soft.html"
+    },
+    {
+      "source": "/elan-skin/produs/pearl-polish",
+      "destination": "/elan-skin/produs/pearl-polish.html"
+    },
+    {
+      "source": "/elan-skin/produs/peptide-quiet",
+      "destination": "/elan-skin/produs/peptide-quiet.html"
+    },
+    {
+      "source": "/elan-skin/produs/quiet-pore",
+      "destination": "/elan-skin/produs/quiet-pore.html"
+    },
+    {
+      "source": "/elan-skin/produs/rice-soft",
+      "destination": "/elan-skin/produs/rice-soft.html"
+    },
+    {
+      "source": "/elan-skin/produs/sheer-guard",
+      "destination": "/elan-skin/produs/sheer-guard.html"
+    },
+    {
+      "source": "/elan-skin/produs/silk-body",
+      "destination": "/elan-skin/produs/silk-body.html"
+    },
+    {
+      "source": "/elan-skin/produs/silk-cushion",
+      "destination": "/elan-skin/produs/silk-cushion.html"
+    },
+    {
+      "source": "/elan-skin/produs/soft-dissolve",
+      "destination": "/elan-skin/produs/soft-dissolve.html"
+    },
+    {
+      "source": "/elan-skin/produs/soft-ritual",
+      "destination": "/elan-skin/produs/soft-ritual.html"
+    },
+    {
+      "source": "/elan-skin/produs/velvet-barrier",
+      "destination": "/elan-skin/produs/velvet-barrier.html"
+    },
+    {
+      "source": "/elan-skin/produs/water-veil",
+      "destination": "/elan-skin/produs/water-veil.html"
+    },
+    {
+      "source": "/elan-skin/rutina-mea",
+      "destination": "/elan-skin/rutina-mea.html"
+    },
+    {
+      "source": "/elan-skin/termeni-si-conditii",
+      "destination": "/elan-skin/termeni-si-conditii.html"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)/_next/static/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/:demo(bella-notte|veltra|vanta-ink|aurelia-estates|elan-skin)/:path*\\.(webp|jpg|jpeg|png|svg|woff2|ico)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/:path*\\.(webp|jpg|jpeg|png|svg|woff2|ico)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]

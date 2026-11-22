@@ -296,9 +296,50 @@ function rewriteExistingExports() {
   }
 }
 
+/** Keep vercel.json rewrites in sync so /demo/page serves /demo/page.html (avoids prefetch 404s). */
+function syncVercelDemoRewrites() {
+  const vercelPath = join(portfolioRoot, "vercel.json");
+  if (!existsSync(vercelPath)) return;
+  const data = JSON.parse(readFileSync(vercelPath, "utf8"));
+  const rewrites = [];
+  for (const demo of demos) {
+    const destDir = join(publicRoot, demo.slug);
+    if (!existsSync(destDir)) continue;
+    rewrites.push({
+      source: `/${demo.slug}`,
+      destination: `/${demo.slug}/index.html`,
+    });
+    const walk = (dir, rel = "") => {
+      for (const name of readdirSync(dir)) {
+        const abs = join(dir, name);
+        const childRel = rel ? `${rel}/${name}` : name;
+        if (statSync(abs).isDirectory()) {
+          walk(abs, childRel);
+          continue;
+        }
+        if (!name.endsWith(".html")) continue;
+        if (childRel === "index.html") continue;
+        const srcPath = childRel.endsWith("/index.html")
+          ? childRel.slice(0, -"/index.html".length)
+          : childRel.slice(0, -".html".length);
+        rewrites.push({
+          source: `/${demo.slug}/${srcPath}`,
+          destination: `/${demo.slug}/${childRel}`,
+        });
+      }
+    };
+    walk(destDir);
+  }
+  data.cleanUrls = true;
+  data.rewrites = rewrites;
+  writeFileSync(vercelPath, `${JSON.stringify(data, null, 2)}\n`);
+  console.log(`[demos] synced ${rewrites.length} vercel rewrites for clean demo URLs`);
+}
+
 function main() {
   if (process.env.REWRITE_DEMO_PATHS_ONLY === "1") {
     rewriteExistingExports();
+    syncVercelDemoRewrites();
     return;
   }
 
@@ -319,6 +360,7 @@ function main() {
   for (const demo of selected) {
     buildDemo(demo);
   }
+  syncVercelDemoRewrites();
   console.log("\n[demos] all static demos ready under public/");
 }
 
