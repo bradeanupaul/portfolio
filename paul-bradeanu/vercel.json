@@ -9,5 +9,25 @@
     { "source": "/vanta-ink", "destination": "/vanta-ink/index.html" },
     { "source": "/aurelia-estates", "destination": "/aurelia-estates/index.html" },
     { "source": "/elan-skin", "destination": "/elan-skin/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)/_next/static/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/:demo(bella-notte|veltra|vanta-ink|aurelia-estates|elan-skin)/:path*\\.(webp|jpg|jpeg|png|svg|woff2|ico)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/:path*\\.(webp|jpg|jpeg|png|svg|woff2|ico)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
   ]
 }

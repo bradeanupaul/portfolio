@@ -16,12 +16,12 @@ type IntroContextValue = {
 };
 
 const IntroContext = createContext<IntroContextValue>({
-  ready: false,
+  ready: true,
   markReady: () => undefined,
 });
 
 export function IntroProvider({ children }: { children: ReactNode }) {
-  const [ready, setReady] = useState(false);
+  const [ready, setReady] = useState(true);
   const markReady = useCallback(() => setReady(true), []);
   const value = useMemo(() => ({ ready, markReady }), [ready, markReady]);
   return (

@@ -16,12 +16,13 @@ type IntroContextValue = {
 };
 
 const IntroContext = createContext<IntroContextValue>({
-  ready: false,
+  ready: true,
   markReady: () => undefined,
 });
 
 export function IntroProvider({ children }: { children: ReactNode }) {
-  const [ready, setReady] = useState(false);
+  // Start ready — splash overlays are disabled so LCP is not gated on hydration.
+  const [ready, setReady] = useState(true);
   const markReady = useCallback(() => setReady(true), []);
   const value = useMemo(() => ({ ready, markReady }), [ready, markReady]);
   return (

@@ -6,4 +6,4 @@
 :HL["/veltra/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/css/6c3ed663a9bacb2f.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"oowTz_LANgrwWh_6SQSUo","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"f1I_CQjZN6sZXMxFnKQ19","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

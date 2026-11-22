@@ -3,25 +3,25 @@
 3:"static/chunks/212-21d39745b08cc7c0.js"
 4:"static/chunks/500-fc3b64d9ff4a32a7.js"
 5:"static/chunks/437-8f6df1705fed9fb2.js"
-6:"static/chunks/642-daf15319962cd668.js"
-7:"static/chunks/309-4b9892069b2844b3.js"
-8:"static/chunks/720-9618de237d48222e.js"
-9:"static/chunks/app/layout-a08db64f85fb0b31.js"
-a:I[9664,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","177","$9"],"SiteShell"]
-b:I[7121,[],""]
-c:"static/chunks/app/error-446b496c626cb340.js"
-d:I[9648,["500","$4","39","$c"],"default"]
-e:I[4581,[],""]
+6:"static/chunks/309-4b9892069b2844b3.js"
+7:"static/chunks/720-9618de237d48222e.js"
+8:"static/chunks/app/layout-a7c258f81e2c234f.js"
+9:I[9664,["592","$2","212","$3","500","$4","437","$5","309","$6","720","$7","177","$8"],"SiteShell"]
+a:I[7121,[],""]
+b:"static/chunks/app/error-446b496c626cb340.js"
+c:I[9648,["500","$4","39","$b"],"default"]
+d:I[4581,[],""]
+e:"static/chunks/642-daf15319962cd668.js"
 f:"static/chunks/app/spa/page-87e6c0707fbac02d.js"
-10:I[8500,["212","$3","500","$4","437","$5","642","$6","3","$f"],""]
-14:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"RevealEditorial"]
+10:I[8500,["212","$3","500","$4","437","$5","642","$e","3","$f"],""]
+14:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"RevealEditorial"]
 15:"RevealEditorialLine"
-16:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"$15"]
-17:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"RevealImage"]
-18:I[8437,["212","$3","500","$4","437","$5","642","$6","3","$f"],"Image"]
-19:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"Reveal"]
-1a:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"RevealStagger"]
-1b:I[4804,["212","$3","500","$4","437","$5","642","$6","3","$f"],"RevealItem"]
+16:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"$15"]
+17:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"RevealImage"]
+18:I[8437,["212","$3","500","$4","437","$5","642","$e","3","$f"],"Image"]
+19:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"Reveal"]
+1a:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"RevealStagger"]
+1b:I[4804,["212","$3","500","$4","437","$5","642","$e","3","$f"],"RevealItem"]
 22:"ViewportBoundary"
 23:I[484,[],"$22"]
 25:"MetadataBoundary"
@@ -37,9 +37,9 @@ f:"static/chunks/app/spa/page-87e6c0707fbac02d.js"
 :HL["/veltra/_next/static/css/6c3ed663a9bacb2f.css","style"]
 12:X
 13:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[[["$","section",null,{"className":"overflow-hidden bg-ivory pt-[calc(var(--header-h)+2rem)] pb-16 md:pb-20","children":["$","div",null,{"className":"hero-shell grid items-end gap-10 lg:grid-cols-[1fr_0.9fr]","children":[["$","$L14",null,{"immediate":true,"children":[["$","$L16",null,{"children":["$","p",null,{"className":"text-[0.78rem] font-semibold tracking-[0.22em] text-clay uppercase","children":"Wellness"}]}],["$","$L16",null,{"children":["$","h1",null,{"className":"mt-4 max-w-[14ch] font-serif text-[clamp(2.5rem,5vw,4rem)] leading-[1.04] text-pine text-balance","children":["Lasă ziua să ",["$","span",null,{"className":"font-script inline-block pb-[0.12em] text-[1.12em] leading-none text-clay","children":"încetinească"}]]}]}],["$","$L16",null,{"children":["$","p",null,{"className":"mt-5 max-w-[40ch] text-[1.08rem] leading-relaxed text-ink/75","children":"Apă caldă, abur fin și aer de pădure. Un ritm scurt de refacere, fără listă lungă de amenități și fără pretenții medicale."}]}]]}],["$","$L17",null,{"from":"right","immediate":true,"className":"relative aspect-[4/5] max-w-[28rem] bg-forest-ink/8 lg:justify-self-end","children":["$","$L18",null,{"src":"/veltra/images/facilities/v7/facility-sauna-interior.webp","alt":"Detaliu saună din lemn la VELTRA","fill":true,"priority":true,"className":"object-cover","sizes":"(max-width: 1024px) 90vw, 40vw"}]}]]}]}],["$","section",null,{"className":"bg-[#EFE6DA] py-20 md:py-28","aria-labelledby":"ritual-heading","children":["$","div",null,{"className":"hero-shell","children":[["$","$L19",null,{"kind":"editorial","children":[["$","h2",null,{"id":"ritual-heading","className":"max-w-[16ch] font-serif text-[clamp(2.2rem,4vw,3.3rem)] text-pine text-balance","children":["Un ritual pentru ",["$","span",null,{"className":"font-script inline-block pb-[0.12em] text-[1.12em] leading-none text-clay","children":"tine"}]]}],["$","p",null,{"className":"mt-4 max-w-[46ch] text-ink/70","children":"Pași ilustrativi, nu un program medical. Poți parcurge tot circuitul sau doar o parte."}]]}],["$","$L1a",null,{"className":"mt-12 grid gap-0 md:grid-cols-4","children":[["$","$L1b","01",{"children":["$","div",null,{"className":"border-t border-ink/15 py-6 md:border-t-0 md:border-l md:px-5 md:py-0 first:md:border-l-0 first:md:pl-0","children":[["$","p",null,{"className":"font-serif text-sm tracking-wide text-clay","children":"01"}],["$","h3",null,{"className":"mt-3 font-serif text-2xl text-pine","children":"Saună"}],["$","p",null,{"className":"mt-3 text-[0.98rem] leading-relaxed text-ink/70","children":"Căldură uscată, respirație lentă, lemn de miere. Cinci până la douăzeci de minute, după cum te simți."}]]}]}],"$L1c","$L1d","$L1e"]}]]}]}],"$L1f","$L20"],null,"$L21"]}],"p":false,"v":null}}]]
-11:[["children",{"s":"spa","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$12"},"c":"$Q13"}]]
-0:{"P":null,"c":["","spa"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$d","errorStyles":[],"errorScripts":null,"template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$L10",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$L10",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q11"},"h":{"r":["$","$1","h",{"children":[null,["$","$L23",null,{"children":"$L24"}],["$","$L26",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$27",null,{"name":"Next.Metadata","children":"$L28"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$29",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"oowTz_LANgrwWh_6SQSUo"}
-2a:I[4496,["212","$3","500","$4","437","$5","642","$6","3","$f"],"FaqAccordion"]
+11:[["children",{"s":"spa","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$12"},"c":"$Q13"}]]
+0:{"P":null,"c":["","spa"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$c","errorStyles":[],"errorScripts":null,"template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$L10",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$L10",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q11"},"h":{"r":["$","$1","h",{"children":[null,["$","$L23",null,{"children":"$L24"}],["$","$L26",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$27",null,{"name":"Next.Metadata","children":"$L28"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$29",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"f1I_CQjZN6sZXMxFnKQ19"}
+2a:I[4496,["212","$3","500","$4","437","$5","642","$e","3","$f"],"FaqAccordion"]
 2b:I[484,[],"OutletBoundary"]
 12:C
 1c:["$","$L1b","02",{"children":["$","div",null,{"className":"border-t border-ink/15 py-6 md:border-t-0 md:border-l md:px-5 md:py-0 first:md:border-l-0 first:md:pl-0","children":[["$","p",null,{"className":"font-serif text-sm tracking-wide text-clay","children":"02"}],["$","h3",null,{"className":"mt-3 font-serif text-2xl text-pine","children":"Răcire"}],["$","p",null,{"className":"mt-3 text-[0.98rem] leading-relaxed text-ink/70","children":"Aer curat sau un duș scurt. Corpul își regăsește ritmul înainte de următorul pas."}]]}]}]

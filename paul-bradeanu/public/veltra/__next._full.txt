@@ -3,24 +3,23 @@
 3:"static/chunks/212-21d39745b08cc7c0.js"
 4:"static/chunks/500-fc3b64d9ff4a32a7.js"
 5:"static/chunks/437-8f6df1705fed9fb2.js"
-6:"static/chunks/642-daf15319962cd668.js"
-7:"static/chunks/309-4b9892069b2844b3.js"
-8:"static/chunks/720-9618de237d48222e.js"
-9:"static/chunks/app/layout-a08db64f85fb0b31.js"
-a:I[9664,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","177","$9"],"SiteShell"]
-b:I[7121,[],""]
-c:"static/chunks/app/error-446b496c626cb340.js"
-d:I[9648,["500","$4","39","$c"],"default"]
-e:I[4581,[],""]
-f:"static/chunks/app/not-found-5ad156f7610e6db7.js"
-10:I[8500,["500","$4","345","$f"],""]
-13:I[484,[],"OutletBoundary"]
-14:"$Sreact.suspense"
-16:"ViewportBoundary"
-17:I[484,[],"$16"]
-19:"MetadataBoundary"
-1a:I[484,[],"$19"]
-1c:I[7123,[],"default",1]
+6:"static/chunks/309-4b9892069b2844b3.js"
+7:"static/chunks/720-9618de237d48222e.js"
+8:"static/chunks/app/layout-a7c258f81e2c234f.js"
+9:I[9664,["592","$2","212","$3","500","$4","437","$5","309","$6","720","$7","177","$8"],"SiteShell"]
+a:I[7121,[],""]
+b:"static/chunks/app/error-446b496c626cb340.js"
+c:I[9648,["500","$4","39","$b"],"default"]
+d:I[4581,[],""]
+e:"static/chunks/app/not-found-5ad156f7610e6db7.js"
+f:I[8500,["500","$4","345","$e"],""]
+12:I[484,[],"OutletBoundary"]
+13:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[484,[],"$15"]
+18:"MetadataBoundary"
+19:I[484,[],"$18"]
+1b:I[7123,[],"default",1]
 :HL["/veltra/_next/static/media/48410f3df60da620-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/media/536d9d896eaf4f3f-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/media/7b89a4fd5e90ede0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -28,28 +27,29 @@ f:"static/chunks/app/not-found-5ad156f7610e6db7.js"
 :HL["/veltra/_next/static/media/8760c4774489e4ba-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/css/6c3ed663a9bacb2f.css","style"]
-11:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$L12",null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":false,"v":null}}]]
-0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$d","errorStyles":[],"errorScripts":null,"template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$L10",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$L10",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q11"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":"$L18"}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":"$L1b"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1c",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"oowTz_LANgrwWh_6SQSUo"}
-18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-1d:I[6869,[],"IconMark"]
-15:null
-1b:[["$","title","0",{"children":"VELTRA Alpine Hideaway & Spa"}],["$","meta","1",{"name":"description","content":"Refugiu montan premium în Valea Cerbului Alb. Camere elegante, SPA, restaurant ARBOR și experiențe în natură. Proiect demonstrativ."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","4",{"property":"og:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","5",{"property":"og:locale","content":"ro_RO"}],["$","meta","6",{"property":"og:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.webp"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","10",{"name":"twitter:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","11",{"name":"twitter:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.webp"}],["$","link","12",{"rel":"icon","href":"/veltra/favicon.svg"}],["$","$L1d","13",{}]]
+10:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$L11",null,["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":false,"v":null}}]]
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$c","errorStyles":[],"errorScripts":null,"template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$Lf",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$Lf",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q10"},"h":{"r":["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$13",null,{"name":"Next.Metadata","children":"$L1a"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1b",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"f1I_CQjZN6sZXMxFnKQ19"}
+17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[6869,[],"IconMark"]
+14:null
+1a:[["$","title","0",{"children":"VELTRA Alpine Hideaway & Spa"}],["$","meta","1",{"name":"description","content":"Refugiu montan premium în Valea Cerbului Alb. Camere elegante, SPA, restaurant ARBOR și experiențe în natură. Proiect demonstrativ."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","4",{"property":"og:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","5",{"property":"og:locale","content":"ro_RO"}],["$","meta","6",{"property":"og:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.webp"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"VELTRA Alpine Hideaway & Spa"}],["$","meta","10",{"name":"twitter:description","content":"O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile."}],["$","meta","11",{"name":"twitter:image","content":"https://paulbradeanu.com/veltra/images/exterior/hero-golden-hour.webp"}],["$","link","12",{"rel":"icon","href":"/veltra/favicon.svg"}],["$","$L1c","13",{}]]
+1d:"static/chunks/642-daf15319962cd668.js"
 1e:"static/chunks/801-6299f1bf51b0877d.js"
-1f:"static/chunks/app/page-269a1fc6219d4600.js"
-20:I[3920,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"Hero"]
+1f:"static/chunks/app/page-bbc660f5126e5c32.js"
+20:I[3920,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"Hero"]
 21:"FacilitiesPreview"
-22:I[9962,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"$21"]
-23:I[6419,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"RoomsIntro"]
+22:I[9962,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"$21"]
+23:I[6419,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"RoomsIntro"]
 24:"VeltraFloorExplorer"
-25:I[7914,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"$24"]
+25:I[7914,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"$24"]
 26:"ExperiencesPreview"
-27:I[8320,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"$26"]
+27:I[8320,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"$26"]
 28:"RestaurantPreview"
-29:I[6176,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"$28"]
-2a:I[5891,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"SpaPreview"]
-2b:I[8523,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"GalleryPreview"]
-2c:I[8070,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"GuestStories"]
+29:I[6176,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"$28"]
+2a:I[5891,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"SpaPreview"]
+2b:I[8523,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"GalleryPreview"]
+2c:I[8070,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"GuestStories"]
 2d:"SurroundingsPreview"
-2e:I[516,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"$2d"]
-2f:I[9780,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","801","$1e","974","$1f"],"BookingCta"]
-12:[["$","$L20",null,{}],["$","$L22",null,{}],["$","$L23",null,{"rooms":[{"slug":"forest-room","name":"Forest Room","description":"O cameră caldă, cu texturi naturale și priveliște spre pădure, creată pentru dimineți lente.","capacityMax":2,"areaSqm":28,"viewType":"pădure","basePriceBan":89000,"image":"/veltra/images/rooms/forest-primary.jpg"},{"slug":"mountain-view-suite","name":"Mountain View Suite","description":"Suită spațioasă cu ferestre panoramice și priveliște largă spre crestele munților.","capacityMax":3,"areaSqm":42,"viewType":"munte","basePriceBan":129000,"image":"/veltra/images/rooms/mountain-suite-primary.jpg"},{"slug":"panorama-loft","name":"Panorama Loft","description":"Suită la etaj, cu geamuri generoase și o atmosferă contemporană, aproape de cer.","capacityMax":4,"areaSqm":55,"viewType":"panoramă","basePriceBan":169000,"image":"/veltra/images/rooms/panorama-loft-primary.jpg"}]}],["$","$L25",null,{}],["$","$L27",null,{}],["$","$L29",null,{}],["$","$L2a",null,{}],["$","$L2b",null,{}],["$","$L2c",null,{}],["$","$L2e",null,{}],["$","$L2f",null,{}]]
+2e:I[516,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"$2d"]
+2f:I[9780,["592","$2","212","$3","500","$4","437","$5","642","$1d","309","$6","720","$7","801","$1e","974","$1f"],"BookingCta"]
+11:[["$","$L20",null,{}],["$","$L22",null,{}],["$","$L23",null,{"rooms":[{"slug":"forest-room","name":"Forest Room","description":"O cameră caldă, cu texturi naturale și priveliște spre pădure, creată pentru dimineți lente.","capacityMax":2,"areaSqm":28,"viewType":"pădure","basePriceBan":89000,"image":"/veltra/images/rooms/forest-primary.jpg"},{"slug":"mountain-view-suite","name":"Mountain View Suite","description":"Suită spațioasă cu ferestre panoramice și priveliște largă spre crestele munților.","capacityMax":3,"areaSqm":42,"viewType":"munte","basePriceBan":129000,"image":"/veltra/images/rooms/mountain-suite-primary.jpg"},{"slug":"panorama-loft","name":"Panorama Loft","description":"Suită la etaj, cu geamuri generoase și o atmosferă contemporană, aproape de cer.","capacityMax":4,"areaSqm":55,"viewType":"panoramă","basePriceBan":169000,"image":"/veltra/images/rooms/panorama-loft-primary.jpg"}]}],["$","$L25",null,{}],["$","$L27",null,{}],["$","$L29",null,{}],["$","$L2a",null,{}],["$","$L2b",null,{}],["$","$L2c",null,{}],["$","$L2e",null,{}],["$","$L2f",null,{}]]

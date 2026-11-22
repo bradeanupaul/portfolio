@@ -5,4 +5,4 @@
 :HL["/elan-skin/_next/static/css/26dc12bca8922c2c.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"ingrediente","h":64,"c":"$Q2"}]]
-0:{"b":"_ofEPZcjusUIPmJblaakq","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"Md0S5BYQ9DQA4DmrfCj70","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

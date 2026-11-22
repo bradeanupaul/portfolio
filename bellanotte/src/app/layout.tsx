@@ -17,15 +17,17 @@ import "./globals.css";
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
+  preload: true,
 });
 
 const sansFont = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   display: "swap",
+  preload: true,
 });
 
 const scriptFont = Great_Vibes({
@@ -33,6 +35,7 @@ const scriptFont = Great_Vibes({
   subsets: ["latin", "latin-ext"],
   weight: "400",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

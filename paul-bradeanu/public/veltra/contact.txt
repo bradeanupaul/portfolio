@@ -3,22 +3,22 @@
 3:"static/chunks/212-21d39745b08cc7c0.js"
 4:"static/chunks/500-fc3b64d9ff4a32a7.js"
 5:"static/chunks/437-8f6df1705fed9fb2.js"
-6:"static/chunks/642-daf15319962cd668.js"
-7:"static/chunks/309-4b9892069b2844b3.js"
-8:"static/chunks/720-9618de237d48222e.js"
-9:"static/chunks/app/layout-a08db64f85fb0b31.js"
-a:I[9664,["592","$2","212","$3","500","$4","437","$5","642","$6","309","$7","720","$8","177","$9"],"SiteShell"]
-b:I[7121,[],""]
-c:"static/chunks/app/error-446b496c626cb340.js"
-d:I[9648,["500","$4","39","$c"],"default"]
-e:I[4581,[],""]
+6:"static/chunks/309-4b9892069b2844b3.js"
+7:"static/chunks/720-9618de237d48222e.js"
+8:"static/chunks/app/layout-a7c258f81e2c234f.js"
+9:I[9664,["592","$2","212","$3","500","$4","437","$5","309","$6","720","$7","177","$8"],"SiteShell"]
+a:I[7121,[],""]
+b:"static/chunks/app/error-446b496c626cb340.js"
+c:I[9648,["500","$4","39","$b"],"default"]
+d:I[4581,[],""]
+e:"static/chunks/642-daf15319962cd668.js"
 f:"static/chunks/135-72606f029188d2e7.js"
 10:"static/chunks/app/contact/page-cdc1e3c2a4c9307a.js"
-11:I[8500,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],""]
-15:I[4804,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"RevealHero"]
-16:I[4804,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"RevealImage"]
-17:I[8437,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"Image"]
-18:I[4804,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"Reveal"]
+11:I[8500,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],""]
+15:I[4804,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"RevealHero"]
+16:I[4804,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"RevealImage"]
+17:I[8437,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"Image"]
+18:I[4804,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"Reveal"]
 22:"ViewportBoundary"
 23:I[484,[],"$22"]
 25:"MetadataBoundary"
@@ -34,12 +34,12 @@ f:"static/chunks/135-72606f029188d2e7.js"
 :HL["/veltra/_next/static/css/6c3ed663a9bacb2f.css","style"]
 13:X
 14:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[[["$","section",null,{"className":"overflow-hidden bg-ivory pt-[calc(var(--header-h)+1.75rem)] pb-12 md:pb-16","children":["$","div",null,{"className":"hero-shell grid items-end gap-10 lg:grid-cols-12","children":[["$","$L15",null,{"className":"lg:col-span-6","children":[["$","p",null,{"className":"text-[0.78rem] font-semibold tracking-[0.22em] text-clay uppercase","children":"Contact"}],["$","h1",null,{"className":"mt-4 max-w-[16ch] font-serif text-[clamp(2.4rem,5vw,3.9rem)] leading-[1.04] text-pine text-balance","children":["Un mesaj și începe ",["$","span",null,{"className":"font-script inline-block pb-[0.12em] text-[1.12em] leading-none text-clay","children":"povestea"}]]}],["$","p",null,{"className":"mt-5 max-w-[40ch] text-[1.08rem] leading-relaxed text-ink/75","children":"Camere, weekenduri de grup, meniuri speciale sau facilități. Completați formularul demonstrativ; datele rămân în mediul local de demo."}],["$","ul",null,{"className":"mt-8 flex flex-wrap gap-6 text-sm text-pine/80","children":[["$","li",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"viewBox":"0 0 24 24","className":"h-5 w-5 text-clay","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"3.5","y":"6","width":"17","height":"12","stroke":"currentColor","strokeWidth":"1.5"}],["$","path",null,{"d":"M4 7l8 6 8-6","stroke":"currentColor","strokeWidth":"1.5"}]]}],"oaspeti@veltra.demo"]}],["$","li",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"viewBox":"0 0 24 24","className":"h-5 w-5 text-clay","fill":"none","aria-hidden":true,"children":[["$","circle",null,{"cx":"12","cy":"12","r":"8.5","stroke":"currentColor","strokeWidth":"1.5"}],["$","path",null,{"d":"M12 8v4.5l3 1.5","stroke":"currentColor","strokeWidth":"1.5","strokeLinecap":"square"}]]}],"răspuns ilustrativ"]}]]}]]}],["$","$L16",null,{"from":"right","immediate":true,"className":"relative aspect-[5/4] max-h-[22rem] bg-forest-ink/8 lg:col-span-6 lg:justify-self-end lg:w-full","children":["$","div",null,{"className":"absolute inset-0","style":{"clipPath":"polygon(8% 0, 100% 0, 100% 100%, 0 100%)"},"children":["$","$L17",null,{"src":"/veltra/images/about/about-human-moment.webp","alt":"Intrare și lumină caldă la VELTRA","fill":true,"priority":true,"className":"object-cover object-[50%_35%]","sizes":"(max-width: 1024px) 100vw, 48vw"}]}]}]]}]}],["$","section",null,{"className":"bg-[#EFE6DA] py-16 md:py-24","children":["$","div",null,{"className":"hero-shell grid gap-10 lg:grid-cols-12 lg:gap-12","children":[["$","$L18",null,{"className":"lg:col-span-5","children":["$","aside",null,{"className":"surface-dark bg-forest-ink p-7 text-[#F3EBE1] md:p-9","children":["$L19","$L1a","$L1b"]}]}],"$L1c"]}]}],"$L1d","$L1e","$L1f","$L20"],null,"$L21"]}],"p":false,"v":null}}]]
-12:[["children",{"s":"contact","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$13"},"c":"$Q14"}]]
-0:{"P":null,"c":["","contact"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$d","errorStyles":[],"errorScripts":null,"template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$L11",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$L11",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q12"},"h":{"r":["$","$1","h",{"children":[null,["$","$L23",null,{"children":"$L24"}],["$","$L26",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$27",null,{"name":"Next.Metadata","children":"$L28"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$29",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"oowTz_LANgrwWh_6SQSUo"}
-2a:I[9892,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"ContactForm"]
-2b:I[4804,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"RevealStagger"]
-2c:I[4804,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"RevealItem"]
-2d:I[4496,["212","$3","500","$4","437","$5","642","$6","135","$f","977","$10"],"FaqAccordion"]
+12:[["children",{"s":"contact","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$13"},"c":"$Q14"}]]
+0:{"P":null,"c":["","contact"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/veltra/_next/static/css/6c3ed663a9bacb2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","className":"__variable_d53cf1 __variable_67b956 __variable_013dd7 h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col bg-hero-beige text-ink","children":["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","error":"$c","errorStyles":[],"errorScripts":null,"template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"id":"$undefined","className":"section-pad surface-dark flex min-h-[70vh] items-center pt-24","children":["$","div",null,{"className":"container-editorial max-w-xl text-center","children":[["$","p",null,{"className":"eyebrow text-stone","children":"404"}],["$","h1",null,{"className":"mt-4 font-serif text-4xl text-ivory","children":"Poteca se oprește aici"}],["$","p",null,{"className":"mt-5 text-ivory/80","children":"Pagina căutată nu există în proiectul demonstrativ VELTRA. Reveniți la camere sau la pagina principală."}],["$","div",null,{"className":"mt-10 flex flex-wrap justify-center gap-3","children":[["$","$L11",null,{"href":"/","className":"btn btn-primary","children":"Acasă"}],["$","$L11",null,{"href":"/camere","className":"btn btn-ghost","children":"Camere"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],"p":false,"v":null},"c":"$Q12"},"h":{"r":["$","$1","h",{"children":[null,["$","$L23",null,{"children":"$L24"}],["$","$L26",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$27",null,{"name":"Next.Metadata","children":"$L28"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$29",[]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"f1I_CQjZN6sZXMxFnKQ19"}
+2a:I[9892,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"ContactForm"]
+2b:I[4804,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"RevealStagger"]
+2c:I[4804,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"RevealItem"]
+2d:I[4496,["212","$3","500","$4","437","$5","642","$e","135","$f","977","$10"],"FaqAccordion"]
 2e:I[484,[],"OutletBoundary"]
 13:C
 19:["$","h2",null,{"className":"font-serif text-2xl md:text-[1.75rem]","children":"Date demonstrative"}]
