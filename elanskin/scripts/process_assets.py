@@ -125,11 +125,14 @@ def cutout_packshot(src_name: str, dest_png: Path, dest_jpg: Path) -> None:
     raw = Image.open(src).convert("RGBA")
     print(f"rembg {src.name}...")
     cut = remove(raw)
+    # Harden soft rembg alpha — milky edges read as a transparent overlay on white.
+    r, g, b, a = cut.split()
+    a = a.point(lambda v: 255 if v > 40 else (0 if v < 20 else int((v - 20) * (255 / 20))))
+    cut = Image.merge("RGBA", (r, g, b, a))
     cut.save(dest_png, "PNG")
-    # Also keep a soft pearl composite JPG for places that expect jpg
-    pearl = Image.new("RGBA", cut.size, (250, 248, 253, 255))
-    composed = Image.alpha_composite(pearl, cut).convert("RGB")
-    composed.save(dest_jpg, "JPEG", quality=92)
+    white = Image.new("RGBA", cut.size, (255, 255, 255, 255))
+    composed = Image.alpha_composite(white, cut).convert("RGB")
+    composed.save(dest_jpg, "JPEG", quality=94)
     print(f"cutout -> {dest_png.relative_to(ROOT)} and {dest_jpg.name}")
 
 

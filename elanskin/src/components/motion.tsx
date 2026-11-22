@@ -158,6 +158,7 @@ export function RevealLine({
 export function StaggerChildren({
   children,
   className,
+  trigger = "view",
 }: {
   children: ReactNode;
   className?: string;
@@ -173,11 +174,15 @@ export function StaggerChildren({
     <motion.div
       className={className}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.08, margin: "0px 0px -3% 0px" }}
+      {...(trigger === "mount"
+        ? { animate: "show" as const }
+        : {
+            whileInView: "show" as const,
+            viewport: { once: true, amount: 0.05, margin: "0px 0px -2% 0px" },
+          })}
       variants={{
         hidden: {},
-        show: { transition: { staggerChildren: 0.06, delayChildren: 0.03 } },
+        show: { transition: { staggerChildren: 0.05, delayChildren: 0.02 } },
       }}
     >
       {Children.map(children, (child, index) => {
@@ -187,8 +192,9 @@ export function StaggerChildren({
             key={child.key ?? index}
             className="h-full"
             variants={{
-              hidden: { opacity: 0, y: 14 },
-              show: { opacity: 1, y: 0, transition: { duration: 0.4, ease } },
+              // Keep near-visible so product photos never look veiled if in-view misses.
+              hidden: { opacity: 0.96, y: 10 },
+              show: { opacity: 1, y: 0, transition: { duration: 0.35, ease } },
             }}
           >
             {child}

@@ -221,14 +221,20 @@ export function ShopBrowser({
         </div>
       ) : (
         <div className="mt-8 space-y-10">
-          <StaggerChildren className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <StaggerChildren
+            trigger="mount"
+            className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          >
             {visible.slice(0, 8).map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
           </StaggerChildren>
           <ShopBanner banner={banner} />
           {visible.length > 8 ? (
-            <StaggerChildren className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <StaggerChildren
+              trigger="mount"
+              className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            >
               {visible.slice(8).map((product) => (
                 <ProductCard key={product.slug} product={product} />
               ))}

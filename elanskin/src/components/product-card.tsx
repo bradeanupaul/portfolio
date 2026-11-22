@@ -44,7 +44,7 @@ export function ProductCard({ product }: { product: Product }) {
               <Media
                 src={secondary}
                 alt=""
-                className="absolute inset-0 bg-white opacity-0 transition duration-500 group-hover:opacity-100 motion-reduce:group-hover:opacity-0"
+                className="pointer-events-none absolute inset-0 bg-white opacity-0 transition duration-500 group-hover:opacity-100 motion-reduce:hidden"
                 sizes="(min-width: 1280px) 22vw, (min-width: 768px) 33vw, 50vw"
                 fit="contain"
                 tone="white"
