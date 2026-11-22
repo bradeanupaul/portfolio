@@ -159,7 +159,7 @@ export function CaseStudyView({
       </div>
 
       {/* Overview band */}
-      <section className="relative mt-20 border-y border-white/6 bg-[linear-gradient(180deg,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.2)_100%)] py-16 md:mt-24 md:py-20">
+      <section className="relative mt-14 border-y border-white/6 bg-[linear-gradient(180deg,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.2)_100%)] section-y-md md:mt-16 lg:mt-20">
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(37,140,255,0.45),transparent)]"
           aria-hidden
@@ -224,7 +224,7 @@ export function CaseStudyView({
       </section>
 
       {/* Capabilities + engineering */}
-      <div className="container-shell relative mt-16 md:mt-20">
+      <div className="container-shell relative mt-12 md:mt-14 lg:mt-16">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
           <div className="relative pl-5 md:pl-6">
             <span
@@ -307,13 +307,13 @@ export function CaseStudyView({
       </div>
 
       {/* Highlights */}
-      <div className="container-shell relative mt-20 md:mt-24">
+      <div className="container-shell relative mt-14 md:mt-16 lg:mt-20">
         <CaseStudyHighlights slug={project.slug} projectName={project.name} />
       </div>
 
       {/* Gallery */}
       {details.length ? (
-        <section className="relative mt-20 md:mt-24">
+        <section className="relative mt-14 md:mt-16 lg:mt-20">
           <div className="container-shell">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
@@ -365,7 +365,7 @@ export function CaseStudyView({
       ) : null}
 
       {/* Challenges */}
-      <section className="relative mt-20 border-y border-white/6 bg-[radial-gradient(700px_280px_at_50%_0%,rgba(37,140,255,0.08),transparent_65%)] py-16 md:mt-24 md:py-20">
+      <section className="relative mt-14 border-y border-white/6 bg-[radial-gradient(700px_280px_at_50%_0%,rgba(37,140,255,0.08),transparent_65%)] section-y-md md:mt-16 lg:mt-20">
         <div className="container-shell">
           <RevealItem as="p" className="eyebrow" delay={0.02}>
             Proces
@@ -400,7 +400,7 @@ export function CaseStudyView({
       </section>
 
       {/* Performance */}
-      <div className="container-shell relative mt-16 md:mt-20">
+      <div className="container-shell relative mt-12 md:mt-14 lg:mt-16">
         <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
           <div>
             <RevealItem as="p" className="eyebrow" delay={0.02}>
@@ -457,7 +457,7 @@ export function CaseStudyView({
 
       {/* Related */}
       {related.length ? (
-        <div className="container-shell relative mt-20 md:mt-24">
+        <div className="container-shell relative mt-14 md:mt-16 lg:mt-20">
           <RevealItem as="p" className="eyebrow" delay={0.02}>
             Continuă
           </RevealItem>
@@ -510,7 +510,7 @@ export function CaseStudyView({
       ) : null}
 
       {/* CTA */}
-      <div className="container-shell relative mt-20 md:mt-24">
+      <div className="container-shell relative mt-14 md:mt-16 lg:mt-20">
         <div className="glass-card relative overflow-hidden rounded-[22px] border border-white/15 px-6 py-8 md:px-10 md:py-10">
           <div
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(720px_280px_at_0%_50%,rgba(37,140,255,0.08),transparent_55%)]"

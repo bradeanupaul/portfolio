@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 
 export default function ContactPage() {
   return (
-    <div className="relative pb-10 pt-6 md:pb-14 md:pt-10">
+    <div className="relative pb-10 pt-5 md:pb-12 md:pt-8 lg:pt-10">
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[360px] bg-[radial-gradient(640px_280px_at_18%_0%,rgba(37,140,255,0.03),transparent_60%),radial-gradient(460px_220px_at_88%_10%,rgba(15,79,154,0.025),transparent_55%)]"
         aria-hidden

@@ -41,7 +41,7 @@ const salesHighlightIcons = [Users, MessagesSquare] as const;
 
 export function ExperienceTeaser() {
   return (
-    <section className="border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)] py-12 md:py-24">
+    <section className="section-y-lg border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)]">
       <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
         <div>
           <SectionHeading

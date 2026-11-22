@@ -55,7 +55,7 @@ export function Header() {
           />
 
           <nav
-            className="hidden items-center gap-0.5 xl:flex"
+            className="hidden min-w-0 flex-1 items-center justify-center gap-0 lg:flex xl:gap-0.5"
             aria-label="Navigare principală"
           >
             {navLinks.map((link) => {
@@ -68,7 +68,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "font-nav relative rounded-full px-3.5 py-2 text-[13px] transition-colors",
+                    "font-nav relative shrink-0 rounded-full px-2 py-1.5 text-[11px] tracking-[0.12em] transition-colors xl:px-3 xl:py-2 xl:text-[13px] xl:tracking-[0.14em]",
                     active
                       ? "text-[var(--text-primary)]"
                       : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]",
@@ -76,7 +76,7 @@ export function Header() {
                 >
                   {link.label}
                   {active ? (
-                    <span className="absolute inset-x-3 -bottom-0.5 h-px bg-[var(--accent)]" />
+                    <span className="absolute inset-x-2 -bottom-0.5 h-px bg-[var(--accent)] xl:inset-x-3" />
                   ) : null}
                 </Link>
               );
@@ -94,7 +94,7 @@ export function Header() {
             </Link>
             <button
               type="button"
-              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--line-on-dark)] text-[var(--text-primary)] sm:h-10 sm:w-10 xl:hidden"
+              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--line-on-dark)] text-[var(--text-primary)] sm:h-10 sm:w-10 lg:hidden"
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? "Închide meniul" : "Deschide meniul"}

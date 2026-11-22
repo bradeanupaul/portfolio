@@ -43,7 +43,7 @@ const phases = [
 
 export function EngineeringApproach() {
   return (
-    <section id="approach" className="scroll-mt-24 border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)] py-12 md:py-24">
+    <section id="approach" className="section-y-lg scroll-mt-24 border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)]">
       <div className="container-shell">
         <SectionHeading
           eyebrow="Cum lucrez"

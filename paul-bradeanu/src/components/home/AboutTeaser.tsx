@@ -43,7 +43,7 @@ const focusAreas = [
 
 export function AboutTeaser() {
   return (
-    <section className="section-light relative overflow-hidden py-8 md:py-24">
+    <section className="section-light section-y-lg relative overflow-hidden">
       <div
         className="absolute inset-0 bg-[radial-gradient(820px_420px_at_12%_30%,rgba(37,140,255,0.1),transparent_58%)]"
         aria-hidden

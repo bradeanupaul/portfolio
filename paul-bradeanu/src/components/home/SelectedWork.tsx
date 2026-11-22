@@ -231,7 +231,7 @@ export function SelectedWork() {
   return (
     <section
       id="selected-work"
-      className="relative scroll-mt-24 overflow-x-clip overflow-y-visible border-y border-[var(--line-on-dark)] bg-[var(--bg-deep)] py-8 md:scroll-mt-28 md:py-24"
+      className="section-y-lg relative scroll-mt-24 overflow-x-clip overflow-y-visible border-y border-[var(--line-on-dark)] bg-[var(--bg-deep)] md:scroll-mt-28"
     >
       <div className="container-shell relative max-md:overflow-x-clip md:overflow-visible">
         <SectionHeading

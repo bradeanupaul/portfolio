@@ -32,7 +32,7 @@ const featureSets: Record<string, { icon: typeof FileSearch; label: string }[]> 
 
 export function SoftwareProjects() {
   return (
-    <section id="software" className="scroll-mt-24 border-y border-white/5 bg-black py-12 pb-8 md:py-24">
+    <section id="software" className="section-y-lg scroll-mt-24 border-y border-white/5 bg-black">
       <div className="container-shell">
         <SectionHeading
           eyebrow="Software"

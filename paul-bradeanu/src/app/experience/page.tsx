@@ -112,7 +112,7 @@ const experienceKeywords = [
 
 export default function ExperiencePage() {
   return (
-    <div className="pb-12 pt-6 md:pb-20 md:pt-14">
+    <div className="pb-10 pt-5 md:pb-14 md:pt-8 lg:pb-16 lg:pt-10">
       <div className="container-shell">
         <Stagger stagger={0.06} delay={0.02} wrap={false}>
           <RevealItem as="p" variant="fadeLeft" className="eyebrow">
@@ -315,7 +315,7 @@ export default function ExperiencePage() {
               <RevealItem
                 as="h2"
                 delay={0.06}
-                className="mt-2 section-title !text-[clamp(1.65rem,6.5vw,3.4rem)] text-[var(--ink-on-dark)] md:!text-[clamp(2rem,3.2vw,3.4rem)]"
+                className="section-title mt-2 text-[var(--ink-on-dark)]"
               >
                 Tehnologii
               </RevealItem>
@@ -433,7 +433,7 @@ export default function ExperiencePage() {
               <RevealItem
                 as="h2"
                 delay={0.06}
-                className="section-title !text-[clamp(1.65rem,6.5vw,3.4rem)] text-[var(--ink-on-dark)] md:!text-[clamp(2rem,3.2vw,3.4rem)]"
+                className="section-title text-[var(--ink-on-dark)]"
               >
                 Studii
               </RevealItem>
@@ -459,7 +459,7 @@ export default function ExperiencePage() {
             <RevealItem
               as="h2"
               delay={0.06}
-              className="section-title !text-[clamp(1.65rem,6.5vw,3.4rem)] text-[var(--ink-on-dark)] md:!text-[clamp(2rem,3.2vw,3.4rem)]"
+              className="section-title text-[var(--ink-on-dark)]"
             >
               Proiecte software
             </RevealItem>

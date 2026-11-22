@@ -44,27 +44,27 @@ export function HomeHero() {
   };
 
   return (
-    <section className="relative flex flex-col overflow-hidden pt-2 md:min-h-[calc(100dvh-var(--header-h))] md:pt-10">
+    <section className="home-hero relative flex flex-col overflow-hidden pt-2 md:min-h-[calc(100dvh-var(--header-h))] md:pt-6 lg:pt-8">
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(900px_480px_at_78%_-8%,rgba(37,140,255,0.04),transparent_58%),radial-gradient(640px_380px_at_8%_30%,rgba(15,79,154,0.03),transparent_55%)]"
         aria-hidden
       />
       <HeroArt />
 
-      <div className="container-shell relative z-10 flex min-h-0 flex-1 items-center py-4 pb-6 md:py-10">
-        <div className="max-w-xl text-left lg:max-w-[34rem]">
+      <div className="container-shell relative z-10 flex min-h-0 flex-1 items-center py-4 pb-5 md:py-6 lg:py-8">
+        <div className="max-w-xl text-left xl:max-w-[36rem]">
           <motion.p className="eyebrow" {...item(0.08)}>
             FULL STACK DEVELOPER · FRONTEND & AI
           </motion.p>
 
-          <h1 className="font-display mt-3 text-[clamp(2.05rem,7.2vw,4.35rem)] font-semibold leading-[1.08] tracking-[-0.035em] text-[var(--text-primary)] md:mt-5">
+          <h1 className="font-display mt-2.5 text-[clamp(1.85rem,4.2vw+0.4rem,3.35rem)] font-semibold leading-[1.08] tracking-[-0.035em] text-[var(--text-primary)] md:mt-3 lg:mt-4">
             <motion.span className="block" {...item(0.18, 28)}>
               Construiesc
             </motion.span>
             <motion.span className="block" {...item(0.28, 28)}>
               produse digitale
             </motion.span>
-            <motion.span className="mt-1.5 block" {...item(0.42, 12)}>
+            <motion.span className="mt-1 block" {...item(0.42, 12)}>
               <TypewriterHand
                 text={HAND_TEXT}
                 reduceMotion={reduceMotion}
@@ -75,7 +75,7 @@ export function HomeHero() {
           </h1>
 
           <motion.p
-            className="mt-4 max-w-lg text-[15px] leading-relaxed text-[var(--text-secondary)] md:mt-6 md:text-lg"
+            className="mt-3 max-w-lg text-[15px] leading-relaxed text-[var(--text-secondary)] md:mt-4 md:text-base lg:mt-5 lg:text-lg"
             {...item(0.72)}
           >
             Sunt Paul Brădeanu, dezvoltator software specializat în React, Next.js,
@@ -84,7 +84,7 @@ export function HomeHero() {
           </motion.p>
 
           <motion.div
-            className="mt-5 flex w-full flex-col gap-2 sm:flex-row sm:gap-3 md:mt-8"
+            className="mt-4 flex w-full flex-col gap-2 sm:flex-row sm:gap-3 md:mt-5 lg:mt-6"
             {...item(0.88)}
           >
             <ButtonLink
@@ -106,7 +106,7 @@ export function HomeHero() {
           </motion.div>
 
           <motion.div
-            className="mt-5 flex items-center gap-2 text-[var(--text-secondary)] md:mt-8 md:gap-3"
+            className="mt-4 flex items-center gap-2 text-[var(--text-secondary)] md:mt-5 md:gap-3 lg:mt-6"
             {...item(1.02)}
           >
             <a
@@ -142,7 +142,7 @@ export function HomeHero() {
       </div>
 
       <motion.div
-        className="relative z-10 hidden shrink-0 justify-center pb-20 pt-10 md:flex md:pb-24 md:pt-12"
+        className="home-hero-scroll relative z-10 hidden shrink-0 justify-center pb-6 pt-4 md:flex lg:pb-10 lg:pt-6"
         {...item(1.15, 16)}
       >
         <Link

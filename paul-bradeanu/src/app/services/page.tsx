@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 
 export default function ServicesPage() {
   return (
-    <div className="relative pb-14 pt-8 md:pb-20 md:pt-14">
+    <div className="relative pb-10 pt-5 md:pb-14 md:pt-8 lg:pb-16 lg:pt-10">
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[380px] bg-[radial-gradient(720px_300px_at_12%_0%,rgba(37,140,255,0.04),transparent_60%),radial-gradient(520px_240px_at_90%_8%,rgba(15,79,154,0.03),transparent_55%)]"
         aria-hidden
@@ -134,7 +134,7 @@ export default function ServicesPage() {
             </RevealItem>
             <RevealItem
               as="h2"
-              className="section-title !text-[clamp(1.65rem,6.5vw,3.4rem)] text-[var(--ink-on-dark)] md:!text-[clamp(2rem,3.2vw,3.4rem)] sm:flex-1"
+              className="section-title text-[var(--ink-on-dark)] sm:flex-1"
             >
               Cum lucrăm
             </RevealItem>

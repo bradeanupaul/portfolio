@@ -128,7 +128,7 @@ export function ContactCTA() {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent" />
       </div>
 
-      <div className="container-shell relative z-10 py-10 md:py-20">
+      <div className="container-shell section-y-md relative z-10">
         <Stagger stagger={0.06} delay={0.04} wrap={false}>
           <RevealItem as="p" variant="fadeLeft" className="eyebrow">
             Contact

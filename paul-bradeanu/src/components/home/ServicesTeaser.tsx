@@ -96,7 +96,7 @@ export function ServicesTeaser() {
   return (
     <section
       id="services"
-      className="relative scroll-mt-24 overflow-hidden border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)] py-12 pb-8 md:py-24"
+      className="section-y-lg relative scroll-mt-24 overflow-hidden border-y border-[var(--line-on-dark)] bg-[var(--bg-ink)]"
     >
       <div
         className="pointer-events-none absolute -right-20 top-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(37,140,255,0.03),transparent_65%)] blur-2xl"

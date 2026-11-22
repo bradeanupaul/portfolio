@@ -59,7 +59,7 @@ export function Toolkit() {
   const ActiveIcon = groupIcons[current.id];
 
   return (
-    <section id="toolkit" className="scroll-mt-24 border-y border-[var(--line-on-dark)] bg-[var(--bg-deep)] py-12 md:py-24">
+    <section id="toolkit" className="section-y-lg scroll-mt-24 border-y border-[var(--line-on-dark)] bg-[var(--bg-deep)]">
       <div className="container-shell">
         <SectionHeading
           eyebrow="Toolkit"

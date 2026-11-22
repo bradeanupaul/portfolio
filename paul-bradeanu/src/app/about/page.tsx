@@ -76,7 +76,7 @@ const focusAreas = [
 
 export default function AboutPage() {
   return (
-    <div className="relative pb-12 pt-6 md:pb-20 md:pt-14">
+    <div className="relative pb-10 pt-5 md:pb-14 md:pt-8 lg:pb-16 lg:pt-10">
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(700px_300px_at_18%_0%,rgba(37,140,255,0.04),transparent_60%),radial-gradient(480px_240px_at_88%_12%,rgba(15,79,154,0.025),transparent_55%)]"
         aria-hidden

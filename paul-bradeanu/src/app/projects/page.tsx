@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 
 export default function ProjectsPage() {
   return (
-    <div className="relative pb-10 pt-5 md:pb-24 md:pt-14">
+    <div className="relative pb-10 pt-5 md:pb-14 md:pt-8 lg:pb-16 lg:pt-10">
       <div className="container-shell relative">
         <div className="grid gap-3 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-end lg:gap-8">
           <div>
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
             <RevealItem
               as="h1"
               delay={0.08}
-              className="mt-1.5 max-w-none text-balance text-[clamp(1.65rem,6.5vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] text-[var(--ink-on-dark)] md:mt-3 md:max-w-[16ch]"
+              className="mt-1.5 max-w-none text-balance text-[clamp(1.65rem,3.5vw+0.5rem,2.85rem)] font-semibold leading-[1.05] tracking-[-0.035em] text-[var(--ink-on-dark)] md:mt-2.5 md:max-w-[16ch] xl:text-[clamp(2rem,3vw,3.1rem)]"
             >
               Cinci experiențe web, gândite ca produse reale.
             </RevealItem>

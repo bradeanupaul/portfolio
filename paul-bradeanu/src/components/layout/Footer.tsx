@@ -38,7 +38,7 @@ export function Footer() {
         aria-hidden
       />
 
-      <div className="container-shell relative grid gap-10 py-16 md:grid-cols-[1.25fr_1fr_1fr_1.1fr]">
+      <div className="container-shell section-y-md relative grid gap-8 md:grid-cols-[1.25fr_1fr_1fr_1.1fr] md:gap-10">
         <div>
           <Link href="/" aria-label="Paul Brădeanu, pagina principală" className="inline-flex">
             <Image

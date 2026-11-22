@@ -48,7 +48,7 @@ export function SectionHeading({
         as="h2"
         variant="fadeUp"
         className={cn(
-          "section-title !text-[clamp(1.65rem,6.5vw,3.4rem)] md:!text-[clamp(2rem,3.2vw,3.4rem)]",
+          "section-title",
           tone === "light"
             ? "text-[var(--ink-on-light)]"
             : "text-[var(--text-primary)]",
@@ -61,7 +61,7 @@ export function SectionHeading({
           as="p"
           variant="fadeUp"
           className={cn(
-            "mt-3 text-[15px] leading-relaxed md:mt-4 md:text-lg",
+            "mt-3 max-w-2xl text-[15px] leading-relaxed md:mt-3.5 md:text-base lg:mt-4 lg:text-lg",
             tone === "light"
               ? "text-[var(--muted-on-light)]"
               : "text-[var(--text-secondary)]",
