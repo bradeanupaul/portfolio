@@ -29,11 +29,12 @@ export const metadata: Metadata = {
   ...buildMetadata(),
   icons: {
     icon: [
-      { url: "/favicon.ico" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/branding/logo-pb-mark.png", type: "image/png" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
     ],
-    apple: [{ url: "/apple-touch-icon.png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,

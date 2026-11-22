@@ -114,7 +114,7 @@ export function ServicesTeaser() {
           className="mt-8 md:mt-10"
           ariaLabel="Servicii"
           trackClassName="max-lg:-mx-3 max-lg:px-3 lg:grid lg:grid-cols-2 lg:gap-5 lg:overflow-visible lg:snap-none lg:pb-0 xl:grid-cols-4"
-          slideClassName="h-full max-lg:w-[min(88vw,360px)] lg:w-auto lg:min-w-0 lg:shrink lg:snap-none"
+          slideClassName="h-full max-lg:w-[min(calc(100vw-2.5rem),340px)] lg:w-auto lg:min-w-0 lg:shrink lg:snap-none"
         >
           {highlights.map((service, index) => {
             const Icon = cardIcons[index] ?? Globe2;

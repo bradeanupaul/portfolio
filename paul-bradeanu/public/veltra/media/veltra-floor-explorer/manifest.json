@@ -3,7 +3,7 @@
   "fps": 12,
   "width": 1280,
   "format": "webp",
-  "pathPattern": "/media/veltra-floor-explorer/frames/frame_{index}.webp",
+  "pathPattern": "/veltra/media/veltra-floor-explorer/frames/frame_{index}.webp",
   "background": "#013125",
   "clipRanges": {
     "01-camera-orbit": {

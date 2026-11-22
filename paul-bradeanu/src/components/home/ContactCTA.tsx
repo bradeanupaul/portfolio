@@ -170,7 +170,7 @@ export function ContactCTA() {
 
           <RevealItem className="relative mt-6 sm:mt-8">
             <div
-              className="md:hidden"
+              className="overflow-x-clip md:hidden"
               aria-label="Canale de contact"
               style={{
                 maskImage:

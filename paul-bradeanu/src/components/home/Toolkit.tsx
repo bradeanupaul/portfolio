@@ -72,7 +72,7 @@ export function Toolkit() {
           <SnapCarousel
             ariaLabel="Toolkit"
             trackClassName="-mx-3 px-3 sm:-mx-4 sm:px-4"
-            slideClassName="w-[min(88vw,360px)]"
+            slideClassName="w-[min(calc(100vw-2.5rem),340px)]"
             dotsHideFrom="lg"
           >
             {skillGroups.map((group) => {
@@ -88,7 +88,7 @@ export function Toolkit() {
                       alt=""
                       fill
                       className="object-cover object-center"
-                      sizes="88vw"
+                      sizes="(max-width: 768px) 90vw, 360px"
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(0,0,0,0.88)_100%)]" />

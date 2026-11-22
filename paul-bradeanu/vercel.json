@@ -2,5 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
   "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  "buildCommand": "npm run build",
+  "rewrites": [
+    { "source": "/bella-notte", "destination": "/bella-notte/index.html" },
+    { "source": "/veltra", "destination": "/veltra/index.html" },
+    { "source": "/vanta-ink", "destination": "/vanta-ink/index.html" },
+    { "source": "/aurelia-estates", "destination": "/aurelia-estates/index.html" },
+    { "source": "/elan-skin", "destination": "/elan-skin/index.html" }
+  ]
 }

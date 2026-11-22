@@ -160,6 +160,76 @@ function assertExportSafe(appDir) {
   }
 }
 
+/**
+ * Next basePath prefixes Link/`_next`, but many `next/image` + public paths in
+ * static HTML/RSC stay root-absolute (`/images/...`). Rewrite them to `/{slug}/...`.
+ */
+function collectAssetRoots(destDir) {
+  const roots = new Set(["_next"]);
+  for (const name of readdirSync(destDir)) {
+    if (name.startsWith("__next") || name.startsWith(".")) continue;
+    const full = join(destDir, name);
+    const st = statSync(full);
+    if (st.isDirectory()) {
+      // Route folders usually have a sibling `.html` (e.g. meniu/ + meniu.html).
+      if (existsSync(join(destDir, `${name}.html`))) continue;
+      if (name === "_not-found") continue;
+      roots.add(name);
+      continue;
+    }
+    if (
+      /^(favicon\.(ico|svg)|apple-touch-icon\.png|icon-\d+\.png|manifest\.(json|webmanifest)|robots\.txt|.*\.(svg|png|ico|jpg|jpeg|webp|gif))$/i.test(
+        name,
+      )
+    ) {
+      roots.add(name);
+    }
+  }
+  return [...roots].sort((a, b) => b.length - a.length);
+}
+
+function rewriteAssetPaths(destDir, slug) {
+  const roots = collectAssetRoots(destDir);
+  if (roots.length === 0) return 0;
+
+  const alt = roots.map((r) => r.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  // "/images/..." or "\/images\/..." (escaped in JS bundles), skip if already /{slug}/
+  const pattern = new RegExp(
+    String.raw`(?<![A-Za-z0-9_-])(\/|\\\/)(?!${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:\/|\\\/))(${alt})(?=\/|\\\/|"|'|\)|\s|$|\?)`,
+    "g",
+  );
+
+  const textExt = /\.(html?|js|css|txt|json|xml|webmanifest|svg|map)$/i;
+  let files = 0;
+
+  function walkWrite(dir) {
+    for (const name of readdirSync(dir)) {
+      const full = join(dir, name);
+      const st = statSync(full);
+      if (st.isDirectory()) {
+        walkWrite(full);
+        continue;
+      }
+      if (!textExt.test(name)) continue;
+      const before = readFileSync(full, "utf8");
+      const after = before.replace(pattern, (_match, slash, root) => {
+        if (slash === "\\/") return `\\/${slug}\\/${root}`;
+        return `/${slug}/${root}`;
+      });
+      if (after !== before) {
+        writeFileSync(full, after);
+        files += 1;
+      }
+    }
+  }
+
+  walkWrite(destDir);
+  console.log(
+    `[demos] rewrote asset paths in ${files} files under public/${slug} (roots: ${roots.filter((r) => r !== "_next").join(", ") || "—"})`,
+  );
+  return files;
+}
+
 function buildDemo(demo) {
   const { dir, slug, stashApp = [], stubActions = false } = demo;
   const appDir = join(monorepoRoot, dir);
@@ -202,13 +272,30 @@ function buildDemo(demo) {
     mkdirSync(publicRoot, { recursive: true });
     cpSync(outDir, destDir, { recursive: true });
     console.log(`[demos] copied to public/${slug}`);
+    rewriteAssetPaths(destDir, slug);
   } finally {
     restoreInstantExports(instantTouched);
     restoreStash(stashed);
   }
 }
 
+function rewriteExistingExports() {
+  for (const demo of demos) {
+    const destDir = join(publicRoot, demo.slug);
+    if (!existsSync(destDir)) {
+      console.warn(`[demos] no export at public/${demo.slug} — skip rewrite`);
+      continue;
+    }
+    rewriteAssetPaths(destDir, demo.slug);
+  }
+}
+
 function main() {
+  if (process.env.REWRITE_DEMO_PATHS_ONLY === "1") {
+    rewriteExistingExports();
+    return;
+  }
+
   if (process.env.SKIP_DEMO_STATIC === "1") {
     console.log("[demos] SKIP_DEMO_STATIC=1 — skipping");
     return;
