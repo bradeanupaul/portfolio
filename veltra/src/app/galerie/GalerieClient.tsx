@@ -32,13 +32,13 @@ function chunkColumns(items: GalleryImage[], count: number) {
 const FEATURES = [
   {
     id: "feat-dip-a",
-    src: "/images/facilities/veltra-sauna.jpg",
+    src: "/images/facilities/veltra-sauna.webp",
     alt: "Saună VELTRA",
     caption: "Căldură uscată",
   },
   {
     id: "feat-dip-b",
-    src: "/images/restaurant/food-closeup.jpg",
+    src: "/images/restaurant/food-closeup.webp",
     alt: "Farfurie ARBOR, detaliu",
     caption: "Farfurie de seară",
   },
@@ -290,7 +290,7 @@ export function GalerieClient() {
             viewport={{ once: true, amount: 0.35 }}
           >
             <Image
-              src="/images/facilities/veltra-ciubar.jpg"
+              src="/images/facilities/veltra-ciubar.webp"
               alt="Ciubăr pe terasa lodge-ului"
               fill
               className="object-cover"

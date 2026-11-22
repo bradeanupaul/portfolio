@@ -7,17 +7,17 @@ import { Container } from "@/components/ui/Container";
 
 const showcase = [
   {
-    src: "/images/menu/food-tagliatelle.jpg",
+    src: "/images/menu/food-tagliatelle.webp",
     alt: "Tagliatelle cu trufe",
     className: "aspect-[4/5]",
   },
   {
-    src: "/images/menu/food-margherita.jpg",
+    src: "/images/menu/food-margherita.webp",
     alt: "Pizza Margherita",
     className: "aspect-square",
   },
   {
-    src: "/images/menu/food-tiramisu.jpg",
+    src: "/images/menu/food-tiramisu.webp",
     alt: "Tiramisu",
     className: "aspect-[3/4]",
   },
@@ -30,7 +30,8 @@ export function MenuHero() {
     <section className="relative isolate overflow-hidden border-b border-bn-border">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/hero/pasta-wide.jpg"
+          src="/images/hero/pasta-wide.webp"
+          fetchPriority="high"
           alt=""
           fill
           priority

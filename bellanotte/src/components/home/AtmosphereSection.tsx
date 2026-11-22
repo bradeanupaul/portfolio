@@ -13,7 +13,7 @@ export function AtmosphereSection() {
       aria-labelledby="atmosphere-heading"
     >
       <Image
-        src="/images/atmosphere/romantic-table.jpg"
+        src="/images/atmosphere/romantic-table.webp"
         alt="Masă romantică la lumina lumânărilor în restaurantul Bella Notte"
         fill
         sizes="100vw"

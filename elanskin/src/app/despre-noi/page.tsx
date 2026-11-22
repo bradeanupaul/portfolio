@@ -69,7 +69,7 @@ export default function Page() {
       <Container className="grid items-center gap-10 py-16 md:grid-cols-2">
         <SoftParallax>
           <Media
-            src="/assets/editorial/atelier.jpg"
+            src="/assets/editorial/atelier.webp"
             alt="Masă de atelier cu sticle de îngrijire în lumină pală."
             className="aspect-[5/4] rounded-[1.8rem]"
           />
@@ -139,7 +139,7 @@ export default function Page() {
 
       <Container className="grid items-center gap-8 py-8 md:grid-cols-2">
         <Media
-          src="/assets/botanical-ingredients.jpg"
+          src="/assets/botanical-ingredients.webp"
           alt="Ingrediente botanice pe fond de lavandă pală."
           className="aspect-[5/4] rounded-[1.8rem]"
         />
@@ -157,7 +157,7 @@ export default function Page() {
 
       <Container className="grid items-center gap-8 py-12 md:grid-cols-[1.2fr_0.8fr]">
         <Media
-          src="/assets/editorial/packaging.jpg"
+          src="/assets/editorial/packaging.webp"
           alt="Ambalaje ÉLAN pe o masă deschisă."
           className="aspect-[16/10] rounded-[1.8rem]"
         />

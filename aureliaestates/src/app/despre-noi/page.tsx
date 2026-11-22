@@ -73,7 +73,7 @@ export default function AboutPage() {
           <div className="relative pb-2 lg:col-span-7 lg:pb-8">
             <div className="relative aspect-[16/11] overflow-hidden rounded-[20px] bg-ice shadow-[0_16px_40px_rgba(12,23,40,0.08)]">
               <Image
-                src="/images/hero/hero-flagship-villa.jpg"
+                src="/images/hero/hero-flagship-villa.webp"
                 alt="Vilă contemporană lângă lac, folosită ca imagine de prezentare"
                 fill
                 priority
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <div className="absolute -bottom-6 left-6 hidden w-[36%] overflow-hidden rounded-[16px] shadow-[0_16px_40px_rgba(12,23,40,0.16)] sm:block">
               <div className="relative aspect-[3/2]">
                 <Image
-                  src="/images/editorial/detail-stone-glass.jpg"
+                  src="/images/editorial/detail-stone-glass.webp"
                   alt="Detaliu de piatră și sticlă"
                   fill
                   sizes="24vw"
@@ -180,7 +180,7 @@ export default function AboutPage() {
         <Container className="grid items-center gap-8 py-10 md:py-12 lg:grid-cols-12">
           <div className="relative aspect-[3/2] overflow-hidden rounded-[18px] shadow-soft lg:col-span-5">
             <Image
-              src="/images/lifestyle/family.jpg"
+              src="/images/lifestyle/family.webp"
               alt="Interior cald, potrivit unei case de familie"
               fill
               sizes="(min-width: 1024px) 36vw, 100vw"

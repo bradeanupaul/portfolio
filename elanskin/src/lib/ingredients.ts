@@ -19,7 +19,7 @@ export const ingredients: Ingredient[] = [
       "O găsești în formulele de zi, acolo unde textura trebuie să rămână lejeră până seara.",
     ],
     productSlugs: ["quiet-pore", "glow-drops", "dew-theory", "night-reset"],
-    image: "/assets/ingredients/niacinamida.jpg",
+    image: "/assets/ingredients/niacinamida.webp",
   },
   {
     slug: "acid-hialuronic",
@@ -31,7 +31,7 @@ export const ingredients: Ingredient[] = [
       "Îl punem în seruri, în ceață și în crema de contur, acolo unde textura trebuie să rămână ușoară.",
     ],
     productSlugs: ["glow-drops", "mist-hour", "dew-theory", "linen-veil", "calm-current"],
-    image: "/assets/ingredients/acid-hialuronic.jpg",
+    image: "/assets/ingredients/acid-hialuronic.webp",
   },
   {
     slug: "centella",
@@ -43,7 +43,7 @@ export const ingredients: Ingredient[] = [
       "Nu înlocuiește un consult când pielea doare, arde sau se schimbă brusc.",
     ],
     productSlugs: ["calm-current", "night-reset", "velvet-barrier"],
-    image: "/assets/ingredients/centella.jpg",
+    image: "/assets/ingredients/centella.webp",
   },
   {
     slug: "ceramide",
@@ -55,7 +55,7 @@ export const ingredients: Ingredient[] = [
       "Le cauți când tenul se simte strâns după curățare, nu când vrei un finisaj mat.",
     ],
     productSlugs: ["velvet-barrier", "dawn-balm", "afterglow-oil", "linen-veil"],
-    image: "/assets/ingredients/ceramide.jpg",
+    image: "/assets/ingredients/ceramide.webp",
   },
   {
     slug: "ascorbil-glucozid",
@@ -67,7 +67,7 @@ export const ingredients: Ingredient[] = [
       "Dimineața, peste el vine întotdeauna protecția solară.",
     ],
     productSlugs: ["glow-drops"],
-    image: "/assets/ingredients/ascorbil-glucozid.jpg",
+    image: "/assets/ingredients/ascorbil-glucozid.webp",
   },
   {
     slug: "pantenol",
@@ -79,7 +79,7 @@ export const ingredients: Ingredient[] = [
       "Este un ingredient de senzație imediată, prezent și în laptele de corp.",
     ],
     productSlugs: ["cloud-cleanse", "calm-current", "amber-milk", "pearl-polish"],
-    image: "/assets/ingredients/pantenol.jpg",
+    image: "/assets/ingredients/pantenol.webp",
   },
   {
     slug: "squalane",
@@ -91,7 +91,7 @@ export const ingredients: Ingredient[] = [
       "Stă în uleiul facial, în balsamul de curățare și în crema de seară.",
     ],
     productSlugs: ["afterglow-oil", "soft-ritual", "dawn-balm", "velvet-barrier", "amber-milk"],
-    image: "/assets/ingredients/squalane.jpg",
+    image: "/assets/ingredients/squalane.webp",
   },
   {
     slug: "extract-de-orez",
@@ -103,7 +103,7 @@ export const ingredients: Ingredient[] = [
       "Este un ingredient de senzație, nu o promisiune de transformare.",
     ],
     productSlugs: ["glow-drops", "pearl-polish", "silk-cushion"],
-    image: "/assets/ingredients/extract-de-orez.jpg",
+    image: "/assets/ingredients/extract-de-orez.webp",
   },
   {
     slug: "oxid-de-zinc",
@@ -115,7 +115,7 @@ export const ingredients: Ingredient[] = [
       "Formula este o loțiune fină, ca să poată fi purtată în fiecare dimineață, nu doar la mare.",
     ],
     productSlugs: ["daily-veil-spf-50"],
-    image: "/assets/ingredients/oxid-de-zinc.jpg",
+    image: "/assets/ingredients/oxid-de-zinc.webp",
   },
 ];
 

@@ -15,7 +15,7 @@ export const agents: Agent[] = [
     ],
     email: "elena.marinescu@aureliaestates.example",
     phone: "+40 700 000 101",
-    image: "/images/agents/elena-marinescu-ls.jpg",
+    image: "/images/agents/elena-marinescu-ls.webp",
     quote:
       "O casă bună se recunoaște în liniștea pe care o lasă după ce pleci.",
   },
@@ -33,7 +33,7 @@ export const agents: Agent[] = [
     ],
     email: "andrei.popescu@aureliaestates.example",
     phone: "+40 700 000 102",
-    image: "/images/agents/andrei-popescu-ls.jpg",
+    image: "/images/agents/andrei-popescu-ls.webp",
     quote:
       "Caut locuințe în care orașul se simte aproape, fără să intre în casă.",
   },
@@ -51,7 +51,7 @@ export const agents: Agent[] = [
     ],
     email: "ioana.radu@aureliaestates.example",
     phone: "+40 700 000 103",
-    image: "/images/agents/ioana-radu-ls.jpg",
+    image: "/images/agents/ioana-radu-ls.webp",
     quote:
       "Lumina de seară, deasupra orașului, schimbă felul în care trăiești o zi.",
   },
@@ -69,7 +69,7 @@ export const agents: Agent[] = [
     ],
     email: "mihai.constantin@aureliaestates.example",
     phone: "+40 700 000 104",
-    image: "/images/agents/mihai-constantin-ls.jpg",
+    image: "/images/agents/mihai-constantin-ls.webp",
     quote:
       "O familie are nevoie de spațiu care se poate împărți, nu doar de metri.",
   },
@@ -87,7 +87,7 @@ export const agents: Agent[] = [
     ],
     email: "clara.ionescu@aureliaestates.example",
     phone: "+40 700 000 105",
-    image: "/images/agents/clara-ionescu-ls.jpg",
+    image: "/images/agents/clara-ionescu-ls.webp",
     quote: "La munte, priveliștea face parte din arhitectură.",
   },
 ];

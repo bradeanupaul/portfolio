@@ -12,7 +12,7 @@ export type AssetEntry = {
 export const assetManifest: AssetEntry[] = [
   {
     role: "hero-desktop",
-    path: "/assets/hero-desktop.jpg",
+    path: "/assets/hero-desktop.webp",
     aspect: "16:9",
     alt: "Trei sticle de îngrijire pe un podium translucid liliac.",
     status: "generated",
@@ -20,7 +20,7 @@ export const assetManifest: AssetEntry[] = [
   },
   {
     role: "hero-mobile",
-    path: "/assets/hero-mobile.jpg",
+    path: "/assets/hero-mobile.webp",
     aspect: "3:4",
     alt: "Ser lavandă pe lumină perlă, cadrăj vertical.",
     status: "generated",
@@ -28,7 +28,7 @@ export const assetManifest: AssetEntry[] = [
   },
   {
     role: "macro-dropper",
-    path: "/assets/macro-dropper.jpg",
+    path: "/assets/macro-dropper.webp",
     aspect: "4:3",
     alt: "Picătură de ser pe vârful unui dropper de sticlă.",
     status: "generated",
@@ -36,7 +36,7 @@ export const assetManifest: AssetEntry[] = [
   },
   {
     role: "botanical-ingredients",
-    path: "/assets/botanical-ingredients.jpg",
+    path: "/assets/botanical-ingredients.webp",
     aspect: "4:3",
     alt: "Macro botanic cu texturi de gel și citrice.",
     status: "generated",
@@ -60,7 +60,7 @@ export const assetManifest: AssetEntry[] = [
   },
   {
     role: "og",
-    path: "/assets/og.jpg",
+    path: "/assets/og.webp",
     aspect: "1:1",
     alt: "Campanie ÉLAN SKIN pentru share social.",
     status: "generated",

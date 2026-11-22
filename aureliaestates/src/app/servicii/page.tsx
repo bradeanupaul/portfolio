@@ -77,7 +77,7 @@ export default function ServicesPage() {
           <div className="overflow-hidden rounded-[20px] bg-ice shadow-[0_18px_48px_rgba(12,23,40,0.07)] lg:grid lg:min-h-[640px] lg:grid-cols-12">
             <div className="relative min-h-[320px] sm:min-h-[420px] lg:col-span-7 lg:min-h-full">
               <Image
-                src="/images/lifestyle/urban.jpg"
+                src="/images/lifestyle/urban.webp"
                 alt="Interior urban luminos, folosit pentru capitolul de cumpărare"
                 fill
                 priority
@@ -144,7 +144,7 @@ export default function ServicesPage() {
 
           <div className="relative mt-8 min-h-[420px] overflow-hidden rounded-[20px] md:min-h-[520px]">
             <Image
-              src="/images/editorial/seller-cta-blue-hour.jpg"
+              src="/images/editorial/seller-cta-blue-hour.webp"
               alt="Reședință la ora albastră, cu ferestre luminate"
               fill
               sizes="(min-width: 1024px) 1200px, 100vw"
@@ -186,7 +186,7 @@ export default function ServicesPage() {
           <div className="overflow-hidden rounded-[20px] bg-white shadow-[0_18px_48px_rgba(12,23,40,0.07)]">
             <div className="relative min-h-[280px] sm:min-h-[380px] md:min-h-[440px]">
               <Image
-                src="/images/properties/penthouse-rooftop-twilight.jpg"
+                src="/images/properties/penthouse-rooftop-twilight.webp"
                 alt="Terasă de penthouse la amurg, folosită pentru capitolul de închiriere"
                 fill
                 sizes="(min-width: 1024px) 1200px, 100vw"

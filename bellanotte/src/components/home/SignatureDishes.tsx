@@ -14,7 +14,7 @@ const dishes = [
     name: "Tagliatelle al Tartufo",
     description: "Paste fresh, unt montato, Parmigiano 24 luni și trufe negre.",
     price: 92,
-    image: "/images/menu/food-tagliatelle.jpg",
+    image: "/images/menu/food-tagliatelle.webp",
     featured: true,
   },
   {
@@ -22,7 +22,7 @@ const dishes = [
     name: "Risotto ai Funghi Porcini",
     description: "Carnaroli, porcini sauté și o notă de ulei de trufe.",
     price: 78,
-    image: "/images/menu/food-risotto-porcini.jpg",
+    image: "/images/menu/food-risotto-porcini.webp",
     featured: false,
   },
   {
@@ -30,7 +30,7 @@ const dishes = [
     name: "Filetto di Manzo",
     description: "Mușchi de vită, reducție de Barolo și piure de țelină.",
     price: 128,
-    image: "/images/menu/food-filetto.jpg",
+    image: "/images/menu/food-filetto.webp",
     featured: false,
   },
 ] as const;

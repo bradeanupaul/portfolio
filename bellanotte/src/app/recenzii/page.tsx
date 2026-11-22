@@ -21,7 +21,7 @@ export default function RecenziiPage() {
     <>
       <section className="relative isolate min-h-[48vh] overflow-hidden border-b border-bn-border/40">
         <Image
-          src="/images/atmosphere/chandeliers.jpg"
+          src="/images/atmosphere/chandeliers.webp"
           alt=""
           fill
           priority
@@ -69,11 +69,11 @@ export default function RecenziiPage() {
               const imageRight = index % 2 === 1;
               const imageSrc =
                 [
-                  "/images/atmosphere/romantic-table.jpg",
-                  "/images/restaurant/interior-main.jpg",
-                  "/images/events/wine-tasting.jpg",
-                  "/images/reservations/candlelit.jpg",
-                ][index % 4] ?? "/images/restaurant/interior-main.jpg";
+                  "/images/atmosphere/romantic-table.webp",
+                  "/images/restaurant/interior-main.webp",
+                  "/images/events/wine-tasting.webp",
+                  "/images/reservations/candlelit.webp",
+                ][index % 4] ?? "/images/restaurant/interior-main.webp";
 
               return (
                 <AnimatedReveal

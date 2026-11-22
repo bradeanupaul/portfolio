@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
   description:
     "Ristorante Italiano în inima Clujului. Paste proaspete, risotto cremos și o atmosferă caldă, cu lumânări și vinuri alese.",
   url: getSiteUrl(),
-  defaultOgImage: "/images/hero/pasta-truffle.jpg",
+  defaultOgImage: "/images/hero/pasta-truffle.webp",
   locale: "ro-RO",
   themeColor: "#0A0908",
 };

@@ -31,7 +31,7 @@ export default function ImprejurimiPage() {
           </RevealHero>
           <RevealImage from="right" immediate className="media-frame relative aspect-[16/10]">
             <Image
-              src="/images/surroundings/panorama.jpg"
+              src="/images/surroundings/panorama.webp"
               alt="Panoramă montană văzută de la VELTRA"
               fill
               className="object-cover"

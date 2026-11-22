@@ -36,7 +36,7 @@ export default function ContactPage() {
       {/* Chapter 1: cinematic hero */}
       <section className="relative isolate min-h-[min(78vh,720px)] overflow-hidden">
         <Image
-          src="/images/contact/hero-twilight.jpg"
+          src="/images/contact/hero-twilight.webp"
           alt="Intrarea Bella Notte la amurg, cu lumină caldă și arce de piatră"
           fill
           priority
@@ -256,7 +256,7 @@ export default function ContactPage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/atmosphere/cta-dining-evening.jpg"
+            src="/images/atmosphere/cta-dining-evening.webp"
             alt=""
             fill
             className="object-cover object-center"

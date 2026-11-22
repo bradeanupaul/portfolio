@@ -28,23 +28,23 @@ export async function generateMetadata({
 const art = {
   "ritualul-diminetii": {
     tone: "dawn",
-    hero: "/assets/editorial/ritual.jpg",
-    secondary: "/assets/collections/curatare.jpg",
+    hero: "/assets/editorial/ritual.webp",
+    secondary: "/assets/collections/curatare.webp",
   },
   "ritualul-serii": {
     tone: "dusk",
-    hero: "/assets/editorial/texturi.jpg",
-    secondary: "/assets/collections/noapte.jpg",
+    hero: "/assets/editorial/texturi.webp",
+    secondary: "/assets/collections/noapte.webp",
   },
   "lumina-lina": {
     tone: "glow",
-    hero: "/assets/collections/lumina-lina.jpg",
-    secondary: "/assets/macro-dropper.jpg",
+    hero: "/assets/collections/lumina-lina.webp",
+    secondary: "/assets/macro-dropper.webp",
   },
   "confort-zilnic": {
     tone: "soft",
-    hero: "/assets/collections/confort-zilnic.jpg",
-    secondary: "/assets/editorial/atelier.jpg",
+    hero: "/assets/collections/confort-zilnic.webp",
+    secondary: "/assets/editorial/atelier.webp",
   },
 } as const;
 

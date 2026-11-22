@@ -143,7 +143,7 @@ function PizzaLayout({
     <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-8">
       <AnimatedReveal variant="mask" className="relative aspect-[4/3] max-h-[440px] overflow-hidden border border-bn-border lg:aspect-auto lg:min-h-[400px] lg:max-h-[480px]">
         <Image
-          src="/images/atmosphere/pizza-oven.jpg"
+          src="/images/atmosphere/pizza-oven.webp"
           alt="Cuptor pe lemne"
           fill
           className="object-cover"
@@ -164,7 +164,7 @@ function RisottoLayout({ items }: { items: MenuItem[] }) {
     <div className="relative mt-8 overflow-hidden border border-bn-border">
       <div className="absolute inset-0">
         <Image
-          src={items[0]?.image ?? "/images/menu/food-risotto.jpg"}
+          src={items[0]?.image ?? "/images/menu/food-risotto.webp"}
           alt=""
           fill
           className="object-cover opacity-30"

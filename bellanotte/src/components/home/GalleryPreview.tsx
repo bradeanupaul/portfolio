@@ -11,27 +11,27 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const images = [
   {
-    src: "/images/restaurant/interior-main.jpg",
+    src: "/images/restaurant/interior-main.webp",
     alt: "Salon elegant cu mese pregătite pentru seară",
     label: "Restaurant",
   },
   {
-    src: "/images/gallery/pizza-oven.jpg",
+    src: "/images/gallery/pizza-oven.webp",
     alt: "Pizza artizanală în cuptorul pe lemne",
     label: "Pizza",
   },
   {
-    src: "/images/gallery/terrace.jpg",
+    src: "/images/gallery/terrace.webp",
     alt: "Terasă italiană iluminată seara",
     label: "Terasă",
   },
   {
-    src: "/images/gallery/wine.jpg",
+    src: "/images/gallery/wine.webp",
     alt: "Pahar de vin roșu la lumina lumânării",
     label: "Vin",
   },
   {
-    src: "/images/atmosphere/romantic-table.jpg",
+    src: "/images/atmosphere/romantic-table.webp",
     alt: "Masă romantică cu lumânări",
     label: "Atmosferă",
   },

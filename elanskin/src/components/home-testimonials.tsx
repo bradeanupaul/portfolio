@@ -13,7 +13,7 @@ const featured = {
   name: "Mara D.",
   productSlug: "glow-drops",
   detail: "Textură fluidă, dimineața",
-  image: "/assets/editorial/routine.jpg",
+  image: "/assets/editorial/routine.webp",
 };
 
 const shorts = [

@@ -28,10 +28,10 @@ export async function generateMetadata({
 }
 
 const asideImage: Record<string, string> = {
-  "ordinea-pasilor": "/assets/editorial/routine.jpg",
-  "texturi-de-seara": "/assets/editorial/textura.jpg",
-  "cum-citesti-o-eticheta": "/assets/botanical-ingredients.jpg",
-  "un-ritual-scurt": "/assets/editorial/atelier.jpg",
+  "ordinea-pasilor": "/assets/editorial/routine.webp",
+  "texturi-de-seara": "/assets/editorial/textura.webp",
+  "cum-citesti-o-eticheta": "/assets/botanical-ingredients.webp",
+  "un-ritual-scurt": "/assets/editorial/atelier.webp",
 };
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
@@ -68,7 +68,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 <p>{paragraph}</p>
                 {index === 2 ? (
                   <Media
-                    src={asideImage[article.slug] ?? "/assets/editorial/textura.jpg"}
+                    src={asideImage[article.slug] ?? "/assets/editorial/textura.webp"}
                     alt=""
                     className="my-8 aspect-[16/9] rounded-[1.4rem]"
                   />

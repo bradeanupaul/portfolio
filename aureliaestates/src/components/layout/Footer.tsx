@@ -14,7 +14,7 @@ export function Footer() {
         <Reveal>
           <Link href="/" className="inline-block w-[240px] sm:w-[280px] md:w-[300px]">
             <Image
-              src="/branding/logo-stacked-metallic.png"
+              src="/branding/logo-stacked-metallic.webp"
               alt="Aurelia Estates"
               width={468}
               height={262}

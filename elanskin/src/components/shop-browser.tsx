@@ -41,25 +41,25 @@ const banners = {
     href: "/colectii/ritualul-serii",
     title: "Ritualul serii",
     lede: "Texturi moi pentru când lumina scade. Poți lua un singur produs din listă.",
-    image: "/assets/editorial/texturi.jpg",
+    image: "/assets/editorial/texturi.webp",
   },
   lumina: {
     href: "/colectii/lumina-lina",
     title: "Lumină lină",
     lede: "Un ser fluid și o cremă care lasă tenul treaz, fără film greu.",
-    image: "/assets/macro-dropper.jpg",
+    image: "/assets/macro-dropper.webp",
   },
   confort: {
     href: "/colectii/confort-zilnic",
     title: "Confort zilnic",
     lede: "Gesturi blânde, de dimineață până seara. Exfolierea rămâne rară.",
-    image: "/assets/editorial/atelier.jpg",
+    image: "/assets/editorial/atelier.webp",
   },
   dimineata: {
     href: "/colectii/ritualul-diminetii",
     title: "Ritualul dimineții",
     lede: "Câteva gesturi limpezi, apoi ziua poate începe. Voalul stă la final.",
-    image: "/assets/editorial/ritual.jpg",
+    image: "/assets/editorial/ritual.webp",
   },
 };
 

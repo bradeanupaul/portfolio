@@ -63,7 +63,7 @@ export default function ContactPage() {
             </Reveal>
             <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-[20px] shadow-[0_16px_40px_rgba(12,23,40,0.1)]">
               <Image
-                src="/images/editorial/facade-detail.jpg"
+                src="/images/editorial/facade-detail.webp"
                 alt="Detaliu de fațadă contemporană, piatră și sticlă"
                 fill
                 priority

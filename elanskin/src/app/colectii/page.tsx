@@ -30,10 +30,10 @@ const shared: { icon: SectionIconName; title: string; copy: string }[] = [
 ];
 
 const covers: Record<string, string> = {
-  "ritualul-diminetii": "/assets/editorial/ritual.jpg",
-  "ritualul-serii": "/assets/editorial/texturi.jpg",
-  "lumina-lina": "/assets/collections/lumina-lina.jpg",
-  "confort-zilnic": "/assets/collections/confort-zilnic.jpg",
+  "ritualul-diminetii": "/assets/editorial/ritual.webp",
+  "ritualul-serii": "/assets/editorial/texturi.webp",
+  "lumina-lina": "/assets/collections/lumina-lina.webp",
+  "confort-zilnic": "/assets/collections/confort-zilnic.webp",
 };
 
 export default function Page() {
@@ -50,7 +50,7 @@ export default function Page() {
         {lead ? (
           <Link href={`/colectii/${lead.slug}`} className="group grid items-end gap-6 md:grid-cols-[1.4fr_0.8fr]">
             <Media
-              src={covers[lead.slug] ?? "/assets/editorial/ritual.jpg"}
+              src={covers[lead.slug] ?? "/assets/editorial/ritual.webp"}
               alt={lead.name}
               className="aspect-[16/9] rounded-[1.8rem]"
               priority
@@ -67,7 +67,7 @@ export default function Page() {
             <Reveal key={collection.slug} delay={index * 0.05}>
               <Link href={`/colectii/${collection.slug}`} className="group block">
                 <Media
-                  src={covers[collection.slug] ?? "/assets/editorial/atelier.jpg"}
+                  src={covers[collection.slug] ?? "/assets/editorial/atelier.webp"}
                   alt={collection.name}
                   className="aspect-[4/5] rounded-[1.5rem]"
                 />

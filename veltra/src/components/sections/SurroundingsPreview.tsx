@@ -13,25 +13,25 @@ const seasons = [
     name: "Primăvară",
     mark: "01",
     text: "Trasee moi, aer umed, pădure care se trezește. Ideal pentru drumeții scurte și cafea pe terasă.",
-    src: "/images/home/experience-hiking.jpg",
+    src: "/images/home/experience-hiking.webp",
   },
   {
     name: "Vară",
     mark: "02",
     text: "Zile lungi, piscină încălzită seara, grătar pe terasă și plimbări până la apus.",
-    src: "/images/facilities/pool-dusk.jpg",
+    src: "/images/facilities/pool-dusk.webp",
   },
   {
     name: "Toamnă",
     mark: "03",
     text: "Culori calde, foc de seară, mese lungi și aer uscat de pădure.",
-    src: "/images/experiences/campfire.jpg",
+    src: "/images/experiences/campfire.webp",
   },
   {
     name: "Iarnă",
     mark: "04",
     text: "Abur din ciubăr, lumină joasă în lounge și peisaj alb printre conifere.",
-    src: "/images/home/hot-tub-evening.jpg",
+    src: "/images/home/hot-tub-evening.webp",
   },
 ] as const;
 

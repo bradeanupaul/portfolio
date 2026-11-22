@@ -66,7 +66,7 @@ export function HomePage() {
             <div className="relative">
               <SoftParallax>
                 <Media
-                  src="/assets/editorial/texturi.jpg"
+                  src="/assets/editorial/texturi.webp"
                   alt="Macro textură cosmetică."
                   className="aspect-[4/5] rounded-[1.6rem]"
                   sizes="(min-width: 1024px) 35vw, 100vw"
@@ -256,7 +256,7 @@ export function HomePage() {
       {/* D7 Texture immersion */}
       <section className="relative min-h-[52vh] overflow-hidden md:min-h-[58vh]">
         <Media
-          src="/assets/editorial/textura.jpg"
+          src="/assets/editorial/textura.webp"
           alt="Macro textură de cremă pe lumină amethyst."
           className="absolute inset-0"
           sizes="100vw"
@@ -415,7 +415,7 @@ export function HomePage() {
           </RevealGroup>
           <Reveal mode="mask" delay={0.08}>
             <Media
-              src="/assets/macro-dropper.jpg"
+              src="/assets/macro-dropper.webp"
               alt="Picături de ser pe sticlă."
               className="aspect-[5/4] rounded-[1.6rem] border border-white/10"
               sizes="(min-width: 1024px) 40vw, 100vw"

@@ -19,7 +19,7 @@ export function IntroductionSection() {
           <AnimatedReveal variant="mask" className="relative">
             <div className="relative aspect-[4/5] max-h-[480px] overflow-hidden bn-frame sm:aspect-[5/6] sm:max-h-[520px] lg:aspect-[4/5] lg:max-h-[560px]">
               <Image
-                src="/images/restaurant/interior-main.jpg"
+                src="/images/restaurant/interior-main.webp"
                 alt="Salonul Bella Notte, cu mese elegante, lumânări și lumină caldă"
                 fill
                 sizes="(max-width: 1024px) 100vw, 52vw"

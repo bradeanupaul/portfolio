@@ -632,7 +632,7 @@ function EditorialStrip() {
     <aside className="group col-span-full grid overflow-hidden rounded-[18px] bg-midnight text-white shadow-soft lg:grid-cols-12">
       <div className="relative aspect-[3/2] overflow-hidden lg:col-span-5 lg:aspect-auto lg:min-h-[240px]">
         <Image
-          src="/images/editorial/detail-stone-glass.jpg"
+          src="/images/editorial/detail-stone-glass.webp"
           alt="Detaliu de fațadă din piatră și sticlă"
           fill
           sizes="(min-width: 1024px) 30vw, 100vw"

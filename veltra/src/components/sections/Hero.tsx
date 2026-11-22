@@ -93,10 +93,11 @@ export function Hero() {
       >
         <Reveal kind="mask" immediate active={ready} delay={0.22} className="relative h-full w-full">
           <Image
-            src="/images/exterior/hero-beige-lodge.jpg"
+            src="/images/exterior/hero-beige-lodge.webp"
             alt=""
             fill
             priority
+            fetchPriority="high"
             sizes="(max-width: 1024px) 90vw, 88vw"
             className="object-cover object-[28%_42%]"
           />
@@ -105,10 +106,11 @@ export function Hero() {
 
       <div className="absolute inset-0 z-0 md:hidden" aria-hidden>
         <Image
-          src="/images/exterior/hero-beige-lodge.jpg"
+          src="/images/exterior/hero-beige-lodge.webp"
           alt=""
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover object-[58%_center]"
         />

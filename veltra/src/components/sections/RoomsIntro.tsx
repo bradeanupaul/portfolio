@@ -68,18 +68,18 @@ const FEATURES = [
 
 const SLIDE_ASSETS: Record<string, Omit<RoomSlide, "slug" | "name">> = {
   "forest-room": {
-    hero: "/images/rooms/forest-bedroom-hero.jpg",
-    secondary: ["/images/rooms/forest-bathroom.jpg", "/images/rooms/forest-lounge.jpg"],
+    hero: "/images/rooms/forest-bedroom-hero.webp",
+    secondary: ["/images/rooms/forest-bathroom.webp", "/images/rooms/forest-lounge.webp"],
     heroAlt: "Dormitor Forest Room cu ferestre panoramice spre munți",
   },
   "mountain-view-suite": {
-    hero: "/images/rooms/mountain-bedroom-hero.jpg",
-    secondary: ["/images/rooms/mountain-bathroom.jpg", "/images/rooms/mountain-lounge.jpg"],
+    hero: "/images/rooms/mountain-bedroom-hero.webp",
+    secondary: ["/images/rooms/mountain-bathroom.webp", "/images/rooms/mountain-lounge.webp"],
     heroAlt: "Mountain View Suite cu priveliște panoramică",
   },
   "panorama-loft": {
-    hero: "/images/rooms/panorama-bedroom-hero.jpg",
-    secondary: ["/images/rooms/panorama-bathroom.jpg", "/images/rooms/panorama-lounge.jpg"],
+    hero: "/images/rooms/panorama-bedroom-hero.webp",
+    secondary: ["/images/rooms/panorama-bathroom.webp", "/images/rooms/panorama-lounge.webp"],
     heroAlt: "Panorama Loft cu tavan înclinat și vedere spre pădure",
   },
 };

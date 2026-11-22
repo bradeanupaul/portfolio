@@ -93,7 +93,7 @@ export default function Page() {
           </div>
           <aside className="space-y-6 lg:sticky lg:top-28">
             <Media
-              src="/assets/editorial/packaging.jpg"
+              src="/assets/editorial/packaging.webp"
               alt="Ambalaje ÉLAN pe o masă deschisă."
               className="aspect-[4/5] rounded-[1.6rem]"
             />

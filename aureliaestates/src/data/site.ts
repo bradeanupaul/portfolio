@@ -55,7 +55,7 @@ export const site: SiteContent = {
   sellerCta: {
     title: "Proprietatea ta merită o prezentare remarcabilă.",
     text: "Fotografiem, scriem și reprezentăm adresa cu aceeași grijă pe care o aștepți de la o casă pe care o lași să plece. Răspundem personal, apoi stabilim dacă putem reprezenta locuința.",
-    image: "/images/editorial/seller-cta-blue-hour.jpg",
+    image: "/images/editorial/seller-cta-blue-hour.webp",
     href: "/vinde-cu-noi",
   },
 };

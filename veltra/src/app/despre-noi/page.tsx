@@ -57,7 +57,7 @@ export default function DespreNoiPage() {
           </RevealEditorial>
           <RevealImage from="right" immediate className="relative aspect-[16/11] bg-forest-ink/8 lg:col-span-7">
             <Image
-              src="/images/exterior/lodge-reference.jpg"
+              src="/images/exterior/lodge-reference.webp"
               alt="Lodge-ul VELTRA, arhitectură de lemn și piatră"
               fill
               priority

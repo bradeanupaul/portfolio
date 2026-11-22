@@ -21,7 +21,7 @@ const chapters = [
     number: "01",
     title: "Tradiție",
     text: "Rețete transmise cu grijă, paste fresh în fiecare dimineață și respect pentru ritmul italian al mesei.",
-    image: "/images/about/chapter-traditie.jpg",
+    image: "/images/about/chapter-traditie.webp",
     alt: "Atelier de paste la lumina dimineții, pe un blat lung de lemn",
     panel: "right" as const,
     icon: Wheat,
@@ -30,7 +30,7 @@ const chapters = [
     number: "02",
     title: "Pasiune",
     text: "Fiecare farfurie este o conversație între sezon, tehnică și oaspete. Fără artificii goale.",
-    image: "/images/about/chapter-pasiune.jpg",
+    image: "/images/about/chapter-pasiune.webp",
     alt: "Bucătărie deschisă Bella Notte, cu flăcări și cupru",
     panel: "left" as const,
     icon: Flame,
@@ -39,7 +39,7 @@ const chapters = [
     number: "03",
     title: "Rafinament",
     text: "Lumânări, vin ales, serviciu discret. Eleganța se simte în detalii, nu în zgomot.",
-    image: "/images/about/chapter-rafinament.jpg",
+    image: "/images/about/chapter-rafinament.webp",
     alt: "Masă de seară cu pahare și lumânări în salon",
     panel: "right" as const,
     icon: Sparkles,
@@ -214,10 +214,10 @@ export function AboutBody() {
             <AnimatedReveal delay={0.08}>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { src: "/images/menu/ingredient-olive-oil.jpg", alt: "Ulei extravirgin" },
-                  { src: "/images/menu/ingredient-cheeses.jpg", alt: "Brânzeturi italiene" },
+                  { src: "/images/menu/ingredient-olive-oil.webp", alt: "Ulei extravirgin" },
+                  { src: "/images/menu/ingredient-cheeses.webp", alt: "Brânzeturi italiene" },
                   {
-                    src: "/images/menu/ingredient-herbs.jpg",
+                    src: "/images/menu/ingredient-herbs.webp",
                     alt: "Ierburi aromatice",
                     className: "col-span-2 aspect-[21/9]",
                   },
@@ -244,7 +244,7 @@ export function AboutBody() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/atmosphere/cta-dining-evening.jpg"
+            src="/images/atmosphere/cta-dining-evening.webp"
             alt="Salon Bella Notte pregătit pentru seară, cu mese și lumânări"
             fill
             className="object-cover object-center"

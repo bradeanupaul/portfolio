@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: absoluteUrl("/meniu"),
     images: [
       {
-        url: absoluteUrl("/images/hero/pasta-truffle.jpg"),
+        url: absoluteUrl("/images/hero/pasta-truffle.webp"),
         width: 1200,
         height: 630,
         alt: "Paste cu truf la Bella Notte",

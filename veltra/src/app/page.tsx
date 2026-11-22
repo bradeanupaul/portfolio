@@ -26,7 +26,7 @@ export default async function HomePage() {
     areaSqm: room.areaSqm,
     viewType: room.viewType,
     basePriceBan: room.basePriceBan,
-    image: room.images[0]?.src ?? "/images/rooms/forest-primary.jpg",
+    image: room.images[0]?.src ?? "/images/rooms/forest-primary.webp",
   }));
 
   return (

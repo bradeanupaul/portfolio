@@ -121,6 +121,7 @@ export function HeroHome() {
                 alt={heroMain.alt}
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 1024px) 70vw, 300px"
                 className="h-full w-full object-cover"
                 objectPosition="center 25%"

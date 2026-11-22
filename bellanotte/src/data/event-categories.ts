@@ -32,7 +32,7 @@ export const eventCategories: EventCategory[] = [
     title: "Cine romantice",
     shortTitle: "Romantice",
     subtitle: "Lumânări, vin și conversații care rămân",
-    heroImage: "/images/events/romantic-dinner.jpg",
+    heroImage: "/images/events/romantic-dinner.webp",
     heroAlt: "Masă intimă cu lumânări pentru o cină romantică",
     accent: "burgundy",
     intro:
@@ -53,17 +53,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 320 RON pentru doi (fără băuturi)",
     gallery: [
       {
-        src: "/images/events/romantic-dinner.jpg",
+        src: "/images/events/romantic-dinner.webp",
         alt: "Masă romantică",
         title: "Lumina serii",
       },
       {
-        src: "/images/atmosphere/romantic-table.jpg",
+        src: "/images/atmosphere/romantic-table.webp",
         alt: "Detaliu masă cu lumânări",
         title: "Detalii",
       },
       {
-        src: "/images/reservations/candlelit.jpg",
+        src: "/images/reservations/candlelit.webp",
         alt: "Vin și lumânări",
         title: "Vinul serii",
       },
@@ -75,7 +75,7 @@ export const eventCategories: EventCategory[] = [
     title: "Aniversări",
     shortTitle: "Aniversări",
     subtitle: "Sărbători elegante, fără agitație",
-    heroImage: "/images/events/anniversary.jpg",
+    heroImage: "/images/events/anniversary.webp",
     heroAlt: "Masă festivă pregătită pentru aniversare",
     accent: "gold",
     intro:
@@ -96,17 +96,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 180 RON / persoană (meniu fix demonstrativ)",
     gallery: [
       {
-        src: "/images/events/anniversary.jpg",
+        src: "/images/events/anniversary.webp",
         alt: "Aniversare",
         title: "Sărbătoare",
       },
       {
-        src: "/images/events/private-celebration.jpg",
+        src: "/images/events/private-celebration.webp",
         alt: "Masă lungă de celebrare",
         title: "La masă",
       },
       {
-        src: "/images/menu/food-tiramisu.jpg",
+        src: "/images/menu/food-tiramisu.webp",
         alt: "Desert aniversar",
         title: "Desert",
       },
@@ -118,7 +118,7 @@ export const eventCategories: EventCategory[] = [
     title: "Evenimente corporate",
     shortTitle: "Corporate",
     subtitle: "Prânzuri și seri de echipă, cu eleganță",
-    heroImage: "/images/events/corporate-dining.jpg",
+    heroImage: "/images/events/corporate-dining.webp",
     heroAlt: "Salon privat pregătit pentru dining corporate",
     accent: "olive",
     intro:
@@ -139,17 +139,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 210 RON / persoană (pachet demonstrativ)",
     gallery: [
       {
-        src: "/images/events/corporate-dining.jpg",
+        src: "/images/events/corporate-dining.webp",
         alt: "Corporate dining",
         title: "Salon",
       },
       {
-        src: "/images/atmosphere/private-dining.jpg",
+        src: "/images/atmosphere/private-dining.webp",
         alt: "Masă lungă corporate",
         title: "Configurație",
       },
       {
-        src: "/images/atmosphere/chandeliers.jpg",
+        src: "/images/atmosphere/chandeliers.webp",
         alt: "Interior elegant",
         title: "Atmosferă",
       },
@@ -161,7 +161,7 @@ export const eventCategories: EventCategory[] = [
     title: "Degustări de vin",
     shortTitle: "Vinuri",
     subtitle: "Etichete italiene, povești și pairing",
-    heroImage: "/images/events/wine-tasting.jpg",
+    heroImage: "/images/events/wine-tasting.webp",
     heroAlt: "Masă de degustare cu pahare și sticle de vin",
     accent: "burgundy",
     intro:
@@ -182,17 +182,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 190 RON / persoană (pachet demonstrativ)",
     gallery: [
       {
-        src: "/images/events/wine-tasting.jpg",
+        src: "/images/events/wine-tasting.webp",
         alt: "Degustare",
         title: "Pahare",
       },
       {
-        src: "/images/atmosphere/wine-cellar.jpg",
+        src: "/images/atmosphere/wine-cellar.webp",
         alt: "Cramă",
         title: "Crama",
       },
       {
-        src: "/images/gallery/wine.jpg",
+        src: "/images/gallery/wine.webp",
         alt: "Vin roșu",
         title: "Roșu italian",
       },
@@ -204,7 +204,7 @@ export const eventCategories: EventCategory[] = [
     title: "Petreceri private",
     shortTitle: "Private",
     subtitle: "Salon dedicat, muzică soft, meniu liber",
-    heroImage: "/images/events/private-celebration.jpg",
+    heroImage: "/images/events/private-celebration.webp",
     heroAlt: "Salon privat pregătit pentru celebrare",
     accent: "amber",
     intro:
@@ -225,17 +225,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 200 RON / persoană (estimare demonstrativă)",
     gallery: [
       {
-        src: "/images/events/private-celebration.jpg",
+        src: "/images/events/private-celebration.webp",
         alt: "Petrecere privată",
         title: "Salon",
       },
       {
-        src: "/images/events/live-music.jpg",
+        src: "/images/events/live-music.webp",
         alt: "Muzică live",
         title: "Live",
       },
       {
-        src: "/images/atmosphere/chandeliers.jpg",
+        src: "/images/atmosphere/chandeliers.webp",
         alt: "Salon luminat",
         title: "Seara",
       },
@@ -247,7 +247,7 @@ export const eventCategories: EventCategory[] = [
     title: "Seri gastronomice",
     shortTitle: "Gastronomice",
     subtitle: "Chef, trufe, ateliere și meniuri tematice",
-    heroImage: "/images/events/seri-gastronomice.jpg",
+    heroImage: "/images/events/seri-gastronomice.webp",
     heroAlt: "Plating la linie în bucătăria Bella Notte, pentru o seară gastronomică",
     accent: "gold",
     intro:
@@ -268,17 +268,17 @@ export const eventCategories: EventCategory[] = [
     indicativePrice: "de la 280 RON / persoană (pachet demonstrativ)",
     gallery: [
       {
-        src: "/images/events/seri-gastronomice.jpg",
+        src: "/images/events/seri-gastronomice.webp",
         alt: "Plating gastronomic",
         title: "La linie",
       },
       {
-        src: "/images/gallery/pasta-prep.jpg",
+        src: "/images/gallery/pasta-prep.webp",
         alt: "Preparare paste",
         title: "Atelier",
       },
       {
-        src: "/images/menu/food-tagliatelle.jpg",
+        src: "/images/menu/food-tagliatelle.webp",
         alt: "Farfurie semnătură",
         title: "Semnătură",
       },

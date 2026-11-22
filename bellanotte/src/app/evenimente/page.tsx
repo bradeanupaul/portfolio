@@ -48,7 +48,7 @@ export default function EvenimentePage() {
           <div className="grid lg:grid-cols-2">
             <div className="relative order-1 aspect-[16/11] w-full sm:aspect-[21/9] lg:order-2 lg:aspect-auto lg:min-h-[min(48vh,440px)]">
               <Image
-                src="/images/events/private-celebration.jpg"
+                src="/images/events/private-celebration.webp"
                 alt="Masă elegantă pregătită pentru un eveniment privat"
                 fill
                 priority

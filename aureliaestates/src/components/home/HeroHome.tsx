@@ -22,7 +22,7 @@ export function HeroHome() {
         aria-hidden
       >
         <Image
-          src="/images/hero/hero-radical-building-mobile.jpg"
+          src="/images/hero/hero-radical-building-mobile.webp"
           alt=""
           fill
           priority
@@ -105,7 +105,7 @@ export function HeroHome() {
             className="relative mx-auto aspect-[16/10] w-full max-w-3xl"
           >
             <Image
-              src="/images/hero/hero-radical-building.jpg"
+              src="/images/hero/hero-radical-building.webp"
               alt="Clădire rezidențială contemporană pe fundal alb, imagine de brand Aurelia Estates"
               fill
               priority

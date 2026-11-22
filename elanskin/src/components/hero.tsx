@@ -56,7 +56,7 @@ export function Hero() {
         </Reveal>
         <Reveal mode="mask" eager delay={0.35} className="relative mt-8 aspect-[4/5] overflow-hidden rounded-[1.5rem]">
           <Media
-            src="/assets/hero-mobile.jpg"
+            src="/assets/hero-mobile.webp"
             alt="Trio de produse ÉLAN SKIN pe lumină moale."
             className="absolute inset-0"
             priority
@@ -126,7 +126,7 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-[42rem]">
           <Reveal mode="mask" eager delay={0.28} className="relative aspect-[5/4] max-h-[40rem] overflow-hidden rounded-[1.75rem]">
             <Media
-              src="/assets/hero-desktop.jpg"
+              src="/assets/hero-desktop.webp"
               alt="Produse ÉLAN SKIN pe suprafață de sticlă."
               className="absolute inset-0"
               priority

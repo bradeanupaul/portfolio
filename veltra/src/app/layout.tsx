@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "O experiență completă în inima naturii. Cazare premium, relaxare autentică și experiențe memorabile.",
     locale: "ro_RO",
     type: "website",
-    images: [{ url: "/images/exterior/hero-golden-hour.jpg" }],
+    images: [{ url: "/images/exterior/hero-golden-hour.webp" }],
   },
   robots: {
     index: true,

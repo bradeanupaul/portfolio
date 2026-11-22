@@ -20,7 +20,7 @@ export const districts: District[] = [
       "Reședințe cu grădină",
       "Acces rapid spre centru",
     ],
-    image: "/images/hero/hero-flagship-villa.jpg",
+    image: "/images/hero/hero-flagship-villa.webp",
   },
   {
     id: "primaverii",
@@ -40,7 +40,7 @@ export const districts: District[] = [
       "Bulevardul Primăverii",
       "Apropiere de parc",
     ],
-    image: "/images/hero/hero-penthouse-terrace.jpg",
+    image: "/images/hero/hero-penthouse-terrace.webp",
   },
   {
     id: "floreasca",
@@ -60,7 +60,7 @@ export const districts: District[] = [
       "Restaurante și birouri",
       "Viață de cartier",
     ],
-    image: "/images/properties/apartment-urban-living.jpg",
+    image: "/images/properties/apartment-urban-living.webp",
   },
   {
     id: "pipera",
@@ -80,7 +80,7 @@ export const districts: District[] = [
       "Grădini pentru familie",
       "Acces spre nordul orașului",
     ],
-    image: "/images/properties/prop-08.jpg",
+    image: "/images/properties/prop-08.webp",
   },
   {
     id: "corbeanca",
@@ -100,7 +100,7 @@ export const districts: District[] = [
       "Piscine și curți",
       "Aer curat, aproape de oraș",
     ],
-    image: "/images/properties/family-atrium-staircase.jpg",
+    image: "/images/properties/family-atrium-staircase.webp",
   },
   {
     id: "brasov",
@@ -120,7 +120,7 @@ export const districts: District[] = [
       "Poiana Brașov",
       "Lumină de iarnă",
     ],
-    image: "/images/properties/prop-05-brasov-view.jpg",
+    image: "/images/properties/prop-05-brasov-view.webp",
   },
 ];
 

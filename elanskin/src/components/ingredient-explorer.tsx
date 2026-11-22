@@ -8,7 +8,7 @@ import { useMotionSafe } from "@/components/motion";
 import { ingredients, type Ingredient } from "@/lib/ingredients";
 
 function imageFor(ingredient: Ingredient) {
-  return ingredient.image || "/assets/botanical-ingredients.jpg";
+  return ingredient.image || "/assets/botanical-ingredients.webp";
 }
 
 export function IngredientExplorer() {

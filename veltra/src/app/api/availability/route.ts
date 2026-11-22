@@ -50,7 +50,7 @@ export async function GET(request: Request) {
       capacityMax: room.capacityMax,
       areaSqm: room.areaSqm,
       viewType: room.viewType,
-      image: room.images[0]?.src ?? "/images/rooms/forest-primary.jpg",
+      image: room.images[0]?.src ?? "/images/rooms/forest-primary.webp",
       available,
       inventory: room.units.length,
       pricing,

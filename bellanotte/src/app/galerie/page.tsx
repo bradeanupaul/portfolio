@@ -18,7 +18,7 @@ export default function GaleriePage() {
     <>
       <section className="relative isolate min-h-[48vh] overflow-hidden sm:min-h-[52vh]">
         <Image
-          src="/images/restaurant/interior-main.jpg"
+          src="/images/restaurant/interior-main.webp"
           alt=""
           fill
           priority

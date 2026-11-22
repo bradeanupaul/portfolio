@@ -15,7 +15,7 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   {
     id: "ext-golden",
-    src: "/images/exterior/hero-golden-hour.jpg",
+    src: "/images/exterior/hero-golden-hour.webp",
     alt: "VELTRA la golden hour, fațadă din lemn și piatră",
     caption: "Golden hour la lodge",
     category: "natura",
@@ -24,7 +24,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "ext-night",
-    src: "/images/gallery/night-lodge.jpg",
+    src: "/images/gallery/night-lodge.webp",
     alt: "Lodje luminată seara, siluetă caldă pe fond de pădure",
     caption: "Sosire seara",
     category: "natura",
@@ -32,7 +32,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "ext-side",
-    src: "/images/exterior/hero-lodge-side.jpg",
+    src: "/images/exterior/hero-lodge-side.webp",
     alt: "Profil lateral al lodgei VELTRA",
     caption: "Siluetă din lemn și piatră",
     category: "natura",
@@ -40,7 +40,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "room-forest",
-    src: "/images/rooms/forest-primary.jpg",
+    src: "/images/rooms/forest-primary.webp",
     alt: "Forest Room, pat și texturi naturale",
     caption: "Forest Room",
     category: "camere",
@@ -48,7 +48,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "room-mountain",
-    src: "/images/rooms/mountain-suite-primary.jpg",
+    src: "/images/rooms/mountain-suite-primary.webp",
     alt: "Mountain View Suite cu priveliște spre creste",
     caption: "Mountain View Suite",
     category: "camere",
@@ -56,7 +56,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "room-panorama",
-    src: "/images/rooms/panorama-loft-primary.jpg",
+    src: "/images/rooms/panorama-loft-primary.webp",
     alt: "Panorama Loft, lumină largă prin sticlă",
     caption: "Panorama Loft",
     category: "camere",
@@ -64,7 +64,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "room-signature",
-    src: "/images/rooms/signature-residence-primary.jpg",
+    src: "/images/rooms/signature-residence-primary.webp",
     alt: "Signature Residence, living spațios",
     caption: "Signature Residence",
     category: "camere",
@@ -72,7 +72,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "room-bath",
-    src: "/images/rooms/mountain-bathroom.jpg",
+    src: "/images/rooms/mountain-bathroom.webp",
     alt: "Baie de suite cu piatră și lumină blândă",
     caption: "Baie de piatră",
     category: "detalii",
@@ -104,7 +104,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "relax-spa",
-    src: "/images/spa/relaxation.jpg",
+    src: "/images/spa/relaxation.webp",
     alt: "Zonă SPA de relaxare",
     caption: "Ritm SPA",
     category: "relaxare",
@@ -176,7 +176,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "nat-panorama",
-    src: "/images/surroundings/panorama.jpg",
+    src: "/images/surroundings/panorama.webp",
     alt: "Panoramă montană din împrejurimi",
     caption: "Panoramă montană",
     category: "natura",
@@ -184,7 +184,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "detail-deck",
-    src: "/images/gallery/deck-coffee.jpg",
+    src: "/images/gallery/deck-coffee.webp",
     alt: "Cafea pe terasă dimineața",
     caption: "Cafea pe terasă",
     category: "detalii",
@@ -192,7 +192,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "detail-fire",
-    src: "/images/gallery/fireplace.jpg",
+    src: "/images/gallery/fireplace.webp",
     alt: "Șemineu cu lumină caldă",
     caption: "Lounge cu șemineu",
     category: "detalii",
@@ -200,7 +200,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "detail-tub-close",
-    src: "/images/gallery/hot-tub-closeup.jpg",
+    src: "/images/gallery/hot-tub-closeup.webp",
     alt: "Detaliu ciubăr cu abur",
     caption: "Abur pe lemn",
     category: "detalii",
@@ -216,7 +216,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "detail-lounge",
-    src: "/images/rooms/forest-lounge.jpg",
+    src: "/images/rooms/forest-lounge.webp",
     alt: "Colț de lounge în Forest Room",
     caption: "Colț de lectură",
     category: "detalii",

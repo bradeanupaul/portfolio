@@ -14,25 +14,25 @@ const items = [
     slug: "drumetii-montane",
     name: "Drumeții montane",
     meta: "Trasee pe creste și prin păduri de conifere",
-    src: "/images/home/experience-hiking.jpg",
+    src: "/images/home/experience-hiking.webp",
   },
   {
     slug: "tururi-cu-bicicleta",
     name: "Trasee cu bicicleta",
     meta: "Drumuri forestiere, ritm liber, aer curat",
-    src: "/images/experiences/cycling.jpg",
+    src: "/images/experiences/cycling.webp",
   },
   {
     slug: "tururi-cu-atv",
     name: "Aventuri cu ATV",
     meta: "Excursii ghidate pe drumuri permisibile",
-    src: "/images/experiences/atv.jpg",
+    src: "/images/experiences/atv.webp",
   },
   {
     slug: "seri-la-foc",
     name: "Seri în jurul focului",
     meta: "Conversații lungi, foc de piatră, pături calde",
-    src: "/images/experiences/campfire.jpg",
+    src: "/images/experiences/campfire.webp",
   },
 ] as const;
 

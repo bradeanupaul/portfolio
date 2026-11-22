@@ -20,7 +20,7 @@ export const facilityHighlights: FacilityHighlight[] = [
     title: "Piscină cu priveliște",
     description:
       "Un bazin liniștit la amurg, unde apa reflectă crestele. Ideal pentru înot scurt sau pentru o baie rece după saună.",
-    image: "/images/facilities/pool-dusk.jpg",
+    image: "/images/facilities/pool-dusk.webp",
     imageAlt: "Piscină la amurg la VELTRA",
     layout: "right",
   },
@@ -29,7 +29,7 @@ export const facilityHighlights: FacilityHighlight[] = [
     title: "Ciubăr și abur",
     description:
       "Seara, aburul ridică miros de lemn și de brad. Un ritual lent, cu cerul deschis deasupra.",
-    image: "/images/facilities/hot-tub-evening.jpg",
+    image: "/images/facilities/hot-tub-evening.webp",
     imageAlt: "Ciubăr cu abur seara",
     layout: "left",
   },
@@ -38,7 +38,7 @@ export const facilityHighlights: FacilityHighlight[] = [
     title: "Dining outdoor",
     description:
       "Mese simple, pregătite la grătar, cu masă lungă sub cer. Concept pentru seri cu prieteni sau familie.",
-    image: "/images/facilities/bbq-dining.jpg",
+    image: "/images/facilities/bbq-dining.webp",
     imageAlt: "Masă outdoor cu grill",
     layout: "right",
   },

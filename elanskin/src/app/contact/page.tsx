@@ -90,7 +90,7 @@ export default function Page() {
 
       <Container className="grid items-center gap-8 pb-8 md:grid-cols-2">
         <Media
-          src="/assets/editorial/atelier.jpg"
+          src="/assets/editorial/atelier.webp"
           alt="Masă de atelier cu sticle de îngrijire în lumină pală."
           className="aspect-[5/4] rounded-[1.8rem]"
         />

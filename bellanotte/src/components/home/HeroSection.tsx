@@ -45,10 +45,11 @@ export function HeroSection() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/pasta-wide.jpg"
+          src="/images/hero/pasta-wide.webp"
           alt="Tagliatelle cu trufe negre și Parmigiano pe farfurie ceramică întunecată"
           fill
           priority
+          fetchPriority="high"
           unoptimized
           sizes="100vw"
           className="object-cover object-center"
@@ -154,7 +155,7 @@ export function HeroSection() {
           >
             <div className="absolute inset-0" aria-hidden>
               <Image
-                src="/images/hero/pasta-truffle.jpg"
+                src="/images/hero/pasta-truffle.webp"
                 alt=""
                 fill
                 className="object-cover object-center"

@@ -3,7 +3,7 @@ import type { GalleryItem } from "@/types";
 export const galleryItems: GalleryItem[] = [
   {
     id: "gal-interior-main",
-    src: "/images/restaurant/interior-main.jpg",
+    src: "/images/restaurant/interior-main.webp",
     alt: "Salonul Bella Notte cu mese elegante și lumină caldă",
     title: "Seara în sală",
     caption: "Lumini calde și mesele pregătite pentru serviciul de seară",
@@ -14,7 +14,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-exterior-night",
-    src: "/images/restaurant/exterior-night.jpg",
+    src: "/images/restaurant/exterior-night.webp",
     alt: "Fațada Bella Notte iluminată noaptea",
     title: "Intrarea",
     caption: "Lanternă, piatră și lumină caldă",
@@ -25,7 +25,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-terrace-dusk",
-    src: "/images/gallery/terrace-dusk.jpg",
+    src: "/images/gallery/terrace-dusk.webp",
     alt: "Terasă italiană la amurg",
     title: "Terasă de seară",
     caption: "Lanternă, iedera și aer de vară italiană",
@@ -36,7 +36,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-terrace",
-    src: "/images/gallery/terrace.jpg",
+    src: "/images/gallery/terrace.webp",
     alt: "Terasa restaurantului seara",
     title: "Terasa deschisă",
     caption: "Vara, serile continuă afară",
@@ -45,7 +45,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-entrance",
-    src: "/images/atmosphere/entrance.jpg",
+    src: "/images/atmosphere/entrance.webp",
     alt: "Intrarea decorată a restaurantului",
     title: "Pragul casei",
     caption: "Detalii italiene de la primul pas",
@@ -54,7 +54,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-private-dining",
-    src: "/images/atmosphere/private-dining.jpg",
+    src: "/images/atmosphere/private-dining.webp",
     alt: "Sala privată pregătită pentru eveniment",
     title: "Dining privat",
     caption: "Ideal pentru aniversări și întâlniri",
@@ -63,7 +63,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-tagliatelle",
-    src: "/images/gallery/food-tagliatelle.jpg",
+    src: "/images/gallery/food-tagliatelle.webp",
     alt: "Tagliatelle cu trufe pe farfurie ceramică",
     title: "Paste la minut",
     caption: "Aluat frământat dimineața, tăiat la cerere",
@@ -73,7 +73,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-carbonara",
-    src: "/images/menu/food-carbonara.jpg",
+    src: "/images/menu/food-carbonara.webp",
     alt: "Spaghetti carbonara servite fierbinți",
     title: "Carbonara clasică",
     caption: "Guanciale, pecorino și piper proaspăt",
@@ -82,7 +82,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-antipasto",
-    src: "/images/menu/food-antipasto.jpg",
+    src: "/images/menu/food-antipasto.webp",
     alt: "Platou colorat de antipasti",
     title: "Antipasti vesele",
     caption: "Culori de piață italiană pe farfurie",
@@ -91,7 +91,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-margherita",
-    src: "/images/gallery/food-margherita.jpg",
+    src: "/images/gallery/food-margherita.webp",
     alt: "Pizza Margherita proaspăt coaptă",
     title: "Margherita napoletană",
     caption: "Mozzarella di bufala și busuioc",
@@ -101,7 +101,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-pizza-oven",
-    src: "/images/gallery/pizza-oven.jpg",
+    src: "/images/gallery/pizza-oven.webp",
     alt: "Pizza artizanală în cuptorul pe lemne",
     title: "Din cuptorul pe lemne",
     caption: "Coaptă rapidă, margine aerată",
@@ -111,7 +111,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-risotto",
-    src: "/images/menu/food-risotto-porcini.jpg",
+    src: "/images/menu/food-risotto-porcini.webp",
     alt: "Risotto cu parmezan",
     title: "Cremă de risotto",
     caption: "Textură onctuoasă, fără exces",
@@ -120,7 +120,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-osso-buco",
-    src: "/images/menu/food-osso-buco.jpg",
+    src: "/images/menu/food-osso-buco.webp",
     alt: "Osso buco servit cu gremolata",
     title: "Osso buco lent",
     caption: "Brăzat ore întregi, polentă alături",
@@ -129,7 +129,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-filetto",
-    src: "/images/menu/food-filetto.jpg",
+    src: "/images/menu/food-filetto.webp",
     alt: "Filetto di manzo la farfurie",
     title: "Filetto la grătar",
     caption: "Sos Barolo și garnitură discretă",
@@ -138,7 +138,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-tagliata",
-    src: "/images/menu/food-tagliata.jpg",
+    src: "/images/menu/food-tagliata.webp",
     alt: "Tagliata de vită cu rucola",
     title: "Farfurie signature",
     caption: "Carne feliată cu respect pentru tradiție",
@@ -148,7 +148,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-tiramisu",
-    src: "/images/menu/food-tiramisu.jpg",
+    src: "/images/menu/food-tiramisu.webp",
     alt: "Tiramisu cu cacao pudrată",
     title: "Final dulce",
     caption: "Clasic, fără a fi prea greu",
@@ -157,7 +157,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-romantic-table",
-    src: "/images/atmosphere/romantic-table.jpg",
+    src: "/images/atmosphere/romantic-table.webp",
     alt: "Masă romantică cu lumânări",
     title: "Momente în doi",
     caption: "Un colț liniștit pentru conversații lungi",
@@ -167,7 +167,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-wine",
-    src: "/images/gallery/wine.jpg",
+    src: "/images/gallery/wine.webp",
     alt: "Pahar de vin roșu la lumina lumânării",
     title: "Vinul serii",
     caption: "Reflexii calde pe paharul de vin",
@@ -177,7 +177,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-chandeliers",
-    src: "/images/atmosphere/chandeliers.jpg",
+    src: "/images/atmosphere/chandeliers.webp",
     alt: "Candelabre deasupra meselor",
     title: "Lumină de seară",
     caption: "Reflexii blânde pe fețe zâmbitoare",
@@ -187,7 +187,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-wine-cellar",
-    src: "/images/atmosphere/wine-cellar.jpg",
+    src: "/images/atmosphere/wine-cellar.webp",
     alt: "Sticle de vin în cramă",
     title: "Crama noastră",
     caption: "Etichete alese, roșii și albe",
@@ -196,7 +196,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-bar",
-    src: "/images/atmosphere/bar.jpg",
+    src: "/images/atmosphere/bar.webp",
     alt: "Barul cu lumini calde",
     title: "Barul de seară",
     caption: "Espresso, digestivi și conversații târzii",
@@ -205,7 +205,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-candlelit",
-    src: "/images/gallery/candlelit.jpg",
+    src: "/images/gallery/candlelit.webp",
     alt: "Masă luminată de lumânări",
     title: "Ritualul serii",
     caption: "Flacără stabilă, ritm lent",
@@ -214,7 +214,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-pasta-prep",
-    src: "/images/gallery/pasta-prep.jpg",
+    src: "/images/gallery/pasta-prep.webp",
     alt: "Paste proaspete pe blat de lucru",
     title: "De la aluat la farfurie",
     caption: "Frământat și tăiat zilnic",
@@ -224,7 +224,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-chef-marco",
-    src: "/images/chef/marco-bellini.jpg",
+    src: "/images/chef/marco-bellini.webp",
     alt: "Chef Marco Bellini în bucătăria Bella Notte",
     title: "În bucătărie",
     caption: "Atenție la fiecare detaliu de plating",
@@ -233,7 +233,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-chef-plating",
-    src: "/images/generated/chef-marco-plating.jpg",
+    src: "/images/generated/chef-marco-plating.webp",
     alt: "Chef Marco finisează o farfurie",
     title: "Finisaj la linie",
     caption: "Ultimele tușe înainte de servire",
@@ -242,7 +242,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-olive-oil",
-    src: "/images/menu/ingredient-olive-oil.jpg",
+    src: "/images/menu/ingredient-olive-oil.webp",
     alt: "Sticlă de ulei extravirgin și roșii",
     title: "Ulei de origine",
     caption: "Puglia pe blatul de lucru",
@@ -251,7 +251,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-handmade-pasta",
-    src: "/images/editorial/handmade-pasta.jpg",
+    src: "/images/editorial/handmade-pasta.webp",
     alt: "Paste artizanale întinse manual",
     title: "Atelier de paste",
     caption: "Textură elastică, tăiate la mână",
@@ -260,7 +260,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-wine-tasting",
-    src: "/images/events/wine-tasting.jpg",
+    src: "/images/events/wine-tasting.webp",
     alt: "Degustare de vinuri în grup mic",
     title: "Seri cu vin",
     caption: "Povești despre crame și soiuri",
@@ -270,7 +270,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-live-music",
-    src: "/images/events/live-music.jpg",
+    src: "/images/events/live-music.webp",
     alt: "Seară cu muzică live în sală",
     title: "Muzică discretă",
     caption: "Jazz și chitară în serile speciale",
@@ -279,7 +279,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-romantic-dinner",
-    src: "/images/events/romantic-dinner.jpg",
+    src: "/images/events/romantic-dinner.webp",
     alt: "Cină romantică organizată în sală",
     title: "Seară romantică",
     caption: "Lumânări și meniu degustare",
@@ -288,7 +288,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-corporate",
-    src: "/images/events/corporate-dining.jpg",
+    src: "/images/events/corporate-dining.webp",
     alt: "Masă corporate cu prezentare",
     title: "Corporate dining",
     caption: "Întâlniri cu servire atentă",
@@ -297,7 +297,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "gal-anniversary",
-    src: "/images/events/anniversary.jpg",
+    src: "/images/events/anniversary.webp",
     alt: "Aniversare decorată în restaurant",
     title: "Aniversări",
     caption: "Detalii personalizate pentru invitați",

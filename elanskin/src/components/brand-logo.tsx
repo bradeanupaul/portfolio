@@ -29,7 +29,7 @@ export function BrandLogo({
   const titleClass = size === "footer" ? "text-[2.35rem]" : "text-[1.45rem]";
   const subClass =
     size === "footer" ? "text-[0.72rem] tracking-[0.46em]" : "text-[0.58rem] tracking-[0.4em]";
-  const src = light ? "/assets/brand/logo-mark-light-v2.png" : "/assets/brand/logo-mark.png";
+  const src = light ? "/assets/brand/logo-mark-light-v2.webp" : "/assets/brand/logo-mark.png";
 
   return (
     <span

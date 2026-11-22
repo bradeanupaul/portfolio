@@ -281,7 +281,7 @@ export default function HomePage() {
           <div className="grid items-center gap-10 lg:grid-cols-12">
             <Reveal variant="mask" className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:col-span-6">
               <Image
-                src="/images/editorial/facade-detail.jpg"
+                src="/images/editorial/facade-detail.webp"
                 alt="Detaliu de fațadă contemporană"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"

@@ -25,18 +25,18 @@ function usePrefersReducedMotion() {
 }
 
 const RAIN = [
-  { src: "/images/gallery/deck-coffee.jpg", alt: "Cafea pe terasă", title: "Dimineață pe terasă", ratio: "aspect-[3/4]" },
+  { src: "/images/gallery/deck-coffee.webp", alt: "Cafea pe terasă", title: "Dimineață pe terasă", ratio: "aspect-[3/4]" },
   { src: "/images/facilities/v7/facility-hot-tub-editorial.webp", alt: "Ciubăr seara", title: "Ciubăr cu abur", ratio: "aspect-[3/4]" },
   { src: "/images/facilities/v7/facility-pool-editorial.webp", alt: "Piscină la amurg", title: "Piscină încălzită", ratio: "aspect-[4/3]" },
-  { src: "/images/rooms/forest-primary.jpg", alt: "Forest Room", title: "Forest Room", ratio: "aspect-[3/4]" },
+  { src: "/images/rooms/forest-primary.webp", alt: "Forest Room", title: "Forest Room", ratio: "aspect-[3/4]" },
   { src: "/images/restaurant/v7/arbor-breakfast-table.webp", alt: "Mic dejun ARBOR", title: "Mic dejun", ratio: "aspect-[3/4]" },
-  { src: "/images/gallery/fireplace.jpg", alt: "Șemineu", title: "Lounge cu șemineu", ratio: "aspect-[4/3]" },
+  { src: "/images/gallery/fireplace.webp", alt: "Șemineu", title: "Lounge cu șemineu", ratio: "aspect-[4/3]" },
   { src: "/images/experiences/v7/experience-campfire.webp", alt: "Foc de seară", title: "Seară la foc", ratio: "aspect-[3/4]" },
   { src: "/images/experiences/v7/experience-hiking.webp", alt: "Drumeție", title: "Traseu de dimineață", ratio: "aspect-[3/4]" },
-  { src: "/images/gallery/night-lodge.jpg", alt: "Lodje seara", title: "Sosire seara", ratio: "aspect-[4/3]" },
+  { src: "/images/gallery/night-lodge.webp", alt: "Lodje seara", title: "Sosire seara", ratio: "aspect-[4/3]" },
   { src: "/images/restaurant/v7/arbor-house-dessert.webp", alt: "Desert ARBOR", title: "Mărul pădurii", ratio: "aspect-square" },
   { src: "/images/facilities/v7/facility-outdoor-grill.webp", alt: "Grătar", title: "Pavilion de grătar", ratio: "aspect-[4/3]" },
-  { src: "/images/rooms/mountain-suite-primary.jpg", alt: "Mountain View Suite", title: "Mountain View Suite", ratio: "aspect-[3/4]" },
+  { src: "/images/rooms/mountain-suite-primary.webp", alt: "Mountain View Suite", title: "Mountain View Suite", ratio: "aspect-[3/4]" },
 ] as const;
 
 function chunkColumns(count: number) {

@@ -59,7 +59,7 @@ export function SpaPreview() {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/images/home/hot-tub-evening.jpg"
+              src="/images/home/hot-tub-evening.webp"
               alt="Ciubăr pe terasa VELTRA, la amurg"
               fill
               className="object-cover"

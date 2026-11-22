@@ -45,7 +45,7 @@ export function CartView() {
       <Container className="py-16">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <Media
-            src="/assets/editorial/cart-empty.jpg"
+            src="/assets/editorial/cart-empty.webp"
             alt="Tavă goală cu o petală de orhidee pe lumină perlă."
             className="aspect-[4/3] rounded-[1.8rem]"
           />

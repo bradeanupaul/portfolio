@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "ÉLAN SKIN",
     locale: "ro_RO",
     type: "website",
-    images: [{ url: "/assets/og.jpg", width: 1024, height: 1024, alt: "ÉLAN SKIN" }],
+    images: [{ url: "/assets/og.webp", width: 1024, height: 1024, alt: "ÉLAN SKIN" }],
   },
 };
 

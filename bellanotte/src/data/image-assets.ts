@@ -25,14 +25,14 @@ export const heroImages: ImageAsset[] = [
   },
   {
     id: "hero-candlelit",
-    src: "/images/atmosphere/romantic-table.jpg",
+    src: "/images/atmosphere/romantic-table.webp",
     alt: "Masă luminită romantic cu pahare de vin",
     category: "hero",
     caption: "Perfect pentru seri în doi",
   },
   {
     id: "hero-wine",
-    src: "/images/gallery/wine.jpg",
+    src: "/images/gallery/wine.webp",
     alt: "Pahar de vin alb servit lângă o farfurie italiană",
     category: "hero",
     caption: "Vinuri alese pentru fiecare fel",
@@ -67,7 +67,7 @@ export const peopleImages: ImageAsset[] = [
   },
   {
     id: "people-chef-plating",
-    src: "/images/generated/chef-marco-plating.jpg",
+    src: "/images/generated/chef-marco-plating.webp",
     alt: "Chef Marco la lucru în bucătăția deschisă",
     category: "people",
   },
@@ -76,13 +76,13 @@ export const peopleImages: ImageAsset[] = [
 export const editorialImages: ImageAsset[] = [
   {
     id: "ed-pasta-prep",
-    src: "/images/gallery/pasta-prep.jpg",
+    src: "/images/gallery/pasta-prep.webp",
     alt: "Paste tăiate manual pe masă de lemn",
     category: "editorial",
   },
   {
     id: "ed-wine-cellar",
-    src: "/images/atmosphere/wine-cellar.jpg",
+    src: "/images/atmosphere/wine-cellar.webp",
     alt: "Crama cu sticle de vin selectate",
     category: "editorial",
   },

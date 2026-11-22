@@ -17,7 +17,7 @@ export const articles: JournalArticle[] = [
     excerpt: "De la curățare la protecție, fără să transformi baia în laborator.",
     date: "12 martie 2026",
     reading: "6 minute",
-    image: "/assets/editorial/ordine.jpg",
+    image: "/assets/editorial/ordine.webp",
     productSlugs: ["cloud-cleanse", "glow-drops", "daily-veil-spf-50"],
     remember: [
       "Curățare, apoi pasul concentrat, apoi hidratarea.",
@@ -42,7 +42,7 @@ export const articles: JournalArticle[] = [
     excerpt: "Balsam, ulei, fluid sau cremă: alegi după senzație, nu după un regulament.",
     date: "2 aprilie 2026",
     reading: "7 minute",
-    image: "/assets/editorial/texturi.jpg",
+    image: "/assets/editorial/texturi.webp",
     productSlugs: ["soft-ritual", "night-reset", "velvet-barrier", "afterglow-oil"],
     remember: [
       "Balsamul și uleiul de curățare stau pe ten uscat.",
@@ -67,7 +67,7 @@ export const articles: JournalArticle[] = [
     excerpt: "O listă de ingrediente nu este un diagnostic. Este un început de conversație.",
     date: "18 mai 2026",
     reading: "6 minute",
-    image: "/assets/editorial/eticheta.jpg",
+    image: "/assets/editorial/eticheta.webp",
     productSlugs: ["glow-drops", "quiet-pore", "velvet-barrier"],
     remember: [
       "Ce este mai mult stă mai sus în listă.",
@@ -92,7 +92,7 @@ export const articles: JournalArticle[] = [
     excerpt: "Trei produse dimineața. Unul sau două seara. Atât poate fi de ajuns.",
     date: "9 iunie 2026",
     reading: "5 minute",
-    image: "/assets/editorial/ritual.jpg",
+    image: "/assets/editorial/ritual.webp",
     productSlugs: ["cloud-cleanse", "dew-theory", "daily-veil-spf-50"],
     remember: [
       "Trei produse dimineața pot fi de ajuns.",

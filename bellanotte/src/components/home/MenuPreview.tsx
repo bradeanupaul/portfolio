@@ -12,25 +12,25 @@ const categories = [
   {
     name: "Antipasti",
     href: "/meniu#antipasti",
-    image: "/images/menu/food-bruschetta.jpg",
+    image: "/images/menu/food-bruschetta.webp",
     alt: "Bruschetta cu roșii proaspete și busuioc",
   },
   {
     name: "Paste",
     href: "/meniu#paste",
-    image: "/images/menu/food-tagliatelle.jpg",
+    image: "/images/menu/food-tagliatelle.webp",
     alt: "Tagliatelle handmade cu trufe",
   },
   {
     name: "Feluri principale",
     href: "/meniu#feluri-principale",
-    image: "/images/menu/food-tagliata.jpg",
+    image: "/images/menu/food-tagliata.webp",
     alt: "Tagliata de vită cu ierburi",
   },
   {
     name: "Deserturi",
     href: "/meniu#deserturi",
-    image: "/images/menu/food-tiramisu.jpg",
+    image: "/images/menu/food-tiramisu.webp",
     alt: "Tiramisu elegant pe farfurie întunecată",
   },
 ] as const;
