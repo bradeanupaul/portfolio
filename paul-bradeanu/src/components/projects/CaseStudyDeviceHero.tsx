@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 type Media = {
   src: string;
   alt: string;
+  poster?: string;
 };
 
 export function CaseStudyDeviceHero({

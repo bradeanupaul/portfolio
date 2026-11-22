@@ -14,7 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import { getDemoAudit } from "@/data/audits";
-import { projects } from "@/data/projects";
+import { projectPosterSrc, projects } from "@/data/projects";
 import { resolveProjectLiveUrl } from "@/lib/project-links";
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -97,6 +97,7 @@ function ProjectWorkRow({
           <LaptopFrame
             image={{
               src: desktop.src,
+              poster: projectPosterSrc(desktop.src, project.slug),
               alt: desktop.alt,
               priority: index === 0,
             }}
@@ -115,7 +116,11 @@ function ProjectWorkRow({
               )}
             >
               <PhoneFrame
-                image={{ src: mobile.src, alt: mobile.alt }}
+                image={{
+                  src: mobile.src,
+                  poster: projectPosterSrc(mobile.src, project.slug),
+                  alt: mobile.alt,
+                }}
                 sizes="(max-width: 1024px) 300px, 420px"
                 active={active}
                 appearDelay={0.16}

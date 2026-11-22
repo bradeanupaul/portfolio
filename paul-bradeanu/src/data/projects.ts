@@ -126,7 +126,7 @@ export const projects: Project[] = [
     liveUrl: null,
     repositoryUrl: null,
     audit: null,
-    status: "demo-local",
+    status: "deployed",
     relatedProjects: ["veltra", "elan-skin"],
     accent: "#C4A574",
     capabilities: [
@@ -221,7 +221,7 @@ export const projects: Project[] = [
     liveUrl: null,
     repositoryUrl: null,
     audit: null,
-    status: "demo-local",
+    status: "deployed",
     relatedProjects: ["bella-notte", "aurelia-estates"],
     accent: "#B7C4B1",
     capabilities: [
@@ -314,7 +314,7 @@ export const projects: Project[] = [
     liveUrl: null,
     repositoryUrl: null,
     audit: null,
-    status: "demo-local",
+    status: "deployed",
     relatedProjects: ["bella-notte", "elan-skin"],
     accent: "#9AA4B2",
     capabilities: [
@@ -408,7 +408,7 @@ export const projects: Project[] = [
     liveUrl: null,
     repositoryUrl: null,
     audit: null,
-    status: "demo-local",
+    status: "deployed",
     relatedProjects: ["veltra", "elan-skin"],
     accent: "#6B8CFF",
     capabilities: [
@@ -503,7 +503,7 @@ export const projects: Project[] = [
     liveUrl: null,
     repositoryUrl: null,
     audit: null,
-    status: "demo-local",
+    status: "deployed",
     relatedProjects: ["aurelia-estates", "bella-notte"],
     accent: "#D7C4B8",
     capabilities: [
@@ -552,6 +552,15 @@ export function projectCoverAlt(project: Project) {
 
 export function isVideoSrc(src: string) {
   return /\.(mp4|webm|mov)(\?|$)/i.test(src);
+}
+
+/** Poster still for a mockup video (or passthrough for image srcs). */
+export function projectPosterSrc(src: string, slug: string) {
+  if (!isVideoSrc(src)) return src;
+  if (/preview-mobile|mockup-mobile/i.test(src)) {
+    return `/projects/${slug}/screen-mobile.png`;
+  }
+  return `/projects/${slug}/screen-desktop.png`;
 }
 
 export const projectCategories = [

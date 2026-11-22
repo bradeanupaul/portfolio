@@ -13,7 +13,11 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import type { Project } from "@/data/projects";
-import { projectCoverAlt, projectCoverSrc } from "@/data/projects";
+import {
+  projectCoverAlt,
+  projectCoverSrc,
+  projectPosterSrc,
+} from "@/data/projects";
 import { getDemoAudit } from "@/data/audits";
 import { resolveProjectLiveUrl } from "@/lib/project-links";
 import { RevealItem } from "@/components/motion/Reveal";
@@ -135,8 +139,20 @@ export function CaseStudyView({
           </div>
 
           <CaseStudyDeviceHero
-            desktop={{ src: hero.src, alt: hero.alt }}
-            mobile={mobile ? { src: mobile.src, alt: mobile.alt } : null}
+            desktop={{
+              src: hero.src,
+              poster: projectPosterSrc(hero.src, project.slug),
+              alt: hero.alt,
+            }}
+            mobile={
+              mobile
+                ? {
+                    src: mobile.src,
+                    poster: projectPosterSrc(mobile.src, project.slug),
+                    alt: mobile.alt,
+                  }
+                : null
+            }
             accent={project.accent}
           />
         </div>

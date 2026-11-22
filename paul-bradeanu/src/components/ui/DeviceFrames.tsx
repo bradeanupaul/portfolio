@@ -1,13 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { isVideoSrc } from "@/data/projects";
 
 type FrameMedia = {
   src: string;
   alt: string;
+  /** Still shown until video is ready (or forever if video fails). */
+  poster?: string;
   priority?: boolean;
 };
 
@@ -89,55 +92,111 @@ function releasePlay(el: HTMLVideoElement) {
   playing.delete(el);
 }
 
-function ScreenVideo({
+function ScreenMedia({
   src,
+  poster,
   alt,
   active,
   priority = false,
-  className,
 }: {
   src: string;
+  poster?: string;
   alt: string;
   active: boolean;
   priority?: boolean;
-  className?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
-  const attached = useRef(false);
+  const video = isVideoSrc(src);
+  const still = poster ?? (!video ? src : undefined);
+  const [ready, setReady] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    setReady(false);
+    setFailed(false);
+  }, [src]);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !video || failed) return;
 
-    if (active) {
-      if (!attached.current || el.dataset.src !== src) {
-        el.src = src;
-        el.dataset.src = src;
-        el.load();
-        attached.current = true;
-      }
-      claimPlay(el);
-    } else {
+    if (!active) {
       releasePlay(el);
+      return;
     }
 
-    return () => releasePlay(el);
-  }, [active, src]);
+    if (el.dataset.src !== src) {
+      el.src = src;
+      el.dataset.src = src;
+      el.load();
+    }
+
+    let cancelled = false;
+
+    const markReady = () => {
+      if (cancelled) return;
+      setReady(true);
+      claimPlay(el);
+    };
+
+    const markFailed = () => {
+      if (cancelled) return;
+      setFailed(true);
+      setReady(false);
+      releasePlay(el);
+    };
+
+    if (el.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      markReady();
+    } else {
+      el.addEventListener("loadeddata", markReady);
+      el.addEventListener("canplay", markReady);
+      el.addEventListener("error", markFailed);
+    }
+
+    return () => {
+      cancelled = true;
+      el.removeEventListener("loadeddata", markReady);
+      el.removeEventListener("canplay", markReady);
+      el.removeEventListener("error", markFailed);
+      releasePlay(el);
+    };
+  }, [active, src, video, failed]);
 
   return (
-    <video
-      ref={ref}
-      className={cn(
-        "absolute inset-0 h-full w-full object-cover object-top [transform:translateZ(0)]",
-        className,
+    <>
+      {still ? (
+        // eslint-disable-next-line @next/next/no-img-element -- tiny screen fill; next/image layout fights absolute cover
+        <img
+          src={still}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover object-top"
+          draggable={false}
+          decoding={priority ? "sync" : "async"}
+          loading={priority ? "eager" : "lazy"}
+          aria-hidden
+        />
+      ) : (
+        <div className="absolute inset-0 bg-black" aria-hidden />
       )}
-      muted
-      loop
-      playsInline
-      preload={priority ? "metadata" : "none"}
-      disableRemotePlayback
-      aria-label={alt}
-    />
+
+      {video && !failed ? (
+        <video
+          ref={ref}
+          className={cn(
+            "absolute inset-0 h-full w-full object-cover object-top [transform:translateZ(0)] transition-opacity duration-300",
+            ready ? "opacity-100" : "opacity-0",
+          )}
+          muted
+          loop
+          playsInline
+          preload={active || priority ? "auto" : "none"}
+          disableRemotePlayback
+          aria-label={alt}
+          poster={still}
+        />
+      ) : null}
+    </>
   );
 }
 
@@ -164,7 +223,11 @@ function DeviceStage({
 }) {
   const reduce = useReducedMotion();
   const stageRef = useRef<HTMLDivElement>(null);
-  const appeared = useInView(stageRef, { once: true, amount: 0.05, margin: "80px 0px" });
+  const appeared = useInView(stageRef, {
+    once: true,
+    amount: 0.05,
+    margin: "80px 0px",
+  });
 
   const offset =
     appearFrom === "left"
@@ -181,13 +244,11 @@ function DeviceStage({
     <motion.div
       ref={stageRef}
       className={cn("relative aspect-square w-full", className)}
-      initial={
-        reduce ? false : { opacity: 0, scale: 0.9, ...offset, filter: "blur(10px)" }
-      }
+      initial={reduce ? false : { opacity: 0, scale: 0.9, ...offset }}
       animate={
         show
-          ? { opacity: 1, scale: 1, x: 0, y: 0, filter: "blur(0px)" }
-          : { opacity: 0, scale: 0.9, ...offset, filter: "blur(10px)" }
+          ? { opacity: 1, scale: 1, x: 0, y: 0 }
+          : { opacity: 0, scale: 0.9, ...offset }
       }
       transition={{ duration: 0.75, delay: appearDelay, ease }}
     >
@@ -203,7 +264,7 @@ function DeviceStage({
         aria-hidden
       />
 
-      {/* 2. Video — optional full-canvas mask for pixel-perfect corners */}
+      {/* 2. Still + video — optional full-canvas mask for pixel-perfect corners */}
       <div
         className="absolute inset-0 z-[1]"
         style={
@@ -233,8 +294,9 @@ function DeviceStage({
               : { borderRadius: 0 }),
           }}
         >
-          <ScreenVideo
+          <ScreenMedia
             src={media.src}
+            poster={media.poster}
             alt={media.alt}
             active={active}
             priority={media.priority}
