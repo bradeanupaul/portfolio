@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Suspense } from "react";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { HandwrittenAccent } from "@/components/ui/HandwrittenAccent";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
@@ -17,9 +18,6 @@ export const metadata: Metadata = {
   description: "Scrieți echipei VELTRA. Formular demonstrativ, fără răspuns comercial real.",
 };
 
-type Props = {
-  searchParams: Promise<{ subiect?: string }>;
-};
 
 const infoBlocks = [
   {
@@ -129,9 +127,9 @@ function InfoIcon({ kind }: { kind: (typeof infoBlocks)[number]["icon"] }) {
   }
 }
 
-export default async function ContactPage({ searchParams }: Props) {
-  const params = await searchParams;
-  const defaultSubject = params.subiect ? decodeURIComponent(params.subiect) : "";
+export default function ContactPage() {
+  // Query `?subiect=` is applied client-side in ContactForm (keeps page static-exportable).
+  const defaultSubject = "";
 
   return (
     <>
@@ -211,7 +209,9 @@ export default async function ContactPage({ searchParams }: Props) {
               Etichete deasupra câmpurilor, validare pe loc. Mesajele se salvează în baza locală de demo.
             </p>
             <div className="mt-6">
-              <ContactForm defaultSubject={defaultSubject} />
+              <Suspense fallback={null}>
+                <ContactForm defaultSubject={defaultSubject} />
+              </Suspense>
             </div>
           </Reveal>
         </div>

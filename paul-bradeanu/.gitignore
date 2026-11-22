@@ -24,6 +24,13 @@
 .DS_Store
 *.pem
 
+# Static demo exports (generated into public/ at build time)
+/public/bella-notte/
+/public/veltra/
+/public/vanta-ink/
+/public/aurelia-estates/
+/public/elan-skin/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

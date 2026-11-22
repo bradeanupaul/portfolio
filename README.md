@@ -1,17 +1,19 @@
 # Portfolio monorepo
 
-Un singur repo cu portofoliul și site-urile demo folosite în case studies.
+Un singur repo + **un singur proiect Vercel** (portofoliul). Demo-urile se exportă static la build și apar pe același domeniu:
+
+- `paulbradeanu.com/bella-notte`
+- `paulbradeanu.com/veltra`
+- `paulbradeanu.com/vanta-ink`
+- `paulbradeanu.com/aurelia-estates`
+- `paulbradeanu.com/elan-skin`
 
 ## Structură
 
 | Path | Rol |
 |------|-----|
-| `paul-bradeanu/` | Portofoliu (Next.js) — domeniul principal |
-| `bellanotte/` | Demo → `paulbradeanu.com/bella-notte` |
-| `veltra/` | Demo → `paulbradeanu.com/veltra` |
-| `vantaink/` | Demo → `paulbradeanu.com/vanta-ink` |
-| `aureliaestates/` | Demo → `paulbradeanu.com/aurelia-estates` |
-| `elanskin/` | Demo → `paulbradeanu.com/elan-skin` |
+| `paul-bradeanu/` | Portofoliu + export static al demo-urilor în `public/<slug>/` |
+| `bellanotte/` … `elanskin/` | Sursele demo (Next.js), folosite la `npm run build` |
 | `client-presentations/` | Prezentări client |
 
 ## Development
@@ -19,54 +21,27 @@ Un singur repo cu portofoliul și site-urile demo folosite în case studies.
 ```bash
 cd paul-bradeanu
 npm install
-npm run dev          # portofoliu + cele 5 demo-uri (ports 3000–3005)
-npm run dev:site     # doar portofoliul pe :3000
+npm run dev          # portofoliu + demo-uri pe ports 3000–3005
+npm run dev:site     # doar portofoliul
 ```
 
-Demo-urile trebuie instalate separat o dată (`npm install` în fiecare folder). Local **fără** basePath (rămân pe `/`).
+Local, demo-urile rulează full (cu API). Pe Vercel, formularele/API rămân demonstrative (export static).
 
-## Deploy pe Vercel (path-uri, fără subdomenii)
+## Deploy (un proiect)
 
-### 1) Portofoliu
+1. Importă [bradeanupaul/portfolio](https://github.com/bradeanupaul/portfolio) pe Vercel.
+2. **Root Directory:** `paul-bradeanu`
+3. Build: `npm run build` (rulează `scripts/build-demos.mjs`, apoi Next)
+4. Fără proiecte Vercel separate, fără subdomenii.
 
-- Repo: `bradeanupaul/portfolio`
-- **Root Directory:** `paul-bradeanu`
-- Domeniu: `paulbradeanu.com` / `www`
-
-### 2) Fiecare demo (proiect separat, același repo)
-
-| Root Directory | Env pe proiectul demo |
-|----------------|------------------------|
-| `bellanotte` | `NEXT_PUBLIC_BASE_PATH=/bella-notte` |
-| `veltra` | `NEXT_PUBLIC_BASE_PATH=/veltra` |
-| `vantaink` | `NEXT_PUBLIC_BASE_PATH=/vanta-ink` |
-| `aureliaestates` | `NEXT_PUBLIC_BASE_PATH=/aurelia-estates` |
-| `elanskin` | `NEXT_PUBLIC_BASE_PATH=/elan-skin` |
-
-Plus pe fiecare demo:
+Build-ul din `paul-bradeanu` vede sibling-urile (`../bellanotte` etc.) din același repo și le instală la nevoie.
 
 ```bash
-DATABASE_URL="file:./prisma/dev.db"
-NEXT_PUBLIC_SITE_URL="https://paulbradeanu.com/<path>"
+# build rapid fără demo-uri (local)
+npm run build:site
 ```
-
-(Nu atașa domeniu custom pe demo-uri — lasă `*.vercel.app`.)
-
-### 3) Proxy pe portofoliu
-
-În proiectul **paul-bradeanu** (Vercel → Settings → Environment Variables), pune originile demo:
-
-```bash
-DEMO_ORIGIN_BELLA_NOTTE=https://<bellanotte>.vercel.app
-DEMO_ORIGIN_VELTRA=https://<veltra>.vercel.app
-DEMO_ORIGIN_VANTA_INK=https://<vantaink>.vercel.app
-DEMO_ORIGIN_AURELIA_ESTATES=https://<aureliaestates>.vercel.app
-DEMO_ORIGIN_ELAN_SKIN=https://<elanskin>.vercel.app
-```
-
-Redeploy portofoliul. Apoi `paulbradeanu.com/bella-notte` servește demo-ul.
 
 ## Note
 
-- Assetele livrate (video/cover) sunt în `paul-bradeanu/public/`.
-- `paul-bradeanu/screenshots-for-mockups/` e local și nu e versionat.
+- Exporturile din `public/<slug>/` sunt generate, nu se commită.
+- Assetele mockup (video/cover) sunt în `paul-bradeanu/public/projects/`.

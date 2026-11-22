@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { X } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
 import { Container } from "@/components/chrome";
@@ -78,9 +79,15 @@ export function ShopBrowser({
   categories: Category[];
   initialCategory?: string;
 }) {
-  const [category, setCategory] = useState(
-    categories.some((item) => item.slug === initialCategory) ? initialCategory : "",
-  );
+  const searchParams = useSearchParams();
+  const fromQuery = searchParams.get("categorie") ?? "";
+  const seed =
+    categories.some((item) => item.slug === initialCategory)
+      ? initialCategory
+      : categories.some((item) => item.slug === fromQuery)
+        ? fromQuery
+        : "";
+  const [category, setCategory] = useState(seed);
   const [feel, setFeel] = useState<SkinFeel | "">("");
   const [sort, setSort] = useState<(typeof sorts)[number]["id"]>("recomandate");
 

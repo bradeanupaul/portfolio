@@ -1,7 +1,8 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useId, useState, type ReactNode } from "react";
+import { useId, useEffect, useState, type ReactNode } from "react";
+import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { motion, useReducedMotion } from "motion/react";
 import { z } from "zod";
@@ -36,6 +37,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }) {
   const reduce = useReducedMotion();
   const formId = useId();
+  const searchParams = useSearchParams();
   const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
   const {
     register,
@@ -58,6 +60,16 @@ export function ContactForm({ defaultSubject = "" }: { defaultSubject?: string }
       website: "",
     },
   });
+
+  useEffect(() => {
+    const raw = searchParams.get("subiect");
+    if (!raw) return;
+    try {
+      setValue("subject", decodeURIComponent(raw));
+    } catch {
+      setValue("subject", raw);
+    }
+  }, [searchParams, setValue]);
 
   const subjectValue = watch("subject");
 

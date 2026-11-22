@@ -1,12 +1,33 @@
 import type { NextConfig } from "next";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH?.replace(/\/$/, "") || "";
+const isStatic = process.env.STATIC_EXPORT === "1";
 
 const nextConfig: NextConfig = {
   ...(basePath ? { basePath } : {}),
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  ...(isStatic
+    ? {
+        output: "export",
+        images: { unoptimized: true },
+      }
+    : {
+        cacheComponents: true,
+        partialPrefetching: true,
+        async headers() {
+          return [
+            {
+              source: "/:path*",
+              headers: [
+                {
+                  key: "Content-Security-Policy",
+                  value:
+                    "frame-src 'self' https://www.google.com https://www.google.ro https://maps.google.com; object-src 'none'",
+                },
+              ],
+            },
+          ];
+        },
+      }),
   turbopack: {
     rules: {
       "*.css": {
@@ -14,21 +35,6 @@ const nextConfig: NextConfig = {
         as: "*.css",
       },
     },
-  },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            // Allow keyless Google Maps embeds without locking Next runtime scripts.
-            key: "Content-Security-Policy",
-            value:
-              "frame-src 'self' https://www.google.com https://www.google.ro https://maps.google.com; object-src 'none'",
-          },
-        ],
-      },
-    ];
   },
 };
 
