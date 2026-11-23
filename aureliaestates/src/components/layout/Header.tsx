@@ -103,8 +103,8 @@ export function Header() {
               alt="Aurelia Estates"
               width={420}
               height={88}
-              priority
-              fetchPriority="high"
+              loading="eager"
+              fetchPriority="low"
               unoptimized
               className="h-auto w-full"
             />

@@ -5,7 +5,7 @@
 :HL["/veltra/_next/static/media/8760c4774489e4ba-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/css/e85b2f2a275f87cf.css","style"]
-:HL["/veltra/_next/static/css/f9ffed506215f810.css","style"]
+:HL["/veltra/_next/static/css/ba11ab7e1e66d2d4.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"experiente","h":96,"c":"$Q2"}]]
-0:{"b":"39TcfNNO2z-SdMPc6PHcq","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"0NLDhfE8eoc6xu3V-nlKS","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

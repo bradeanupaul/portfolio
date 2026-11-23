@@ -89,7 +89,7 @@ const editorialSlugs = new Set(["night-reset", "daily-veil-spf-50"]);
 
 function images(slug: string): Product["images"] {
   return {
-    packshot: `/assets/products/${slug}/packshot.jpg`,
+    packshot: `/assets/products/${slug}/packshot.webp`,
     lifestyle: `/assets/products/${slug}/angle.jpg`,
     texture: `/assets/products/${slug}/texture.jpg`,
     front: `/assets/products/${slug}/front.jpg`,

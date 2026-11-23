@@ -48,10 +48,11 @@ export function HeroSection() {
           src="/images/hero/pasta-wide.webp"
           alt="Tagliatelle cu trufe negre și Parmigiano pe farfurie ceramică întunecată"
           fill
+          priority
           loading="eager"
           fetchPriority="high"
           unoptimized
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-bn-bg via-bn-bg/78 to-bn-bg/25 max-lg:via-bn-bg/55 max-lg:to-bn-bg/35" />

@@ -52,9 +52,9 @@ export function Logo({ variant = "horizontal", className, priority = false }: Lo
         alt="Bella Notte Ristorante Italiano"
         width={config.width}
         height={height}
-        // Eager + fetchPriority on the img; layout owns media-scoped preloads (do not set Image `priority`).
+        // Eager for first paint, but never high — hero LCP must win the network.
         loading={priority ? "eager" : undefined}
-        fetchPriority={priority ? "high" : undefined}
+        fetchPriority={priority ? "low" : undefined}
         decoding="async"
         unoptimized
         className={cn(

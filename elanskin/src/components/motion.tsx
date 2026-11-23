@@ -110,7 +110,7 @@ export function Reveal({
     return (
       <div ref={clipRef} className={cn("overflow-hidden", className)}>
         <motion.div
-          initial="hidden"
+          initial={eager ? false : "hidden"}
           animate={show ? "visible" : "hidden"}
           variants={modeVariants.clip}
           transition={transition}
@@ -124,7 +124,7 @@ export function Reveal({
   return (
     <motion.div
       className={className}
-      initial="hidden"
+      initial={eager ? false : "hidden"}
       {...animateProp(eager, active)}
       variants={modeVariants[mode]}
       transition={transition}

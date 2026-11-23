@@ -86,7 +86,7 @@ export const assetManifest: AssetEntry[] = [
   ].flatMap((slug) => [
     {
       role: `product-packshot-${slug}`,
-      path: `/assets/products/${slug}/packshot.png`,
+      path: `/assets/products/${slug}/packshot.webp`,
       aspect: "1:1",
       alt: `Packshot ${slug} pe fundal transparent.`,
       status: "composed" as const,

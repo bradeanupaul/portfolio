@@ -228,8 +228,14 @@ export function VeltraFloorExplorer() {
 
   useEffect(() => {
     if (reduced) return;
+    const host = sectionRef.current;
+    if (!host) return;
+
     let cancelled = false;
-    const images: (HTMLImageElement | null)[] = new Array(FLOOR_EXPLORER_MANIFEST.frameCount).fill(null);
+    let started = false;
+    const images: (HTMLImageElement | null)[] = new Array(
+      FLOOR_EXPLORER_MANIFEST.frameCount,
+    ).fill(null);
     imagesRef.current = images;
     let loaded = 0;
     let firstReady = false;
@@ -263,13 +269,47 @@ export function VeltraFloorExplorer() {
       img.src = frameSrc(i);
     };
 
-    [...priority].forEach(loadOne);
-    for (let i = 0; i < FLOOR_EXPLORER_MANIFEST.frameCount; i++) {
-      if (!priority.has(i)) loadOne(i);
-    }
+    const startLoading = () => {
+      if (started || cancelled) return;
+      started = true;
+      // First paint: only priority frames. Rest after idle so LCP/TBT stay clear.
+      [...priority].forEach(loadOne);
+      const loadRest = () => {
+        if (cancelled) return;
+        for (let i = 0; i < FLOOR_EXPLORER_MANIFEST.frameCount; i++) {
+          if (!priority.has(i)) loadOne(i);
+        }
+      };
+      const ric = (
+        window as Window & {
+          requestIdleCallback?: (
+            cb: () => void,
+            opts?: { timeout: number },
+          ) => number;
+        }
+      ).requestIdleCallback;
+      if (typeof ric === "function") {
+        ric(loadRest, { timeout: 2500 });
+      } else {
+        globalThis.setTimeout(loadRest, 1200);
+      }
+    };
+
+    // Don't pull ~7MB of frames until the section is near the viewport.
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          startLoading();
+          io.disconnect();
+        }
+      },
+      { rootMargin: "400px 0px", threshold: 0.01 },
+    );
+    io.observe(host);
 
     return () => {
       cancelled = true;
+      io.disconnect();
     };
   }, [reduced, showFrame]);
 

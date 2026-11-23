@@ -109,13 +109,7 @@ export function HeroHome() {
           </div>
 
           <div className="relative mx-auto w-full max-w-md lg:max-h-[500px] lg:max-w-none">
-            <Reveal
-              mode="mask"
-              delay={0.28}
-              eager
-              active={ready}
-              className="relative mx-auto aspect-[4/5] w-full max-w-[300px] overflow-hidden border border-line bg-surface lg:ml-auto lg:max-h-[440px]"
-            >
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-[300px] overflow-hidden border border-line bg-surface lg:ml-auto lg:max-h-[440px]">
               <SmartImage
                 src={heroMain.path}
                 alt={heroMain.alt}
@@ -126,7 +120,7 @@ export function HeroHome() {
                 className="h-full w-full object-cover"
                 objectPosition="center 25%"
               />
-            </Reveal>
+            </div>
             <Reveal
               mode="scale"
               delay={0.55}

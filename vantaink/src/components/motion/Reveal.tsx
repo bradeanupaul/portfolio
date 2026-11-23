@@ -137,7 +137,7 @@ export function Reveal({
         data-js-motion="ready"
       >
         <motion.div
-          initial="hidden"
+          initial={eager ? false : "hidden"}
           animate={show ? "visible" : "hidden"}
           variants={variants}
           transition={transition}
@@ -153,7 +153,7 @@ export function Reveal({
     <motion.div
       className={className}
       data-js-motion="ready"
-      initial="hidden"
+      initial={eager ? false : "hidden"}
       {...animateProp}
       variants={variants}
       transition={transition}

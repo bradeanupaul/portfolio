@@ -54,7 +54,7 @@ export function Hero() {
             Construiește rutina
           </Link>
         </Reveal>
-        <Reveal mode="mask" eager delay={0.35} className="relative mt-8 aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+        <div className="relative mt-8 aspect-[4/5] overflow-hidden rounded-[1.5rem]">
           <Media
             src="/assets/hero-mobile.webp"
             alt="Trio de produse ÉLAN SKIN pe lumină moale."
@@ -67,7 +67,7 @@ export function Hero() {
           <span className="absolute left-4 top-4 rounded-full border border-white/50 bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-aubergine backdrop-blur">
             Niacinamidă
           </span>
-        </Reveal>
+        </div>
         <Reveal mode="fadeLeft" eager delay={1.3}>
           <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-plum">
             {trust.map((label) => (
@@ -124,13 +124,12 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[42rem]">
-          <Reveal mode="mask" eager delay={0.28} className="relative aspect-[5/4] max-h-[40rem] overflow-hidden rounded-[1.75rem]">
+          <div className="relative aspect-[5/4] max-h-[40rem] overflow-hidden rounded-[1.75rem]">
             <Media
               src="/assets/hero-desktop.webp"
               alt="Produse ÉLAN SKIN pe suprafață de sticlă."
               className="absolute inset-0"
-              priority
-              sizes="(min-width: 768px) 50vw, 100vw"
+              sizes="(min-width: 768px) 50vw, 0px"
               fit="cover"
               tone="cool"
             />
@@ -138,7 +137,7 @@ export function Hero() {
               aria-hidden
               className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(252,250,255,0.35),transparent_40%),linear-gradient(180deg,transparent_55%,rgba(33,20,43,0.18))]"
             />
-          </Reveal>
+          </div>
           <Reveal
             mode="scale"
             eager

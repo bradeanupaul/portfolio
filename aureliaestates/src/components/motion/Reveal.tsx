@@ -98,7 +98,7 @@ export function Reveal({
     return (
       <div ref={clipRef} className={cn("overflow-hidden", className)}>
         <motion.div
-          initial="hidden"
+          initial={eager ? false : "hidden"}
           animate={show ? "visible" : "hidden"}
           variants={variants.clip}
           transition={{ duration: durationFor.clip ?? 0.85, ease, delay }}
@@ -112,7 +112,7 @@ export function Reveal({
   return (
     <motion.div
       className={cn(className)}
-      initial="hidden"
+      initial={eager ? false : "hidden"}
       {...animateProp(eager, active)}
       variants={variants[variant]}
       transition={{ duration: durationFor[variant] ?? 0.9, ease, delay }}
@@ -167,7 +167,7 @@ export function RevealGroup({
   return (
     <motion.div
       className={className}
-      initial="hidden"
+      initial={eager ? false : "hidden"}
       {...animateProp(eager, active)}
       variants={{
         hidden: {},

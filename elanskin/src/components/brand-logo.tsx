@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 /** Icon mark + ÉLAN SKIN wordmark. Light variant uses a lilac-white mark for dark surfaces. */
@@ -18,26 +17,17 @@ export function BrandLogo({
   const light = variant === "light";
   const ink = light ? "#FAF9FC" : "#352344";
   const accent = light ? "#E8D5F0" : "#8463A1";
-  const [reveal, setReveal] = useState(false);
-
-  useEffect(() => {
-    const frame = requestAnimationFrame(() => setReveal(true));
-    return () => cancelAnimationFrame(frame);
-  }, []);
-
   const markW = size === "footer" ? 56 : 34;
   const titleClass = size === "footer" ? "text-[2.35rem]" : "text-[1.45rem]";
   const subClass =
     size === "footer" ? "text-[0.72rem] tracking-[0.46em]" : "text-[0.58rem] tracking-[0.4em]";
-  const src = light ? "/assets/brand/logo-mark-light-v2.webp" : "/assets/brand/logo-mark.png";
+  const src = light
+    ? "/assets/brand/logo-mark-light-v2.webp"
+    : "/assets/brand/logo-mark.webp";
 
   return (
     <span
-      className={cn(
-        "inline-flex items-center gap-3 transition duration-500",
-        reveal ? "opacity-100" : "opacity-0",
-        className,
-      )}
+      className={cn("inline-flex items-center gap-3", className)}
       role="img"
       aria-label={alt}
     >
@@ -50,7 +40,7 @@ export function BrandLogo({
         className="shrink-0"
         style={{ width: markW, height: "auto" }}
         decoding="async"
-        fetchPriority="high"
+        fetchPriority="low"
       />
       <span className="leading-none">
         <span className={cn("block font-display tracking-[0.04em]", titleClass)} style={{ color: ink }}>

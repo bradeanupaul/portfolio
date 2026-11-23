@@ -128,7 +128,7 @@ export function AnimatedReveal({
       <div ref={clipRef} className={cn("overflow-hidden", className)}>
         <motion.div
           variants={variants.clip}
-          initial="hidden"
+          initial={eager ? false : "hidden"}
           animate={show ? "visible" : "hidden"}
           transition={transition}
         >
@@ -142,7 +142,7 @@ export function AnimatedReveal({
     <MotionTag
       className={cn(className)}
       variants={variants[variant]}
-      initial="hidden"
+      initial={eager ? false : "hidden"}
       {...animateProps(eager, active, once)}
       transition={transition}
     >

@@ -97,7 +97,7 @@ export function Reveal({
   const shared = {
     className: cn(className),
     variants,
-    initial: "hidden" as const,
+    initial: (immediate ? false : "hidden") as false | "hidden",
     viewport: { once: true, amount },
     style: kind === "rule" ? ({ transformOrigin: "left center" } as const) : undefined,
     "data-motion-reveal": true,
@@ -113,7 +113,7 @@ export function Reveal({
       >
         <motion.div
           variants={clipLine}
-          initial="hidden"
+          initial={immediate ? false : "hidden"}
           animate={show ? "show" : "hidden"}
           transition={delay ? { delay } : undefined}
         >

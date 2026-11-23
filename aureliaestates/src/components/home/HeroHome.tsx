@@ -36,7 +36,7 @@ export function HeroHome() {
               "linear-gradient(to bottom, black 0%, black 55%, transparent 92%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
             maskComposite: "intersect",
             WebkitMaskComposite: "source-in",
-            opacity: 0.42,
+            opacity: 0.72,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/25 to-white" />
@@ -109,9 +109,8 @@ export function HeroHome() {
               src="/images/hero/hero-radical-building.webp"
               alt="Clădire rezidențială contemporană pe fundal alb, imagine de brand Aurelia Estates"
               fill
-              priority
-              fetchPriority="high"
-              sizes="(min-width: 1024px) 55vw, 100vw"
+              loading="lazy"
+              sizes="(min-width: 1024px) 55vw, 0px"
               className="object-contain object-right-bottom"
               style={{
                 maskImage:

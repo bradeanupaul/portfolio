@@ -54,11 +54,20 @@ export function Media({
         alt={alt}
         fill
         priority={priority}
+        fetchPriority={priority ? "high" : "auto"}
         sizes={sizes}
         className={padClass}
         onError={() => {
           if (triedFallback) return;
           setTriedFallback(true);
+          // Prefer webp siblings before heavier raster fallbacks.
+          if (current.endsWith(".png") || current.endsWith(".jpg")) {
+            const webp = current.replace(/\.(png|jpg)$/, ".webp");
+            if (webp !== current) {
+              setCurrent(webp);
+              return;
+            }
+          }
           if (current.endsWith(".png")) {
             setCurrent(current.replace(/\.png$/, ".jpg"));
             return;

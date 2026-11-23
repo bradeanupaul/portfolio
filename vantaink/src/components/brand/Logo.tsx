@@ -72,8 +72,8 @@ export function Logo(props: LogoProps) {
           alt={altWordmark}
           width={196}
           height={28}
-          priority={priority}
-          fetchPriority={priority ? "high" : undefined}
+          loading={priority ? "eager" : undefined}
+          fetchPriority={priority ? "low" : undefined}
           unoptimized={tone === "light"}
           className="h-6 w-auto max-w-[11rem] object-contain object-left sm:h-7 sm:max-w-[13rem]"
         />

@@ -2,7 +2,6 @@ import { prisma } from "@/lib/db/client";
 import { Hero } from "@/components/sections/Hero";
 import { RoomsIntro } from "@/components/sections/RoomsIntro";
 import { FacilitiesPreview } from "@/components/sections/FacilitiesPreview";
-import { VeltraFloorExplorer } from "@/components/sections/VeltraFloorExplorer";
 import { ExperiencesPreview } from "@/components/sections/ExperiencesPreview";
 import { RestaurantPreview } from "@/components/sections/RestaurantPreview";
 import { SpaPreview } from "@/components/sections/SpaPreview";
@@ -10,6 +9,7 @@ import { GalleryPreview } from "@/components/sections/GalleryPreview";
 import { GuestStories } from "@/components/sections/GuestStories";
 import { SurroundingsPreview } from "@/components/sections/SurroundingsPreview";
 import { BookingCta } from "@/components/sections/BookingCta";
+import { VeltraFloorExplorerLazy } from "@/components/sections/VeltraFloorExplorerLazy";
 
 export default async function HomePage() {
   const rooms = await prisma.roomType.findMany({
@@ -34,7 +34,7 @@ export default async function HomePage() {
       <Hero />
       <FacilitiesPreview />
       <RoomsIntro rooms={featured} />
-      <VeltraFloorExplorer />
+      <VeltraFloorExplorerLazy />
       <ExperiencesPreview />
       <RestaurantPreview />
       <SpaPreview />

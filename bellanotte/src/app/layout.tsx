@@ -28,7 +28,8 @@ const sansFont = DM_Sans({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600"],
   display: "swap",
-  preload: true,
+  // Body font can swap in — keep preloads for display only (LCP).
+  preload: false,
 });
 
 const scriptFont = Great_Vibes({
@@ -91,20 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${displayFont.variable} ${sansFont.variable} ${scriptFont.variable} h-full`}
     >
       <head>
-        <link
-          rel="preload"
-          as="image"
-          href={`${assetBase}/images/branding/logo-bella-notte-mobile.webp`}
-          fetchPriority="high"
-          media="(max-width: 1023px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href={`${assetBase}/images/branding/logo-bella-notte.webp`}
-          fetchPriority="high"
-          media="(min-width: 1024px)"
-        />
+        {/* Only the LCP hero — logo preloads steal bandwidth on mobile PSI. */}
         <link
           rel="preload"
           as="image"

@@ -101,15 +101,15 @@ export function Header() {
               solid
                 ? "/images/brand/veltra-logo-dark.png"
                 : onDarkRoute || (isHome && isNarrow)
-                  ? "/images/brand/veltra-logo-light.png"
+                  ? "/images/brand/veltra-logo-light.webp"
                   : "/images/brand/veltra-logo-dark.png"
             }
             alt="VELTRA Alpine Hideaway & Spa"
             width={168}
             height={56}
             className="!h-10 w-auto object-contain md:!h-11"
-            priority
-            fetchPriority="high"
+            loading="eager"
+            fetchPriority="low"
             unoptimized
           />
         </Link>

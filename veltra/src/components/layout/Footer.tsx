@@ -15,7 +15,7 @@ export function Footer() {
           <RevealItem>
             <div>
               <Image
-                src="/images/brand/veltra-logo-light.png"
+                src="/images/brand/veltra-logo-light.webp"
                 alt="VELTRA Alpine Hideaway & Spa"
                 width={220}
                 height={72}

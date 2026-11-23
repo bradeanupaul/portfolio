@@ -91,17 +91,16 @@ export function Hero() {
         style={{ y: photoY, scale: photoScale }}
         aria-hidden
       >
-        <Reveal kind="mask" immediate active={ready} delay={0.22} className="relative h-full w-full">
+        <div className="relative h-full w-full">
           <Image
             src="/images/exterior/hero-beige-lodge.webp"
             alt=""
             fill
-            priority
-            fetchPriority="high"
-            sizes="(max-width: 1024px) 90vw, 88vw"
+            // Desktop-only plane — no priority so mobile LCP isn't double-fetched.
+            sizes="(max-width: 767px) 0px, 88vw"
             className="object-cover object-[28%_42%]"
           />
-        </Reveal>
+        </div>
       </motion.div>
 
       <div className="absolute inset-0 z-0 md:hidden" aria-hidden>

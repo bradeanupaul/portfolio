@@ -4,6 +4,9 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH?.replace(/\/$/, "") || "";
 const isStatic = process.env.STATIC_EXPORT === "1";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion", "motion"],
+  },
   ...(basePath ? { basePath } : {}),
   ...(isStatic
     ? {

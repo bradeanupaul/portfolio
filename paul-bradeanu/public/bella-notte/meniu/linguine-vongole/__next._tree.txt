@@ -1,13 +1,9 @@
-:HL["/bella-notte/_next/static/media/13971731025ec697-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/bella-notte/_next/static/media/48410f3df60da620-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/bella-notte/_next/static/media/7ab938503e4547a1-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/bella-notte/_next/static/media/7b89a4fd5e90ede0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/bella-notte/_next/static/css/fea953545d6ee8c2.css","style"]
+:HL["/bella-notte/_next/static/css/d1676cf5c5d45d78.css","style"]
 :HL["/bella-notte/_next/static/css/cd0d4663f62b187e.css","style"]
-:HL["/bella-notte/images/branding/logo-bella-notte-mobile.webp","image",{"fetchPriority":"high","media":"(max-width: 1023px)"}]
-:HL["/bella-notte/images/branding/logo-bella-notte.webp","image",{"fetchPriority":"high","media":"(min-width: 1024px)"}]
 :HL["/bella-notte/images/hero/pasta-wide.webp","image",{"fetchPriority":"high"}]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"linguine-vongole","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"meniu","h":64,"c":"$Q2"}]]
-0:{"b":"qJmWsLTvZjoHOM1J_8zjK","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"wsgCkEBhGmMAp4WMAOMRo","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
