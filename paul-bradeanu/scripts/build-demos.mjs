@@ -330,7 +330,9 @@ function syncVercelDemoRewrites() {
     };
     walk(destDir);
   }
-  data.cleanUrls = true;
+  // Do not enable cleanUrls — it 308s *.html → extensionless, then the
+  // extensionless path 404s unless a rewrite wins first (often it doesn't).
+  delete data.cleanUrls;
   data.rewrites = rewrites;
   writeFileSync(vercelPath, `${JSON.stringify(data, null, 2)}\n`);
   console.log(`[demos] synced ${rewrites.length} vercel rewrites for clean demo URLs`);
