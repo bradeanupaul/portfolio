@@ -8,4 +8,4 @@
 :HL["/bella-notte/images/branding/logo-bella-notte.webp","image",{"fetchPriority":"high","media":"(min-width: 1024px)"}]
 :HL["/bella-notte/images/hero/pasta-wide.webp","image",{"fetchPriority":"high"}]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"AG4dAswc-l60YntQ1bU6X","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"qJmWsLTvZjoHOM1J_8zjK","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

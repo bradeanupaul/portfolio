@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" fill="none">
+  <g transform="translate(0,0)">
+    <path d="M18 12 C18 12 20 46 20 48 C20 50 18 84 18 84" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M24 46 L58 18" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M30 52 L60 82" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="84" y="52" font-family="Manrope, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="650" letter-spacing="0.18em" fill="#FFFFFF">KERN</text>
+  <text x="86" y="78" font-family="Manrope, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="0.32em" fill="#C5CBD0">AUTOMOTIVE STUDIO</text>
+</svg>

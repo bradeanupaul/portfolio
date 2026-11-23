@@ -13,8 +13,7 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const instant = false;
-
+/* static-export: instant removed */
 export function generateStaticParams() {
   return agents.map((agent) => ({ slug: agent.slug }));
 }

@@ -1032,6 +1032,15 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
+    },
+    {
+      "source": "/:demo(bella-notte|veltra|vanta-ink|aurelia-estates|elan-skin)/:path*__next*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ]
 }

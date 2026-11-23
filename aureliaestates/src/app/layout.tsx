@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { BrandLoader } from "@/components/motion/BrandLoader";
 import { IntroProvider } from "@/components/motion/IntroContext";
+import { RscStaticFetchFix } from "@/components/RscStaticFetchFix";
 import { PageEnter } from "@/components/motion/PageEnter";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="flex min-h-full flex-col bg-canvas font-sans text-ink">
+        <RscStaticFetchFix />
         <IntroProvider>
           <a href="#continut" className="skip-link">
             Sari la conținut

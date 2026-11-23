@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Abstract K from two body-contour strokes -->
+  <path d="M34 18 C34 18 36 58 36 60 C36 62 34 102 34 102" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M40 58 L86 22" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M48 64 L88 100" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <!-- subtle secondary contour -->
+  <path d="M28 24 C30 50 30 70 28 96" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.35"/>
+</svg>

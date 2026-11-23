@@ -18,17 +18,29 @@ const RSC_HEADERS = [
 ] as const;
 
 /**
- * Demo static exports live under public/<demo>/ and ship their own App Router
- * client. Prefetch sends RSC headers; the parent Next app then intercepts and
- * 404s the static .txt/.html payloads (Best Practices / console errors).
- * Strip those headers so Vercel serves the files from public/ as plain assets.
+ * Nested static demo exports send RSC prefetch headers. The parent Next app
+ * then treats those requests as Flight and 404s the public/ files. Clear the
+ * headers (and tell the edge to override them) so Vercel serves the static
+ * payloads as plain assets.
  */
-function withoutRscHeaders(request: NextRequest) {
+function stripRsc(request: NextRequest) {
   const headers = new Headers(request.headers);
   for (const name of RSC_HEADERS) {
     headers.delete(name);
   }
   return headers;
+}
+
+function withRscOverride(response: NextResponse) {
+  // Instruct the Next edge to replace inbound RSC headers with empty values.
+  response.headers.set(
+    "x-middleware-override-headers",
+    RSC_HEADERS.join(","),
+  );
+  for (const name of RSC_HEADERS) {
+    response.headers.set(`x-middleware-request-${name}`, "");
+  }
+  return response;
 }
 
 export function middleware(request: NextRequest) {
@@ -38,12 +50,17 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const headers = withoutRscHeaders(request);
+  const headers = stripRsc(request);
   const leaf = parts[parts.length - 1] ?? "";
 
-  // Real assets keep their extension (.js, .css, .webp, .txt, __next.*.txt, …)
+  // Assets with an extension (.js/.css/.webp/.txt/__next.*.txt) stay as-is,
+  // but still need RSC headers cleared so they aren't Flight-routed to /404.
+  // Rewrite (not next) so the edge re-resolves the static file without Flight.
   if (leaf.includes(".")) {
-    return NextResponse.next({ request: { headers } });
+    const assetUrl = request.nextUrl.clone();
+    return withRscOverride(
+      NextResponse.rewrite(assetUrl, { request: { headers } }),
+    );
   }
 
   const url = request.nextUrl.clone();
@@ -52,7 +69,7 @@ export function middleware(request: NextRequest) {
   } else {
     url.pathname = `${pathname.replace(/\/$/, "")}.html`;
   }
-  return NextResponse.rewrite(url, { request: { headers } });
+  return withRscOverride(NextResponse.rewrite(url, { request: { headers } }));
 }
 
 export const config = {

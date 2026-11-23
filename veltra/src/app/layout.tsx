@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Great_Vibes, Manrope } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
+import { RscStaticFetchFix } from "@/components/RscStaticFetchFix";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ro" className={`${cormorant.variable} ${manrope.variable} ${greatVibes.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-hero-beige text-ink">
+        <RscStaticFetchFix />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

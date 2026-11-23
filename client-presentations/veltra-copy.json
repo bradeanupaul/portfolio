@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "name": "VELTRA Alpine Hideaway & Spa",
+    "category": "Lodge · Spa · Retreat montan",
+    "tagline": "Site de lodge: camere cu fișă, etaje la scroll, spa, meniu ARBOR și cerere de sejur fără plată."
+  },
+  "cover": {
+    "lede": "Site-ul VELTRA este vitrina unui lodge montan fictiv, în Valea Cerbului Alb, fără încasare. Oaspetele vede camerele, etajele, spa-ul și restaurantul ARBOR, apoi trimite o cerere de nopți care se salvează cu un cod. Pentru proprietar, oferta stă pe adrese separate, iar cererile apar în panou doar după login. Demo-ul rulează local, pe portul 3002, cu prețuri simulate.",
+    "body": [
+      "Prima pagină leagă intrările: două butoane în hero, banda de facilități, caruselul de camere și widget-ul de date. Din ele se ajunge la listă, la fișă sau la wizard, cu nopțile deja puse în adresă.",
+      "Restul ofertei are rute proprii: /camere, /spa, /restaurant, /experiente și /galerie. /rezervari este wizard-ul. /admin nu stă în meniul public și se deschide doar după email și parolă. Contactul se salvează local."
+    ],
+    "points": [
+      {
+        "title": "Aceleași date pe card",
+        "text": "Metri, oaspeți și preț de la stau pe card. Click-ul schimbă pagina și deschide fișa, pe adresa camerei."
+      },
+      {
+        "title": "Cerere fără card",
+        "text": "Cinci pași: date, camere libere, oaspete, sumar, cod. Înapoi păstrează intervalul. Nu există câmp pentru card."
+      },
+      {
+        "title": "Panou doar după login",
+        "text": "După autentificare: rezervări active, mesaje noi și tipuri de camere. Tabelul arată referința și butonul de anulare."
+      }
+    ]
+  },
+  "journey": {
+    "title": "De la prima poză la cod",
+    "intro": "De la primul ecran până la cod, vizitatorul rămâne pe site. Nu completează un formular găzduit în altă parte și nu introduce un card. Pașii de mai jos sunt butoane și ecrane din demo, în ordinea în care le întâlnește un oaspete.",
+    "steps": [
+      {
+        "title": "Hero și meniu",
+        "text": "Sus stau logo-ul, linkurile de pagină și, pe ecran lat, Rezervă acum. În hero, același buton deschide /rezervari, iar Descoperă VELTRA deschide pagina Despre. Pe telefon, Rezervă acum e în meniul din iconiță."
+      },
+      {
+        "title": "Scroll pe prima pagină",
+        "text": "Sub hero urmează facilitățile, caruselul de camere și etajele prinse la scroll. Mai jos stau experiențele, previzualizările, poveștile, anotimpurile și widget-ul cu Sosire, Plecare și Oaspeți."
+      },
+      {
+        "title": "Listă, apoi fișă",
+        "text": "Din carusel sau din meniul Camere se deschide /camere. Cardul arată metri, capacitate și preț de la. Descoperă camera deschide /camere/slug, cu dotări, fotografii și butonul Rezervă această cameră."
+      },
+      {
+        "title": "Wizard de nopți",
+        "text": "Pasul 1 cere check-in, check-out și numărul de oaspeți. Pasul 2 listează tipurile care încap și marchează ocupatele. Pașii 3 și 4 cer numele, emailul, telefonul și un sumar, fără date de card."
+      },
+      {
+        "title": "Cod în panou",
+        "text": "După confirmare, ecranul arată un cod de forma VEL-dată-litere, numele camerei și totalul. Aceeași cerere intră în tabelul din /admin/rezervari, unde poate fi anulată. Plata nu se procesează."
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "home",
+      "title": "Prima pagină",
+      "eyebrow": "Acasă",
+      "lede": "Prima pagină este harta site-ului. Header-ul ține meniul și butonul Rezervă acum, vizibil pe ecran lat. În hero, Rezervă acum deschide wizard-ul de pe /rezervari, iar Descoperă VELTRA deschide /despre-noi. Mai jos: facilități, carusel, etaje la scroll, experiențe, previzualizări și widget de date.",
+      "sections": [
+        {
+          "heading": "Hero, meniu și patru scurtături",
+          "paras": [
+            "Pe ecran lat, header-ul rămâne fix. Linkurile sunt Camere, Facilități, Experiențe, Restaurant, Galerie, SPA, Despre și Contact. Butonul Rezervă acum, în cupru, duce la /rezervari.",
+            "În hero, sub titlu, stau Rezervă acum și Descoperă VELTRA. Sub ele, patru scurtături cu icon: Camere elegante, Piscină încălzită, Ciubăr în aer liber și Restaurant local. Fiecare e un link către pagina lui."
+          ],
+          "bullets": [
+            "Rezervă acum din header și din hero deschid /rezervari.",
+            "Descoperă VELTRA deschide /despre-noi.",
+            "Pe telefon, linkurile stau în meniul din iconiță."
+          ]
+        },
+        {
+          "heading": "Carusel, facilități și widget",
+          "paras": [
+            "Banda de facilități se încheie cu Descoperă facilitățile, către /facilitati. Caruselul arată trei camere, cu săgeți și un contor. Butonul Vezi camerele deschide lista, nu fișa unei singure camere.",
+            "La final, widget-ul are Sosire, Plecare și Oaspeți, între 1 și 8. Verifică disponibilitatea deschide /rezervari cu checkIn, checkOut și guests în adresă, dacă plecarea e după sosire."
+          ],
+          "bullets": [
+            "O dată din trecut oprește widget-ul, cu mesaj.",
+            "Plecarea trebuie să fie după sosire.",
+            "Adresa păstrează cele trei valori alese."
+          ]
+        },
+        {
+          "heading": "Experiențe, galerie și anotimpuri",
+          "paras": [
+            "Acordeonul are patru rânduri: drumeții, bicicletă, ATV și foc. Un click sau trecerea mouse-ului schimbă fotografia, fără reload. Descoperă experiența deschide /experiente/slug. Vezi experiențele deschide lista.",
+            "Vezi galeria duce la /galerie, cu filtre și lightbox. Poveștile se schimbă din șase etichete, iar anotimpurile schimbă textul și poza. Explorează împrejurimile deschide /imprejurimi."
+          ],
+          "bullets": [
+            "Descoperă restaurantul deschide /restaurant.",
+            "Explorează zona SPA deschide /spa.",
+            "Planifică un weekend, de la povești, deschide wizard-ul."
+          ]
+        }
+      ],
+      "why": "Oaspetele vede dintr-un ecran unde sunt camerele, spa-ul și masa, și pornește cererea din hero sau din widget. Header-ul rămâne vizibil pe toată derularea.",
+      "shots": {
+        "primary": "home",
+        "secondary": "home-s2",
+        "phone": "home"
+      }
+    },
+    {
+      "id": "floor",
+      "title": "Etajele, prinse la scroll",
+      "eyebrow": "Secțiune pe homepage",
+      "lede": "Secțiunea stă pe homepage și rămâne prinsă pe ecran cât timp derulezi. Cadrele WebP arată o secțiune prin lodja terminată, de la acoperiș spre parter, nu un șantier. Șina sare la Mansardă, Etaj 2, Etaj 1 sau Parter. Lângă desen apar încăperile, câteva cifre și un buton către camere sau restaurant.",
+      "sections": [
+        {
+          "heading": "191 de cadre, prinse pe loc",
+          "paras": [
+            "Scroll-ul nu dă pagina mai departe cât timp secțiunea e activă. GSAP ScrollTrigger schimbă cadrul: 191 de fișiere WebP, legate de poziția în pagină. Oaspetele vede tăietura lodjei, nivel după nivel.",
+            "Ordinea desenului coboară: acoperiș, etaje, parter. Butonul din panou se schimbă odată cu nivelul. La mansardă și la etaje duce la /camere. La parter, Descoperă restaurantul duce la /restaurant."
+          ],
+          "bullets": [
+            "Secțiunea rămâne fixă până se termină cadrele.",
+            "Parterul are buton către /restaurant.",
+            "Etajele au buton către /camere."
+          ]
+        },
+        {
+          "heading": "Șina și panoul de nivel",
+          "paras": [
+            "Șina din lateral listează Mansardă, Etaj 2, Etaj 1 și Parter. Un click duce scroll-ul la acel nivel, ca să nu fie nevoie să derulezi tot filmul de cadre. Panoul se actualizează odată cu cadrul.",
+            "Pe fiecare nivel apar încăperile, o notiță și câteva fapte: metri, oaspeți, baie sau dining. Mansarda e o suită, etajul 2 are patru camere cu baie, etajul 1 are balcon, parterul ține masă, lounge și primire."
+          ],
+          "bullets": [
+            "Click pe șină sare la nivelul ales.",
+            "Panoul arată încăperi, nu un plan PDF.",
+            "Cifrele sunt orientative, pe nivel."
+          ]
+        },
+        {
+          "heading": "Când mișcarea e oprită",
+          "paras": [
+            "Dacă telefonul sau browserul cere mișcare redusă, cadrele nu mai curg. Rămâne posterul static și cele patru descrieri, una sub alta, plus butonul Vezi camerele către /camere.",
+            "Același ecran apare dacă cadrele nu se încarcă. Oaspetele tot poate citi nivelurile și poate pleca spre listă. Nu rămâne un bloc gol în mijlocul homepage-ului."
+          ],
+          "bullets": [
+            "Mișcarea redusă lasă posterul static.",
+            "Cele patru niveluri rămân în text.",
+            "Vezi camerele duce la /camere."
+          ]
+        }
+      ],
+      "why": "Oaspetele înțelege cum e așezată lodja, de la suită până la masă, și pleacă din același bloc spre camere sau restaurant. Totul stă în scroll-ul de pe homepage.",
+      "shots": {
+        "primary": "home-s2",
+        "secondary": "home-s3",
+        "phone": "home-s2"
+      }
+    },
+    {
+      "id": "camere",
+      "title": "Lista de camere",
+      "eyebrow": "/camere",
+      "lede": "Pagina /camere listează patru tipuri, fiecare cu poză, metri, capacitate și preț de la, pe noapte. Tipurile marcate alternează: poza stânga, textul dreapta, apoi invers. Pe card sunt Descoperă camera și Verifică disponibilitatea. Reședința signature stă într-un bloc separat, cu Vezi detalii.",
+      "sections": [
+        {
+          "heading": "Patru tipuri, aceleași câmpuri",
+          "paras": [
+            "Forest Room are 28 mp, 1–2 oaspeți, de la 890 RON pe noapte. Mountain View Suite are 42 mp, 2–3 oaspeți, de la 1.290 RON. Pe card mai stau tipul de vedere și un text scurt, ca să se poată compara fără să deschizi fișa.",
+            "Panorama Loft are 55 mp, 2–4 oaspeți, de la 1.690 RON. Signature Residence are 78 mp, 2–6 oaspeți, de la 2.390 RON. Sumele sunt prețuri de pornire, fictive. Totalul din wizard ține cont și de sezon și de weekend."
+          ],
+          "bullets": [
+            "Metri, oaspeți și preț stau pe același rând.",
+            "Prețul e scris de la, pe noapte.",
+            "Catalogul are exact patru tipuri."
+          ]
+        },
+        {
+          "heading": "Două butoane, două destinații",
+          "paras": [
+            "Descoperă camera deschide fișa, la /camere/slug. Verifică disponibilitatea deschide /rezervari. Cine vrea să vadă patul intră în fișă. Cine are deja datele sare la wizard.",
+            "Pe ecran lat, poza și textul schimbă locul de la un card la altul. Pe telefon, poza stă deasupra textului, iar butoanele rămân unul lângă altul, sub cifre. Nu se deschide un popup peste listă."
+          ],
+          "bullets": [
+            "Descoperă camera schimbă ruta, nu un popup.",
+            "Verifică disponibilitatea deschide wizard-ul.",
+            "Pe telefon, poza stă deasupra textului."
+          ]
+        },
+        {
+          "heading": "Ordinea pe pagină",
+          "paras": [
+            "Sus, pe fundal închis, stau titlul și o frază care spune că sunt patru tipuri și că prețurile sunt demonstrative. Apoi vin camerele marcate, în blocuri mari, cu poza pe mai bine de jumătate din rând.",
+            "Signature Residence, nemarcată în selecția de sus, stă într-un bloc pe fundal deschis, cu textul lung și butonul Vezi detalii. Butonul duce la aceeași formă de fișă ca Descoperă camera, pe slug-ul ei."
+          ],
+          "bullets": [
+            "Camerele marcate apar primele, alternat.",
+            "Signature Residence are bloc separat.",
+            "Vezi detalii deschide fișa reședinței."
+          ]
+        }
+      ],
+      "why": "Recepția trimite un singur link de listă. Oaspetele compară metrii, locurile și prețul de la pe același ecran, înainte să deschidă o fișă sau patru taburi.",
+      "shots": {
+        "primary": "camere",
+        "secondary": "camere-s2",
+        "phone": "camere"
+      }
+    },
+    {
+      "id": "camera",
+      "title": "Fișa unei camere",
+      "eyebrow": "/camere/slug",
+      "lede": "Fiecare tip are adresa lui, de forma /camere/slug, cu titlu și descriere proprii. Sus stau Înapoi la camere, poza mare, numele și patru date: suprafață, capacitate, tarif pe noapte și nota că prețul e fictiv. Jos sunt dotările și până la patru fotografii. Rezervă această cameră deschide wizard-ul.",
+      "sections": [
+        {
+          "heading": "Ce se citește înainte de dotări",
+          "paras": [
+            "Linkul Înapoi la camere stă deasupra pozei și duce la /camere, nu la pasul anterior din browser. Poza principală ocupă jumătatea lată. Lângă ea: tipul de vedere, numele și descrierea lungă, nu doar fraza de pe card.",
+            "Sub text, patru câmpuri: Suprafață în mp, Capacitate de la–până la, Tarif orientativ pe noapte și Demo, cu textul Preț fictiv, fără plată reală. Tariful e același punct de pornire ca pe listă, nu totalul sejurului."
+          ],
+          "bullets": [
+            "Înapoi la camere duce la /camere.",
+            "Tariful de pe fișă e pe noapte.",
+            "Nota Demo stă lângă preț, în text."
+          ]
+        },
+        {
+          "heading": "Dotări și fotografii",
+          "paras": [
+            "Blocul Dotări listează amenajările una sub alta, cu un punct lângă fiecare rând. Lista vine din cameră, nu e un text comun copiat pe toate fișele. Oaspetele vede ce include tipul înainte să ceară nopțile.",
+            "Dacă există mai multe fotografii, apar până la patru, într-o grilă de pătrate, lângă dotări. Pe telefon, grila cade sub listă. Nu e un lightbox pe fișă: pozele se văd în pagină."
+          ],
+          "bullets": [
+            "Fiecare dotare e un rând de text.",
+            "Grila arată cel mult patru poze.",
+            "Pozele nu se deschid într-un popup."
+          ]
+        },
+        {
+          "heading": "Butonul către wizard",
+          "paras": [
+            "Rezervă această cameră deschide /rezervari. În varianta de acum, adresa nu poartă slug-ul, deci pasul 2 nu vine cu tipul bifat. Oaspetele reia datele și alege camera din lista liberă.",
+            "Fișa rămâne o pagină de citit și de trimis. Linkul poate fi copiat: deschide tipul, nu toată lista. Titlul din tab și descrierea folosesc numele și textul camerei, ca share-ul să nu arate homepage-ul."
+          ],
+          "bullets": [
+            "Butonul deschide /rezervari.",
+            "Tipul nu e preselectat din acest buton.",
+            "Linkul fișei se poate trimite direct."
+          ]
+        }
+      ],
+      "why": "Un link de fișă răspunde la metri, locuri și dotări, iar butonul duce la cerere pe același site. Linkul se poate copia și trimite. Dotările sunt deja scrise.",
+      "shots": {
+        "primary": "camera",
+        "secondary": "camera-s2",
+        "phone": "camera"
+      }
+    },
+    {
+      "id": "spa",
+      "title": "Pagina de spa",
+      "eyebrow": "/spa",
+      "lede": "Pagina /spa este o rută separată, legată din meniu și din subsol, nu un tab în interiorul camerelor. Hero-ul pune textul lângă poza de saună. Urmează patru pași numerotați: Saună, Răcire, Ciubăr sau odihnă, Ceai și tăcere. Nu există coș și nu există listă de tratamente cu plată. Întrebările stau într-un acordeon.",
+      "sections": [
+        {
+          "heading": "Hero și cei patru pași",
+          "paras": [
+            "Sus, eticheta Wellness, titlul și un paragraf scurt stau lângă fotografia de saună. Pe ecran lat, textul e în stânga și poza în dreapta. Pe telefon, textul urcă deasupra pozei, pe toată lățimea.",
+            "Pașii sunt 01 Saună, 02 Răcire, 03 Ciubăr sau odihnă, 04 Ceai și tăcere. Pe ecran lat stau pe un rând, despărțiți de o linie. Pe telefon se așază unul sub altul. Sunt un circuit de citit, nu un calendar de programări."
+          ],
+          "bullets": [
+            "SPA e în meniul de sus și în subsol.",
+            "Cei patru pași nu au buton de plată.",
+            "Pe telefon, pașii stau unul sub altul."
+          ]
+        },
+        {
+          "heading": "Ciubăr, întrebări, contact",
+          "paras": [
+            "Blocul următor pune poza de ciubăr lângă un text care spune că circuitul e demonstrativ: fără terapeuți și fără rezultate promise. Butonul de aici deschide /contact cu subiectul deja completat, Întrebare despre SPA.",
+            "Acordeonul răspunde la trei lucruri: tratamentele nu sunt reale, accesul e ilustrativ, iar sauna și ciubărul sunt gândite și iarna, cu orar tot ilustrativ. Click-ul deschide răspunsul pe loc."
+          ],
+          "bullets": [
+            "Butonul deschide contactul cu subiectul pus.",
+            "Acordeonul are trei întrebări.",
+            "Pagina nu are coș și nu are tarife de tratament."
+          ]
+        }
+      ],
+      "why": "Spa-ul are pagină de trimis separat de camere, iar întrebările frecvente stau pe ea, ca recepția să nu le repete în fiecare mesaj. Se trimite ca link.",
+      "shots": {
+        "primary": "spa",
+        "secondary": "spa-s2",
+        "phone": "spa"
+      }
+    },
+    {
+      "id": "restaurant",
+      "title": "Restaurantul ARBOR",
+      "eyebrow": "/restaurant",
+      "lede": "Restaurantul ARBOR are pagina /restaurant, separată de camere și de spa. Sus, Vezi meniul ilustrativ sare la lista de feluri, iar Scrie-ne deschide contactul cu subiectul despre restaurant. Meniul e pe taburi, cu preț în lei și cod de alergen lângă fel. Legenda se deschide din buton.",
+      "sections": [
+        {
+          "heading": "Intrare și momentele zilei",
+          "paras": [
+            "Hero-ul arată sala și un cadru de desert. Vezi meniul ilustrativ coboară la #meniu. Scrie-ne deschide /contact cu subiectul despre ARBOR. Sub butoane: Mic dejun, Cină, Terasa și Opțiuni vegetariene.",
+            "Blocul de momente are trei rânduri. Click-ul schimbă fotografia și deschide textul rândului ales: program ilustrativ, ce se servește, o notiță. Celelalte rânduri rămân doar cu titlul, ca să nu se citească tot deodată."
+          ],
+          "bullets": [
+            "Vezi meniul ilustrativ sare la #meniu.",
+            "Scrie-ne deschide formularul de contact.",
+            "Click pe moment schimbă poza din stânga."
+          ]
+        },
+        {
+          "heading": "Farfurii și coduri de alergen",
+          "paras": [
+            "Patru farfurii de semnătură stau cu nume, text, poză și coduri: de exemplu F și L la păstrăv, adică pește și lapte. Codul e text lângă fel, nu doar desenat în fotografie. O etichetă spune că preparatul e exemplu.",
+            "Butonul Vezi legenda alergenilor deschide grila de coduri: G gluten, L lapte, N fructe cu coajă și restul, până la moluște. Butonul o închide la loc. Legenda nu ocupă ecranul până nu e cerută."
+          ],
+          "bullets": [
+            "Codul de alergen stă lângă numele felului.",
+            "Legenda se deschide și se închide din buton.",
+            "Prețurile din meniu sunt fictive, în RON."
+          ]
+        },
+        {
+          "heading": "Taburile de meniu",
+          "paras": [
+            "Taburile sunt Mic dejun, Feluri principale, Deserturi și Băuturi fără alcool. Click-ul schimbă lista, fără reload. Rândul are nume, descriere, preț și coduri. Felurile vegetariene sunt marcate în date.",
+            "Sub meniu stă un acordeon de întrebări: opțiuni vegetariene, alergeni, ore, copii, terasă, rezervare. Rezervarea unei mese nu are wizard propriu. Întrebarea despre masă pleacă pe contact, separat de cererea de nopți."
+          ],
+          "bullets": [
+            "Patru taburi schimbă lista de feluri.",
+            "Prețul e scris în rând, în RON.",
+            "Masa nu se rezervă din wizard-ul de camere."
+          ]
+        }
+      ],
+      "why": "Meniul și alergenii pot fi trimiși ca un singur link, în text, lângă fiecare fel. Întrebarea despre masă pleacă pe contact, separat de cererea de nopți din wizard.",
+      "shots": {
+        "primary": "restaurant",
+        "secondary": "restaurant-s2",
+        "phone": "restaurant"
+      }
+    },
+    {
+      "id": "rezervari",
+      "title": "Wizard de rezervare",
+      "eyebrow": "/rezervari",
+      "lede": "Pe /rezervari, cererea are cinci pași: Date, Camere, Date oaspete, Confirmare, Final. Pasul activ e evidențiat. Înapoi revine la pasul anterior și păstrează datele alese. La final apare un cod. Nu există câmp de card, iar sumarul spune că nu se procesează o plată și nu se blochează o cameră reală.",
+      "sections": [
+        {
+          "heading": "Date, apoi camere libere",
+          "paras": [
+            "Pasul 1 are Check-in, Check-out și Număr oaspeți, de la 1 la 8. Vezi camerele disponibile întreabă serverul. Dacă datele sunt greșite, apare eroarea și pasul nu avansează.",
+            "Pasul 2 arată tipurile în care încap oaspeții: poză, nume, metri, locuri, nopți și total. Ocupatele sunt estompate, cu radio oprit și textul Indisponibilă. Continuă stă oprit până se alege o cameră liberă."
+          ],
+          "bullets": [
+            "Tipurile prea mici pentru grup nu intră în listă.",
+            "Camera ocupată nu poate fi bifată.",
+            "Înapoi de la pasul 2 revine la date."
+          ]
+        },
+        {
+          "heading": "Cum se calculează totalul",
+          "paras": [
+            "Totalul nu e doar prețul de pe fișă înmulțit cu nopțile. Regulile demo adaugă 15% în decembrie, ianuarie și februarie și 8% pe nopțile de vineri, sâmbătă și duminică. Suma afișată e pentru intervalul ales.",
+            "Dacă în adresă există room cu slug-ul unui tip, iar tipul e în listă, radio-ul lui vine bifat. Butonul de pe fișă nu pune acest parametru. Îl poate pune un link construit separat. Fără el, oaspetele alege manual."
+          ],
+          "bullets": [
+            "Iarna și weekendul schimbă totalul.",
+            "Suma e pentru toate nopțile alese.",
+            "Parametrul room poate prebifa un tip."
+          ]
+        },
+        {
+          "heading": "Oaspete, sumar, cod",
+          "paras": [
+            "Pasul 3 cere Prenume, Nume, Email și Telefon. Cerințe speciale e opțional. Revizuiește nu trece dacă un câmp obligatoriu e gol. Înapoi duce la camere, cu intervalul păstrat.",
+            "Pasul 4 repetă camera, oaspetele, datele, persoanele și totalul, plus fraza că cererea e demonstrativă. Confirmarea o salvează. Pasul 5 arată codul VEL-dată-litere, camera, suma și linkul spre acasă."
+          ],
+          "bullets": [
+            "Fără nume, email sau telefon, pasul nu avansează.",
+            "Confirmarea nu cere număr de card.",
+            "Codul are forma VEL-dată-litere."
+          ]
+        }
+      ],
+      "why": "Recepția primește o cerere cu nopți, tip, nume și telefon, iar oaspetele pleacă cu un cod, știind că nu a plătit și că locul nu e ținut în realitate.",
+      "shots": {
+        "primary": "rezervari",
+        "secondary": "rezervari-s2",
+        "phone": "rezervari"
+      }
+    },
+    {
+      "id": "admin",
+      "title": "Panoul de administrare",
+      "eyebrow": "/admin",
+      "lede": "Intrarea publică în panou este /admin/login: email, parolă și un mesaj dacă datele nu trec. După autentificare, prezentarea generală arată cinci carduri cu cifre, fiecare un link. Rezervările stau într-un tabel cu referință, cameră, perioadă, oaspete, total, stare și anulare. Panoul nu e în meniul site-ului.",
+      "sections": [
+        {
+          "heading": "Ecranul de login",
+          "paras": [
+            "Formularul are Email, Parolă și butonul de intrare. Câmpurile goale sau prea scurte sunt oprite înainte de cerere. Dacă serverul refuză perechea, mesajul rămâne pe același ecran. După reușită, browserul intră pe /admin.",
+            "Pagina de login și restul panoului sunt marcate să nu fie indexate. robots.txt închide /admin și /api/. Un vizitator care ghicește adresa vede formularul, nu tabelul, până nu se autentifică."
+          ],
+          "bullets": [
+            "Fără email și parolă valide, tabelul nu se deschide.",
+            "Eroarea rămâne pe ecranul de login.",
+            "/admin e scos din index și din robots."
+          ]
+        },
+        {
+          "heading": "Cinci carduri cu cifre",
+          "paras": [
+            "Prezentarea generală numără rezervările active, mesajele noi, cererile de experiențe, tipurile de camere și valoarea demo, adică suma totalurilor simulate. Sub cifră stă o notiță, nu o încasare.",
+            "Fiecare card e un link. Rezervările și valoarea duc la /admin/rezervari. Mesajele și experiențele duc la /admin/mesaje. Camerele duc la /admin/camere. În stânga: aceleași intrări și Deconectare."
+          ],
+          "bullets": [
+            "Cifra de rezervări numără doar cele deschise.",
+            "Valoarea demo nu e o încasare.",
+            "Deconectare revine la /admin/login."
+          ]
+        },
+        {
+          "heading": "Tabelul de rezervări",
+          "paras": [
+            "Tabelul listează până la 100 de cereri, cele mai noi sus: Referință, Cameră, Perioadă, Oaspete, Total, Stare, Acțiuni. Stările sunt Confirmată demo, În așteptare și Anulată. Lista goală spune că nu există rezervări.",
+            "Butonul de anulare e activ pentru Confirmată demo și În așteptare. După anulare, camera redevine liberă pe acel interval la o căutare nouă. Rândul rămâne în tabel, cu starea Anulată, ca să se vadă că cererea a existat."
+          ],
+          "bullets": [
+            "Referința din tabel e codul văzut de oaspete.",
+            "Anularea eliberează nopțile simulate.",
+            "Rândul anulat rămâne vizibil în listă."
+          ]
+        }
+      ],
+      "why": "După login, recepția vede câte cereri sunt deschise, le deschide în tabel și poate elibera un interval. Codul din tabel e cel văzut de oaspete, fără cont separat.",
+      "shots": {
+        "primary": "admin",
+        "secondary": "admin-s2",
+        "phone": "admin"
+      }
+    }
+  ],
+  "mobile": {
+    "title": "Aceleași pagini pe telefon",
+    "lede": "Pe telefon, paginile se așază una sub alta. Rezervă acum lipsește din bara de sus și revine în meniul deschis din iconiță, lângă Acasă, Împrejurimi și Întrebări frecvente. Hero-ul acoperă ecranul cu poză, text deschis și cele două butoane. La camere, poza stă deasupra textului.",
+    "points": [
+      {
+        "title": "Meniu pe tot ecranul",
+        "text": "Iconița deschide lista pe fundal hârtie. Un link închide meniul. Derularea din spate e oprită cât e deschis, iar Rezervă acum stă la baza listei."
+      },
+      {
+        "title": "Hero pe înălțimea ecranului",
+        "text": "Poza umple ecranul, textul e deschis, iar Rezervă acum și Descoperă VELTRA stau sub titlu. Cele patru scurtături cad pe două coloane."
+      },
+      {
+        "title": "Wizard pe o coloană",
+        "text": "Pașii Date, Camere, Date oaspete, Confirmare și Final se împart pe rânduri. Check-in, check-out și oaspeții stau unul sub altul. Cardul de cameră pune poza deasupra textului."
+      },
+      {
+        "title": "Fișa, poză apoi cifre",
+        "text": "Pe /camere/slug, poza mare stă deasupra numelui și a celor patru date. Dotările urcă înaintea grilei de fotografii. Butonul Rezervă această cameră rămâne sub cifre."
+      }
+    ],
+    "shots": ["home", "camere", "rezervari", "camera"]
+  },
+  "stack": {
+    "note": "Etajele sunt prinse la scroll cu GSAP ScrollTrigger: 191 de cadre WebP, de la mansardă la parter. Caruselul și lightbox-ul folosesc Framer Motion. Camerele, nopțile și mesajele stau în SQLite, prin Prisma. Vitest verifică intervalele care se suprapun și tariful de sezon. Titlurile sunt Cormorant Garamond, butoanele Manrope.",
+    "items": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "Prisma",
+      "SQLite",
+      "Vitest"
+    ],
+    "nextSteps": [
+      "Email către oaspete și recepție, cu același cod de referință.",
+      "Avans după confirmare, legat de codul de sejur, fără coș separat.",
+      "Tarife de sezon și de weekend schimbate din panou.",
+      "Butonul de pe fișă să deschidă wizard-ul cu tipul deja ales.",
+      "Calendar extern pe aceleași intervale, ca nopțile să nu se suprapună."
+    ]
+  },
+  "seo": {
+    "intro": "Căutările pentru un lodge sunt concrete: cazare la munte, cameră cu vedere, spa, restaurant, disponibilitate. Site-ul răspunde cu pagini separate. Fiecare tip de cameră, spa-ul, restaurantul ARBOR și experiențele au adresă, titlu și descriere proprii, nu un singur PDF de ofertă.",
+    "items": [
+      {
+        "title": "Cameră cu adresă proprie",
+        "text": "Slug-ul, titlul și descrierea vin din fișa camerei. Un link trimis deschide tipul, la /camere/slug, nu lista întreagă. Așa se poate trimite o cameră anume."
+      },
+      {
+        "title": "Sitemap pe oferta publică",
+        "text": "Sitemap-ul include camerele, spa-ul, restaurantul, experiențele, galeria și pagina de rezervări. /admin și /api/ sunt închise în robots.txt, ca panoul să nu iasă în căutări."
+      },
+      {
+        "title": "Meniu care se poate cita",
+        "text": "Prețul în RON și codul de alergen sunt text lângă fel, nu doar în fotografie. Legenda se deschide din butonul Vezi legenda alergenilor, pe aceeași pagină."
+      },
+      {
+        "title": "Titlu potrivit la share",
+        "text": "Fișa își ia titlul și descrierea din numele și textul camerei. Un link trimis pe mesaj nu moștenește descrierea de pe homepage. Titlul rămâne al camerei."
+      },
+      {
+        "title": "Contact scris în pagină",
+        "text": "Pe /contact, emailul, telefonul demonstrativ și zona Valea Cerbului Alb sunt text lângă formular. Mesajul se salvează în baza locală de demo."
+      }
+    ]
+  },
+  "contact": {
+    "lead": "Dacă vrei aceleași ecrane pentru lodge-ul tău, cu listă de camere, fișă, meniu cu alergeni și cerere de nopți, scrie-mi. Stabilim un apel scurt, pe paginile și textele tale."
+  }
+}

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, IBM_Plex_Mono, Manrope } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
+import { RscStaticFetchFix } from "@/components/RscStaticFetchFix";
 import { site } from "@/data/site";
 import "./globals.css";
 
@@ -71,6 +72,7 @@ export default function RootLayout({
       className={`${anton.variable} ${manrope.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <RscStaticFetchFix />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

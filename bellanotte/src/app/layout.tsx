@@ -9,6 +9,7 @@ import { ScrollManager } from "@/components/layout/ScrollManager";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { IntroProvider } from "@/components/motion/IntroContext";
+import { RscStaticFetchFix } from "@/components/RscStaticFetchFix";
 import { SiteLoader } from "@/components/motion/SiteLoader";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { absoluteUrl, siteConfig } from "@/lib/site";
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="bn-grain flex min-h-full flex-col bg-bn-bg font-sans text-bn-text antialiased">
+        <RscStaticFetchFix />
         <IntroProvider>
           <JsonLd />
           <SkipLink />

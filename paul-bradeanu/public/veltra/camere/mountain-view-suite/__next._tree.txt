@@ -5,8 +5,8 @@
 :HL["/veltra/_next/static/media/8760c4774489e4ba-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/veltra/_next/static/css/e85b2f2a275f87cf.css","style"]
-:HL["/veltra/_next/static/css/19542e087d4b7da4.css","style"]
+:HL["/veltra/_next/static/css/f9ffed506215f810.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"mountain-view-suite","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"camere","h":96,"c":"$Q2"}]]
-0:{"b":"Uk3-Nu7DS6AKTQTqPy7Ob","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"39TcfNNO2z-SdMPc6PHcq","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

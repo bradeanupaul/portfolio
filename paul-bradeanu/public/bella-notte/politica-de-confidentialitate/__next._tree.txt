@@ -9,4 +9,4 @@
 :HL["/bella-notte/images/hero/pasta-wide.webp","image",{"fetchPriority":"high"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"politica-de-confidentialitate","h":64,"c":"$Q2"}]]
-0:{"b":"AG4dAswc-l60YntQ1bU6X","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"qJmWsLTvZjoHOM1J_8zjK","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

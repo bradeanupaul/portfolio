@@ -10,4 +10,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"tagliata-di-manzo","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"meniu","h":64,"c":"$Q2"}]]
-0:{"b":"AG4dAswc-l60YntQ1bU6X","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"qJmWsLTvZjoHOM1J_8zjK","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

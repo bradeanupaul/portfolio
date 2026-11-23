@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Manrope } from "next/font/google";
 import { CookieNotice } from "@/components/cookie-notice";
+import { RscStaticFetchFix } from "@/components/RscStaticFetchFix";
 import { MiniCart } from "@/components/mini-cart";
 import { PageTransition } from "@/components/page-transition";
 import { SiteFooter } from "@/components/site-footer";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${display.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans text-aubergine">
+        <RscStaticFetchFix />
         <StoreHydrator />
         <a
           href="#continut"
