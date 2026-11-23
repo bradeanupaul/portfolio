@@ -22,6 +22,7 @@ const attribution =
 
 /**
  * Measured Lighthouse lab scores against production URLs (2026-11-23).
+ * Mobile Performance remeasured after LCP / defer-load fixes.
  */
 export const demoAudits: Record<string, ProjectAudit> = {
   "bella-notte": {
@@ -29,7 +30,7 @@ export const demoAudits: Record<string, ProjectAudit> = {
     label: "PageSpeed Insights",
     attribution,
     mobile: {
-      performance: 79,
+      performance: 95,
       accessibility: 100,
       bestPractices: 100,
       seo: 100,
@@ -41,16 +42,12 @@ export const demoAudits: Record<string, ProjectAudit> = {
       seo: 100,
     },
     scores: {
-      performance: 79,
+      performance: 95,
       accessibility: 100,
       bestPractices: 100,
       seo: 100,
     },
-    reportUrl: {
-      mobile:
-        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-bella-notte/eg9xp2yz8t?form_factor=mobile",
-      desktop: null,
-    },
+    reportUrl: { mobile: null, desktop: null },
     measuredAt: "2026-11-23",
     source: "lighthouse",
   },
@@ -59,7 +56,7 @@ export const demoAudits: Record<string, ProjectAudit> = {
     label: "PageSpeed Insights",
     attribution,
     mobile: {
-      performance: 52,
+      performance: 97,
       accessibility: 93,
       bestPractices: 100,
       seo: 100,
@@ -71,7 +68,7 @@ export const demoAudits: Record<string, ProjectAudit> = {
       seo: 100,
     },
     scores: {
-      performance: 52,
+      performance: 97,
       accessibility: 93,
       bestPractices: 100,
       seo: 100,
@@ -85,7 +82,7 @@ export const demoAudits: Record<string, ProjectAudit> = {
     label: "PageSpeed Insights",
     attribution,
     mobile: {
-      performance: 89,
+      performance: 96,
       accessibility: 100,
       bestPractices: 100,
       seo: 100,
@@ -97,16 +94,12 @@ export const demoAudits: Record<string, ProjectAudit> = {
       seo: 100,
     },
     scores: {
-      performance: 89,
+      performance: 96,
       accessibility: 100,
       bestPractices: 100,
       seo: 100,
     },
-    reportUrl: {
-      mobile:
-        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-vanta-ink/ok2a7vknya?form_factor=mobile",
-      desktop: null,
-    },
+    reportUrl: { mobile: null, desktop: null },
     measuredAt: "2026-11-23",
     source: "lighthouse",
   },
@@ -115,7 +108,7 @@ export const demoAudits: Record<string, ProjectAudit> = {
     label: "PageSpeed Insights",
     attribution,
     mobile: {
-      performance: 63,
+      performance: 96,
       accessibility: 96,
       bestPractices: 100,
       seo: 100,
@@ -127,16 +120,12 @@ export const demoAudits: Record<string, ProjectAudit> = {
       seo: 100,
     },
     scores: {
-      performance: 99,
+      performance: 96,
       accessibility: 96,
       bestPractices: 100,
       seo: 100,
     },
-    reportUrl: {
-      mobile: null,
-      desktop:
-        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-aurelia-estates/pjh6tsg9gq?form_factor=desktop",
-    },
+    reportUrl: { mobile: null, desktop: null },
     measuredAt: "2026-11-23",
     source: "lighthouse",
   },
@@ -145,9 +134,9 @@ export const demoAudits: Record<string, ProjectAudit> = {
     label: "PageSpeed Insights",
     attribution,
     mobile: {
-      performance: 73,
+      performance: 97,
       accessibility: 96,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     desktop: {
@@ -157,9 +146,9 @@ export const demoAudits: Record<string, ProjectAudit> = {
       seo: 100,
     },
     scores: {
-      performance: 73,
+      performance: 97,
       accessibility: 96,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     reportUrl: { mobile: null, desktop: null },
