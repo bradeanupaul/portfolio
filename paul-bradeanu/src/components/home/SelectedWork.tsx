@@ -252,8 +252,8 @@ export function SelectedWork() {
 
         <Reveal className="mt-10 md:mt-14">
           <p className="max-w-2xl text-sm text-[var(--text-muted)]">
-            Site-urile sunt proiecte demonstrative. Scorurile din secțiunea de
-            date sunt illustrative, până la audituri reale.
+            Site-urile sunt proiecte demonstrative. Scorurile PageSpeed Insights
+            de pe fiecare card sunt măsurători reale de laborator.
           </p>
           <Link
             href="/projects"

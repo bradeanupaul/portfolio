@@ -223,12 +223,12 @@ export default function HomePage() {
                     sizes="(min-width: 768px) 33vw, 100vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.035]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/25 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/10" />
                   <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                    <h3 className="font-display text-2xl font-bold tracking-[-0.02em]">
+                    <h3 className="font-display text-2xl font-bold tracking-[-0.02em] text-white">
                       {collection.title}
                     </h3>
-                    <p className="mt-2 line-clamp-2 text-sm text-white/85">{collection.shortDescription}</p>
+                    <p className="mt-2 line-clamp-2 text-sm text-white">{collection.shortDescription}</p>
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold">
                       Deschide
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

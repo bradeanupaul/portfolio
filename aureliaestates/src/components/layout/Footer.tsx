@@ -5,7 +5,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Container } from "@/components/ui/Container";
 import { footerNavigation, footerServices } from "@/lib/navigation";
 
-const linkClass = "text-sm text-slate-soft transition-colors hover:text-white";
+const linkClass = "text-sm text-white/90 transition-colors hover:text-white";
 
 export function Footer() {
   return (
@@ -30,7 +30,7 @@ export function Footer() {
         <Reveal delay={0.08}>
           <div className="mt-16 grid gap-12 lg:grid-cols-12 lg:gap-10">
             <div className="lg:col-span-4">
-              <p className="max-w-sm text-base leading-relaxed text-slate-soft">{site.description}</p>
+              <p className="max-w-sm text-base leading-relaxed text-white/85">{site.description}</p>
             </div>
 
             <div className="lg:col-span-2 lg:col-start-6">

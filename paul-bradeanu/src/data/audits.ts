@@ -7,66 +7,167 @@ export type DemoAuditScores = {
 
 export type ProjectAudit = {
   slug: string;
-  demo: true;
-  label: "DEMO / DATE ILUSTRATIVE";
-  attribution: "PageSpeed Insights · valori demonstrative";
+  label: string;
+  attribution: string;
   scores: DemoAuditScores;
-  reportUrl: string | null;
-  measuredAt: string | null;
-  source: "illustrative";
+  mobile: DemoAuditScores;
+  desktop: DemoAuditScores;
+  reportUrl: { mobile: string | null; desktop: string | null };
+  measuredAt: string;
+  source: "pagespeed" | "lighthouse";
 };
 
-/** Illustrative only. Never present as measured Google results. */
+/**
+ * Measured Lighthouse lab scores (local CLI against production URLs).
+ * Replaced after each optimization pass — keep mobile + desktop in sync.
+ */
 export const demoAudits: Record<string, ProjectAudit> = {
   "bella-notte": {
     slug: "bella-notte",
-    demo: true,
-    label: "DEMO / DATE ILUSTRATIVE",
-    attribution: "PageSpeed Insights · valori demonstrative",
-    scores: { performance: 94, accessibility: 98, bestPractices: 96, seo: 97 },
-    reportUrl: null,
-    measuredAt: null,
-    source: "illustrative",
+    label: "PageSpeed Insights",
+    attribution:
+      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    mobile: {
+      performance: 72,
+      accessibility: 100,
+      bestPractices: 96,
+      seo: 100,
+    },
+    desktop: {
+      performance: 90,
+      accessibility: 100,
+      bestPractices: 96,
+      seo: 100,
+    },
+    scores: {
+      performance: 72,
+      accessibility: 100,
+      bestPractices: 96,
+      seo: 100,
+    },
+    reportUrl: {
+      mobile:
+        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-bella-notte/eg9xp2yz8t?form_factor=mobile",
+      desktop: null,
+    },
+    measuredAt: "2026-11-23",
+    source: "lighthouse",
   },
   veltra: {
     slug: "veltra",
-    demo: true,
-    label: "DEMO / DATE ILUSTRATIVE",
-    attribution: "PageSpeed Insights · valori demonstrative",
-    scores: { performance: 92, accessibility: 97, bestPractices: 95, seo: 96 },
-    reportUrl: null,
-    measuredAt: null,
-    source: "illustrative",
+    label: "PageSpeed Insights",
+    attribution:
+      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    mobile: {
+      performance: 88,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    desktop: {
+      performance: 94,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    scores: {
+      performance: 88,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    reportUrl: { mobile: null, desktop: null },
+    measuredAt: "2026-11-23",
+    source: "lighthouse",
   },
   "vanta-ink": {
     slug: "vanta-ink",
-    demo: true,
-    label: "DEMO / DATE ILUSTRATIVE",
-    attribution: "PageSpeed Insights · valori demonstrative",
-    scores: { performance: 90, accessibility: 96, bestPractices: 94, seo: 95 },
-    reportUrl: null,
-    measuredAt: null,
-    source: "illustrative",
+    label: "PageSpeed Insights",
+    attribution:
+      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    mobile: {
+      performance: 92,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    desktop: {
+      performance: 95,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    scores: {
+      performance: 92,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    reportUrl: {
+      mobile:
+        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-vanta-ink/ok2a7vknya?form_factor=mobile",
+      desktop: null,
+    },
+    measuredAt: "2026-11-23",
+    source: "lighthouse",
   },
   "aurelia-estates": {
     slug: "aurelia-estates",
-    demo: true,
-    label: "DEMO / DATE ILUSTRATIVE",
-    attribution: "PageSpeed Insights · valori demonstrative",
-    scores: { performance: 95, accessibility: 98, bestPractices: 97, seo: 98 },
-    reportUrl: null,
-    measuredAt: null,
-    source: "illustrative",
+    label: "PageSpeed Insights",
+    attribution:
+      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    mobile: {
+      performance: 70,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    desktop: {
+      performance: 49,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    scores: {
+      performance: 49,
+      accessibility: 96,
+      bestPractices: 96,
+      seo: 100,
+    },
+    reportUrl: {
+      mobile: null,
+      desktop:
+        "https://pagespeed.web.dev/analysis/https-www-paulbradeanu-com-aurelia-estates/pjh6tsg9gq?form_factor=desktop",
+    },
+    measuredAt: "2026-11-23",
+    source: "lighthouse",
   },
   "elan-skin": {
     slug: "elan-skin",
-    demo: true,
-    label: "DEMO / DATE ILUSTRATIVE",
-    attribution: "PageSpeed Insights · valori demonstrative",
-    scores: { performance: 91, accessibility: 97, bestPractices: 95, seo: 96 },
-    reportUrl: null,
-    measuredAt: null,
-    source: "illustrative",
+    label: "PageSpeed Insights",
+    attribution:
+      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    mobile: {
+      performance: 85,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    desktop: {
+      performance: 92,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    scores: {
+      performance: 85,
+      accessibility: 97,
+      bestPractices: 96,
+      seo: 100,
+    },
+    reportUrl: { mobile: null, desktop: null },
+    measuredAt: "2026-11-23",
+    source: "lighthouse",
   },
 };
 

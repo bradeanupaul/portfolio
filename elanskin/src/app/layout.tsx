@@ -30,7 +30,14 @@ export const metadata: Metadata = {
   description:
     "Îngrijire a pielii cu texturi line, ingrediente alese și un ritual pe care îl ții în ritmul tău. Demonstrație fictivă de portofoliu.",
   applicationName: "ÉLAN SKIN",
-  icons: { icon: "/assets/brand/mark.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/assets/brand/mark.svg", type: "image/svg+xml" },
+      { url: "/assets/brand/mark.png", type: "image/png" },
+    ],
+    shortcut: ["/favicon.svg"],
+  },
   openGraph: {
     siteName: "ÉLAN SKIN",
     locale: "ro_RO",

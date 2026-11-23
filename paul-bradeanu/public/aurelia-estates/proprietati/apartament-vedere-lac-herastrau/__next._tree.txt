@@ -2,8 +2,8 @@
 :HL["/aurelia-estates/_next/static/media/8760c4774489e4ba-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/aurelia-estates/_next/static/media/9e7b0a821b9dfcb4-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/aurelia-estates/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/aurelia-estates/_next/static/css/257023e567834345.css","style"]
+:HL["/aurelia-estates/_next/static/css/8e2b7516e89b863f.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"apartament-vedere-lac-herastrau","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"proprietati","h":64,"c":"$Q2"}]]
-0:{"b":"RZLWnG6KlidemtW_AwPHy","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"JBCP7IvqrVts6s2lEfn1E","t":{"t":{"s":"","h":20,"c":"$Q1"}}}

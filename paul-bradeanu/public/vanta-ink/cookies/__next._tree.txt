@@ -6,8 +6,8 @@
 :HL["/vanta-ink/_next/static/media/cdec7fa3927eb560-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/vanta-ink/_next/static/media/d51fd126416ee4c8-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/vanta-ink/_next/static/media/f9e1dbe9676d9bb6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/vanta-ink/_next/static/css/0f23c4ef9e6c2555.css","style"]
+:HL["/vanta-ink/_next/static/css/9af2580666181251.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"cookies","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"(site)","h":68,"c":"$Q2"}]]
-0:{"b":"-dsTh7U1txUYMG9RHnBB4","t":{"t":{"s":"","h":28,"c":"$Q1"}}}
+0:{"b":"_pIScnmcAFU0szLnRYrAt","t":{"t":{"s":"","h":28,"c":"$Q1"}}}

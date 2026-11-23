@@ -46,7 +46,11 @@ export const metadata: Metadata = {
     images: ["/brand/opengraph.webp"],
   },
   icons: {
-    icon: "/brand/vanta-symbol.svg",
+    icon: [
+      { url: "/brand/favicon.svg", type: "image/svg+xml" },
+      { url: "/brand/vanta-symbol.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/brand/favicon.svg"],
     apple: "/brand/apple-touch-icon.png",
   },
 };

@@ -9,11 +9,28 @@ const DEMOS = new Set([
   "elan-skin",
 ]);
 
+const RSC_HEADERS = [
+  "rsc",
+  "next-router-state-tree",
+  "next-router-prefetch",
+  "next-router-segment-prefetch",
+  "next-url",
+] as const;
+
 /**
- * Static demo exports live as public/<demo>/.../*.html, but the App Router
- * inside each demo navigates/prefetches extensionless paths. Without this
- * rewrite those requests 404 and PageSpeed flags console errors (Best Practices 88).
+ * Demo static exports live under public/<demo>/ and ship their own App Router
+ * client. Prefetch sends RSC headers; the parent Next app then intercepts and
+ * 404s the static .txt/.html payloads (Best Practices / console errors).
+ * Strip those headers so Vercel serves the files from public/ as plain assets.
  */
+function withoutRscHeaders(request: NextRequest) {
+  const headers = new Headers(request.headers);
+  for (const name of RSC_HEADERS) {
+    headers.delete(name);
+  }
+  return headers;
+}
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const parts = pathname.split("/").filter(Boolean);
@@ -21,10 +38,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  const headers = withoutRscHeaders(request);
   const leaf = parts[parts.length - 1] ?? "";
+
   // Real assets keep their extension (.js, .css, .webp, .txt, __next.*.txt, …)
   if (leaf.includes(".")) {
-    return NextResponse.next();
+    return NextResponse.next({ request: { headers } });
   }
 
   const url = request.nextUrl.clone();
@@ -33,7 +52,7 @@ export function middleware(request: NextRequest) {
   } else {
     url.pathname = `${pathname.replace(/\/$/, "")}.html`;
   }
-  return NextResponse.rewrite(url);
+  return NextResponse.rewrite(url, { request: { headers } });
 }
 
 export const config = {

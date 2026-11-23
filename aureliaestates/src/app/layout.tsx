@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   applicationName: site.name,
   icons: {
     icon: [
-      { url: "/branding/favicon.png", type: "image/png", sizes: "64x64" },
       { url: "/branding/favicon.svg", type: "image/svg+xml" },
+      { url: "/branding/logo-mark.svg", type: "image/svg+xml" },
     ],
   },
   openGraph: {

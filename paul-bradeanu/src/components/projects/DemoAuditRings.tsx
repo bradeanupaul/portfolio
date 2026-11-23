@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import {
   useInView,
@@ -7,13 +8,33 @@ import {
   useReducedMotion,
   useSpring,
 } from "motion/react";
-import type { ProjectAudit } from "@/data/audits";
+import type { DemoAuditScores, ProjectAudit } from "@/data/audits";
 
-const labels: { key: keyof ProjectAudit["scores"]; label: string }[] = [
-  { key: "performance", label: "Performance" },
-  { key: "accessibility", label: "Accessibility" },
-  { key: "bestPractices", label: "Best Practices" },
-  { key: "seo", label: "SEO" },
+const METRICS: {
+  key: keyof DemoAuditScores;
+  label: string;
+  blurb: string;
+}[] = [
+  {
+    key: "performance",
+    label: "Performance",
+    blurb: "Cât de repede se încarcă și răspunde pagina.",
+  },
+  {
+    key: "accessibility",
+    label: "Accessibility",
+    blurb: "Cât de ușor poate fi folosită de toți utilizatorii.",
+  },
+  {
+    key: "bestPractices",
+    label: "Best Practices",
+    blurb: "Securitate, erori de consolă și practici moderne.",
+  },
+  {
+    key: "seo",
+    label: "SEO",
+    blurb: "Cât de bine e pregătită pagina pentru căutare.",
+  },
 ];
 
 const VIEW_W = 100;
@@ -25,13 +46,29 @@ const STROKE = 2.5;
 const ARC_LEN = Math.PI * R;
 const NEEDLE_LEN = R - 8;
 
+function useIsCompactViewport() {
+  const [compact, setCompact] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const sync = () => setCompact(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  return compact;
+}
+
 function SemiGauge({
   value,
   label,
+  blurb,
   reduceMotion,
 }: {
   value: number;
   label: string;
+  blurb: string;
   reduceMotion: boolean | null;
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -119,8 +156,11 @@ function SemiGauge({
       <p className="font-display mt-1 text-[1.7rem] font-semibold leading-none tracking-[-0.04em] text-[var(--text-primary)] md:text-[1.9rem]">
         {display}
       </p>
-      <p className="mt-1.5 max-w-[7rem] font-nav text-[8px] leading-tight text-[var(--text-muted)] sm:text-[9px]">
+      <p className="mt-1.5 max-w-[7.5rem] font-nav text-[8px] font-semibold uppercase leading-tight tracking-[0.08em] text-[var(--text-primary)] sm:text-[9px]">
         {label}
+      </p>
+      <p className="mt-1 max-w-[9rem] text-[10px] leading-snug text-[var(--text-muted)] sm:text-[11px]">
+        {blurb}
       </p>
     </div>
   );
@@ -128,25 +168,44 @@ function SemiGauge({
 
 export function DemoAuditRings({ audit }: { audit: ProjectAudit }) {
   const reduceMotion = useReducedMotion();
+  const compact = useIsCompactViewport();
+  const scores = compact ? audit.mobile : audit.desktop;
+  const formLabel = compact ? "Mobil" : "Desktop";
 
   return (
     <div className="border-t border-[var(--line-on-dark)] pt-5">
-      <p className="font-semibold text-[10px] tracking-[0.16em] text-[var(--accent-hover)]">
-        {audit.label}
-      </p>
-      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-3">
-        {labels.map((item) => (
+      <div className="flex items-center justify-between gap-3">
+        <p className="font-semibold text-[10px] tracking-[0.16em] text-[var(--accent-hover)]">
+          {audit.label}
+          <span className="ml-2 font-normal tracking-[0.08em] text-[var(--text-muted)]">
+            · {formLabel}
+          </span>
+        </p>
+      </div>
+      <div className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-3">
+        {METRICS.map((item) => (
           <SemiGauge
-            key={item.key}
-            value={audit.scores[item.key]}
+            key={`${formLabel}-${item.key}`}
+            value={scores[item.key]}
             label={item.label}
+            blurb={item.blurb}
             reduceMotion={reduceMotion}
           />
         ))}
       </div>
-      <p className="mt-3 text-[11px] leading-relaxed text-[var(--text-muted)]">
-        {audit.attribution}. Nu sunt rezultate măsurate Google.
-      </p>
+      <div className="mt-4 flex items-start gap-3">
+        <Image
+          src="/branding/pagespeed-insights-white.svg"
+          alt=""
+          width={28}
+          height={28}
+          className="mt-0.5 shrink-0 opacity-90"
+          aria-hidden
+        />
+        <p className="text-[11px] leading-relaxed text-[var(--text-muted)]">
+          {audit.attribution}
+        </p>
+      </div>
     </div>
   );
 }

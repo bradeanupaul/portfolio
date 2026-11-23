@@ -26,6 +26,7 @@ export function HeroHome() {
           alt=""
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-contain object-[center_12%]"
           style={{
@@ -109,6 +110,7 @@ export function HeroHome() {
               alt="Clădire rezidențială contemporană pe fundal alb, imagine de brand Aurelia Estates"
               fill
               priority
+              fetchPriority="high"
               sizes="(min-width: 1024px) 55vw, 100vw"
               className="object-contain object-right-bottom"
               style={{
