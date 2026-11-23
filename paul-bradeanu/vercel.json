@@ -1034,7 +1034,7 @@
       ]
     },
     {
-      "source": "/:demo(bella-notte|veltra|vanta-ink|aurelia-estates|elan-skin)/:path*__next*",
+      "source": "/:demo(bella-notte|veltra|vanta-ink|aurelia-estates|elan-skin)/(.*)\\.txt",
       "headers": [
         {
           "key": "Cache-Control",
