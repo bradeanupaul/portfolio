@@ -17,32 +17,33 @@ export type ProjectAudit = {
   source: "pagespeed" | "lighthouse";
 };
 
+const attribution =
+  "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.";
+
 /**
- * Measured Lighthouse lab scores (local CLI against production URLs).
- * Replaced after each optimization pass — keep mobile + desktop in sync.
+ * Measured Lighthouse lab scores against production URLs (2026-11-23).
  */
 export const demoAudits: Record<string, ProjectAudit> = {
   "bella-notte": {
     slug: "bella-notte",
     label: "PageSpeed Insights",
-    attribution:
-      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    attribution,
     mobile: {
-      performance: 72,
+      performance: 79,
       accessibility: 100,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     desktop: {
-      performance: 90,
+      performance: 99,
       accessibility: 100,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     scores: {
-      performance: 72,
+      performance: 79,
       accessibility: 100,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     reportUrl: {
@@ -56,24 +57,23 @@ export const demoAudits: Record<string, ProjectAudit> = {
   veltra: {
     slug: "veltra",
     label: "PageSpeed Insights",
-    attribution:
-      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    attribution,
     mobile: {
-      performance: 88,
-      accessibility: 97,
-      bestPractices: 96,
+      performance: 52,
+      accessibility: 93,
+      bestPractices: 100,
       seo: 100,
     },
     desktop: {
-      performance: 94,
-      accessibility: 97,
-      bestPractices: 96,
+      performance: 99,
+      accessibility: 93,
+      bestPractices: 100,
       seo: 100,
     },
     scores: {
-      performance: 88,
-      accessibility: 97,
-      bestPractices: 96,
+      performance: 52,
+      accessibility: 93,
+      bestPractices: 100,
       seo: 100,
     },
     reportUrl: { mobile: null, desktop: null },
@@ -83,24 +83,23 @@ export const demoAudits: Record<string, ProjectAudit> = {
   "vanta-ink": {
     slug: "vanta-ink",
     label: "PageSpeed Insights",
-    attribution:
-      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    attribution,
     mobile: {
-      performance: 92,
-      accessibility: 96,
-      bestPractices: 96,
+      performance: 89,
+      accessibility: 100,
+      bestPractices: 100,
       seo: 100,
     },
     desktop: {
-      performance: 95,
-      accessibility: 96,
-      bestPractices: 96,
+      performance: 100,
+      accessibility: 100,
+      bestPractices: 100,
       seo: 100,
     },
     scores: {
-      performance: 92,
-      accessibility: 96,
-      bestPractices: 96,
+      performance: 89,
+      accessibility: 100,
+      bestPractices: 100,
       seo: 100,
     },
     reportUrl: {
@@ -114,24 +113,23 @@ export const demoAudits: Record<string, ProjectAudit> = {
   "aurelia-estates": {
     slug: "aurelia-estates",
     label: "PageSpeed Insights",
-    attribution:
-      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    attribution,
     mobile: {
-      performance: 70,
+      performance: 63,
       accessibility: 96,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     desktop: {
-      performance: 49,
+      performance: 99,
       accessibility: 96,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     scores: {
-      performance: 49,
+      performance: 99,
       accessibility: 96,
-      bestPractices: 96,
+      bestPractices: 100,
       seo: 100,
     },
     reportUrl: {
@@ -145,23 +143,22 @@ export const demoAudits: Record<string, ProjectAudit> = {
   "elan-skin": {
     slug: "elan-skin",
     label: "PageSpeed Insights",
-    attribution:
-      "PageSpeed Insights e serviciul Google care măsoară performanța, accesibilitatea, bunele practici și SEO în condiții de laborator.",
+    attribution,
     mobile: {
-      performance: 85,
-      accessibility: 97,
+      performance: 73,
+      accessibility: 96,
       bestPractices: 96,
       seo: 100,
     },
     desktop: {
-      performance: 92,
-      accessibility: 97,
+      performance: 100,
+      accessibility: 96,
       bestPractices: 96,
       seo: 100,
     },
     scores: {
-      performance: 85,
-      accessibility: 97,
+      performance: 73,
+      accessibility: 96,
       bestPractices: 96,
       seo: 100,
     },
